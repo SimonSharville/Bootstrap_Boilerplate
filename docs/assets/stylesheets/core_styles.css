@@ -6517,3 +6517,17 @@ li p {
   text-indent: -1.25em;
   margin-bottom: 0.5em;
   line-height: 1.3em; }
+
+/* BOOTSTRAP Structure Overrides */
+* {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: grayscale !important;
+  font-smoothing: antialiased !important; }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  color: #211F0F; }
