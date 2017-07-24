@@ -1,0 +1,166 @@
+
+/* SARD Colours ======================== */
+
+$turq:                  #00B2B2;
+$pink:                  #E50073;
+$orange:                #FF6A00;
+$yellow:                #FFB200;
+$lime:                  #A7BF30;
+$green:                 #359E00;
+$teal:                  #004D4D;
+$blue:                  #003CB8;
+$ink:                   #000078;
+$purple:                #52008C;
+$plum:                  #990099;
+$red:                   #BF0000;
+$white:                 #FFFFFF;
+
+$MRv:                   $turq;
+$NRv:                   $orange;
+$sa-360:                $yellow;
+$eLeave:                $lime;
+$A4A:                   $plum;
+$JPL:                   $pink;
+$eRo:                   $teal;
+$CPL:                   $red;
+
+//  Greys ==============================
+$grey00:                #f0f0f0;
+$grey01:                #F0F0F0;
+$grey02:                #EDEBEB;
+$grey03:                #E3E1E1;
+$grey04:                #D9D6D6;
+$grey05:                #d0cecd;
+$grey06:                #C7C4C2;
+$grey07:                #bdbab9;
+$grey08:                #B5B0B0;
+$grey09:                #aba6a5;
+$grey10:                #A39E9C;
+$grey11:                #918d8b;
+$grey12:                #827D7D;
+$grey13:                #716d6c;
+$grey14:                #615E5C;
+$grey15:                #514e4d;
+$grey16:                #403D3D;
+$grey17:                #302f2e;
+$grey18:                #211F0F;
+$grey19:                #0e0e0e;
+
+//  Other Colours ======================
+$active:                $grey04; // Used in Bootstrap Overrides Table Hover line 1030.
+$success:               $green;
+$info:                  #00a0e0;
+$warning:               $yellow;
+$danger:                $red;
+$alert:                 $pink;
+
+
+// Text Colours ========================
+
+.turq{ color: $turq;}
+.pink{ color: $pink;}
+.orange{ color: $orange;}
+.yellow{ color: $yellow;}
+.lime{ color: $lime;}
+.green{ color: $green;}
+.teal{ color: $teal;}
+.blue{ color: $blue;}
+.ink{ color: $ink;}
+.purple{ color: $purple;}
+.plum{ color: $plum;}
+.red{ color: $red;}
+.white{ color: $white;}
+
+.MRv{ color: $MRv;}
+.NRv{ color: $NRv;}
+.sa_360{ color: $sa_360;}
+.eLeave{ color: $eLeave;}
+.A4A{ color: $A4A;}
+.JPL{ color: $JPL;}
+.eRo{ color: $eRo;}
+.CPL{ color: $CPL;} 
+
+.grey02{ color: $grey02;}
+.grey03{ color: $grey03;}
+.grey04{ color: $grey04;}
+.grey06{ color: $grey06;}
+.grey08{ color: $grey08;}
+.grey10{ color: $grey10;}
+.grey10{ color: $grey10;}
+.grey12{ color: $grey12;}
+.grey14{ color: $grey14;}
+.grey16{ color: $grey16;}
+.grey18{ color: $grey18;}
+
+.success{ color: $success;}
+.info{ color: $info;}
+.warning{ color: $warning;}
+.danger{ color: $danger;}
+.alert{ color: $alert;}
+
+
+
+// Background Colours ====================
+
+.bg_turq    {background-color: $turq;}
+.bg_pink    {background-color: $pink;}
+.bg_orange  {background-color: $orange;}
+.bg_yellow  {background-color: $yellow;}
+.bg_lime    {background-color: $lime;}
+.bg_green   {background-color: $green;}
+.bg_teal    {background-color: $teal;}
+.bg_blue    {background-color: $blue;}
+.bg_pink    {background-color: $ink;}
+.bg_purple  {background-color: $purple;}
+.bg_plum    {background-color: $plum;}
+.bg_red     {background-color: $red;}
+.bg_white   {background-color: $white;}
+
+.bg_MRv     {background-color: $MRv;}
+.bg_NRv     {background-color: $NRv;}
+.bg_sa_360  {background-color: $sa_360;}
+.bg_eLeave  {background-color: $eLeave;}
+.bg_A4A     {background-color: $A4A;}
+.bg_JPL     {background-color: $JPL;}
+.bg_eRo     {background-color: $eRo;}
+.bg_CPL     {background-color: $CPL;}
+
+.bg_grey02  {background-color: $grey02;}
+.bg_grey03  {background-color: $grey03;}
+.bg_grey04  {background-color: $grey04;}
+.bg_grey06  {background-color: $grey06;}
+.bg_grey08  {background-color: $grey08;}
+.bg_grey10  {background-color: $grey10;}
+.bg_grey10  {background-color: $grey10;}
+.bg_grey12  {background-color: $grey12;}
+.bg_grey14  {background-color: $grey14;}
+.bg_grey16  {background-color: $grey16;}
+.bg_grey18  {background-color: $grey18;}
+
+.bg_success {background-color: $success;}
+.bg_info    {background-color: $info;}
+.bg_warning {background-color: $warning;}
+.bg_danger  {background-color: $danger;}
+.bg_alert   {background-color: $alert;}
+
+// Global Mixins ========================
+$bg-default:            $grey04;
+
+$client:                $turq; 
+$client-light:          lighten($client, 5%);
+$client-very-light:     lighten($client, 10%);
+$client-dark:           darken($client, 10%);
+$client-very-dark:      darken($client, 20%);
+
+$medic:                 $turq;
+$non-medic:             $ink;
+
+// Admin Mixins =========================
+$admin:               $pink;
+$admin-light:         lighten($admin, 5%);
+$admin-very-light:    lighten($admin, 10%);
+$admin-dark:          darken($admin, 10%);
+$admin-very-dark:     darken($admin, 20%);
+
+
+
