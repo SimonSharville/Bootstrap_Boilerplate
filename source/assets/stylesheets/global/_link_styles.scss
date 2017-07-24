@@ -1,0 +1,292 @@
+/* LINK Styles =============================================== */
+
+    
+  // Text Link Colours
+
+    $text_link:             $grey18;
+    $text_link_visited:     $plum;
+    $text_link_hover:       darken($client, 5%);
+    $text_link_active:      $purple;    
+
+
+  a {
+    color: $client;
+    text-decoration: none; 
+  }
+
+  a:hover, a:focus {
+    color: $ink;
+    text-decoration: none; }
+
+  a:link{ color:$bodytext;}
+  a:visited{ color:$bodytext;}
+  a:hover{ color:$text_link_hover;}
+  a:active{ color:$text_link_hover;}
+
+  a:link .fa{ color:$grey16;}
+  a:visited .fa{ color:$grey16;}
+  a:hover .fa{ color:$text_link_hover;}
+  a:active .fa{ color:$text_link_hover;}
+
+
+  // This makes links in text blue when they have no link icon
+  .text-link:link{ color:darken($client, 10%);}
+  a.text-link:visited{ color:darken($client, 10%);}
+  a.text-link:hover{ color:$client-dark;}
+  a.text-link:active{ color:$client-dark;}
+
+
+  // Link Icons ==========================================================================
+
+
+  // ARROW =============================================================================
+  .link-arrow{ // This places the arrow icon in front of all text links in a single cell
+    li, p{padding-left: 1.3em ;
+      text-indent: -1.3em ;
+    }
+    a:link:before{
+      font-family: 'FontAwesome';
+      content: "\f0a9" ;
+      padding-right:5px;
+      color:$client;
+    }
+    a:visited:before{color:$client;}
+  }
+
+  p.link-arrow{ // This places the pdf icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+  ul li p.link-arrow{ // This places the pdf icon in front individual text in a list
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+  p.link-arrow a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f0a9" ;
+    padding-right:5px;
+    color:$client;
+  }
+
+  p.link-arrow a:visited:before{color:$client;}
+
+
+  // PDF ===========================================================================
+  // This places the pdf icon in front of text links
+
+  .link-pdf a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c1" ;
+    padding-right:7px;
+    color:$red;
+  }
+  a[class$='pdf']:before,
+  span.link-pdf:before {
+    font-family: 'FontAwesome';
+    content: "\f1c1" ;
+    padding-right:1.3em;
+    color:$red;
+    float:left;
+  }
+  p.link-pdf{ // This places the pdf icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+  
+  // WORD DOCS ===========================================================================
+  // This places the doc icon in front of text links
+
+  .link-doc a:link:before,
+  .link-docm a:link:before, 
+  .link-docx a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c2" ;
+    padding-right:7px;
+    color:$blue;
+  }
+  a[class$='doc']:before,
+  a[class$='docm']:before,
+  a[class$='docx']:before,
+  span.link-doc:before,
+  span.link-docm:before, 
+  span.link-docx:before {
+    font-family: 'FontAwesome';
+    content: "\f1c2" ;
+    padding-right:1.3em;
+    color:$blue;
+    float:left;
+  }
+  p.link-doc,
+  p.link-docm, 
+  p.link-docx{ // This places the doc icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+
+  // Text docs, RTF docs ===========================================================================
+  // This places the txt icon in front of text links
+
+  .link-txt a:link:before,
+  .link-odt a:link:before, 
+  .link-rtf a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f0f6" ;
+    padding-right:7px;
+    color:$grey18;
+  }
+  a[class$='txt']:before,
+  a[class$='odt']:before,
+  a[class$='rtf']:before,
+  span.link-txt:before,
+  span.link-odt:before, 
+  span.link-rtf:before {
+    font-family: 'FontAwesome';
+    content: "\f0f6" ;
+    padding-right:1.3em;
+    color:$grey18;
+    float:left;
+  }
+  p.link-txt,
+  p.link-odt, 
+  p.link-rtf{ // This places the txt icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+
+  // Excel docs ===========================================================================
+  // This places the xls icon in front of text links
+  .link-xls a:link:before,
+  .link-xlsx a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c3" ;
+    padding-right:7px;
+    color:$green;
+  }
+  a[class$='xls']:before,
+  a[class$='xlsx']:before,
+  span.link-xls:before, 
+  span.link-xlsx:before {
+    font-family: 'FontAwesome';
+    content: "\f1c3" ;
+    padding-right:1.3em;
+    color:$green;
+    float:left;
+  }
+  p.link-xls, 
+  p.link-xlsx{ // This places the xls icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+
+  // JPG, PNG, Photos & Images ===========================================================================
+  // This places the image icon in front of text links
+  .link-jpg a:link:before, 
+  .link-png a:link:before, 
+  .link-gif a:link:before, 
+  .link-photo a:link:before,
+  .link-photo a:link:before, 
+  .link-ico a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c5" ;
+    padding-right:7px;
+    color:$grey18;
+  }
+  a[class$='jpg']:before,
+  a[class$='png']:before,
+  a[class$='gif']:before,
+  a[class$='photo']:before,
+  a[class$='image']:before,
+  a[class$='ico']:before,
+  span.link-jpg:before, 
+  span.link-png:before, 
+  span.link-gif:before, 
+  span.link-photo:before, 
+  span.link-image:before,
+  span.link-ico:before {
+    font-family: 'FontAwesome';
+    content: "\f1c5" ;
+    padding-right:1.3em;
+    color:$grey18;
+    float:left;
+    
+  }
+  p.link-jpg, 
+  p.link-png,
+  p.link-gif,
+  p.link-photo,
+  p.link-image,
+  p.link-ico{ // This places the image icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+
+
+  // ZIP ===========================================================================
+  // This places the zip icon in front of text links
+  .link-zip a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f1c6" ;
+    padding-right:7px;
+    color:$grey18;
+  }
+  a[class$='zip']:before,
+  span.link-zip:before {
+    font-family: 'FontAwesome';
+    content: "\f1c6" ;
+    padding-right:1.3em;
+    color:$grey18;
+    float:left;
+  }
+  p.link-zip{ // This places the zip icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+
+  // Phone ===========================================================================
+  // This places the phone icon in front of text links
+  .link-phone a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f095" ;
+    padding-right:7px;
+    color:$grey18;
+  }
+  a[class$='phone']:before,
+  span.link-phone:before {
+    font-family: 'FontAwesome';
+    content: "\f095" ;
+    padding-right:8px;
+    color:$grey18;
+  }
+  p.link-phone{ // This places the phone icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }
+
+
+  // EMAIL ===========================================================================
+  // This places the email icon in front of text links
+  .link-email a:link:before{
+    font-family: 'FontAwesome';
+    content: "\f003" ;
+    padding-right:7px;
+    color:$grey18;
+  }
+  a[class$='email']:before,
+  span.link-email:before {
+    font-family: 'FontAwesome';
+    content: "\f003" ;
+    padding-right:5px;
+    color:$grey18;
+  }
+  p.link-email{ // This places the email icon in front individual text
+    padding-left: 1.3em ;
+    text-indent: -1.3em ;
+  }

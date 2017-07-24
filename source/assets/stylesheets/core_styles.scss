@@ -4,16 +4,18 @@
   @import "bootstrap.scss";
 
 // Typography ==========================
-@import "../fonts/font-awesome/css/font-awesome.css";
+  @import "../fonts/font-awesome/css/font-awesome.css";
 
 // Global styles =======================
   @import "global/sard_colours";
 
-  // @import "global/fonts";
+  @import "global/font_roboto";
 
-  
+  @import "global/typography";
 
-  // @import "global/typography";
+  @import "global/link_styles";
+
+  @import "global/list_styles";
 
   // @import "global/structure";
 

@@ -1,0 +1,139 @@
+
+/* TYPOGRAPHY ============================= */
+
+
+
+//  TYPOGRAPHY GENERAL ========================================================== 
+
+    $text:             $grey18;
+    $bodytext:         $grey18;
+
+  //letter-spacing
+    $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
+    $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
+    $vslight: 0.025em; 
+    $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
+    $single: 0.0625em; /* 16 * 0.0625 = 1px */
+    $double: 0.125em; /* 16 * 0.125 = 2px */
+  
+   
+
+h1, h2, h3, h4, h5, h6, p{
+  font-weight:normal;
+}
+  
+  h1 {
+    font-family: $robotothin;
+    font-size: 5.000em;
+    letter-spacing: $reduced;
+    margin-top:0;
+    margin-left:-4px;
+  }
+  
+  h2 {
+    font-family: $robotolight;
+    font-size: 2.5em;
+    margin-top:0;
+    margin-left:-3px;
+  }
+  
+  h3 {
+    font-family: $robotolight;
+    font-size: 2.000em;
+    margin-top:0;
+    margin-left:-2px;
+  }
+  
+  h4 {
+    font-family: $robotoregular;
+    font-size: 1.500em;
+    margin-left:-1px;
+  }
+
+  h5 {
+    font-family: $robotomedium;
+    font-size: 1.250em;
+  }
+
+  h6 {
+    font-family: $robotobold;
+    font-size: 1.000em;
+  }
+  
+  p {
+    font-family: $robotoregular;
+    font-size: 1.000em;
+  }
+
+  
+
+
+// Small screens
+@media (max-width: 767px) {
+  h1{ font-size: 4.000em;}
+  h2{ font-size: 2.2em;}
+  h3{
+    font-family: $robotoregular;
+    font-size: 1.750em;
+  }
+  h4{font-size: 1.500em;}
+} 
+
+// TEXT Styles ==========================================================
+  
+  .black{ 
+    font-family: $robotoblack;
+    font-weight:normal;
+    letter-spacing: $vslight;
+  }
+
+  strong, .bold, .strong{ 
+    font-family: $robotobold;
+    font-weight:normal;
+  }
+  .regular{
+    font-family: $robotoregular;
+    font-weight:normal;
+  }
+  .light{
+    font-family: $robotolight;
+    font-weight:normal;
+  }
+  .thin{
+    font-family: $robotothin;
+    font-weight:normal;
+  }
+
+  .asterisk{color:$client}
+  .admin .asterisk{color:$admin}
+
+  .center{text-align:center;}
+  .centre{text-align:center;}
+  .left{text-align:left;}
+  .right{text-align:right;}
+
+  // .ui-intro{
+  //   font-family: 'robotoregular';
+  //   font-size:1.25em;
+  //   line-height:1.4em;
+  // }
+
+
+
+
+
+
+
+
+
+// Glyphicons  & Font Awesome =========================================================================
+  
+  .glyphicon, .fa{ 
+    padding: 0 5px 0 0;
+  }
+
+  .glyphicon-ok{color:$green;}
+  .glyphicon-remove{color:$red;}
+  .glyphicon-minus{color:$grey16;}
+  
+
