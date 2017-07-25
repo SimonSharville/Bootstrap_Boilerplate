@@ -73,7 +73,7 @@ $alert:                 $pink;
 
 .MRv{ color: $MRv;}
 .NRv{ color: $NRv;}
-.sa_360{ color: $sa_360;}
+.sa-360{ color: $sa-360;}
 .eLeave{ color: $eLeave;}
 .A4A{ color: $A4A;}
 .JPL{ color: $JPL;}
@@ -102,46 +102,46 @@ $alert:                 $pink;
 
 // Background Colours ====================
 
-.bg_turq    {background-color: $turq;}
-.bg_pink    {background-color: $pink;}
-.bg_orange  {background-color: $orange;}
-.bg_yellow  {background-color: $yellow;}
-.bg_lime    {background-color: $lime;}
-.bg_green   {background-color: $green;}
-.bg_teal    {background-color: $teal;}
-.bg_blue    {background-color: $blue;}
-.bg_pink    {background-color: $ink;}
-.bg_purple  {background-color: $purple;}
-.bg_plum    {background-color: $plum;}
-.bg_red     {background-color: $red;}
-.bg_white   {background-color: $white;}
+.bg-turq    {background-color: $turq;}
+.bg-pink    {background-color: $pink;}
+.bg-orange  {background-color: $orange;}
+.bg-yellow  {background-color: $yellow;}
+.bg-lime    {background-color: $lime;}
+.bg-green   {background-color: $green;}
+.bg-teal    {background-color: $teal;}
+.bg-blue    {background-color: $blue;}
+.bg-pink    {background-color: $ink;}
+.bg-purple  {background-color: $purple;}
+.bg-plum    {background-color: $plum;}
+.bg-red     {background-color: $red;}
+.bg-white   {background-color: $white;}
 
-.bg_MRv     {background-color: $MRv;}
-.bg_NRv     {background-color: $NRv;}
-.bg_sa_360  {background-color: $sa_360;}
-.bg_eLeave  {background-color: $eLeave;}
-.bg_A4A     {background-color: $A4A;}
-.bg_JPL     {background-color: $JPL;}
-.bg_eRo     {background-color: $eRo;}
-.bg_CPL     {background-color: $CPL;}
+.bg-MRv     {background-color: $MRv;}
+.bg-NRv     {background-color: $NRv;}
+.bg-sa_360  {background-color: $sa_360;}
+.bg-eLeave  {background-color: $eLeave;}
+.bg-A4A     {background-color: $A4A;}
+.bg-JPL     {background-color: $JPL;}
+.bg-eRo     {background-color: $eRo;}
+.bg-CPL     {background-color: $CPL;}
 
-.bg_grey02  {background-color: $grey02;}
-.bg_grey03  {background-color: $grey03;}
-.bg_grey04  {background-color: $grey04;}
-.bg_grey06  {background-color: $grey06;}
-.bg_grey08  {background-color: $grey08;}
-.bg_grey10  {background-color: $grey10;}
-.bg_grey10  {background-color: $grey10;}
-.bg_grey12  {background-color: $grey12;}
-.bg_grey14  {background-color: $grey14;}
-.bg_grey16  {background-color: $grey16;}
-.bg_grey18  {background-color: $grey18;}
+.bg-grey02  {background-color: $grey02;}
+.bg-grey03  {background-color: $grey03;}
+.bg-grey04  {background-color: $grey04;}
+.bg-grey06  {background-color: $grey06;}
+.bg-grey08  {background-color: $grey08;}
+.bg-grey10  {background-color: $grey10;}
+.bg-grey10  {background-color: $grey10;}
+.bg-grey12  {background-color: $grey12;}
+.bg-grey14  {background-color: $grey14;}
+.bg-grey16  {background-color: $grey16;}
+.bg-grey18  {background-color: $grey18;}
 
-.bg_success {background-color: $success;}
-.bg_info    {background-color: $info;}
-.bg_warning {background-color: $warning;}
-.bg_danger  {background-color: $danger;}
-.bg_alert   {background-color: $alert;}
+.bg-success {background-color: $success;}
+.bg-info    {background-color: $info;}
+.bg-warning {background-color: $warning;}
+.bg-danger  {background-color: $danger;}
+.bg-alert   {background-color: $alert;}
 
 // Global Mixins ========================
 $bg-default:            $grey04;

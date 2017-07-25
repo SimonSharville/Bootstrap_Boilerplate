@@ -1,0 +1,116 @@
+/* Navbar Default  ================================================ */
+
+$navBase        : darken($client, 0%);
+$navHover       : darken($navBase, 12.5%);
+$navActive      : darken($navBase, 10%);
+$navText        : white;
+$navActiveDark  : darken($navBase, 15%);
+$navFont        : $fontBold;
+
+
+
+.navbar-default {
+  background-color:$navBase;
+  color:$navText;
+  border:none;
+  font-family: $navFont;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: $navText;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $navText;
+  // font-family: $navFont;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: $navHover;
+  color: $navText;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus{
+  background-color:$navActive;
+  color: $navText;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus{
+  background-color:$navActive;
+  color: $navText;
+}
+
+// Dropdown menu ===================================================
+
+.navbar-default .navbar-nav .dropdown-menu{
+  border:none;
+  background-color:$navActive;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a {
+  color: $navText;
+  font-family: $navFont;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .dropdown-menu > li > a:focus, {
+  background-color: $navActiveDark;
+  color: $navText;
+}
+
+@media (max-width: 767px){
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: $navText;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, {
+    background-color: $navActiveDark;
+    color: $navText;
+  }
+}
+
+// Toggle Button ===================================================
+
+.navbar-default .navbar-toggle{
+  border:none;
+  background-color:$navActive;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus{
+  background-color: $navActiveDark;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: $navText;
+}
+
+// Navbar Collapse =================================================
+
+.navbar-fixed-top .navbar-collapse, 
+.navbar-fixed-bottom .navbar-collapse{
+  max-height:100%;
+}
+
+// =================================================================
+// Add adjustments Here ============================================
+
+
+.navbar-footer{
+  background-color:$grey16;
+  color:$navText;
+  border:none;
+  font-family: $navFont;
+  min-height:auto;
+}
+.navbar-footer > a{
+  colorcolor:$navText!important;
+}
