@@ -6637,5 +6637,11 @@ body {
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
   min-height: auto; }
 
-.navbar-footer > a {
-  colorcolor: white !important; }
+.navbar-footer a:link {
+  color: #00b2b2; }
+
+.navbar-footer a:visited {
+  color: #00b2b2; }
+
+.navbar-footer a:hover {
+  color: #007272; }

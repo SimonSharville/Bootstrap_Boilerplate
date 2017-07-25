@@ -111,6 +111,12 @@ $navFont        : $fontBold;
   font-family: $navFont;
   min-height:auto;
 }
-.navbar-footer > a{
-  colorcolor:$navText!important;
+.navbar-footer a:link{
+  color:$navBase;
+}
+.navbar-footer a:visited{
+  color:$navBase;
+}
+.navbar-footer a:hover{
+  color:$navHover;
 }
