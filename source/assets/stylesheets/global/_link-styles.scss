@@ -3,10 +3,10 @@
     
   // Text Link Colours
 
-    $text_link:             $grey18;
-    $text_link_visited:     $plum;
+    $text_link:             $client;
+    $text_link_visited:     $client;
     $text_link_hover:       darken($client, 5%);
-    $text_link_active:      $purple;    
+    $text_link_active:      darken($client, 15%);   
 
 
   a {
@@ -18,10 +18,10 @@
     color: $ink;
     text-decoration: none; }
 
-  a:link{ color:$bodytext;}
-  a:visited{ color:$bodytext;}
-  a:hover{ color:$text_link_hover;}
-  a:active{ color:$text_link_hover;}
+  a:link{ color:$text_link;}
+  a:visited{ color:$text_link_visited;}
+  a:hover, a:focus{ color:$text_link_hover;}
+  a:active{ color:$text_link_active;}
 
   a:link .fa{ color:$grey16;}
   a:visited .fa{ color:$grey16;}
