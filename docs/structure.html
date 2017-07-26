@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="grid">
 
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -30,12 +30,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Home</a>
+          <a class="navbar-brand" href="index.html">Home</a>
         </div>
     
         <div class="collapse navbar-collapse" id="ui-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Structure <span class="sr-only">(current)</span></a></li>
+            <li><a href="structure.html">Structure <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Typography</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -45,8 +45,8 @@
           <div class="container">
             <div class="navbar-btn">
               <div class="row">
-                <div class="col-xs-6 col-left-50">Bootstrap Boilerplate</div>
-                <div class="col-xs-6 col-right-50 right">Design: <a href="http://www.simonsharville.co.uk" target="new">SiDe</a></div>
+                <div class="col-xs-6 bg">Bootstrap Boilerplate</div>
+                <div class="col-xs-6 bg right">Design: <a href="http://www.simonsharville.co.uk" target="new">SiDe</a></div>
               </div>
             <!-- <div id="col1">content</div><div id="col2">content</div> -->
             </div>
@@ -55,19 +55,23 @@
         </nav>
    
 
-    <div class="content container red-border">
+    <div class="content container">
       <div class="row">
         <div class="col-xs-12">
-           <h1 class=""> Headline H1</h1>
-          This is a container-fluid div
+           <h1 class=""> Structure</h1>
+           <p><em>To allow for the Top Navbar, the first container chould also have the class of <strong>content</strong>, this will add a top margin so that it drops below the navbar.</em></p>
+           <h2>Grid Structure</h2>
+           <p><em>The Grid Structure has been amended slighly from the Bootstrap Default. We have adjusted the column-gutters to be <strong>20px</strong> instead of the original 30px.</em></p>
+           <p>To revert to the default Bootstrap setting, comment out the section GRID ADJUSTMENTS in global/structure.scss</p>
         </div>
       </div>
     </div>
 
-    <div class="container red-border">
+    <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          This is a container div
+          <h5>These are a set of column within a container-fluid</h5>
+          <p>To see the column-gutter, this shows the padding within the columns.</p>
         </div>
       </div>
     </div>
@@ -97,7 +101,15 @@
       <div class=" col-xs-2"><div class="ui-col">2</div></div>
       <div class=" col-xs-2"><div class="ui-col">2</div></div>
       </div> <!-- END Row -->
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h5>These are a set of column within a container</h5>
+          <p>To see the column-gutter, this shows the padding within the columns.</p>
+        </div>
+      </div>
     </div>
 
     <div class="container">
@@ -122,8 +134,68 @@
       <div class=" col-xs-2"><div class="ui-col">2</div></div>
       <div class=" col-xs-2"><div class="ui-col">2</div></div>
       <div class=" col-xs-2"><div class="ui-col">2</div></div>
-
       </div> <!-- END Row -->
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Examples</h2>
+          <p><em>Below are examples of columns followed by columns showing their padding.</em></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h5>This shows the columns</h5>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-sm-6 bg-grey04">col-sm-6</div>
+          <div class="col-sm-6 bg-grey06">col-sm-6</div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>&nbsp;</p>
+          <h5>This shows the content area within the columns</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6"><div class="bg-grey06">col-sm-6</div></div>
+        <div class="col-sm-6"><div class="bg-grey08">col-sm-6</div></div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <p>&nbsp;</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h5>This shows the columns</h5>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-sm-4 bg-grey04">col-sm-4</div>
+          <div class="col-sm-4 bg-grey06">col-sm-4</div>
+          <div class="col-sm-4 bg-grey04">col-sm-4</div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>&nbsp;</p>
+          <h5>This shows the content area within the columns</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4"><div class="bg-grey06">col-sm-4</div></div>
+        <div class="col-sm-4"><div class="bg-grey08">col-sm-4</div></div>
+        <div class="col-sm-4"><div class="bg-grey06">col-sm-4</div></div>
+      </div>
     </div>
 
 
