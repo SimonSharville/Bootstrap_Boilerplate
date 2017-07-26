@@ -2,9 +2,10 @@
 
 $navBase        : darken($client, 0%);
 $navHover       : darken($navBase, 12.5%);
+$navFocus       : darken($navBase, 15%);
 $navActive      : darken($navBase, 10%);
 $navText        : white;
-$navActiveDark  : darken($navBase, 15%);
+$navActiveFocus  : darken($navBase, 15%);
 $navFont        : $fontBold;
 
 
@@ -25,26 +26,37 @@ $navFont        : $fontBold;
 
 .navbar-default .navbar-nav > li > a {
   color: $navText;
-  // font-family: $navFont;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover {
   background-color: $navHover;
   color: $navText;
 }
 
+.navbar-default .navbar-nav > li > a:focus {
+  background-color:$navFocus;
+  color: $navText;
+}
+
 .navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus{
+.navbar-default .navbar-nav > .active > a:hover{
   background-color:$navActive;
   color: $navText;
 }
 
+.navbar-default .navbar-nav > .active > a:focus{
+  background-color:$navActiveFocus;
+  color: $navText;
+}
+
 .navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover, 
-.navbar-default .navbar-nav > .open > a:focus{
+.navbar-default .navbar-nav > .open > a:hover{
   background-color:$navActive;
+  color: $navText;
+}
+
+.navbar-default .navbar-nav > .open > a:focus{
+  background-color:$navActiveFocus;
   color: $navText;
 }
 
@@ -57,13 +69,17 @@ $navFont        : $fontBold;
 }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a {
-  color: $navText;
   font-family: $navFont;
+  color: $navText;
 }
 
-.navbar-default .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover{
+  background-color: $navActive;
+  color: $navText;
+}
+
 .navbar-default .navbar-nav .dropdown-menu > li > a:focus, {
-  background-color: $navActiveDark;
+  background-color: $navActiveFocus;
   color: $navText;
 }
 
@@ -71,9 +87,12 @@ $navFont        : $fontBold;
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: $navText;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+    background-color: $navActive;
+    color: $navText;
+  }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, {
-    background-color: $navActiveDark;
+    background-color: $navActiveFocus;
     color: $navText;
   }
 }
@@ -85,9 +104,11 @@ $navFont        : $fontBold;
   background-color:$navActive;
 }
 
-.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:hover{
+  background-color: $navHover;
+}
 .navbar-default .navbar-toggle:focus{
-  background-color: $navActiveDark;
+  background-color: $navActiveFocus;
 }
 
 .navbar-default .navbar-toggle .icon-bar{
