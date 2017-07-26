@@ -5,7 +5,8 @@ $navHover       : darken($navBase, 12.5%);
 $navFocus       : darken($navBase, 15%);
 $navActive      : darken($navBase, 10%);
 $navText        : white;
-$navActiveFocus  : darken($navBase, 15%);
+$navActiveFocus : darken($navBase, 15%);
+$navDropdown    : darken($navBase, 15%);
 $navFont        : $fontBold;
 
 
@@ -64,8 +65,16 @@ $navFont        : $fontBold;
 
 .navbar-default .navbar-nav .dropdown-menu{
   border:none;
-  background-color:$navActive;
+  background-color:$navDropdown;
   border-radius: 0;
+}
+
+.navbar-nav > li > .dropdown-menu{
+  padding:0;
+}
+
+.navbar-nav > li > .dropdown-menu .divider{
+  margin:5px 0;
 }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a {
@@ -74,25 +83,30 @@ $navFont        : $fontBold;
 }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a:hover{
-  background-color: $navActive;
+  background-color: darken($navDropdown, 5%);
   color: $navText;
 }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a:focus, {
-  background-color: $navActiveFocus;
+  background-color: darken($navDropdown, 7%);
   color: $navText;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover{
+  background-color:$navDropdown;
 }
 
 @media (max-width: 767px){
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    background-color:$navDropdown;
     color: $navText;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-    background-color: $navActive;
+    background-color: darken($navDropdown, 5%);
     color: $navText;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, {
-    background-color: $navActiveFocus;
+    background-color: darken($navDropdown, 7%);
     color: $navText;
   }
 }
@@ -120,6 +134,19 @@ $navFont        : $fontBold;
 .navbar-fixed-top .navbar-collapse, 
 .navbar-fixed-bottom .navbar-collapse{
   max-height:100%;
+  border:none;
+  box-shadow:none;
+}
+
+.navbar-fixed-top .navbar-collapse .navbar-nav, 
+.navbar-fixed-bottom .navbar-collapse .navbar-nav{
+  margin:0 -15px;
+}
+
+.navbar-fixed-top .navbar-collapse .navbar-nav > li > a, 
+.navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a{
+  padding-left: 20px; // changed from 15px
+    padding-right: 20px; // changed from 15px
 }
 
 // =================================================================

@@ -50,9 +50,11 @@ body {
   padding-right: 10px; // changed from 15px
 }
 
-.navbar-default .container{ // This aligns the content with in the navbar-default to the rest of the adjusted grid.
-  padding-left: 20px; // changed from 15px
-  padding-right: 20px; // changed from 15px
+@media (min-width: 768px){
+  .navbar-default .container{ 
+    padding-left: 20px; // changed from 15px
+    padding-right: 20px; // changed from 15px
+  }
 }
 
 

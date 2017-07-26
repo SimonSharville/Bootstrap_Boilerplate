@@ -6551,9 +6551,10 @@ body {
   padding-left: 10px;
   padding-right: 10px; }
 
-.navbar-default .container {
-  padding-left: 20px;
-  padding-right: 20px; }
+@media (min-width: 768px) {
+  .navbar-default .container {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 .grid {
   background-image: url("../graphics/20px_grid.png"); }
@@ -6617,29 +6618,40 @@ body {
 
 .navbar-default .navbar-nav .dropdown-menu {
   border: none;
-  background-color: #007f7f;
+  background-color: #006666;
   border-radius: 0; }
+
+.navbar-nav > li > .dropdown-menu {
+  padding: 0; }
+
+.navbar-nav > li > .dropdown-menu .divider {
+  margin: 5px 0; }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a {
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
   color: white; }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a:hover {
-  background-color: #007f7f;
+  background-color: #004c4c;
   color: white; }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a:focus {
-  background-color: #006666;
+  background-color: #004242;
   color: white; }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: #006666; }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    background-color: #006666;
     color: white; }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    background-color: #007f7f;
+    background-color: #004c4c;
     color: white; }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: #006666;
+    background-color: #004242;
     color: white; } }
 
 .navbar-default .navbar-toggle {
@@ -6657,7 +6669,18 @@ body {
 
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
-  max-height: 100%; }
+  max-height: 100%;
+  border: none;
+  box-shadow: none; }
+
+.navbar-fixed-top .navbar-collapse .navbar-nav,
+.navbar-fixed-bottom .navbar-collapse .navbar-nav {
+  margin: 0 -15px; }
+
+.navbar-fixed-top .navbar-collapse .navbar-nav > li > a,
+.navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .navbar-footer {
   background-color: #403D3D;
