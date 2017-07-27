@@ -51,7 +51,7 @@ body {
 }
 
 @media (min-width: 768px){
-  .navbar-default .container{ 
+  .navbar .container{ 
     padding-left: 20px; // changed from 15px
     padding-right: 20px; // changed from 15px
   }
@@ -62,10 +62,18 @@ body {
 // =============================================================================================================
 // STRUCTURE ===================================================================================================
 
-.grid{
-  background-image: url("../graphics/20px_grid.png");
-}
-.content{
-  margin-top:70px;
+.wrapper{
+  margin-top:100px;
+  margin-bottom:100px;
 }
 
+.divider{
+  border-top: 1px solid $client;
+  margin-top:30px;
+  margin-bottom:5px;
+}
+.divider-dashed{
+  border-top: 1px dashed $client;
+  margin-top:20px;
+  margin-bottom:20px;
+}

@@ -1,5 +1,9 @@
 /* UI Styles  ========================== */
 
+.ui-grid{
+  background-image: url("../graphics/20px_grid.png");
+}
+
 .red-border{ 
   border: 1px dotted $red;
 }

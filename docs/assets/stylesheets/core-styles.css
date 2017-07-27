@@ -6129,6 +6129,56 @@ button.close {
 /* 16 * 0.0312 = 1/2px */
 /* 16 * 0.0625 = 1px */
 /* 16 * 0.125 = 2px */
+.font-thin {
+  font-family: "robotothin", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-thin-italic {
+  font-family: "robotothin_italic", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-light {
+  font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-light-italic {
+  font-family: "robotolight_italic", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-regular {
+  font-family: "robotoregular", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-regular-italic {
+  font-family: "robotoitalic", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-medium {
+  font-family: "robotomedium", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-medium-italic {
+  font-family: "robotomedium_italic", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+strong, .bold, .strong, .font-bold {
+  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-bold-italic {
+  font-family: "robotobold_italic", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-black {
+  font-family: "robotoblack", Helvetica, Arial, Sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.025em; }
+
+.font-black-italic {
+  font-family: "robotoblack_italic", Helvetica, Arial, Sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.025em; }
+
 h1, h2, h3, h4, h5, h6, p, em {
   font-weight: normal;
   font-style: normal; }
@@ -6136,43 +6186,82 @@ h1, h2, h3, h4, h5, h6, p, em {
 h1 {
   font-family: "robotothin", Helvetica, Arial, Sans-serif;
   font-size: 5.000em;
+  line-height: 1.0em;
   letter-spacing: -0.025em;
-  margin-top: 0;
-  margin-left: -4px; }
+  margin-left: -0.05em;
+  margin-bottom: 0.2em; }
+
+h1.base {
+  margin-bottom: 0.1em; }
 
 h2 {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
-  font-size: 2.5em;
-  margin-top: 20px;
-  margin-left: -3px;
-  margin-bottom: 2px; }
+  font-size: 3em;
+  line-height: 1.0em;
+  margin-left: -0.05em; }
+
+h2.base {
+  margin-bottom: 0.07em; }
 
 h3 {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
-  font-size: 2.000em;
-  margin-top: 0;
-  margin-left: -2px; }
+  font-size: 2.5em;
+  line-height: 1.0em;
+  margin-left: -0.05em; }
+
+h3.base {
+  margin-bottom: 0.07em; }
 
 h4 {
   font-family: "robotoregular", Helvetica, Arial, Sans-serif;
-  font-size: 1.500em;
-  margin-left: -1px; }
+  font-size: 1.75em;
+  line-height: 1.1em;
+  margin-left: -0.1em; }
+
+h4.base {
+  margin-bottom: 0.05em; }
 
 h5 {
   font-family: "robotomedium", Helvetica, Arial, Sans-serif;
-  font-size: 1.250em; }
+  font-size: 1.5em;
+  line-height: 1.1em; }
+
+h5.base {
+  margin-bottom: 0.05em; }
 
 h6 {
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
-  font-size: 1.000em; }
+  font-size: 1.1em;
+  line-height: 1.2em; }
+
+h6.base {
+  margin-bottom: 0.05em; }
 
 p {
   font-family: "robotoregular", Helvetica, Arial, Sans-serif;
-  font-size: 1.000em; }
+  font-size: 1.1em;
+  line-height: 1.4em; }
 
 em {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
-  font-size: 1.500em; }
+  font-size: 1.500em;
+  line-height: 1.25em; }
+
+.intro {
+  border: none;
+  padding: 0em 0 0.5em 0;
+  margin: 0;
+  font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-size: 1.7em;
+  line-height: 1.3em; }
+
+blockquote {
+  font-family: "robotothin", Helvetica, Arial, Sans-serif;
+  border: none;
+  padding: 0em 0 0.5em 0;
+  margin: 0;
+  font-size: 2.25em;
+  line-height: 1.2em; }
 
 @media (max-width: 767px) {
   h1 {
@@ -6183,28 +6272,9 @@ em {
     font-family: "robotoregular", Helvetica, Arial, Sans-serif;
     font-size: 1.750em; }
   h4 {
-    font-size: 1.500em; } }
-
-.black {
-  font-family: "robotoblack", Helvetica, Arial, Sans-serif;
-  font-weight: normal;
-  letter-spacing: 0.025em; }
-
-strong, .bold, .strong {
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.regular {
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.light {
-  font-family: "robotolight", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.thin {
-  font-family: "robotothin", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
+    font-size: 1.500em; }
+  blockquote {
+    font-size: 2em; } }
 
 .asterisk {
   color: #00B2B2; }
@@ -6223,6 +6293,21 @@ strong, .bold, .strong {
 
 .right {
   text-align: right; }
+
+.half {
+  font-size: 0.5em; }
+
+hr {
+  border-top: 1px solid #C7C4C2; }
+
+hr.dashed {
+  border-top: 1px dashed #C7C4C2; }
+
+hr.client {
+  border-top: 1px solid #00B2B2; }
+
+hr.client-dashed {
+  border-top: 1px dashed #00B2B2; }
 
 .glyphicon, .fa {
   padding: 0 5px 0 0; }
@@ -6552,17 +6637,28 @@ body {
   padding-right: 10px; }
 
 @media (min-width: 768px) {
-  .navbar-default .container {
+  .navbar .container {
     padding-left: 20px;
     padding-right: 20px; } }
 
-.grid {
-  background-image: url("../graphics/20px_grid.png"); }
+.wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px; }
 
-.content {
-  margin-top: 70px; }
+.divider {
+  border-top: 1px solid #00B2B2;
+  margin-top: 30px;
+  margin-bottom: 5px; }
+
+.divider-dashed {
+  border-top: 1px dashed #00B2B2;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 /* UI Styles  ========================== */
+.ui-grid {
+  background-image: url("../graphics/20px_grid.png"); }
+
 .red-border {
   border: 1px dotted #BF0000; }
 

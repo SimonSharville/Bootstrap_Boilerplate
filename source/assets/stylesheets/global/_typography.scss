@@ -5,76 +5,183 @@
 
 //  TYPOGRAPHY GENERAL ========================================================== 
 
-    $text:             $grey18;
-    $bodytext:         $grey18;
+  $text:             $grey18;
+  $bodytext:         $grey18;
 
-  //letter-spacing
-    $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
-    $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
-    $vslight: 0.025em; 
-    $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
-    $single: 0.0625em; /* 16 * 0.0625 = 1px */
-    $double: 0.125em; /* 16 * 0.125 = 2px */
+// letter-spacing
+  $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
+  $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
+  $vslight: 0.025em; 
+  $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
+  $single: 0.0625em; /* 16 * 0.0625 = 1px */
+  $double: 0.125em; /* 16 * 0.125 = 2px */
   
    
+// Font Weights ==========================================================
+  
+
+.font-thin{
+  font-family: $fontThin;
+  font-weight:normal;
+}
+
+.font-thin-italic{
+  font-family: $fontThinItalic;
+  font-weight:normal;
+}
+
+.font-light{
+  font-family: $fontLight;
+  font-weight:normal;
+}
+
+.font-light-italic{
+  font-family: $fontLightItalic;
+  font-weight:normal;
+}
+
+.font-regular{
+  font-family: $fontRegular;
+  font-weight:normal;
+}
+
+.font-regular-italic{
+  font-family: $fontRegularItalic;
+  font-weight:normal;
+}
+
+.font-medium{
+  font-family: $fontMedium;
+  font-weight:normal;
+}
+
+.font-medium-italic{
+  font-family: $fontMediumItalic;
+  font-weight:normal;
+}
+
+strong, .bold, .strong, .font-bold{ 
+  font-family: $fontBold;
+  font-weight:normal;
+}
+
+.font-bold-italic{ 
+  font-family: $fontBoldItalic;
+  font-weight:normal;
+}
+
+.font-black{ 
+  font-family: $fontBlack;
+  font-weight:normal;
+  letter-spacing: $vslight;
+}
+
+.font-black-italic{ 
+  font-family: $fontBlackItalic;
+  font-weight:normal;
+  letter-spacing: $vslight;
+}
+
+
+// font sizes ========================================================
 
 h1, h2, h3, h4, h5, h6, p, em{
   font-weight:normal;
   font-style:normal;
 }
   
-  h1 {
-    font-family: $fontThin;
-    font-size: 5.000em;
-    letter-spacing: $reduced;
-    margin-top:0;
-    margin-left:-4px;
-  }
-  
-  h2 {
-    font-family: $fontLight;
-    font-size: 2.5em;
-    margin-top:20px;
-    margin-left:-3px;
-    margin-bottom:2px;
-  }
-  
-  h3 {
-    font-family: $fontLight;
-    font-size: 2.000em;
-    margin-top:0;
-    margin-left:-2px;
-  }
-  
-  h4 {
-    font-family: $fontRegular;
-    font-size: 1.500em;
-    margin-left:-1px;
-  }
+h1 {
+  font-family: $fontThin;
+  font-size: 5.000em;
+  line-height:1.0em;
+  letter-spacing: $reduced;
+  margin-left:-0.05em;
+  margin-bottom:0.2em;
+}
+ h1.base{
+  margin-bottom:0.1em;
+}
 
-  h5 {
-    font-family: $fontMedium;
-    font-size: 1.250em;
-  }
+h2 {
+  font-family: $fontLight;
+  font-size: 3em;
+  line-height:1.0em;
+  margin-left:-0.05em;
+}
+h2.base{
+  margin-bottom:0.07em;
+}
 
-  h6 {
-    font-family: $fontBold;
-    font-size: 1.000em;
-  }
-  
-  p {
-    font-family: $fontRegular;
-    font-size: 1.000em;
-  }
+h3 {
+  font-family: $fontLight;
+  font-size: 2.5em;
+  line-height:1.0em;
+  margin-left:-0.05em;
+}
+h3.base{
+  margin-bottom:0.07em;
+}
 
-  em {
-    font-family: $fontLight;
-    font-size: 1.500em;
-  }
-  
+h4 {
+  font-family: $fontRegular;
+  font-size: 1.75em;
+  line-height:1.1em;
+  margin-left:-0.1em;
+}
+h4.base{
+  margin-bottom:0.05em;
+}
+
+h5 {
+  font-family: $fontMedium;
+  font-size: 1.5em;
+  line-height:1.1em;
+}
+h5.base{
+  margin-bottom:0.05em;
+}
+
+h6 {
+  font-family: $fontBold;
+  font-size: 1.1em;
+  line-height:1.2em;
+}
+h6.base{
+  margin-bottom:0.05em;
+}
+
+p {
+  font-family: $fontRegular;
+  font-size: 1.1em;
+  line-height:1.4em;
+}
+
+em {
+  font-family: $fontLight;
+  font-size: 1.500em;
+  line-height:1.25em;
+}
+
+.intro{
+  border:none;
+  padding:0em 0 0.5em 0;
+  margin:0;
+  font-family: $fontLight;
+  font-size: 1.7em;
+  line-height:1.3em;
+}
+
+blockquote{
+  font-family: $fontThin;
+  border:none;
+  padding:0em 0 0.5em 0;
+  margin:0;
+  font-size: 2.25em;
+  line-height:1.2em;
+}
 
 
-// Small screens
+// Small screens ===============
 @media (max-width: 767px) {
   h1{ font-size: 4.000em;}
   h2{ font-size: 2.2em;}
@@ -83,63 +190,39 @@ h1, h2, h3, h4, h5, h6, p, em{
     font-size: 1.750em;
   }
   h4{font-size: 1.500em;}
+  blockquote{font-size: 2em;}
 } 
 
-// TEXT Styles ==========================================================
-  
-  .black{ 
-    font-family: $fontBlack;
-    font-weight:normal;
-    letter-spacing: $vslight;
-  }
-
-  strong, .bold, .strong{ 
-    font-family: $fontBold;
-    font-weight:normal;
-  }
-  .regular{
-    font-family: $fontRegular;
-    font-weight:normal;
-  }
-  .light{
-    font-family: $fontLight;
-    font-weight:normal;
-  }
-  .thin{
-    font-family: $fontThin;
-    font-weight:normal;
-  }
-
-  .asterisk{color:$client}
-  .admin .asterisk{color:$admin}
-
-  .center{text-align:center;}
-  .centre{text-align:center;}
-  .left{text-align:left;}
-  .right{text-align:right;}
-
-  // .ui-intro{
-  //   font-family: 'robotoregular';
-  //   font-size:1.25em;
-  //   line-height:1.4em;
-  // }
 
 
+// Other Styles =====================================================
+
+.asterisk{color:$client}
+.admin .asterisk{color:$admin}
+
+.center{text-align:center;}
+.centre{text-align:center;}
+.left{text-align:left;}
+.right{text-align:right;}
+.half{font-size: 0.5em;} // Makes the text 50% size
 
 
-
+hr{border-top: 1px solid $grey06;}
+hr.dashed{border-top: 1px dashed $grey06;}
+hr.client{border-top: 1px solid $client;}
+hr.client-dashed{border-top: 1px dashed $client;}
 
 
 
 
 // Glyphicons  & Font Awesome =========================================================================
   
-  .glyphicon, .fa{ 
-    padding: 0 5px 0 0;
-  }
+.glyphicon, .fa{ 
+  padding: 0 5px 0 0;
+}
 
-  .glyphicon-ok{color:$green;}
-  .glyphicon-remove{color:$red;}
-  .glyphicon-minus{color:$grey16;}
+.glyphicon-ok{color:$green;}
+.glyphicon-remove{color:$red;}
+.glyphicon-minus{color:$grey16;}
   
 
