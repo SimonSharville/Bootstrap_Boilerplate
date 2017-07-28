@@ -6,6 +6,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(../fonts/font-awesome/css/font-awesome.css);
+@import url(../fonts/SARD/css/sard-icons.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6165,6 +6166,10 @@ strong, .bold, .strong, .font-bold {
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
+h5 strong, h5 .bold, h5 .strong, h5 .font-bold, h6 strong, h6 .bold, h6 .strong, h6 .font-bold {
+  font-family: "robotoblack", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
 .font-bold-italic {
   font-family: "robotobold_italic", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
@@ -6197,44 +6202,49 @@ h1.base {
 h2 {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
   font-size: 3em;
-  line-height: 1.0em;
+  line-height: 1.1em;
   margin-left: -0.05em; }
 
 h2.base {
+  line-height: 1em;
   margin-bottom: 0.07em; }
 
 h3 {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
   font-size: 2.5em;
-  line-height: 1.0em;
+  line-height: 1.1em;
   margin-left: -0.05em; }
 
 h3.base {
+  line-height: 1em;
   margin-bottom: 0.07em; }
 
 h4 {
   font-family: "robotoregular", Helvetica, Arial, Sans-serif;
   font-size: 1.75em;
-  line-height: 1.1em;
+  line-height: 1.2em;
   margin-left: -0.1em; }
 
 h4.base {
+  line-height: 1.1em;
   margin-bottom: 0.05em; }
 
 h5 {
   font-family: "robotomedium", Helvetica, Arial, Sans-serif;
   font-size: 1.5em;
-  line-height: 1.1em; }
+  line-height: 1.2em; }
 
 h5.base {
+  line-height: 1.1em;
   margin-bottom: 0.05em; }
 
 h6 {
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.2em; }
 
 h6.base {
+  line-height: 1.1em;
   margin-bottom: 0.05em; }
 
 p {
@@ -6261,7 +6271,31 @@ blockquote {
   padding: 0em 0 0.5em 0;
   margin: 0;
   font-size: 2.25em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  padding-bottom: 0.5em; }
+
+blockquote:last-child {
+  padding-bottom: 0em; }
+
+.quote {
+  margin: 0em 0 0.5em 1.75em; }
+
+[class^="quote"]:before,
+[class*=" quote"]:before {
+  content: "\61";
+  font-family: "sard-quote" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #00B2B2;
+  font-size: 2em;
+  margin-left: -1em;
+  position: relative;
+  top: 0.64em; }
 
 @media (max-width: 767px) {
   h1 {
