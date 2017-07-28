@@ -6355,6 +6355,80 @@ hr.client-dashed {
 .glyphicon-minus {
   color: #403D3D; }
 
+/* BOOTSTRAP Structure Overrides */
+* {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: grayscale !important;
+  font-smoothing: antialiased !important; }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  color: #211F0F;
+  font-family: "robotoregular", Helvetica, Arial, Sans-serif; }
+
+.container-fluid .row {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.container .row {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+@media (min-width: 768px) {
+  .navbar .container {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+.wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.divider {
+  border-top: 1px solid #00B2B2;
+  margin-top: 30px;
+  margin-bottom: 5px; }
+
+.divider-dashed {
+  border-top: 1px dashed #00B2B2;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.scrollToTop {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: fixed;
+  bottom: 3px;
+  left: calc(50% - 15px);
+  display: none;
+  color: white; }
+
+[class^="scrollToTop"]:before,
+[class*=" scrollToTop"]:before {
+  content: "\62";
+  font-family: "sa-quote" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  font-size: 1.5em; }
+
+.scrollToTop:hover:before {
+  text-decoration: none;
+  color: #00B2B2; }
+
 /* LINK Styles =============================================== */
 a {
   color: #00B2B2;
@@ -6642,80 +6716,6 @@ li p {
   text-indent: -1.25em;
   margin-bottom: 0.5em;
   line-height: 1.3em; }
-
-/* BOOTSTRAP Structure Overrides */
-* {
-  -webkit-font-smoothing: antialiased !important;
-  -moz-font-smoothing: grayscale !important;
-  font-smoothing: antialiased !important; }
-
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-body {
-  color: #211F0F;
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif; }
-
-.container-fluid .row {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-.container .row {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-@media (min-width: 768px) {
-  .navbar .container {
-    padding-left: 20px;
-    padding-right: 20px; } }
-
-.wrapper {
-  margin-top: 100px;
-  margin-bottom: 100px; }
-
-.divider {
-  border-top: 1px solid #00B2B2;
-  margin-top: 30px;
-  margin-bottom: 5px; }
-
-.divider-dashed {
-  border-top: 1px dashed #00B2B2;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.scrollToTop {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  position: fixed;
-  bottom: 3px;
-  left: calc(50% - 15px);
-  display: none;
-  color: white; }
-
-[class^="scrollToTop"]:before,
-[class*=" scrollToTop"]:before {
-  content: "\62";
-  font-family: "sa-quote" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
-  font-size: 1.5em; }
-
-.scrollToTop:hover:before {
-  text-decoration: none;
-  color: #00B2B2; }
 
 /* UI Styles  ========================== */
 .ui-grid {
