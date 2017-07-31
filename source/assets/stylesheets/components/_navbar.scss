@@ -1,12 +1,12 @@
 /* Navbar Default  ================================================ */
 
 $navBase        : darken($client, 0%);
-$navHover       : darken($navBase, 12.5%);
-$navFocus       : darken($navBase, 15%);
-$navActive      : darken($navBase, 10%);
+$navHover       : darken($navBase, 15%);
+$navFocus       : darken($navBase, 20%);
+$navActive      : darken($navBase, 20%);
 $navText        : white;
-$navActiveFocus : darken($navBase, 15%);
-$navDropdown    : darken($navBase, 15%);
+$navActiveFocus : darken($navBase, 20%);
+$navDropdown    : darken($navBase, 20%);
 $navFont        : $sans-serif-bold;
 
 
@@ -83,13 +83,17 @@ $navFont        : $sans-serif-bold;
 }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a:hover{
-  background-color: darken($navDropdown, 5%);
+  background-color: darken($navDropdown, 10%);
   color: $navText;
 }
 
 .navbar-default .navbar-nav .dropdown-menu > li > a:focus, {
-  background-color: darken($navDropdown, 7%);
+  background-color: darken($navDropdown, 5%);
   color: $navText;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+  background-color: darken($navDropdown, 5%);
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover{
@@ -102,11 +106,11 @@ $navFont        : $sans-serif-bold;
     color: $navText;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-    background-color: darken($navDropdown, 5%);
+    background-color: darken($navDropdown, 10%);
     color: $navText;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, {
-    background-color: darken($navDropdown, 7%);
+    background-color: darken($navDropdown, 10%);
     color: $navText;
   }
 }
