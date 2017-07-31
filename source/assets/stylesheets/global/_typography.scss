@@ -418,6 +418,81 @@ hr.client{border-top: 1px solid $client;}
 hr.client-dashed{border-top: 1px dashed $client;}
 
 
+// multi-column text blocks ==========================================
+
+
+.multi-column-2, .multi-column-3, .multi-column-4 {
+  -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px;            /* Firefox */
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid $client;  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid $client;    /* Firefox */
+  column-rule: 1px solid $client;
+  -webkit-column-rule-width: 1px;   /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;      /* Firefox */
+  column-rule-width: 1px;
+}
+
+
+// Small screens
+@media (max-width: 767px) {
+  .multi-column-2, .multi-column-3, .multi-column-4 {
+      -webkit-column-count: 1;          /* Chrome, Safari, Opera */
+      -moz-column-count: 1;             /* Firefox */
+      column-count: 1;
+  }
+} 
+
+// Medium screens
+@media (min-width: 768px) and (max-width: 991px) {
+  .multi-column-2, .multi-column-3, .multi-column-4 {
+      -webkit-column-count: 2;          /* Chrome, Safari, Opera */
+      -moz-column-count: 2;             /* Firefox */
+      column-count: 2;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 992px) and (max-width: 1199px) {
+  .multi-column-2 {
+      -webkit-column-count: 2;          /* Chrome, Safari, Opera */
+      -moz-column-count: 2;             /* Firefox */
+      column-count: 2;
+  }
+  .multi-column-3, .multi-column-4 {
+      -webkit-column-count: 3;          /* Chrome, Safari, Opera */
+      -moz-column-count: 3;             /* Firefox */
+      column-count: 3;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 1200px) {
+  .multi-column-2 {
+      -webkit-column-count: 2;          /* Chrome, Safari, Opera */
+      -moz-column-count: 2;             /* Firefox */
+      column-count: 2;
+  }.multi-column-3 {
+      -webkit-column-count: 3;          /* Chrome, Safari, Opera */
+      -moz-column-count: 3;             /* Firefox */
+      column-count: 3;
+  }
+  .multi-column-4 {
+      -webkit-column-count: 4;          /* Chrome, Safari, Opera */
+      -moz-column-count: 4;             /* Firefox */
+      column-count: 4;
+  }
+} 
+
+
+
+
+
+
+
+
 
 
 // Glyphicons  & Font Awesome =========================================================================

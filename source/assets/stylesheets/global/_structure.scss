@@ -78,36 +78,12 @@ body {
   margin-bottom:20px;
 }
 
-.scrollToTop{
-  width:30px; 
-  height:30px;
-  text-align:center; 
-  position:fixed;
-  bottom:3px;
-  left:calc(50% - 15px);
-  display:none;
-  color:white;
+.margin-top-20{
+  margin-top:20px;
 }
 
-[class^="scrollToTop"]:before,
-[class*=" scrollToTop"]:before {
-  content: "\62";
-  font-family: "sa-quote" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color:white;
-  font-size: 1.5em;
+.margin-bottom-20{
+  margin-bottom:20px;
 }
-.scrollToTop:hover:before{
-  text-decoration:none;
-  color:$client;
-}
-
-
 
 
