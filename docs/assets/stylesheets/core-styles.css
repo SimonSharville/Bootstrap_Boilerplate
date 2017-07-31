@@ -6039,6 +6039,18 @@ button.close {
 .bg-alert {
   background-color: #E50073; }
 
+.client {
+  color: #00B2B2; }
+
+.bg-client {
+  background-color: #00B2B2; }
+
+.admin {
+  color: #E50073; }
+
+.bg-admin {
+  background-color: #E50073; }
+
 /* ROBOTO */
 @font-face {
   font-family: 'robotothin';

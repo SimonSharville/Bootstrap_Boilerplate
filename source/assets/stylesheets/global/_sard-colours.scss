@@ -152,6 +152,9 @@ $client-very-light:     lighten($client, 10%);
 $client-dark:           darken($client, 10%);
 $client-very-dark:      darken($client, 20%);
 
+.client{color:$client}
+.bg-client   {background-color: $client;}
+
 $medic:                 $turq;
 $non-medic:             $ink;
 
@@ -162,5 +165,6 @@ $admin-very-light:    lighten($admin, 10%);
 $admin-dark:          darken($admin, 10%);
 $admin-very-dark:     darken($admin, 20%);
 
-
+.admin{color:$admin}
+.bg-admin   {background-color: $admin;}
 
