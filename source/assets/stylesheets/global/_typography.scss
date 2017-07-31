@@ -21,69 +21,69 @@
   
 
 .font-thin{
-  font-family: $fontThin;
+  font-family: $sans-serif-thin;
   font-weight:normal;
 }
 
 .font-thin-italic{
-  font-family: $fontThinItalic;
+  font-family: $sans-serif-thin-italic;
   font-weight:normal;
 }
 
 .font-light{
-  font-family: $fontLight;
+  font-family: $sans-serif-light;
   font-weight:normal;
 }
 
 .font-light-italic{
-  font-family: $fontLightItalic;
+  font-family: $sans-serif-light-italic;
   font-weight:normal;
 }
 
 .font-regular{
-  font-family: $fontRegular;
+  font-family: $sans-serif-regular;
   font-weight:normal;
 }
 
 .font-regular-italic{
-  font-family: $fontRegularItalic;
+  font-family: $sans-serif-regular-italic;
   font-weight:normal;
 }
 
 .font-medium{
-  font-family: $fontMedium;
+  font-family: $sans-serif-medium;
   font-weight:normal;
 }
 
 .font-medium-italic{
-  font-family: $fontMediumItalic;
+  font-family: $sans-serif-medium-italic;
   font-weight:normal;
 }
 
 strong, .bold, .strong, .font-bold{ 
-  font-family: $fontBold;
+  font-family: $sans-serif-bold;
   font-weight:normal;
 }
 h5, h6{
   strong, .bold, .strong, .font-bold{ 
-    font-family: $fontBlack;
+    font-family: $sans-serif-black;
     font-weight:normal;
   }
 }
 
 .font-bold-italic{ 
-  font-family: $fontBoldItalic;
+  font-family: $sans-serif-bold-italic;
   font-weight:normal;
 }
 
 .font-black{ 
-  font-family: $fontBlack;
+  font-family: $sans-serif-black;
   font-weight:normal;
   letter-spacing: $vslight;
 }
 
 .font-black-italic{ 
-  font-family: $fontBlackItalic;
+  font-family: $sans-serif-black-italic;
   font-weight:normal;
   letter-spacing: $vslight;
 }
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p, em{
 }
   
 h1 {
-  font-family: $fontThin;
+  font-family: $sans-serif-thin;
   font-size: 5.000em;
   line-height:1.0em;
   letter-spacing: $reduced;
@@ -109,7 +109,7 @@ h1 {
 }
 
 h2 {
-  font-family: $fontLight;
+  font-family: $sans-serif-light;
   font-size: 3em;
   line-height:1.1em;
   margin-left:-0.05em;
@@ -120,7 +120,7 @@ h2.base{
 }
 
 h3 {
-  font-family: $fontLight;
+  font-family: $sans-serif-light;
   font-size: 2.5em;
   line-height:1.1em;
   margin-left:-0.05em;
@@ -131,7 +131,7 @@ h3.base{
 }
 
 h4 {
-  font-family: $fontRegular;
+  font-family: $sans-serif-regular;
   font-size: 1.75em;
   line-height:1.2em;
   margin-left:-0.1em;
@@ -142,7 +142,7 @@ h4.base{
 }
 
 h5 {
-  font-family: $fontMedium;
+  font-family: $sans-serif-medium;
   font-size: 1.5em;
   line-height:1.2em;
 }
@@ -152,7 +152,7 @@ h5.base{
 }
 
 h6 {
-  font-family: $fontBold;
+  font-family: $sans-serif-bold;
   font-size: 1.2em;
   line-height:1.2em;
 }
@@ -162,13 +162,13 @@ h6.base{
 }
 
 p {
-  font-family: $fontRegular;
+  font-family: $sans-serif-regular;
   font-size: 1.1em;
   line-height:1.4em;
 }
 
 em {
-  font-family: $fontLight;
+  font-family: $sans-serif-light;
   font-size: 1.500em;
   line-height:1.25em;
 }
@@ -177,13 +177,13 @@ em {
   border:none;
   padding:0em 0 0.5em 0;
   margin:0;
-  font-family: $fontLight;
+  font-family: $sans-serif-light;
   font-size: 1.7em;
   line-height:1.3em;
 }
 
 blockquote{
-  font-family: $fontThin;
+  font-family: $sans-serif-thin;
   border:none;
   padding:0em 0 0.5em 0;
   margin:0;
@@ -224,7 +224,7 @@ blockquote:last-child{
   h1{ font-size: 4.000em;}
   h2{ font-size: 2.2em;}
   h3{
-    font-family: $fontRegular;
+    font-family: $sans-serif-regular;
     font-size: 1.750em;
   }
   h4{font-size: 1.500em;}
