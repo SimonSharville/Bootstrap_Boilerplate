@@ -6124,6 +6124,35 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 
+/* ROBOTO SLAB*/
+@font-face {
+  font-family: 'roboto_slabthin';
+  src: url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.eot");
+  src: url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.svg#roboto_slabthin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_slablight';
+  src: url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.eot");
+  src: url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.svg#roboto_slablight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_slabregular';
+  src: url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.eot");
+  src: url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.svg#roboto_slabregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_slabbold';
+  src: url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.eot");
+  src: url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.svg#roboto_slabbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* TYPOGRAPHY ============================= */
 /* 16 * 0.0312 = 1/2px */
 /* 16 * 0.0312 = 1/2px */
@@ -6134,55 +6163,139 @@ button.close {
   font-family: "robotothin", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
-.font-thin-italic {
-  font-family: "robotothin_italic", Helvetica, Arial, Sans-serif;
+.font-thin.serif {
+  font-family: "roboto_slabthin", serif;
   font-weight: normal; }
+
+.font-thin-italic {
+  font-family: "robotolight_italic", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-thin-italic.serif {
+  font-family: "roboto_slabthin", serif;
+  font-weight: normal;
+  font-style: italic; }
 
 .font-light {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-light.serif {
+  font-family: "roboto_slablight", serif;
   font-weight: normal; }
 
 .font-light-italic {
   font-family: "robotolight_italic", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
+.font-light-italic.serif {
+  font-family: "roboto_slablight", serif;
+  font-weight: normal;
+  font-style: italic; }
+
 .font-regular {
   font-family: "robotoregular", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-regular.serif {
+  font-family: "roboto_slabregular", serif;
   font-weight: normal; }
 
 .font-regular-italic {
   font-family: "robotoitalic", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
+.font-regular-italic.serif {
+  font-family: "roboto_slabregular", serif;
+  font-weight: normal;
+  font-style: italic; }
+
 .font-medium {
   font-family: "robotomedium", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.font-medium.serif {
+  font-family: "roboto_slabregular", serif;
   font-weight: normal; }
 
 .font-medium-italic {
   font-family: "robotomedium_italic", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
-strong, .bold, .strong, .font-bold {
+.font-medium-italic.serif {
+  font-family: "roboto_slabregular", serif;
+  font-weight: normal;
+  font-style: italic; }
+
+.font-bold {
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
-h5 strong, h5 .bold, h5 .strong, h5 .font-bold, h6 strong, h6 .bold, h6 .strong, h6 .font-bold {
-  font-family: "robotoblack", Helvetica, Arial, Sans-serif;
+.font-bold.serif {
+  font-family: "roboto_slabbold", serif;
   font-weight: normal; }
 
 .font-bold-italic {
   font-family: "robotobold_italic", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
+.font-bold-italic.serif {
+  font-family: "roboto_slabbold", serif;
+  font-weight: normal;
+  font-style: italic; }
+
 .font-black {
   font-family: "robotoblack", Helvetica, Arial, Sans-serif;
   font-weight: normal;
   letter-spacing: 0.025em; }
 
+.font-black.serif {
+  font-family: "roboto_slabbold", serif;
+  font-weight: normal; }
+
 .font-black-italic {
   font-family: "robotoblack_italic", Helvetica, Arial, Sans-serif;
   font-weight: normal;
   letter-spacing: 0.025em; }
+
+.font-black-italic.serif {
+  font-family: "roboto_slabbold", serif;
+  font-weight: normal;
+  font-style: italic; }
+
+strong, .bold, .strong {
+  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+h5 strong, h5 .bold, h5 .strong, h6 strong, h6 .bold, h6 .strong {
+  font-family: "robotoblack", Helvetica, Arial, Sans-serif;
+  font-weight: normal; }
+
+.serif strong, .serif .bold, .serif .strong {
+  font-family: "roboto_slabbold", serif;
+  font-weight: normal; }
+
+.serif h5 strong, .serif h5 .bold, .serif h5 .strong, .serif h6 strong, .serif h6 .bold, .serif h6 .strong {
+  font-family: "roboto_slabbold", serif;
+  font-weight: normal; }
+
+.thin {
+  font-family: "robotothin", Helvetica, Arial, Sans-serif; }
+
+.light {
+  font-family: "robotolight", Helvetica, Arial, Sans-serif; }
+
+.thin.serif {
+  font-family: "roboto_slabthin", serif; }
+
+.light.serif {
+  font-family: "roboto_slablight", serif; }
+
+.heavy {
+  font-family: "robotoblack", Helvetica, Arial, Sans-serif; }
+
+.heavy.serif {
+  font-family: "roboto_slabbold", serif; }
 
 h1, h2, h3, h4, h5, h6, p, em {
   font-weight: normal;
@@ -6199,6 +6312,9 @@ h1 {
 h1.base {
   margin-bottom: 0.1em; }
 
+h1.serif {
+  font-family: "roboto_slabthin", serif; }
+
 h2 {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
   font-size: 3em;
@@ -6208,6 +6324,9 @@ h2 {
 h2.base {
   line-height: 1em;
   margin-bottom: 0.07em; }
+
+h2.serif {
+  font-family: "roboto_slablight", serif; }
 
 h3 {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
@@ -6219,6 +6338,9 @@ h3.base {
   line-height: 1em;
   margin-bottom: 0.07em; }
 
+h3.serif {
+  font-family: "roboto_slablight", serif; }
+
 h4 {
   font-family: "robotoregular", Helvetica, Arial, Sans-serif;
   font-size: 1.75em;
@@ -6229,6 +6351,9 @@ h4.base {
   line-height: 1.1em;
   margin-bottom: 0.05em; }
 
+h4.serif {
+  font-family: "roboto_slabregular", serif; }
+
 h5 {
   font-family: "robotomedium", Helvetica, Arial, Sans-serif;
   font-size: 1.5em;
@@ -6237,6 +6362,9 @@ h5 {
 h5.base {
   line-height: 1.1em;
   margin-bottom: 0.05em; }
+
+h5.serif {
+  font-family: "roboto_slabregular", serif; }
 
 h6 {
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
@@ -6247,15 +6375,24 @@ h6.base {
   line-height: 1.1em;
   margin-bottom: 0.05em; }
 
+h6.serif {
+  font-family: "roboto_slabbold", serif; }
+
 p {
   font-family: "robotoregular", Helvetica, Arial, Sans-serif;
   font-size: 1.1em;
   line-height: 1.4em; }
 
+p.serif {
+  font-family: "roboto_slabregular", serif; }
+
 em {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
   font-size: 1.500em;
   line-height: 1.25em; }
+
+em.serif {
+  font-family: "roboto_slablight", serif; }
 
 .intro {
   border: none;
@@ -6264,6 +6401,9 @@ em {
   font-family: "robotolight", Helvetica, Arial, Sans-serif;
   font-size: 1.7em;
   line-height: 1.3em; }
+
+.intro.serif {
+  font-family: "roboto_slablight", serif; }
 
 blockquote {
   font-family: "robotothin", Helvetica, Arial, Sans-serif;
@@ -6276,6 +6416,9 @@ blockquote {
 
 blockquote:last-child {
   padding-bottom: 0em; }
+
+blockquote.serif {
+  font-family: "roboto_slabthin", serif; }
 
 .quote {
   margin: 0em 0 0.5em 1.75em; }
@@ -6305,6 +6448,8 @@ blockquote:last-child {
   h3 {
     font-family: "robotoregular", Helvetica, Arial, Sans-serif;
     font-size: 1.750em; }
+  h3.serif {
+    font-family: "roboto_slabregular", serif; }
   h4 {
     font-size: 1.500em; }
   blockquote {
