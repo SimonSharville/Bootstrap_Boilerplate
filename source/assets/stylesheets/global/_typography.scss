@@ -486,7 +486,53 @@ hr.client-dashed{border-top: 1px dashed $client;}
   }
 } 
 
+// Dropcaps =========================================================
 
+.dropcap,.dropcap-circle,.dropcap-square{font-family: $defaultFont_Thin;}
+.serif .dropcap,.serif .dropcap-circle,.serif .dropcap-square{font-family: $secondFont_Thin;}
+
+.dropcap {
+font-size: 5em;
+float: left;   
+position: relative;
+color:$client;
+top:0.25em;
+height: 0.75em;
+margin-right:5px;
+}
+.dropcap-circle {
+font-size: 3em;
+float: left;   
+line-height: 0.8em;
+text-align:center;
+padding-top: 0.230em;
+padding-left: 0.05em;
+color: white;         
+font-weight: 100;
+position: relative;
+left: -0.05em;
+top:0.05em;
+background:$client;
+width: 60px;
+height: 60px;
+border-radius:30px;
+margin-right:5px;
+}
+.dropcap-square {
+font-size: 3em;
+float: left;   
+line-height: 0.8em;
+text-align:center;
+padding-top: 0.2em;
+color: white;         
+font-weight: 100;
+position: relative;
+top:0.1em;
+background:$client;
+width: 55px;
+height: 55px;
+margin-right:8px;
+}
 
 
 

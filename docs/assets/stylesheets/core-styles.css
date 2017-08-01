@@ -6595,6 +6595,54 @@ hr.client-dashed {
     /* Firefox */
     column-count: 4; } }
 
+.dropcap, .dropcap-circle, .dropcap-square {
+  font-family: "robotothin", Helvetica, Arial, Sans-serif; }
+
+.serif .dropcap, .serif .dropcap-circle, .serif .dropcap-square {
+  font-family: "roboto_slabthin", serif; }
+
+.dropcap {
+  font-size: 5em;
+  float: left;
+  position: relative;
+  color: #00B2B2;
+  top: 0.25em;
+  height: 0.75em;
+  margin-right: 5px; }
+
+.dropcap-circle {
+  font-size: 3em;
+  float: left;
+  line-height: 0.8em;
+  text-align: center;
+  padding-top: 0.230em;
+  padding-left: 0.05em;
+  color: white;
+  font-weight: 100;
+  position: relative;
+  left: -0.05em;
+  top: 0.05em;
+  background: #00B2B2;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 5px; }
+
+.dropcap-square {
+  font-size: 3em;
+  float: left;
+  line-height: 0.8em;
+  text-align: center;
+  padding-top: 0.2em;
+  color: white;
+  font-weight: 100;
+  position: relative;
+  top: 0.1em;
+  background: #00B2B2;
+  width: 55px;
+  height: 55px;
+  margin-right: 8px; }
+
 .glyphicon, .fa {
   padding: 0 5px 0 0; }
 
@@ -6653,11 +6701,65 @@ body {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+.margin-top-10 {
+  margin-top: -10px; }
+
+.margin-bottom-10 {
+  margin-bottom: -10px; }
+
 .margin-top-20 {
-  margin-top: 20px; }
+  margin-top: -20px; }
 
 .margin-bottom-20 {
+  margin-bottom: -20px; }
+
+.margin-top-30 {
+  margin-top: -30px; }
+
+.margin-bottom-30 {
+  margin-bottom: -30px; }
+
+.margin-top-40 {
+  margin-top: -40px; }
+
+.margin-bottom-40 {
+  margin-bottom: -40px; }
+
+.margin-top-50 {
+  margin-top: -50px; }
+
+.margin-bottom-50 {
+  margin-bottom: -50px; }
+
+.margin-top10 {
+  margin-top: 10px; }
+
+.margin-bottom10 {
+  margin-bottom: 10px; }
+
+.margin-top20 {
+  margin-top: 20px; }
+
+.margin-bottom20 {
   margin-bottom: 20px; }
+
+.margin-top30 {
+  margin-top: 30px; }
+
+.margin-bottom30 {
+  margin-bottom: 30px; }
+
+.margin-top40 {
+  margin-top: 40px; }
+
+.margin-bottom40 {
+  margin-bottom: 40px; }
+
+.margin-top50 {
+  margin-top: 50px; }
+
+.margin-bottom50 {
+  margin-bottom: 50px; }
 
 /* LINK Styles =============================================== */
 a {
