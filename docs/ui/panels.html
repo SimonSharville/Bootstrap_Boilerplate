@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap Boilerplate</title>
-    <link rel="icon" type="image/ico" href="assets/graphics/favicon.ico"/>
+    <link rel="icon" type="image/ico" href="../assets/graphics/favicon.ico"/>
 
     <!-- Bootstrap -->
-    <link href="assets/stylesheets/core-styles.css" rel="stylesheet">
+    <link href="../assets/stylesheets/core-styles.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,10 +17,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="ui-grid">
 
      <!-- This makes this page active in the Navbar -->
-    
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,19 +34,18 @@
         <div class="col-xs-12">
           <div class="collapse navbar-collapse" id="ui-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <!-- <li class=""><a href="index.html">test</a></li> -->
-              <li class="active "><a href="index.html">Home</a></li>
-              <li class=""><a href="ui/structure.html">Structure <span class="sr-only">(current)</span></a></li>
+              <li class=""><a href="../index.html">Home</a></li>
+              <li class=""><a href="structure.html">Structure <span class="sr-only">(current)</span></a></li>
               <li class="dropdown ">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Typography <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li class=""><a href="ui/type-sans-serif.html">Sans Serif <span class="light"> (Default)</span></a></li>
-                  <li class=""><a href="ui/type-serif.html">Serif</a></li>
+                  <li class=""><a href="type-sans-serif.html">Sans Serif <span class="light"> (Default)</span></a></li>
+                  <li class=""><a href="type-serif.html">Serif</a></li>
                 </ul>
               </li>
               <!-- UI Menu ============================================================================= -->
               <!-- UI Menu ============================================================================= -->
-              <li class="dropdown menu-large ">
+              <li class="dropdown menu-large active ">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI Menu <b class="caret"></b></a>       
                 <ul class="dropdown-menu megamenu">
                   <li class="col-sm-4">
@@ -58,8 +56,8 @@
                       <li><a href="#">Buttons</a></li>
                       <li><a href="#">Forms</a></li>
                       <li><a href="#">Nav Tabs</a></li>
-                      <li><a href="ui/panels.html">Panels</a></li>
-                      <li><a href="ui/tables.html">Tables</a></li>
+                      <li><a href="panels.html">Panels</a></li>
+                      <li><a href="tables.html">Tables</a></li>
                       <li><a href="#">Tooltips</a></li>
                     </ul>
                   </li>
@@ -97,23 +95,25 @@
         </div><!-- / col -->
       </div><!-- /.container -->
     </nav>
-    
    
     <div class="wrapper">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-             <h1 class="">Bootstrap Boilerplate</h1>
-            <p class="intro">I have created this boilerplate as a starting point for future projects.</p>
-            <p class="intro">The default bootstrap grid has been adjusted a little to reduce the gutter-width between columns, which I have always found to be a little wide. Details of this can be seen on the <a href="structure.html">Structure</a> page.</p>
-            <p class="intro">I have also created stylesheets for <a href="typography.html">typography</a> and a set of default Navbars. Other elements may be added as I create them.</p>
-            <p class="intro">The boilerplate has been constructed using <a href="https://codekitapp.com/" target="_blank">CodeKit</a>. <br/>Feel free to <a href="https://github.com/SimonSharville/Bootstrap_Boilerplate" target="_blank">fork</a> it and use as you wish.</p>
+             <h1 class=""> Panels</h1>
+             <p class="intro">Below are a selection of styled bootstrap panels.</p>
           </div>
         </div>
       </div> <!-- / container -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+          </div>
+        </div>
+      </div> <!-- / container -->
+
     </div> <!-- / wrapper -->
-
-
 
     <!-- Footer ========================================================================= -->
     <nav class="navbar navbar-footer navbar-fixed-bottom">
@@ -130,9 +130,10 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+
   </body>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/javascripts/core.js"></script>
+    <script src="../assets/javascripts/core.js"></script>
 </html>
