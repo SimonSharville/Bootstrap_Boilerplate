@@ -277,7 +277,6 @@ h4 {
   font-family: $defaultFont_Regular;
   font-size: 1.75em;
   line-height:1.2em;
-  margin-left:-0.1em;
 }
 h4.base{
   line-height:1.1em;
@@ -365,8 +364,8 @@ blockquote.serif{
 
 [class^="quote"]:before,
 [class*=" quote"]:before {
-  content: "\61";
-  font-family: "sa-icon" !important;
+  content: "\62";
+  font-family: "sa-quote" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
