@@ -44,6 +44,33 @@
 .sa-arrow-up-circle-o:before {
   content: "\62";
 }
-.sa-arrow-up-circle:before {
+.sa-sa-arrow-up-circle:before {
   content: "\63";
+}
+.sa-arrow-down-circle-o:before {
+  content: "\64";
+}
+.sa-arrow-down-circle:before {
+  content: "\65";
+}
+.sa-arrow-left-circle:before {
+  content: "\67";
+}
+.sa-arrow-left-circle-o:before {
+  content: "\66";
+}
+.sa-arrow-right-circle:before {
+  content: "\69";
+}
+.sa-arrow-right-circle-o:before {
+  content: "\68";
+}
+.sa-circle:before {
+  content: "\6a";
+}
+.sa-circle-dot:before {
+  content: "\6b";
+}
+.sa-dot:before {
+  content: "\6c";
 }
