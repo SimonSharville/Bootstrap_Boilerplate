@@ -6193,6 +6193,25 @@ button.close {
   text-decoration: none;
   color: #00B2B2; }
 
+/* PERFORATIONS ============================= */
+hr {
+  border-top: 1px solid #C7C4C2; }
+
+hr.dashed {
+  border-top: 1px dashed #C7C4C2; }
+
+hr.client {
+  border-top: 1px solid #00B2B2; }
+
+hr.client-dashed {
+  border-top: 1px dashed #00B2B2; }
+
+hr.admin {
+  border-top: 1px solid #E50073; }
+
+hr.admin-dashed {
+  border-top: 1px dashed #E50073; }
+
 /* TYPOGRAPHY ============================= */
 /* 16 * 0.0312 = 1/2px */
 /* 16 * 0.0312 = 1/2px */
@@ -6514,18 +6533,6 @@ blockquote.serif {
 
 .half {
   font-size: 0.5em; }
-
-hr {
-  border-top: 1px solid #C7C4C2; }
-
-hr.dashed {
-  border-top: 1px dashed #C7C4C2; }
-
-hr.client {
-  border-top: 1px solid #00B2B2; }
-
-hr.client-dashed {
-  border-top: 1px dashed #00B2B2; }
 
 .multi-column-2, .multi-column-3, .multi-column-4 {
   -webkit-column-gap: 30px;
