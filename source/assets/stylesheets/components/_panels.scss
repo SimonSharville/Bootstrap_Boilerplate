@@ -52,7 +52,7 @@ $panelBaseGrey:         $grey02;
 
 
 
-.panel-body{ padding: 10px 15px;}
+// .panel-body{ padding: 10px 15px;}
 
 // .panel-body .button{ padding-top:8px;}
 
@@ -96,10 +96,10 @@ $panelBaseGrey:         $grey02;
 
 .panel-success > .panel-heading{ background-color:darken($success, 10%);   color:white;   border:0;}
 
-.panel-success > .panel-body{ background-color:lighten($success, 10%); }
+.panel-success > .panel-body{ background-color:lighten($success, 5%); }
 
-.panel-success > .perf-wht{ background-color:lighten($success, 10%); }
-.panel-success > .perf-grey{ background-color:lighten($success, 10%); }
+.panel-success > .perf-wht{ background-color:lighten($success, 5%); }
+.panel-success > .perf-grey{ background-color:lighten($success, 5%); }
 
 .panel-success > .panel-footer{ background-color:darken($success, 20%);   color: white;   border:0;}
 
