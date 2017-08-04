@@ -5856,76 +5856,115 @@ button.close {
 .white {
   color: #FFFFFF; }
 
-.MRv {
+.text-turq {
   color: #00B2B2; }
 
-.NRv {
-  color: #FF6A00; }
-
-.sa-360 {
-  color: #FFB200; }
-
-.eLeave {
-  color: #A7BF30; }
-
-.A4A {
-  color: #990099; }
-
-.JPL {
+.text-pink {
   color: #E50073; }
 
-.eRo {
-  color: #004D4D; }
+.text-orange {
+  color: #FF6A00; }
 
-.CPL {
-  color: #BF0000; }
-
-.grey02 {
-  color: #EDEBEB; }
-
-.grey03 {
-  color: #E3E1E1; }
-
-.grey04 {
-  color: #D9D6D6; }
-
-.grey06 {
-  color: #C7C4C2; }
-
-.grey08 {
-  color: #B5B0B0; }
-
-.grey10 {
-  color: #A39E9C; }
-
-.grey10 {
-  color: #A39E9C; }
-
-.grey12 {
-  color: #827D7D; }
-
-.grey14 {
-  color: #615E5C; }
-
-.grey16 {
-  color: #403D3D; }
-
-.grey18 {
-  color: #211F0F; }
-
-.success {
-  color: #359E00; }
-
-.info {
-  color: #00a0e0; }
-
-.warning {
+.text-yellow {
   color: #FFB200; }
 
-.danger {
+.text-lime {
+  color: #A7BF30; }
+
+.text-green {
+  color: #359E00; }
+
+.text-teal {
+  color: #004D4D; }
+
+.text-blue {
+  color: #003CB8; }
+
+.text-ink {
+  color: #000078; }
+
+.text-purple {
+  color: #52008C; }
+
+.text-plum {
+  color: #990099; }
+
+.text-red {
   color: #BF0000; }
 
-.alert {
+.text-white {
+  color: #FFFFFF; }
+
+.text-MRv {
+  color: #00B2B2; }
+
+.text-NRv {
+  color: #FF6A00; }
+
+.text-sa-360 {
+  color: #FFB200; }
+
+.text-eLeave {
+  color: #A7BF30; }
+
+.text-A4A {
+  color: #990099; }
+
+.text-JPL {
+  color: #E50073; }
+
+.text-eRo {
+  color: #004D4D; }
+
+.text-CPL {
+  color: #BF0000; }
+
+.text-grey02 {
+  color: #EDEBEB; }
+
+.text-grey03 {
+  color: #E3E1E1; }
+
+.text-grey04 {
+  color: #D9D6D6; }
+
+.text-grey06 {
+  color: #C7C4C2; }
+
+.text-grey08 {
+  color: #B5B0B0; }
+
+.text-grey10 {
+  color: #A39E9C; }
+
+.text-grey10 {
+  color: #A39E9C; }
+
+.text-grey12 {
+  color: #827D7D; }
+
+.text-grey14 {
+  color: #615E5C; }
+
+.text-grey16 {
+  color: #403D3D; }
+
+.text-grey18 {
+  color: #211F0F; }
+
+.text-success {
+  color: #359E00; }
+
+.text-info {
+  color: #00a0e0; }
+
+.text-warning {
+  color: #FFB200; }
+
+.text-danger {
+  color: #BF0000; }
+
+.text-alert {
   color: #E50073; }
 
 .bg-turq {
