@@ -103,6 +103,8 @@
              <h1 class=""> Structure</h1>
              <h2>Wrapper</h2>
              <p class="intro">When using a fixed navbar at the top and a fixed footer as in this example all the content of the site should be wrapped in a <strong>wrapper</strong>. This adds a margin top and bottom so that the content doesn't hide behind them. This can be adjusted in the structure.scss file.</p>
+
+             <hr class="dashed-client">
              
              <h2>Grid Structure</h2>
              <p class="intro">The Grid Structure has been amended slightly from the Bootstrap Default. We have adjusted the column-gutters to be <strong>20px</strong> instead of the original 30px.</p>
@@ -186,6 +188,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
+            <hr class="dashed-client">
             <h2>Examples</h2>
             <p class="intro">Below are examples of columns followed by columns showing their padding.</p>
           </div>
@@ -242,6 +245,84 @@
           <div class="col-sm-4"><div class="bg-grey06">col-sm-4</div></div>
         </div>
       </div> <!-- / container -->
+
+      <!-- ================================================================================================================== -->
+
+      <div class="container margin-top20">
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="dashed-client">
+            <h2 class="">Adjustments</h2>
+            <p class="intro">Components are designed to sit within the padding area of a column, so that they align with the text. If you wish them to push out of that and either fill a column or a row width then add the following classes. </p>
+          </div>
+        </div>
+        <div class="row bg-grey04">
+          <div class="col-xs-12">
+            <h4>Full width of a row</h4>
+            <p>These have a class of <strong>full-row</strong> added to the perf or hr.</p>
+           <div class="perf perf-client full-row"></div>
+           <hr class="client-dashed full-row">
+          </div> <!-- / col -->
+        </div> <!-- / row -->
+      </div> <!-- / container -->
+
+      <div class="container margin-top20">
+        <div class="row">
+          <div class="col-xs-12 bg-grey04">
+            <h4>Full width of a column</h4>
+            <p>These have a class of <strong>full-col</strong> added to the perf or hr.</p>
+           <div class="perf perf-client full-col"></div>
+           <hr class="client-dashed full-col">
+          </div> <!-- / col -->
+        </div> <!-- / row -->
+      </div> <!-- / container -->
+
+      <div class="container margin-top40">
+        <div class="row">
+          <div class="col-xs-12">
+            
+            <h4 class="">Container Fluid</h4>
+            <p>Usually you would use Container-fluid to make something full width of the screen. However, occasionally you would want to keep a component within a container, but force it to breakout and appear as if it is in a container-fluid.</p>
+            <p>This first example is of Perforations within a container-fluid.</p>
+          </div> <!-- / col -->
+        </div> <!-- / row -->
+      </div> <!-- / container -->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+           <div class="perf"></div>
+           <hr class="dashed">
+          </div> <!-- / col -->
+        </div> <!-- / row -->
+      </div> <!-- / container-fluid -->
+
+      <div class="container margin-top20">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Breakout of a container</h4>
+            <p>If you wish a component to remain within a container (and not a container-fluid), but want them to appear full width of the browser window, then add the class of <strong>breakout</strong> to them.</p>
+           <div class="perf perf-client breakout"></div>
+           <hr class="dashed-client breakout">
+          </div> <!-- / col -->
+        </div> <!-- / row -->
+      </div> <!-- / container -->
+
+      <div class="container margin-top20">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>This also works with other components like panels.</p>
+            <p class="strong">Note: The breakout class need to be added to the component and not the container, row or column.</p>
+           <div class="panel panel-default breakout">
+              <div class="panel-heading">Panel heading without title</div>
+              <div class="panel-body">
+                Panel body
+              </div>
+            </div>
+          </div> <!-- / col -->
+        </div> <!-- / row -->
+      </div> <!-- / container -->
+
     </div> <!-- / wrapper -->
 
     <!-- Footer ========================================================================= -->

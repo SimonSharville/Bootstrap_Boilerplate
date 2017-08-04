@@ -6195,7 +6195,9 @@ button.close {
 
 /* PERFORATIONS ============================= */
 hr {
-  border-top: 1px solid #C7C4C2; }
+  border-top: 1px solid #C7C4C2;
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 hr.dashed {
   border-top: 1px dashed #C7C4C2; }
@@ -6203,14 +6205,26 @@ hr.dashed {
 hr.client {
   border-top: 1px solid #00B2B2; }
 
-hr.client-dashed {
+hr.dashed-client {
   border-top: 1px dashed #00B2B2; }
 
 hr.admin {
   border-top: 1px solid #E50073; }
 
-hr.admin-dashed {
+hr.dashed-admin {
   border-top: 1px dashed #E50073; }
+
+hr.dark {
+  border-top: 1px solid #211F0F; }
+
+hr.dashed-dark {
+  border-top: 1px dashed #211F0F; }
+
+hr.white {
+  border-top: 1px solid white; }
+
+hr.dashed-white {
+  border-top: 1px dashed white; }
 
 .container-fluid hr {
   margin: 15px -15px 25px -15px; }
@@ -6221,13 +6235,44 @@ hr.admin-dashed {
 .container-fluid .row [class^='col-'] hr {
   margin: 15px -20px 25px -20px; }
 
+.divider {
+  border-top: 1px solid #C7C4C2;
+  margin: 15px 0px 15px 0px; }
+
+.divider-dashed {
+  border-top: 1px dashed #C7C4C2; }
+
+.divider-client {
+  border-top: 1px solid #00B2B2; }
+
+.divider-dashed-client {
+  border-top: 1px dashed #00B2B2; }
+
+.divider-dark {
+  border-top: 1px solid #211F0F; }
+
+.divider-dashed-dark {
+  border-top: 1px dashed #211F0F; }
+
+.divider-white {
+  border-top: 1px solid white; }
+
+.divider-dashed-white {
+  border-top: 1px dashed white; }
+
+.divider-admin {
+  border-top: 1px solid #E50073; }
+
+.divider-dashed-admin {
+  border-top: 1px dashed #E50073; }
+
 .perf {
   display: block;
   width: 100%;
   height: 16px;
   background-repeat: repeat-x;
   background-position: -4px 0px;
-  margin: 15px -15px 25px 0px; }
+  margin: 15px -15px 15px 0px; }
 
 .container-fluid .perf {
   margin: 15px -15px 25px -15px;
@@ -6241,10 +6286,10 @@ hr.admin-dashed {
   margin: 15px -20px 25px -20px;
   width: calc(100% + 40px); }
 
-.perf-grey {
+.perf {
   background-image: url("../graphics/dot_grey04.png"); }
 
-.perf-turq {
+.perf-client {
   background-image: url("../graphics/dot_turq.png"); }
 
 .perf-dark {
@@ -6252,6 +6297,11 @@ hr.admin-dashed {
 
 .perf-white {
   background-image: url("../graphics/dot_white.png"); }
+
+.panel .perf, .panel hr, .panel .divider {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px); }
 
 /* TYPOGRAPHY ============================= */
 /* 16 * 0.0312 = 1/2px */
@@ -6738,15 +6788,39 @@ body {
   margin-top: 100px;
   margin-bottom: 100px; }
 
-.divider {
-  border-top: 1px solid #00B2B2;
-  margin-top: 30px;
-  margin-bottom: 5px; }
+.full-row {
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px); }
 
-.divider-dashed {
-  border-top: 1px dashed #00B2B2;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+.full-col {
+  margin-left: -10px;
+  margin-right: -10px;
+  width: calc(100% + 20px); }
+
+@media (max-width: 767px) {
+  .breakout {
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px); } }
+
+@media (min-width: 768px) {
+  .breakout {
+    width: calc(100vw - 15px);
+    margin-left: calc(-50vw + 725px / 2);
+    margin-right: calc(-50vw + 725px / 2); } }
+
+@media (min-width: 992px) {
+  .breakout {
+    width: calc(100vw - 15px);
+    margin-left: calc(-50vw + 945px / 2);
+    margin-right: calc(-50vw + 945px / 2); } }
+
+@media (min-width: 1200px) {
+  .breakout {
+    width: calc(100vw - 15px);
+    margin-left: calc(-50vw + 1145px / 2);
+    margin-right: calc(-50vw + 1145px / 2); } }
 
 .margin-top-5 {
   margin-top: -5px; }
