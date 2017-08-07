@@ -7254,6 +7254,22 @@ li p {
 .ui-col {
   background-color: #EDEBEB; }
 
+@media (max-width: 767px) {
+  .ui-profile-image {
+    width: 50%; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .ui-profile-image {
+    width: 40%;
+    margin-left: -10px;
+    margin-top: 20px; } }
+
+@media (min-width: 992px) {
+  .ui-profile-image {
+    width: 30%;
+    margin-left: -10px;
+    margin-top: 20px; } }
+
 /* Navbar Default  ================================================ */
 .navbar-default {
   background-color: #00b2b2;
