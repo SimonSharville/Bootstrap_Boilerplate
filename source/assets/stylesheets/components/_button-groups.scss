@@ -1,0 +1,154 @@
+// Button-group Sizes --------------------------------------------------
+
+.btn-group-xl > .btn {
+  font-size: 24px;
+  padding: 12px 21px;
+  border-radius:30px;
+}
+.btn-group-lg > .btn {
+  font-size: 20px;
+  padding: 12px 18px;
+  border-radius:40px;
+}
+.btn-group-sm > .btn {
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius:20px;
+}
+.btn-group-xs > .btn {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius:14px;
+}
+
+
+// Button Group Vertical -----------------------------------------
+.btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 20px; // original 4px
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+
+// Button Dropdowns --------------------------------------------
+
+.btn-group.open .dropdown-toggle{
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+  box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+// Active state of button when dropdown is clicked
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle{
+  background-color:darken($btn-default, 12%);
+}
+
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle{
+  background-color: darken($client, 6%);
+}
+
+.btn-client:active, .btn-client.active, .open > .btn-client.dropdown-toggle{
+  background-color: darken($client, 6%);
+}
+
+.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle{
+  background-color: darken($info, 8%);
+}
+
+.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle{
+  background-color: darken($success, 8%);
+}
+
+.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle{
+  background-color: darken($warning, 5%);
+}
+
+.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle{
+  background-color: darken($danger, 7%);
+}
+
+.btn-dark:active, .btn-dark.active, .open > .btn-dark.dropdown-toggle{
+  background-color: darken($btn-dark, 10%);
+}
+
+.btn-light:active, .btn-light.active, .open > .btn-light.dropdown-toggle{
+  background-color: darken($btn-light, 10%);
+}
+
+.btn-white:active, .btn-white.active, .open > .btn-white.dropdown-toggle{
+  background-color: white;
+}
+
+.btn-admin:active, .btn-admin.active, .open > .btn-admin.dropdown-toggle{
+  background-color: darken($admin, 10%);
+}
+
+.btn-admin-dark:active, .btn-admin-dark.active, .open > .btn-admin-dark.dropdown-toggle{
+  background-color: darken($admin, 30%);
+}
+
+.btn-group.open .dropdown-toggle.btn-link{
+  color: $teal!important;
+}
+
+// Dropdown Menus
+.btn-group.open > .dropdown-menu{
+  border-radius:0px;
+  margin-top:-1px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow:    0px 1px 1px 0px rgba(0,0,0,0.2);
+  box-shadow:         0px 1px 1px 0px rgba(0,0,0,0.2);
+
+  // background-color:$grey04;
+  // border:none;
+  //   // a {color:white; }
+  // a:visited {background-color: $grey04;}
+  // a:hover {background-color: $grey08;}
+  // a:focus {background-color: $grey08;}
+  // a:active {background-color: $grey08;}
+  
+}
+
+.btn-group.open > .dropdown-menu .divider{border-top:1px solid white}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
