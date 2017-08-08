@@ -6232,7 +6232,7 @@ button.close {
   text-decoration: none;
   color: #00B2B2; }
 
-/* PERFORATIONS ============================= */
+/* HRs and Dividers ============================= */
 hr {
   border-top: 1px solid #C7C4C2;
   margin-top: 15px;
@@ -6243,6 +6243,9 @@ hr.dashed {
 
 hr.client {
   border-top: 1px solid #00B2B2; }
+
+hr.dotted-client {
+  border-top: 1px dotted #00B2B2; }
 
 hr.dashed-client {
   border-top: 1px dashed #00B2B2; }
@@ -6304,6 +6307,73 @@ hr.dashed-white {
 
 .divider-dashed-admin {
   border-top: 1px dashed #E50073; }
+
+.dot-start:before {
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position: relative;
+  top: -1.25em;
+  font-size: 0.6em;
+  color: #C7C4C2; }
+
+.dot-middle:before {
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position: relative;
+  top: -1.25em;
+  font-size: 0.6em;
+  left: calc(50% - 0.45em);
+  color: #C7C4C2; }
+
+.dot-end:after {
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position: relative;
+  top: -1.25em;
+  font-size: 0.6em;
+  left: calc(100% - 0.9em);
+  color: #C7C4C2; }
+
+.dot-start-end:before {
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position: relative;
+  top: -1.25em;
+  font-size: 0.6em;
+  color: #C7C4C2; }
+
+.dot-start-end:after {
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position: relative;
+  top: -1.25em;
+  font-size: 0.6em;
+  left: calc(100% - 1.9em);
+  color: #C7C4C2; }
+
+.client.dot-start:before, .client.dot-middle:before, .client.dot-end:after, .client.dot-start-end:before, .client.dot-start-end:after {
+  color: #00B2B2; }
+
+.dashed-client.dot-start:before, .dashed-client.dot-middle:before, .dashed-client.dot-end:after, .dashed-client.dot-start-end:before, .dashed-client.dot-start-end:after {
+  color: #00B2B2; }
+
+.admin.dot-start:before, .admin.dot-middle:before, .admin.dot-end:after, .admin.dot-start-end:before, .admin.dot-start-end:after {
+  color: #E50073; }
+
+.admin-admin.dot-start:before, .dashed-admin.dot-middle:before, .dashed-admin.dot-end:after, .dashed-admin.dot-start-end:before, .dashed-admin.dot-start-end:after {
+  color: #E50073; }
+
+.dark.dot-start:before, .dark.dot-middle:before, .dark.dot-end:after, .dark.dot-start-end:before, .dark.dot-start-end:after {
+  color: #211F0F; }
+
+.dark-client.dot-start:before, .dashed-dark.dot-middle:before, .dashed-dark.dot-end:after .dashed-dark.dot-start-end:before, .dashed-dark.dot-start-end:after {
+  color: #211F0F; }
+
+.white.dot-start:before, .white.dot-middle:before, .white.dot-end:after, .white.dot-start-end:before, .white.dot-start-end:after {
+  color: white; }
+
+.white-client.dot-start:before, .dashed-white.dot-middle:before, .dashed-white.dot-end:after, .dashed-white.dot-start-end:before, .dashed-white.dot-start-end:after {
+  color: white; }
 
 .perf {
   display: block;

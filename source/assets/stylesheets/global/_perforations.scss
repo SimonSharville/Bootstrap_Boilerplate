@@ -1,5 +1,5 @@
 
-/* PERFORATIONS ============================= */
+/* HRs and Dividers ============================= */
 
 hr{
   border-top: 1px solid $grey06;
@@ -8,6 +8,7 @@ hr{
 }
 hr.dashed{border-top: 1px dashed $grey06;}
 hr.client{border-top: 1px solid $client;}
+hr.dotted-client{border-top: 1px dotted $client;}
 hr.dashed-client{border-top: 1px dashed $client;}
 hr.admin{border-top: 1px solid $admin;}
 hr.dashed-admin{border-top: 1px dashed $admin;}
@@ -63,6 +64,83 @@ hr.dashed-white{border-top: 1px dashed white;}
 .divider-dashed-admin{
   border-top: 1px dashed $admin;
 }
+
+// HRs with Dots ========================
+
+.dot-start:before{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  color:$grey06;
+}
+.dot-middle:before{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  left: calc(50% - 0.45em);
+  color:$grey06;
+}
+.dot-end:after{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  left: calc(100% - 0.9em);
+  color:$grey06;
+}
+.dot-start-end:before{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  color:$grey06;
+}
+.dot-start-end:after{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  left: calc(100% - 1.9em);
+  color:$grey06;
+}
+
+.client.dot-start:before, .client.dot-middle:before, .client.dot-end:after, .client.dot-start-end:before, .client.dot-start-end:after{
+  color:$client;
+}
+.dashed-client.dot-start:before, .dashed-client.dot-middle:before, .dashed-client.dot-end:after, .dashed-client.dot-start-end:before, .dashed-client.dot-start-end:after{
+  color:$client;
+}
+
+.admin.dot-start:before, .admin.dot-middle:before, .admin.dot-end:after, .admin.dot-start-end:before, .admin.dot-start-end:after{
+  color:$admin;
+}
+.admin-admin.dot-start:before, .dashed-admin.dot-middle:before, .dashed-admin.dot-end:after, .dashed-admin.dot-start-end:before, .dashed-admin.dot-start-end:after{
+  color:$admin;
+}
+
+.dark.dot-start:before, .dark.dot-middle:before, .dark.dot-end:after, .dark.dot-start-end:before, .dark.dot-start-end:after{
+  color:$grey18;
+}
+.dark-client.dot-start:before, .dashed-dark.dot-middle:before, .dashed-dark.dot-end:after .dashed-dark.dot-start-end:before, .dashed-dark.dot-start-end:after{
+  color:$grey18;
+}
+.white.dot-start:before, .white.dot-middle:before, .white.dot-end:after, .white.dot-start-end:before, .white.dot-start-end:after{
+  color:white;
+}
+.white-client.dot-start:before, .dashed-white.dot-middle:before, .dashed-white.dot-end:after, .dashed-white.dot-start-end:before, .dashed-white.dot-start-end:after{
+  color:white;
+}
+
+
+
+// Perforations ========================
 
 .perf{
   display:block;
