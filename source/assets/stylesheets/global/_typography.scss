@@ -418,6 +418,18 @@ blockquote.serif{
   -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
   -moz-column-gap: 30px;            /* Firefox */
   column-gap: 30px;
+  -webkit-column-rule: 1px solid $grey06;  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid $grey06;    /* Firefox */
+  column-rule: 1px solid $grey06;
+  -webkit-column-rule-width: 1px;   /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;      /* Firefox */
+  column-rule-width: 1px;
+}
+
+.multi-column-2-client, .multi-column-3-client, .multi-column-4-client {
+  -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px;            /* Firefox */
+  column-gap: 30px;
   -webkit-column-rule: 1px solid $client;  /* Chrome, Safari, Opera */
   -moz-column-rule: 1px solid $client;    /* Firefox */
   column-rule: 1px solid $client;
@@ -426,10 +438,38 @@ blockquote.serif{
   column-rule-width: 1px;
 }
 
+.multi-column-2-admin, .multi-column-3-admin, .multi-column-4-admin {
+  -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px;            /* Firefox */
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid $admin;  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid $admin;    /* Firefox */
+  column-rule: 1px solid $admin;
+  -webkit-column-rule-width: 1px;   /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;      /* Firefox */
+  column-rule-width: 1px;
+}
+
+.multi-column-2-dark, .multi-column-3-dark, .multi-column-4-dark {
+  -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px;            /* Firefox */
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid $grey18;  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid $grey18;    /* Firefox */
+  column-rule: 1px solid $grey18;
+  -webkit-column-rule-width: 1px;   /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;      /* Firefox */
+  column-rule-width: 1px;
+}
+
 
 // Small screens
 @media (max-width: 767px) {
-  .multi-column-2, .multi-column-3, .multi-column-4 {
+  .multi-column-2, .multi-column-3, .multi-column-4,
+  .multi-column-2-client, .multi-column-3-client, .multi-column-4-client,
+  .multi-column-2-admin, .multi-column-3-admin, .multi-column-4-admin,
+  .multi-column-2-dark, .multi-column-3-dark, .multi-column-4-dark
+   {
       -webkit-column-count: 1;          /* Chrome, Safari, Opera */
       -moz-column-count: 1;             /* Firefox */
       column-count: 1;
@@ -438,7 +478,11 @@ blockquote.serif{
 
 // Medium screens
 @media (min-width: 768px) and (max-width: 991px) {
-  .multi-column-2, .multi-column-3, .multi-column-4 {
+  .multi-column-2, .multi-column-3, .multi-column-4,
+  .multi-column-2-client, .multi-column-3-client, .multi-column-4-client,
+  .multi-column-2-admin, .multi-column-3-admin, .multi-column-4-admin,
+  .multi-column-2-dark, .multi-column-3-dark, .multi-column-4-dark
+   {
       -webkit-column-count: 2;          /* Chrome, Safari, Opera */
       -moz-column-count: 2;             /* Firefox */
       column-count: 2;
@@ -448,12 +492,18 @@ blockquote.serif{
 
 // Large screens
 @media (min-width: 992px) and (max-width: 1199px) {
-  .multi-column-2 {
+  .multi-column-2, 
+  .multi-column-2-client, 
+  .multi-column-2-admin, 
+  .multi-column-2-dark {
       -webkit-column-count: 2;          /* Chrome, Safari, Opera */
       -moz-column-count: 2;             /* Firefox */
       column-count: 2;
   }
-  .multi-column-3, .multi-column-4 {
+  .multi-column-3, .multi-column-4,
+  .multi-column-3-client, .multi-column-4-client,
+  .multi-column-3-admin, .multi-column-4-admin,
+  .multi-column-3-dark, .multi-column-4-dark {
       -webkit-column-count: 3;          /* Chrome, Safari, Opera */
       -moz-column-count: 3;             /* Firefox */
       column-count: 3;
@@ -463,16 +513,26 @@ blockquote.serif{
 
 // Large screens
 @media (min-width: 1200px) {
-  .multi-column-2 {
+  .multi-column-2, 
+  .multi-column-2-client, 
+  .multi-column-2-admin, 
+  .multi-column-2-dark  {
       -webkit-column-count: 2;          /* Chrome, Safari, Opera */
       -moz-column-count: 2;             /* Firefox */
       column-count: 2;
-  }.multi-column-3 {
+  }
+  .multi-column-3, 
+  .multi-column-3-client, 
+  .multi-column-3-admin, 
+  .multi-column-3-dark  {
       -webkit-column-count: 3;          /* Chrome, Safari, Opera */
       -moz-column-count: 3;             /* Firefox */
       column-count: 3;
   }
-  .multi-column-4 {
+  .multi-column-4, 
+  .multi-column-4-client, 
+  .multi-column-4-admin, 
+  .multi-column-4-dark  {
       -webkit-column-count: 4;          /* Chrome, Safari, Opera */
       -moz-column-count: 4;             /* Firefox */
       column-count: 4;
