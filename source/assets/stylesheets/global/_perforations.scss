@@ -1,19 +1,23 @@
 
+$border-default: $grey06;
+
+$border-dark: $grey18;
+
 /* HRs and Dividers ============================= */
 
 hr{
-  border-top: 1px solid $grey06;
+  border-top: 1px solid $border-default;
   margin-top:15px;
   margin-bottom:15px;
 }
-hr.dashed{border-top: 1px dashed $grey06;}
+hr.dashed{border-top: 1px dashed $border-default;}
 hr.client{border-top: 1px solid $client;}
 hr.dotted-client{border-top: 1px dotted $client;}
 hr.dashed-client{border-top: 1px dashed $client;}
 hr.admin{border-top: 1px solid $admin;}
 hr.dashed-admin{border-top: 1px dashed $admin;}
-hr.dark{border-top: 1px solid $grey18;}
-hr.dashed-dark{border-top: 1px dashed $grey18;}
+hr.dark{border-top: 1px solid $border-dark;}
+hr.dashed-dark{border-top: 1px dashed $border-dark;}
 hr.white{border-top: 1px solid white;}
 hr.dashed-white{border-top: 1px dashed white;}
 
@@ -30,11 +34,11 @@ hr.dashed-white{border-top: 1px dashed white;}
 }
 
 .divider{
-  border-top: 1px solid $grey06;
+  border-top: 1px solid $border-default;
   margin: 15px 0px 15px 0px
 }
 .divider-dashed{
-  border-top: 1px dashed $grey06;
+  border-top: 1px dashed $border-default;
 }
 
 .divider-client{
@@ -45,10 +49,10 @@ hr.dashed-white{border-top: 1px dashed white;}
 }
 
 .divider-dark{
-  border-top: 1px solid $grey18;
+  border-top: 1px solid $border-dark;
 }
 .divider-dashed-dark{
-  border-top: 1px dashed $grey18;
+  border-top: 1px dashed $border-dark;
 }
 
 .divider-white{
@@ -73,7 +77,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   position:relative;
   top:-1.25em;
   font-size:0.6em;
-  color:$grey06;
+  color:$border-default;
 }
 .dot-middle:before{
   content: "\6c";
@@ -82,7 +86,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   top:-1.25em;
   font-size:0.6em;
   left: calc(50% - 0.45em);
-  color:$grey06;
+  color:$border-default;
 }
 .dot-end:after{
   content: "\6c";
@@ -91,7 +95,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   top:-1.25em;
   font-size:0.6em;
   left: calc(100% - 0.9em);
-  color:$grey06;
+  color:$border-default;
 }
 .dot-start-end:before{
   content: "\6c";
@@ -99,7 +103,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   position:relative;
   top:-1.25em;
   font-size:0.6em;
-  color:$grey06;
+  color:$border-default;
 }
 .dot-start-end:after{
   content: "\6c";
@@ -108,7 +112,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   top:-1.25em;
   font-size:0.6em;
   left: calc(100% - 1.9em);
-  color:$grey06;
+  color:$border-default;
 }
 
 .client.dot-start:before, .client.dot-middle:before, .client.dot-end:after, .client.dot-start-end:before, .client.dot-start-end:after{
@@ -126,10 +130,10 @@ hr.dashed-white{border-top: 1px dashed white;}
 }
 
 .dark.dot-start:before, .dark.dot-middle:before, .dark.dot-end:after, .dark.dot-start-end:before, .dark.dot-start-end:after{
-  color:$grey18;
+  color:$border-dark;
 }
 .dark-client.dot-start:before, .dashed-dark.dot-middle:before, .dashed-dark.dot-end:after .dashed-dark.dot-start-end:before, .dashed-dark.dot-start-end:after{
-  color:$grey18;
+  color:$border-dark;
 }
 .white.dot-start:before, .white.dot-middle:before, .white.dot-end:after, .white.dot-start-end:before, .white.dot-start-end:after{
   color:white;
@@ -188,6 +192,153 @@ hr.dashed-white{border-top: 1px dashed white;}
   width: calc(100% + 30px);
 }
 
+// Vertical Rules between columns =====================
+// Only for Medium screens and up
 
+@media (min-width: 768px){
+  .vr{
+    border-right:1px solid $border-default;
+  }
+  .vr:last-child{
+    border-right:0px solid $border-default;
+  }
+
+  .vr-client{
+    border-right:1px solid $client;
+  }
+  .vr-client:last-child{
+    border-right:0px solid $client;
+  }
+
+  .vr-admin{
+    border-right:1px solid $admin;
+  }
+  .vr-admin:last-child{
+    border-right:0px solid $admin;
+  }
+
+  .vr-dark{
+    border-right:1px solid $border-dark;;
+  }
+  .vr-dark:last-child{
+    border-right:0px solid $border-dark;;
+  }
+
+  .vr-white{
+    border-right:1px solid white;
+  }
+  .vr-white:last-child{
+    border-right:0px solid white;
+  }
+}
+
+
+.col-xs-6.vr{
+  border-right:1px solid $border-default;
+}
+.col-xs-6.vr:last-child{
+  border-right:0px solid $border-default;
+}
+.col-xs-6.vr-client{
+  border-right:1px solid $client;
+}
+.col-xs-6.vr-client:last-child{
+  border-right:0px solid $client;
+}
+
+.col-xs-6.vr-admin{
+  border-right:1px solid $admin;
+}
+.col-xs-6.vr-admin:last-child{
+  border-right:0px solid $admin;
+}
+
+.col-xs-6.vr-dark{
+  border-right:1px solid $border-dark;;
+}
+.col-xs-6.vr-dark:last-child{
+  border-right:0px solid $border-dark;;
+}
+
+.col-xs-6.vr-white{
+  border-right:1px solid white;
+}
+.col-xs-6.vr-white:last-child{
+  border-right:0px solid white;
+}
+
+
+
+@media (min-width: 768px){
+  .vr-dashed{
+    border-right:1px dashed $border-default;
+  }
+  .vr-dashed:last-child{
+    border-right:0px dashed $border-default;
+  }
+
+  .vr-dashed-client{
+    border-right:1px dashed $client;
+  }
+  .vr-dashed-client:last-child{
+    border-right:0px dashed $client;
+  }
+
+  .vr-dashed-admin{
+    border-right:1px dashed $admin;
+  }
+  .vr-dashed-admin:last-child{
+    border-right:0px dashed $admin;
+  }
+
+  .vr-dashed-dark{
+    border-right:1px dashed $border-dark;
+  }
+  .vr-dashed-dark:last-child{
+    border-right:0px dashed $border-dark;
+  }
+
+  .vr-dashed-white{
+    border-right:1px dashed white;
+  }
+  .vr-dashed-white:last-child{
+    border-right:0px dashed white;
+  }
+
+}
+.col-xs-6.vr-dashed{
+  border-right:1px dashed $border-default;
+}
+.col-xs-6.vr-dashed:last-child{
+  border-right:0px dashed $border-default;
+}
+
+.col-xs-6.vr-dashed-client{
+  border-right:1px dashed $client;
+}
+.col-xs-6.vr-dashed-client:last-child{
+  border-right:0px dashed $client;
+}
+
+.col-xs-6.vr-dashed-admin{
+  border-right:1px dashed $admin;
+}
+.col-xs-6.vr-dashed-admin:last-child{
+  border-right:0px dashed $admin;
+}
+
+.col-xs-6.vr-dashed-dark{
+  border-right:1px dashed $border-dark;
+}
+.col-xs-6.vr-dashed-dark:last-child{
+  border-right:0px dashed $border-dark;
+}
+
+.col-xs-6.vr-dashed-white{
+  border-right:1px dashed white;
+}
+.col-xs-6.vr-dashed-white:last-child{
+  border-right:0px dashed white;
+}
 
 
