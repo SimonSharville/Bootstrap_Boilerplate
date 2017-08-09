@@ -4,6 +4,10 @@
   background-image: url("../graphics/20px_grid.png");
 }
 
+.ui-10px-grid{
+  background-image: url("../graphics/10px_grid.png");
+}
+
 .red-border{ 
   border: 1px dotted $red;
 }
@@ -20,6 +24,10 @@
 .ui-btn{
   margin-top:5px;
   margin-bottom:5px;
+}
+
+.ui-btn-top{
+  margin-top:10px;
 }
 
 
