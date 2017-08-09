@@ -385,10 +385,14 @@ blockquote.serif{
 // Small screens ===============
 @media (max-width: 767px) {
   h1{ font-size: 4.000em;}
-  h2{ font-size: 2.2em;}
+  h2{ 
+    font-size: 2.2em; 
+    margin-left:0;
+  }
   h3{
     font-family: $defaultFont_Regular;
     font-size: 1.750em;
+    margin-left:0;
   }
   h3.serif{
     font-family: $secondFont_Regular;

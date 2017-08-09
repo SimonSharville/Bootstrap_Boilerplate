@@ -1,0 +1,243 @@
+// Rag Status
+
+$rag-red:          $red;
+$rag-amber:        $yellow;
+$rag-green:        $green;
+$rag-na:           $grey12;
+$rag-white:        $white;
+
+
+
+// Colouring
+.rag-red{ background-color:$rag-red; }
+
+.rag-amber{ background-color:$rag-amber; }
+
+.rag-green{ background-color:$rag-green; }
+
+.rag-na{ background-color:$rag-na; }
+
+.rag-white{ background-color:$rag-white; }
+
+.rag-default{ background-color:$grey16; }
+
+
+// Elements
+
+.rag-status-bar{
+  height:32px;
+  min-height:32px;
+  margin-top:-21px;
+  margin-left:-12px;
+  margin-right:-13px;
+  margin-bottom:10px;
+  font-weight:bold;
+  color:white;
+  padding:6px 22px 0px 22px;
+}
+
+.rag-bar-title{float:left}
+.rag-bar-status{float:right}
+
+
+  // Status Lights ========================================================
+
+  .status{
+    // font-family: 'Glyphicons Halflings';
+    // content: "\e080" ;
+  }
+
+  .status:before{
+    content: "" ;
+    display: inline-block;
+    border-radius:50%;
+    border: 2px solid white;
+    float:left;
+    background-image: url("../graphics/panel_highlight.png");
+
+    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+    text-align:center;
+    color:white;
+  }
+
+  .status-alert:before{
+    background-color:$orange;
+    content: "A" ;
+  }
+
+  .status-warning:before{
+    background-color:$yellow;
+    content: "W" ;
+  }
+
+  .status-success:before{
+    background-color:$success;
+    content: "S" ;
+  }
+
+  .status-danger:before{
+    background-color:$danger;
+    content: "D" ;
+  }
+
+  .status-none:before{
+    background-color:transparent;
+    content: "N" ;
+    color:$grey10;
+    border-color:$grey10;
+  }
+
+// Table specific Status Lights ================
+.table div{ 
+  &.status:before{
+    height: 30px;
+    width: 30px;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    padding-top:3px;
+    padding-left:1px;
+  }
+  &.status-alert:before{ padding-left:1px; }
+  &.status-danger:before{ padding-left:2px; }
+}
+
+.status-col{ 
+  padding: 4px 0px 4px 12px !important; 
+  width:20px;
+}
+
+
+// RAG Buttons ====================================================
+
+
+.rag-buttons{
+  margin-top:10px;
+}
+
+.rag-btn{
+  background-color:$grey04;
+  color: $grey16;
+  -webkit-box-shadow: none;  // This removes the standard button shadows
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+  border-left: 1px solid $grey06;
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+      -moz-box-shadow:    inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+      box-shadow:         inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+    }
+  }
+}
+
+
+
+.rag-btn.rag-btn-red.selected{
+  background-color:$rag-red;
+}
+.rag-btn.rag-btn-red.selected:active{
+  background-color: darken($rag-red, 5%);
+}
+.rag-btn-green.selected{
+  background-color:$rag-green;
+}
+.rag-btn.rag-btn-green.selected:active{
+  background-color: darken($rag-green, 5%);
+}
+.rag-btn.rag-btn-amber.selected{
+  background-color:$rag-amber;
+}
+.rag-btn.rag-btn-amber.selected:active{
+  background-color: darken($rag-amber, 5%);
+}
+.rag-btn.rag-btn-na.selected{
+  background-color:$rag-na;
+}
+.rag-btn.rag-btn-na.selected:active{
+  background-color: darken($rag-na, 5%);
+}
+
+.rag-btn.rag-btn-red.selected,
+.rag-btn.rag-btn-green.selected,
+.rag-btn.rag-btn-amber.selected,
+.rag-btn.rag-btn-na.selected{
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow:    inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+  box-shadow:         inset 0px 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+
+
+.rag-btn-red{ 
+  border-left:none;
+  // color: $rag-red;
+}
+.rag-btn-red:hover { 
+  background-color: $grey06; 
+  // color: $rag-red; 
+}
+.rag-btn-red:focus,
+.rag-btn.rag-btn-red.selected { 
+  background-color: $rag-red; 
+  border-color: darken($rag-red, 0%);
+  color: white; 
+}
+.rag-btn-red:active { 
+  background-color: darken($rag-red, 5%); 
+}
+
+.rag-btn-green{ 
+  // color: $rag-green;
+}
+.rag-btn-green:hover { 
+  background-color: $grey06; 
+  // color: $rag-green; 
+}
+.rag-btn-green:focus,
+.rag-btn.rag-btn-green.selected { 
+  background-color: $rag-green; 
+  border-color: darken($rag-green, 0%);
+  color: white; 
+}
+.rag-btn-green:active { 
+  background-color: darken($rag-green, 5%); 
+}
+
+.rag-btn-amber{ 
+  // color: darken($rag-amber, 5%);
+}
+.rag-btn-amber:hover { 
+  background-color: $grey06; 
+  // color: $rag-amber; 
+}
+.rag-btn-amber:focus,
+.rag-btn.rag-btn-amber.selected { 
+  background-color: $rag-amber; 
+  border-color: darken($rag-amber, 0%);
+  color: white; 
+}
+.rag-btn-amber:active { 
+  background-color: darken($rag-amber, 5%); 
+}
+
+.rag-btn-na{ 
+  // color: $rag-na;
+}
+.rag-btn-na:hover { 
+  background-color: $grey06; 
+  // color: $rag-na; 
+}
+.rag-btn-na:focus,
+.rag-btn.rag-btn-na.selected { 
+  background-color: $rag-na; 
+  border-color: darken($rag-na, 0%);
+  color: white; 
+}
+.rag-btn-na:active, { 
+  background-color: darken($rag-na, 5%); 
+}
+
