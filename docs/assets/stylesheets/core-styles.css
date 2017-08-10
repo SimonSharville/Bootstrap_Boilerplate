@@ -7658,6 +7658,12 @@ li p {
 .menu-large {
   position: static !important; }
 
+.megamenu .title {
+  color: #211F0F;
+  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-size: 1.25em;
+  padding: 0 15px; }
+
 .megamenu {
   padding: 10px 5px !important;
   width: 100%;
@@ -7721,7 +7727,7 @@ li p {
   background-color: #C7C4C2;
   margin: 6px 0; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .megamenu {
     margin-left: 0;
     margin-right: 0;
@@ -7732,7 +7738,7 @@ li p {
   .megamenu > li {
     margin-bottom: 0px; }
   .megamenu > li > ul > li > a {
-    padding: 3px 10px; }
+    padding: 3px 5px; }
   .megamenu > li:last-child {
     margin-bottom: 0; }
   .megamenu .divider {
