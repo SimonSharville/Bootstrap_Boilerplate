@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "sa-quote";
-  src:url("../fonts/sa-quote.eot");
-  src:url("../fonts/sa-quote.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/sa-quote.woff") format("woff"),
-    url("../fonts/sa-quote.ttf") format("truetype"),
-    url("../fonts/sa-quote.svg#sa-quote") format("svg");
+  font-family: "sa-icon";
+  src:url("../fonts/sa-icon.eot");
+  src:url("../fonts/sa-icon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/sa-icon.woff") format("woff"),
+    url("../fonts/sa-icon.ttf") format("truetype"),
+    url("../fonts/sa-icon.svg#sa-icon") format("svg");
   font-weight: normal;
   font-style: normal;
 
 }
 
-/*[data-icon]:before {
-  font-family: "sa-quote" !important;
+[data-icon]:before {
+  font-family: "sa-icon" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -27,7 +27,7 @@
 
 [class^="sa-"]:before,
 [class*=" sa-"]:before {
-  font-family: "sa-quote" !important;
+  font-family: "sa-icon" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -38,6 +38,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sa-sa-quote:before {
+.sa-quote:before {
+  content: "\61";
+}
+.sa-arrow-up-circle-o:before {
   content: "\62";
-}*/
+}
+.sa-sa-arrow-up-circle:before {
+  content: "\63";
+}
+.sa-arrow-down-circle-o:before {
+  content: "\64";
+}
+.sa-arrow-down-circle:before {
+  content: "\65";
+}
+.sa-arrow-left-circle:before {
+  content: "\67";
+}
+.sa-arrow-left-circle-o:before {
+  content: "\66";
+}
+.sa-arrow-right-circle:before {
+  content: "\69";
+}
+.sa-arrow-right-circle-o:before {
+  content: "\68";
+}
+.sa-circle:before {
+  content: "\6a";
+}
+.sa-circle-dot:before {
+  content: "\6b";
+}
+.sa-dot:before {
+  content: "\6c";
+}

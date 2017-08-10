@@ -67,18 +67,62 @@ body {
   margin-bottom:100px;
 }
 
-.divider{
-  border-top: 1px solid $client;
-  margin-top:30px;
-  margin-bottom:5px;
-}
-.divider-dashed{
-  border-top: 1px dashed $client;
-  margin-top:20px;
-  margin-bottom:20px;
+
+
+// Force elements out of a container =========================================
+// Will need adjusting if you remove the above Grid Adjustment settings
+
+.full-row {
+  margin-left:-20px; 
+  margin-right:-20px;
+  width: calc(100% + 40px); 
 }
 
-// Adjustments and Tweaks ==========================
+.full-col {
+  margin-left:-10px; 
+  margin-right:-10px;
+  width: calc(100% + 20px); 
+}
+
+
+@media (max-width: 767px){
+  .breakout {
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+
+}
+@media (min-width: 768px) {
+  .breakout {
+    // width: 750px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 725px / 2);
+    margin-right: calc(-50vw + 725px / 2);
+  }
+}
+@media (min-width: 992px) {
+  .breakout {
+    // width: 970px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 945px / 2);
+    margin-right: calc(-50vw + 945px / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .breakout {
+    // width: 1170px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 1145px / 2);
+    margin-right: calc(-50vw + 1145px / 2);
+  }
+}
+
+// Margin Adjustments and Tweaks ==========================
+
+.margin-top-5{ margin-top:-5px; }
+
+.margin-bottom-5{ margin-bottom:-5px; }
 
 .margin-top-10{ margin-top:-10px; }
 
@@ -100,6 +144,10 @@ body {
 
 .margin-bottom-50{ margin-bottom:-50px; }
 
+.margin-top5{ margin-top:5px; }
+
+.margin-bottom5{ margin-bottom:5px; }
+
 .margin-top10{ margin-top:10px; }
 
 .margin-bottom10{ margin-bottom:10px; }
@@ -119,5 +167,19 @@ body {
 .margin-top50{ margin-top:50px; }
 
 .margin-bottom50{ margin-bottom:50px; }
+
+// Padding Adjustments and Tweaks ==========================
+
+.padding-top5{ padding-top:5px; }
+
+.padding-bottom5{ padding-top:5px; }
+
+.padding-top10{ padding-top:10px; }
+
+.padding-bottom10{ padding-top:10px; }
+
+.padding-top20{ padding-top:20px; }
+
+.padding-bottom20{ padding-top:20px; }
 
 

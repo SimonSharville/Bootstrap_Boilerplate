@@ -1,0 +1,344 @@
+
+$border-default: $grey06;
+
+$border-dark: $grey18;
+
+/* HRs and Dividers ============================= */
+
+hr{
+  border-top: 1px solid $border-default;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+hr.dashed{border-top: 1px dashed $border-default;}
+hr.client{border-top: 1px solid $client;}
+hr.dotted-client{border-top: 1px dotted $client;}
+hr.dashed-client{border-top: 1px dashed $client;}
+hr.admin{border-top: 1px solid $admin;}
+hr.dashed-admin{border-top: 1px dashed $admin;}
+hr.dark{border-top: 1px solid $border-dark;}
+hr.dashed-dark{border-top: 1px dashed $border-dark;}
+hr.white{border-top: 1px solid white;}
+hr.dashed-white{border-top: 1px dashed white;}
+
+.container-fluid hr{
+  margin: 15px -15px 25px -15px;
+}
+
+.container-fluid .row hr{
+  margin: 15px -10px 25px -10px;
+}
+
+.container-fluid .row [class^='col-'] hr{
+  margin: 15px -20px 25px -20px;
+}
+
+.divider{
+  border-top: 1px solid $border-default;
+  margin: 15px 0px 15px 0px
+}
+.divider-dashed{
+  border-top: 1px dashed $border-default;
+}
+
+.divider-client{
+  border-top: 1px solid $client;
+}
+.divider-dashed-client{
+  border-top: 1px dashed $client;
+}
+
+.divider-dark{
+  border-top: 1px solid $border-dark;
+}
+.divider-dashed-dark{
+  border-top: 1px dashed $border-dark;
+}
+
+.divider-white{
+  border-top: 1px solid white;
+}
+.divider-dashed-white{
+  border-top: 1px dashed white;
+}
+
+.divider-admin{
+  border-top: 1px solid $admin;
+}
+.divider-dashed-admin{
+  border-top: 1px dashed $admin;
+}
+
+// HRs with Dots ========================
+
+.dot-start:before{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  color:$border-default;
+}
+.dot-middle:before{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  left: calc(50% - 0.45em);
+  color:$border-default;
+}
+.dot-end:after{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  left: calc(100% - 0.9em);
+  color:$border-default;
+}
+.dot-start-end:before{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  color:$border-default;
+}
+.dot-start-end:after{
+  content: "\6c";
+  font-family: "sa-icon" !important;
+  position:relative;
+  top:-1.25em;
+  font-size:0.6em;
+  left: calc(100% - 1.9em);
+  color:$border-default;
+}
+
+.client.dot-start:before, .client.dot-middle:before, .client.dot-end:after, .client.dot-start-end:before, .client.dot-start-end:after{
+  color:$client;
+}
+.dashed-client.dot-start:before, .dashed-client.dot-middle:before, .dashed-client.dot-end:after, .dashed-client.dot-start-end:before, .dashed-client.dot-start-end:after{
+  color:$client;
+}
+
+.admin.dot-start:before, .admin.dot-middle:before, .admin.dot-end:after, .admin.dot-start-end:before, .admin.dot-start-end:after{
+  color:$admin;
+}
+.admin-admin.dot-start:before, .dashed-admin.dot-middle:before, .dashed-admin.dot-end:after, .dashed-admin.dot-start-end:before, .dashed-admin.dot-start-end:after{
+  color:$admin;
+}
+
+.dark.dot-start:before, .dark.dot-middle:before, .dark.dot-end:after, .dark.dot-start-end:before, .dark.dot-start-end:after{
+  color:$border-dark;
+}
+.dark-client.dot-start:before, .dashed-dark.dot-middle:before, .dashed-dark.dot-end:after .dashed-dark.dot-start-end:before, .dashed-dark.dot-start-end:after{
+  color:$border-dark;
+}
+.white.dot-start:before, .white.dot-middle:before, .white.dot-end:after, .white.dot-start-end:before, .white.dot-start-end:after{
+  color:white;
+}
+.white-client.dot-start:before, .dashed-white.dot-middle:before, .dashed-white.dot-end:after, .dashed-white.dot-start-end:before, .dashed-white.dot-start-end:after{
+  color:white;
+}
+
+
+
+// Perforations ========================
+
+.perf{
+  display:block;
+  width:100%;
+  height: 16px;
+  background-repeat: repeat-x;
+  background-position: -4px 0px;
+  margin: 15px -15px 15px 0px;
+}
+
+.container-fluid .perf{
+  margin: 15px -15px 25px -15px;
+  width: calc(100% + 30px);
+}
+
+.container-fluid .row .perf{
+  margin: 15px -10px 25px -10px;
+  width: calc(100% + 20px);
+}
+
+.container-fluid .row [class^='col-'] .perf{
+  margin: 15px -20px 25px -20px;
+  width: calc(100% + 40px);
+}
+
+.perf {
+  background-image: url("../graphics/dot_grey04.png");
+}
+
+.perf-client {
+  background-image: url("../graphics/dot_turq.png");
+}
+
+.perf-dark {
+  background-image: url("../graphics/dot_grey14.png");
+}
+
+.perf-white {
+  background-image: url("../graphics/dot_white.png");
+}
+
+.panel .perf, .panel hr, .panel .divider{
+  margin-left:-15px;
+  margin-right:-15px;
+  width: calc(100% + 30px);
+}
+
+// Vertical Rules between columns =====================
+// Only for Medium screens and up
+
+@media (min-width: 768px){
+  .vr{
+    border-right:1px solid $border-default;
+  }
+  .vr:last-child{
+    border-right:0px solid $border-default;
+  }
+
+  .vr-client{
+    border-right:1px solid $client;
+  }
+  .vr-client:last-child{
+    border-right:0px solid $client;
+  }
+
+  .vr-admin{
+    border-right:1px solid $admin;
+  }
+  .vr-admin:last-child{
+    border-right:0px solid $admin;
+  }
+
+  .vr-dark{
+    border-right:1px solid $border-dark;;
+  }
+  .vr-dark:last-child{
+    border-right:0px solid $border-dark;;
+  }
+
+  .vr-white{
+    border-right:1px solid white;
+  }
+  .vr-white:last-child{
+    border-right:0px solid white;
+  }
+}
+
+
+.col-xs-6.vr{
+  border-right:1px solid $border-default;
+}
+.col-xs-6.vr:last-child{
+  border-right:0px solid $border-default;
+}
+.col-xs-6.vr-client{
+  border-right:1px solid $client;
+}
+.col-xs-6.vr-client:last-child{
+  border-right:0px solid $client;
+}
+
+.col-xs-6.vr-admin{
+  border-right:1px solid $admin;
+}
+.col-xs-6.vr-admin:last-child{
+  border-right:0px solid $admin;
+}
+
+.col-xs-6.vr-dark{
+  border-right:1px solid $border-dark;;
+}
+.col-xs-6.vr-dark:last-child{
+  border-right:0px solid $border-dark;;
+}
+
+.col-xs-6.vr-white{
+  border-right:1px solid white;
+}
+.col-xs-6.vr-white:last-child{
+  border-right:0px solid white;
+}
+
+
+
+@media (min-width: 768px){
+  .vr-dashed{
+    border-right:1px dashed $border-default;
+  }
+  .vr-dashed:last-child{
+    border-right:0px dashed $border-default;
+  }
+
+  .vr-dashed-client{
+    border-right:1px dashed $client;
+  }
+  .vr-dashed-client:last-child{
+    border-right:0px dashed $client;
+  }
+
+  .vr-dashed-admin{
+    border-right:1px dashed $admin;
+  }
+  .vr-dashed-admin:last-child{
+    border-right:0px dashed $admin;
+  }
+
+  .vr-dashed-dark{
+    border-right:1px dashed $border-dark;
+  }
+  .vr-dashed-dark:last-child{
+    border-right:0px dashed $border-dark;
+  }
+
+  .vr-dashed-white{
+    border-right:1px dashed white;
+  }
+  .vr-dashed-white:last-child{
+    border-right:0px dashed white;
+  }
+
+}
+.col-xs-6.vr-dashed{
+  border-right:1px dashed $border-default;
+}
+.col-xs-6.vr-dashed:last-child{
+  border-right:0px dashed $border-default;
+}
+
+.col-xs-6.vr-dashed-client{
+  border-right:1px dashed $client;
+}
+.col-xs-6.vr-dashed-client:last-child{
+  border-right:0px dashed $client;
+}
+
+.col-xs-6.vr-dashed-admin{
+  border-right:1px dashed $admin;
+}
+.col-xs-6.vr-dashed-admin:last-child{
+  border-right:0px dashed $admin;
+}
+
+.col-xs-6.vr-dashed-dark{
+  border-right:1px dashed $border-dark;
+}
+.col-xs-6.vr-dashed-dark:last-child{
+  border-right:0px dashed $border-dark;
+}
+
+.col-xs-6.vr-dashed-white{
+  border-right:1px dashed white;
+}
+.col-xs-6.vr-dashed-white:last-child{
+  border-right:0px dashed white;
+}
+
+

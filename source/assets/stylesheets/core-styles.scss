@@ -8,13 +8,15 @@
   @import "../fonts/SARD/css/sard-icons.css";
 
 // Global styles =======================
-  @import "global/sard-colours";
+  @import "global/colours";
 
   @import "global/font-roboto";
 
   @import "global/font-robotoslab";
 
   @import "global/scroll-to-top";
+
+  @import "global/perforations";
 
   @import "global/typography";
 
@@ -30,4 +32,17 @@
 // Component styles =======================
 
 @import "components/navbar";
+
 @import "components/megamenu";
+
+@import "components/rag-status";
+
+@import "components/panels";
+
+@import "components/tables";
+
+@import "components/buttons";
+
+@import "components/button-groups";
+
+@import "components/nav-tabs";
