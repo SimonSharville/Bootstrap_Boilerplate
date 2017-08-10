@@ -70,11 +70,11 @@ $navFont        : $defaultFont_Bold;
   border-radius: 0;
 }
 
-.navbar-nav > li > .dropdown-menu{
+.navbar-default .navbar-nav > li > .dropdown-menu{
   padding:0;
 }
 
-.navbar-nav > li > .dropdown-menu .divider{
+.navbar-default .navbar-nav > li > .dropdown-menu .divider{
   margin:5px 0;
 }
 
@@ -93,7 +93,7 @@ $navFont        : $defaultFont_Bold;
   color: $navText;
 }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+.navbar-default .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
   background-color: darken($navDropdown, 5%);
 }
 
@@ -170,19 +170,19 @@ $navFont        : $defaultFont_Bold;
 // Navbar Footer ============================================
 
 
-.navbar-footer{
+.navbar-footer-default{
   background-color:$grey16;
   color:$navText;
   border:none;
   font-family: $navFont;
   min-height:auto;
 }
-.navbar-footer a:link{
+.navbar-footer-default a:link{
   color:$navBase;
 }
-.navbar-footer a:visited{
+.navbar-footer-default a:visited{
   color:$navBase;
 }
-.navbar-footer a:hover{
+.navbar-footer-default a:hover{
   color:$navHover;
 }

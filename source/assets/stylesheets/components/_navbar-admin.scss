@@ -70,11 +70,11 @@ $navFont        : $defaultFont_Bold;
   border-radius: 0;
 }
 
-.navbar-nav > li > .dropdown-menu{
+.navbar-admin .navbar-nav > li > .dropdown-menu{
   padding:0;
 }
 
-.navbar-nav > li > .dropdown-menu .divider{
+.navbar-admin .navbar-nav > li > .dropdown-menu .divider{
   margin:5px 0;
 }
 
@@ -93,7 +93,7 @@ $navFont        : $defaultFont_Bold;
   color: $navText;
 }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+.navbar-admin .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
   background-color: darken($navDropdown, 5%);
 }
 
