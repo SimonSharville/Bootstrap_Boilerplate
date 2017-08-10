@@ -186,7 +186,8 @@ $navFont        : $defaultFont_Bold;
   color:$navText;
   border:none;
   font-family: $navFont;
-  min-height:auto;
+  min-height:35px;
+  height:35px;
 }
 .navbar-footer-default a:link{
   color:$navBase;

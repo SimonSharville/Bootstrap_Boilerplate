@@ -7663,7 +7663,8 @@ li p {
   color: white;
   border: none;
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
-  min-height: auto; }
+  min-height: 35px;
+  height: 35px; }
 
 .navbar-footer-default a:link {
   color: #00b2b2; }
@@ -7775,7 +7776,8 @@ li p {
   color: white;
   border: none;
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
-  min-height: auto; }
+  min-height: 35px;
+  height: 35px; }
 
 .navbar-footer-admin a:link {
   color: #e50073; }
