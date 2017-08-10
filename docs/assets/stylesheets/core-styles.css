@@ -7799,8 +7799,7 @@ li p {
   padding: 10px 5px !important;
   width: 100%;
   background-color: white !important;
-  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
-  min-height: 100px; }
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif; }
 
 .megamenu > li > ul {
   margin: 0;
