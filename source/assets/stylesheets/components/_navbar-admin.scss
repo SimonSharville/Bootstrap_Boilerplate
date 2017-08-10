@@ -1,6 +1,6 @@
-/* Navbar Default  ================================================ */
+/* Navbar Admin  ================================================ */
 
-$navBase        : darken($client, 0%);
+$navBase        : darken($admin, 0%);
 $navHover       : darken($navBase, 15%);
 $navFocus       : darken($navBase, 20%);
 $navActive      : darken($navBase, 20%);
@@ -10,7 +10,7 @@ $navDropdown    : darken($navBase, 20%);
 $navFont        : $defaultFont_Bold;
 
 
-.navbar-default {
+.navbar-admin {
   background-color:$navBase;
   color:$navText;
   border:none;
@@ -20,51 +20,51 @@ $navFont        : $defaultFont_Bold;
   height:50px;
 }
 
-.navbar-default .navbar-brand,
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
+.navbar-admin .navbar-brand,
+.navbar-admin .navbar-brand:hover,
+.navbar-admin .navbar-brand:focus {
   color: $navText;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-admin .navbar-nav > li > a {
   color: $navText;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-admin .navbar-nav > li > a:hover {
   background-color: $navHover;
   color: $navText;
 }
 
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-admin .navbar-nav > li > a:focus {
   background-color:$navFocus;
   color: $navText;
 }
 
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover{
+.navbar-admin .navbar-nav > .active > a, 
+.navbar-admin .navbar-nav > .active > a:hover{
   background-color:$navActive;
   color: $navText;
 }
 
-.navbar-default .navbar-nav > .active > a:focus{
+.navbar-admin .navbar-nav > .active > a:focus{
   background-color:$navActiveFocus;
   color: $navText;
 }
 
-.navbar-default .navbar-nav > .open > a, 
-.navbar-default .navbar-nav > .open > a:hover{
+.navbar-admin .navbar-nav > .open > a, 
+.navbar-admin .navbar-nav > .open > a:hover{
   background-color:$navActive;
   color: $navText;
 }
 
-.navbar-default .navbar-nav > .open > a:focus{
+.navbar-admin .navbar-nav > .open > a:focus{
   background-color:$navActiveFocus;
   color: $navText;
 }
 
 // Dropdown menu ===================================================
 
-.navbar-default .navbar-nav .dropdown-menu{
+.navbar-admin .navbar-nav .dropdown-menu{
   border:none;
   background-color:$navDropdown;
   border-radius: 0;
@@ -78,17 +78,17 @@ $navFont        : $defaultFont_Bold;
   margin:5px 0;
 }
 
-.navbar-default .navbar-nav .dropdown-menu > li > a {
+.navbar-admin .navbar-nav .dropdown-menu > li > a {
   font-family: $navFont;
   color: $navText;
 }
 
-.navbar-default .navbar-nav .dropdown-menu > li > a:hover{
+.navbar-admin .navbar-nav .dropdown-menu > li > a:hover{
   background-color: darken($navDropdown, 10%);
   color: $navText;
 }
 
-.navbar-default .navbar-nav .dropdown-menu > li > a:focus, {
+.navbar-admin .navbar-nav .dropdown-menu > li > a:focus, {
   background-color: darken($navDropdown, 5%);
   color: $navText;
 }
@@ -97,20 +97,20 @@ $navFont        : $defaultFont_Bold;
   background-color: darken($navDropdown, 5%);
 }
 
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover{
+.navbar-admin .navbar-nav > .open > a, .navbar-admin .navbar-nav > .open > a:hover{
   background-color:$navDropdown;
 }
 
 @media (max-width: 767px){
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
     background-color:$navDropdown;
     color: $navText;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover{
     background-color: darken($navDropdown, 10%);
     color: $navText;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, {
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus, {
     background-color: darken($navDropdown, 10%);
     color: $navText;
   }
@@ -118,19 +118,19 @@ $navFont        : $defaultFont_Bold;
 
 // Toggle Button ===================================================
 
-.navbar-default .navbar-toggle{
+.navbar-admin .navbar-toggle{
   border:none;
   background-color:$navActive;
 }
 
-.navbar-default .navbar-toggle:hover{
+.navbar-admin .navbar-toggle:hover{
   background-color: $navHover;
 }
-.navbar-default .navbar-toggle:focus{
+.navbar-admin .navbar-toggle:focus{
   background-color: $navActiveFocus;
 }
 
-.navbar-default .navbar-toggle .icon-bar{
+.navbar-admin .navbar-toggle .icon-bar{
   background-color: $navText;
 }
 
@@ -154,35 +154,25 @@ $navFont        : $defaultFont_Bold;
     padding-right: 20px; // changed from 15px
 }
 
-// =================================================================
-// Navbar Inverse ============================================
-
-.navbar-inverse{
-  border:none;
-  border-radius: 0;
-  font-family: $navFont;
-  min-height:50px;
-  height:50px;
-}
 
 
 // =================================================================
-// Navbar Footer ============================================
+// Navbar Footer Admin  ============================================
 
 
-.navbar-footer{
+.navbar-footer-admin{
   background-color:$grey16;
   color:$navText;
   border:none;
   font-family: $navFont;
   min-height:auto;
 }
-.navbar-footer a:link{
+.navbar-footer-admin a:link{
   color:$navBase;
 }
-.navbar-footer a:visited{
+.navbar-footer-admin a:visited{
   color:$navBase;
 }
-.navbar-footer a:hover{
+.navbar-footer-admin a:hover{
   color:$navHover;
 }

@@ -7534,7 +7534,9 @@ li p {
   color: white;
   border: none;
   border-radius: 0;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif; }
+  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  min-height: 50px;
+  height: 50px; }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
@@ -7639,6 +7641,13 @@ li p {
   padding-left: 20px;
   padding-right: 20px; }
 
+.navbar-inverse {
+  border: none;
+  border-radius: 0;
+  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  min-height: 50px;
+  height: 50px; }
+
 .navbar-footer {
   background-color: #403D3D;
   color: white;
@@ -7654,6 +7663,135 @@ li p {
 
 .navbar-footer a:hover {
   color: #006666; }
+
+/* Navbar Admin  ================================================ */
+.navbar-admin {
+  background-color: #e50073;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  min-height: 50px;
+  height: 50px; }
+
+.navbar-admin .navbar-brand,
+.navbar-admin .navbar-brand:hover,
+.navbar-admin .navbar-brand:focus {
+  color: white; }
+
+.navbar-admin .navbar-nav > li > a {
+  color: white; }
+
+.navbar-admin .navbar-nav > li > a:hover {
+  background-color: #99004d;
+  color: white; }
+
+.navbar-admin .navbar-nav > li > a:focus {
+  background-color: #7f0040;
+  color: white; }
+
+.navbar-admin .navbar-nav > .active > a,
+.navbar-admin .navbar-nav > .active > a:hover {
+  background-color: #7f0040;
+  color: white; }
+
+.navbar-admin .navbar-nav > .active > a:focus {
+  background-color: #7f0040;
+  color: white; }
+
+.navbar-admin .navbar-nav > .open > a,
+.navbar-admin .navbar-nav > .open > a:hover {
+  background-color: #7f0040;
+  color: white; }
+
+.navbar-admin .navbar-nav > .open > a:focus {
+  background-color: #7f0040;
+  color: white; }
+
+.navbar-admin .navbar-nav .dropdown-menu {
+  border: none;
+  background-color: #7f0040;
+  border-radius: 0; }
+
+.navbar-nav > li > .dropdown-menu {
+  padding: 0; }
+
+.navbar-nav > li > .dropdown-menu .divider {
+  margin: 5px 0; }
+
+.navbar-admin .navbar-nav .dropdown-menu > li > a {
+  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  color: white; }
+
+.navbar-admin .navbar-nav .dropdown-menu > li > a:hover {
+  background-color: #4c0026;
+  color: white; }
+
+.navbar-admin .navbar-nav .dropdown-menu > li > a:focus {
+  background-color: #660033;
+  color: white; }
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background-color: #660033; }
+
+.navbar-admin .navbar-nav > .open > a,
+.navbar-admin .navbar-nav > .open > a:hover {
+  background-color: #7f0040; }
+
+@media (max-width: 767px) {
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
+    background-color: #7f0040;
+    color: white; }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #4c0026;
+    color: white; }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #4c0026;
+    color: white; } }
+
+.navbar-admin .navbar-toggle {
+  border: none;
+  background-color: #7f0040; }
+
+.navbar-admin .navbar-toggle:hover {
+  background-color: #99004d; }
+
+.navbar-admin .navbar-toggle:focus {
+  background-color: #7f0040; }
+
+.navbar-admin .navbar-toggle .icon-bar {
+  background-color: white; }
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: 100%;
+  border: none;
+  box-shadow: none; }
+
+.navbar-fixed-top .navbar-collapse .navbar-nav,
+.navbar-fixed-bottom .navbar-collapse .navbar-nav {
+  margin: 0 -15px; }
+
+.navbar-fixed-top .navbar-collapse .navbar-nav > li > a,
+.navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.navbar-footer-admin {
+  background-color: #403D3D;
+  color: white;
+  border: none;
+  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  min-height: auto; }
+
+.navbar-footer-admin a:link {
+  color: #e50073; }
+
+.navbar-footer-admin a:visited {
+  color: #e50073; }
+
+.navbar-footer-admin a:hover {
+  color: #99004d; }
 
 .menu-large {
   position: static !important; }
