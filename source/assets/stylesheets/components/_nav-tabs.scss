@@ -668,3 +668,48 @@ $v-tab-number-bg-active:  $grey18;
   padding-top:8px;
 }
 
+// Perfs & HRs inside Nav-tabs ==============================
+
+.tab-content > .tab-pane .row{
+  margin-left:-20px;
+  margin-right:-20px;
+}
+
+.tab-content > .tab-pane .row hr{
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.tab-content > .tab-pane .row hr.full-col{
+  margin-left:-10px;
+}
+
+.tab-content > .tab-pane .row hr.full-row{
+  margin-left:-20px;
+}
+
+.tab-content > .tab-pane .row .perf{
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.tab-content > .tab-pane hr{
+  margin-left:-20px;
+  margin-right:-20px;
+}
+
+.tab-content > .tab-pane > .perf{
+  margin-left:-20px;
+  width: calc(100% + 40px);
+}
+
+.tab-content > .tab-pane .perf.full-col{
+  margin-left:-10px;
+  width: calc(100% + 20px);
+}
+
+.tab-content > .tab-pane .perf.full-row{
+  margin-left:-20px;
+  width: calc(100% + 40px);
+}
+
