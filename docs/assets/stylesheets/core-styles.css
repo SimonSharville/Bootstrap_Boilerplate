@@ -7793,9 +7793,7 @@ textarea {
   border-radius: 4px;
   max-width: 100%;
   line-height: 28px;
-  cursor: text;
-  margin-top: 5px;
-  margin-bottom: 5px; }
+  cursor: text; }
 
 .bootstrap-tagsinput input {
   border: none;
