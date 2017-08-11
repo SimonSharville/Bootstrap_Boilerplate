@@ -151,106 +151,106 @@ div[class*="col-xs-11"], div[class*="col-sm-11"], div[class*="col-lg-11"], div[c
     width:109.2%;       // Swap widths if column-gutter is set to default
     // width:109.2%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% - 0px); 
     }
   }
 }
 
 div[class*="col-xs-10"], div[class*="col-sm-10"], div[class*="col-lg-10"], div[class*="col-xl-10"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:120.11%;       // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:121%;       // Swap widths if column-gutter is set to default
     // width:120.1%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 5px); 
     }
   }
 }
 
 div[class*="col-xs-9"], div[class*="col-sm-9"], div[class*="col-lg-9"], div[class*="col-xl-9"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:133.4%;     // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:134.5%;     // Swap widths if column-gutter is set to default
     // width:133.4%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 5px);
     }
   }
 }
 
 div[class*="col-xs-8"], div[class*="col-sm-8"], div[class*="col-lg-8"], div[class*="col-xl-8"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:150%;     // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:151.5%;     // Swap widths if column-gutter is set to default
     // width:150%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 5px); 
     }
   }
 }
 
 div[class*="col-xs-7"], div[class*="col-sm-7"], div[class*="col-lg-7"], div[class*="col-xl-7"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:171.5%;     // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:172.8%;     // Swap widths if column-gutter is set to default
     // width:171.5%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 5px); 
     }
   }
 }
 
 div[class*="col-xs-6"], div[class*="col-sm-6"], div[class*="col-lg-6"], div[class*="col-xl-6"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:200%;     // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:201.8%;     // Swap widths if column-gutter is set to default
     // width:200%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 10px);
     }
   }
 }
 
 div[class*="col-xs-5"], div[class*="col-sm-5"], div[class*="col-lg-5"], div[class*="col-xl-5"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:240%;     // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:242.3%;     // Swap widths if column-gutter is set to default
     // width:240%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 10px) 
     }
   }
 }
 
 div[class*="col-xs-4"], div[class*="col-sm-4"], div[class*="col-lg-4"], div[class*="col-xl-4"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:300%;     // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:302.5%;     // Swap widths if column-gutter is set to default
     // width:300%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 5px); 
     }
   }
 }
 
 div[class*="col-xs-3"], div[class*="col-sm-3"], div[class*="col-lg-3"], div[class*="col-xl-3"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:400%;       // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:404%;       // Swap widths if column-gutter is set to default
     // width:400%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 5px);
     }
   }
 }
 
 div[class*="col-xs-2"], div[class*="col-sm-2"], div[class*="col-lg-2"], div[class*="col-xl-2"] { 
   .navbar-nav > li > .megamenu{
-    margin-left:0px; // Remove this if column-gutter is set to default
-    width:600%;       // Swap widths if column-gutter is set to default
+    margin-left:-5px; // Remove this if column-gutter is set to default
+    width:606%;       // Swap widths if column-gutter is set to default
     // width:600%;
     @media (max-width: 767px) { // Small screens
-      width:auto;
+      width:calc(100% + 5px);
     }
   }
 }
