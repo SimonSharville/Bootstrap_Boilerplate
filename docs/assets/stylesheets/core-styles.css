@@ -7839,6 +7839,24 @@ textarea {
   content: "\f057";
   padding: 0px 1px; }
 
+.tags-default .bootstrap-tagsinput .tag {
+  background-color: #00B2B2; }
+
+.tags-default .bootstrap-tagsinput .tag:hover {
+  background-color: #00a3a3; }
+
+.tags-default .bootstrap-tagsinput .tag:active {
+  background-color: #009393; }
+
+.tags-admin .bootstrap-tagsinput .tag {
+  background-color: #E50073; }
+
+.tags-admin .bootstrap-tagsinput .tag:hover {
+  background-color: #d6006b; }
+
+.tags-admin .bootstrap-tagsinput .tag:active {
+  background-color: #c60064; }
+
 /* Navbar Default  ================================================ */
 @media (min-width: 768px) {
   .navbar {
