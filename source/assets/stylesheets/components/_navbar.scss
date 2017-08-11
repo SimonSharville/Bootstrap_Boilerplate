@@ -10,14 +10,19 @@ $navDropdown    : darken($navBase, 20%);
 $navFont        : $defaultFont_Bold;
 
 
+@media (min-width: 768px){
+  .navbar{
+    min-height:50px;
+    height:50px;
+  }
+}
+
 .navbar-default {
   background-color:$navBase;
   color:$navText;
   border:none;
   border-radius: 0;
   font-family: $navFont;
-  min-height:50px;
-  height:50px;
 }
 
 .navbar-default .navbar-brand,
@@ -151,7 +156,14 @@ $navFont        : $defaultFont_Bold;
 .navbar-fixed-top .navbar-collapse .navbar-nav > li > a, 
 .navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a{
   padding-left: 20px; // changed from 15px
-    padding-right: 20px; // changed from 15px
+  padding-right: 20px; // changed from 15px
+}
+
+@media (max-width: 767px){
+  .navbar-fixed-top .col-xs-12{
+  padding-left: 0px; // changed from 15px
+  padding-right: 0px; // changed from 15px
+}
 }
 
 // =================================================================
@@ -161,8 +173,7 @@ $navFont        : $defaultFont_Bold;
   border:none;
   border-radius: 0;
   font-family: $navFont;
-  min-height:50px;
-  height:50px;
+
 }
 
 
@@ -175,7 +186,8 @@ $navFont        : $defaultFont_Bold;
   color:$navText;
   border:none;
   font-family: $navFont;
-  min-height:auto;
+  min-height:35px;
+  height:35px;
 }
 .navbar-footer-default a:link{
   color:$navBase;

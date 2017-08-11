@@ -16,8 +16,8 @@ $navFont        : $defaultFont_Bold;
   border:none;
   border-radius: 0;
   font-family: $navFont;
-  min-height:50px;
-  height:50px;
+  // min-height:50px;
+  // height:50px;
 }
 
 .navbar-admin .navbar-brand,
@@ -136,23 +136,23 @@ $navFont        : $defaultFont_Bold;
 
 // Navbar Collapse =================================================
 
-.navbar-fixed-top .navbar-collapse, 
-.navbar-fixed-bottom .navbar-collapse{
-  max-height:100%;
-  border:none;
-  box-shadow:none;
-}
+// .navbar-fixed-top .navbar-collapse, 
+// .navbar-fixed-bottom .navbar-collapse{
+//   max-height:100%;
+//   border:none;
+//   box-shadow:none;
+// }
 
-.navbar-fixed-top .navbar-collapse .navbar-nav, 
-.navbar-fixed-bottom .navbar-collapse .navbar-nav{
-  margin:0 -15px;
-}
+// .navbar-fixed-top .navbar-collapse .navbar-nav, 
+// .navbar-fixed-bottom .navbar-collapse .navbar-nav{
+//   margin:0 -15px;
+// }
 
-.navbar-fixed-top .navbar-collapse .navbar-nav > li > a, 
-.navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a{
-  padding-left: 20px; // changed from 15px
-    padding-right: 20px; // changed from 15px
-}
+// .navbar-fixed-top .navbar-collapse .navbar-nav > li > a, 
+// .navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a{
+//   padding-left: 20px; // changed from 15px
+//     padding-right: 20px; // changed from 15px
+// }
 
 
 
@@ -165,7 +165,8 @@ $navFont        : $defaultFont_Bold;
   color:$navText;
   border:none;
   font-family: $navFont;
-  min-height:auto;
+  min-height:35px;
+  height:35px;
 }
 .navbar-footer-admin a:link{
   color:$navBase;
