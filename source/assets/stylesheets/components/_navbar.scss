@@ -176,7 +176,6 @@ $navFont        : $defaultFont_Bold;
 
 }
 
-
 // =================================================================
 // Navbar Footer ============================================
 
@@ -198,3 +197,19 @@ $navFont        : $defaultFont_Bold;
 .navbar-footer-default a:hover{
   color:$navHover;
 }
+
+// Colours ======================================================
+
+
+.navbar-default .btn { background-color: darken($teal, 5%); color:white!important;}
+.navbar-default .btn:visited { background-color: darken($teal, 5%); color:white!important;}
+.navbar-default .btn:hover { background-color: darken($teal, 7%); color:white!important;}
+.navbar-default .btn:focus { background-color: darken($teal, 9%)!important;}
+.navbar-default .btn:active  { background-color: darken($teal, 11%)!important;}
+
+.navbar-admin .btn { background-color: darken($admin, 30%); color:white!important;}
+.navbar-admin .btn:visited { background-color: darken($admin, 30%); color:white!important;}
+.navbar-admin .btn:hover { background-color: darken($admin, 32%); color:white!important;}
+.navbar-admin .btn:focus { background-color: darken($admin, 35%)!important;}
+.navbar-admin .btn:active  { background-color: darken($admin, 35%)!important;}
+
