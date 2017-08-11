@@ -353,7 +353,8 @@ input, button, select, textarea{
 // Bootstrap Tagsinput ==========================
 // Changes commented out
 
-$tag-color: $turq;
+$tag-color: $client;
+$tag-color-admin: $admin;
 
 .bootstrap-tagsinput {
   background-color: #fff;
@@ -423,4 +424,30 @@ $tag-color: $turq;
 }
 .bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
   // box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+// Tag Colours -----------------------------
+
+.tags-default .bootstrap-tagsinput .tag {
+  background-color:$tag-color;
+}
+
+.tags-default .bootstrap-tagsinput .tag:hover {
+  background-color:darken($tag-color, 3%);
+}
+
+.tags-default .bootstrap-tagsinput .tag:active {
+  background-color:darken($tag-color, 6%);
+}
+
+.tags-admin .bootstrap-tagsinput .tag {
+  background-color:$tag-color-admin;
+}
+
+.tags-admin .bootstrap-tagsinput .tag:hover {
+  background-color:darken($tag-color-admin, 3%);
+}
+
+.tags-admin .bootstrap-tagsinput .tag:active {
+  background-color:darken($tag-color-admin, 6%);
 }
