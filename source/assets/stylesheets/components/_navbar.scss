@@ -10,6 +10,13 @@ $navDropdown    : darken($navBase, 20%);
 $navFont        : $defaultFont_Bold;
 
 
+@media (min-width: 768px){
+  .navbar{
+    min-height:50px;
+    height:50px;
+  }
+}
+
 .navbar-default {
   background-color:$navBase;
   color:$navText;
@@ -68,11 +75,11 @@ $navFont        : $defaultFont_Bold;
   border-radius: 0;
 }
 
-.navbar-nav > li > .dropdown-menu{
+.navbar-default .navbar-nav > li > .dropdown-menu{
   padding:0;
 }
 
-.navbar-nav > li > .dropdown-menu .divider{
+.navbar-default .navbar-nav > li > .dropdown-menu .divider{
   margin:5px 0;
 }
 
@@ -91,7 +98,7 @@ $navFont        : $defaultFont_Bold;
   color: $navText;
 }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+.navbar-default .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
   background-color: darken($navDropdown, 5%);
 }
 
@@ -149,26 +156,60 @@ $navFont        : $defaultFont_Bold;
 .navbar-fixed-top .navbar-collapse .navbar-nav > li > a, 
 .navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a{
   padding-left: 20px; // changed from 15px
-    padding-right: 20px; // changed from 15px
+  padding-right: 20px; // changed from 15px
+}
+
+@media (max-width: 767px){
+  .navbar-fixed-top .col-xs-12{
+  padding-left: 0px; // changed from 15px
+  padding-right: 0px; // changed from 15px
+}
 }
 
 // =================================================================
-// Add adjustments Here ============================================
+// Navbar Inverse ============================================
+
+.navbar-inverse{
+  border:none;
+  border-radius: 0;
+  font-family: $navFont;
+
+}
+
+// =================================================================
+// Navbar Footer ============================================
 
 
-.navbar-footer{
+.navbar-footer-default{
   background-color:$grey16;
   color:$navText;
   border:none;
   font-family: $navFont;
-  min-height:auto;
+  min-height:35px;
+  height:35px;
 }
-.navbar-footer a:link{
+.navbar-footer-default a:link{
   color:$navBase;
 }
-.navbar-footer a:visited{
+.navbar-footer-default a:visited{
   color:$navBase;
 }
-.navbar-footer a:hover{
+.navbar-footer-default a:hover{
   color:$navHover;
 }
+
+// Colours ======================================================
+
+
+.navbar-default .btn { background-color: darken($teal, 5%); color:white!important;}
+.navbar-default .btn:visited { background-color: darken($teal, 5%); color:white!important;}
+.navbar-default .btn:hover { background-color: darken($teal, 7%); color:white!important;}
+.navbar-default .btn:focus { background-color: darken($teal, 9%)!important;}
+.navbar-default .btn:active  { background-color: darken($teal, 11%)!important;}
+
+.navbar-admin .btn { background-color: darken($admin, 30%); color:white!important;}
+.navbar-admin .btn:visited { background-color: darken($admin, 30%); color:white!important;}
+.navbar-admin .btn:hover { background-color: darken($admin, 32%); color:white!important;}
+.navbar-admin .btn:focus { background-color: darken($admin, 35%)!important;}
+.navbar-admin .btn:active  { background-color: darken($admin, 35%)!important;}
+

@@ -1,0 +1,179 @@
+/* Navbar Admin  ================================================ */
+
+$navBase        : darken($admin, 0%);
+$navHover       : darken($navBase, 15%);
+$navFocus       : darken($navBase, 20%);
+$navActive      : darken($navBase, 20%);
+$navText        : white;
+$navActiveFocus : darken($navBase, 20%);
+$navDropdown    : darken($navBase, 20%);
+$navFont        : $defaultFont_Bold;
+
+
+.navbar-admin {
+  background-color:$navBase;
+  color:$navText;
+  border:none;
+  border-radius: 0;
+  font-family: $navFont;
+  // min-height:50px;
+  // height:50px;
+}
+
+.navbar-admin .navbar-brand,
+.navbar-admin .navbar-brand:hover,
+.navbar-admin .navbar-brand:focus {
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > li > a {
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > li > a:hover {
+  background-color: $navHover;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > li > a:focus {
+  background-color:$navFocus;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > .active > a, 
+.navbar-admin .navbar-nav > .active > a:hover{
+  background-color:$navActive;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > .active > a:focus{
+  background-color:$navActiveFocus;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > .open > a, 
+.navbar-admin .navbar-nav > .open > a:hover{
+  background-color:$navActive;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > .open > a:focus{
+  background-color:$navActiveFocus;
+  color: $navText;
+}
+
+// Dropdown menu ===================================================
+
+.navbar-admin .navbar-nav .dropdown-menu{
+  border:none;
+  background-color:$navDropdown;
+  border-radius: 0;
+}
+
+.navbar-admin .navbar-nav > li > .dropdown-menu{
+  padding:0;
+}
+
+.navbar-admin .navbar-nav > li > .dropdown-menu .divider{
+  margin:5px 0;
+}
+
+.navbar-admin .navbar-nav .dropdown-menu > li > a {
+  font-family: $navFont;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav .dropdown-menu > li > a:hover{
+  background-color: darken($navDropdown, 10%);
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav .dropdown-menu > li > a:focus, {
+  background-color: darken($navDropdown, 5%);
+  color: $navText;
+}
+
+.navbar-admin .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+  background-color: darken($navDropdown, 5%);
+}
+
+.navbar-admin .navbar-nav > .open > a, .navbar-admin .navbar-nav > .open > a:hover{
+  background-color:$navDropdown;
+}
+
+@media (max-width: 767px){
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
+    background-color:$navDropdown;
+    color: $navText;
+  }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover{
+    background-color: darken($navDropdown, 10%);
+    color: $navText;
+  }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus, {
+    background-color: darken($navDropdown, 10%);
+    color: $navText;
+  }
+}
+
+// Toggle Button ===================================================
+
+.navbar-admin .navbar-toggle{
+  border:none;
+  background-color:$navActive;
+}
+
+.navbar-admin .navbar-toggle:hover{
+  background-color: $navHover;
+}
+.navbar-admin .navbar-toggle:focus{
+  background-color: $navActiveFocus;
+}
+
+.navbar-admin .navbar-toggle .icon-bar{
+  background-color: $navText;
+}
+
+// Navbar Collapse =================================================
+
+// .navbar-fixed-top .navbar-collapse, 
+// .navbar-fixed-bottom .navbar-collapse{
+//   max-height:100%;
+//   border:none;
+//   box-shadow:none;
+// }
+
+// .navbar-fixed-top .navbar-collapse .navbar-nav, 
+// .navbar-fixed-bottom .navbar-collapse .navbar-nav{
+//   margin:0 -15px;
+// }
+
+// .navbar-fixed-top .navbar-collapse .navbar-nav > li > a, 
+// .navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a{
+//   padding-left: 20px; // changed from 15px
+//     padding-right: 20px; // changed from 15px
+// }
+
+
+
+// =================================================================
+// Navbar Footer Admin  ============================================
+
+
+.navbar-footer-admin{
+  background-color:$grey16;
+  color:$navText;
+  border:none;
+  font-family: $navFont;
+  min-height:35px;
+  height:35px;
+}
+.navbar-footer-admin a:link{
+  color:$navBase;
+}
+.navbar-footer-admin a:visited{
+  color:$navBase;
+}
+.navbar-footer-admin a:hover{
+  color:$navHover;
+}

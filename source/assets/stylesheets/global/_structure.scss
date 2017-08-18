@@ -67,15 +67,55 @@ body {
   margin-bottom:100px;
 }
 
-.divider{
-  border-top: 1px solid $client;
-  margin-top:30px;
-  margin-bottom:5px;
+
+
+// Force elements out of a container =========================================
+// Will need adjusting if you remove the above Grid Adjustment settings
+
+.full-row {
+  margin-left:-20px; 
+  margin-right:-20px;
+  width: calc(100% + 40px); 
 }
-.divider-dashed{
-  border-top: 1px dashed $client;
-  margin-top:20px;
-  margin-bottom:20px;
+
+.full-col {
+  margin-left:-10px; 
+  margin-right:-10px;
+  width: calc(100% + 20px); 
+}
+
+
+@media (max-width: 767px){
+  .breakout {
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+
+}
+@media (min-width: 768px) {
+  .breakout {
+    // width: 750px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 725px / 2);
+    margin-right: calc(-50vw + 725px / 2);
+  }
+}
+@media (min-width: 992px) {
+  .breakout {
+    // width: 970px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 945px / 2);
+    margin-right: calc(-50vw + 945px / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .breakout {
+    // width: 1170px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 1145px / 2);
+    margin-right: calc(-50vw + 1145px / 2);
+  }
 }
 
 // Margin Adjustments and Tweaks ==========================
@@ -127,6 +167,8 @@ body {
 .margin-top50{ margin-top:50px; }
 
 .margin-bottom50{ margin-bottom:50px; }
+
+.margin-bottom100{ margin-bottom:100px; }
 
 // Padding Adjustments and Tweaks ==========================
 
