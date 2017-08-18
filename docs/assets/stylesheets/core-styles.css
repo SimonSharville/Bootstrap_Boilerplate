@@ -7858,6 +7858,14 @@ textarea {
   background-color: #c60064; }
 
 /* Navbar Default  ================================================ */
+@media (max-width: 767px) {
+  .navbar {
+    min-height: 50px;
+    height: auto; }
+  .navbar-header {
+    min-height: 50px;
+    height: 50px; } }
+
 @media (min-width: 768px) {
   .navbar {
     min-height: 50px;
@@ -7870,10 +7878,55 @@ textarea {
   border-radius: 0;
   font-family: "robotobold", Helvetica, Arial, Sans-serif; }
 
+.navbar-brand {
+  font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-size: 2em;
+  line-height: 0.6em;
+  padding: 14.5px 20px 14.5px 14px;
+  min-height: 50px;
+  height: 50px;
+  color: white; }
+
+.navbar-brand > a {
+  color: white;
+  text-decoration: none; }
+
+[class^="navbar-brand"]:before,
+[class*=" navbar-brand"]:before {
+  content: "\e005";
+  font-family: "sa-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  font-size: 1em;
+  line-height: 0em;
+  margin-right: 0.15em;
+  position: relative;
+  top: 0.15em; }
+
+.navbar-default {
+  background-color: #00b2b2;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-family: "robotobold", Helvetica, Arial, Sans-serif; }
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: white; }
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    min-height: 50px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px; } }
 
 .navbar-default .navbar-nav > li > a {
   color: white; }
@@ -7947,7 +8000,9 @@ textarea {
 
 .navbar-default .navbar-toggle {
   border: none;
-  background-color: #004c4c; }
+  background-color: #004c4c;
+  margin-top: 9px;
+  margin-bottom: 9px; }
 
 .navbar-default .navbar-toggle:hover {
   background-color: #006666; }
@@ -7962,43 +8017,57 @@ textarea {
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 100%;
   border: none;
-  box-shadow: none; }
-
-.navbar-fixed-top .navbar-collapse .navbar-nav,
-.navbar-fixed-bottom .navbar-collapse .navbar-nav {
-  margin: 0 -15px; }
-
-.navbar-fixed-top .navbar-collapse .navbar-nav > li > a,
-.navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a {
-  padding-left: 20px;
-  padding-right: 20px; }
+  box-shadow: none;
+  width: calc(100% + 30px); }
 
 @media (max-width: 767px) {
-  .navbar-fixed-top .col-xs-12 {
-    padding-left: 0px;
-    padding-right: 0px; } }
+  .navbar-fixed-top .navbar-collapse .navbar-nav > li > a,
+  .navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a {
+    min-height: auto;
+    height: auto; } }
 
 .navbar-inverse {
   border: none;
   border-radius: 0;
   font-family: "robotobold", Helvetica, Arial, Sans-serif; }
 
-.navbar-footer-default {
+.navbar-fixed-bottom {
   background-color: #403D3D;
   color: white;
   border: none;
   font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-size: 1em;
   min-height: 35px;
   height: 35px; }
 
-.navbar-footer-default a:link {
+.navbar-fixed-bottom a:link {
   color: #00b2b2; }
 
-.navbar-footer-default a:visited {
+.navbar-fixed-bottom a:visited {
   color: #00b2b2; }
 
-.navbar-footer-default a:hover {
-  color: #006666; }
+.navbar-fixed-bottom a:hover {
+  color: #009999; }
+
+.navbar-form {
+  margin-top: 8px;
+  margin-bottom: 8px; }
+
+.navbar .btn {
+  font-size: 14px;
+  padding: 7px 10px;
+  border-radius: 22px;
+  margin-top: -10px; }
+
+@media (max-width: 767px) {
+  .navbar .btn {
+    margin-top: 0px; } }
+
+.navbar .input-group .btn {
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 0px 20px 20px 0px;
+  margin-top: 0px; }
 
 .navbar-default .btn {
   background-color: #003434;
@@ -8121,7 +8190,9 @@ textarea {
 
 .navbar-admin .navbar-toggle {
   border: none;
-  background-color: #7f0040; }
+  background-color: #7f0040;
+  margin-top: 9px;
+  margin-bottom: 9px; }
 
 .navbar-admin .navbar-toggle:hover {
   background-color: #99004d; }
@@ -8255,6 +8326,10 @@ textarea {
   .navbar-second .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: white;
     background-color: #004c4c; } }
+
+.navbar-second form {
+  margin-top: -9px;
+  margin-bottom: -9px; }
 
 .navbar-admin.navbar-second {
   background-color: #b20059; }
