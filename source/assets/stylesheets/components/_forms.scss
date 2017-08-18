@@ -1,0 +1,453 @@
+// Bootstrap Overrides ==========================================================================
+
+textarea{
+  resize: vertical;
+  margin-bottom:5px;
+}
+
+
+// Forms Styles ============================================================================
+
+ fieldset{
+  background-color:$grey02;
+  padding:10px;
+  padding-bottom:5px;
+  border-radius: 5px;
+  margin-bottom:15px;
+}
+
+ .form-group{
+  border-bottom: 1px solid white;
+  padding-bottom:5px;
+  margin-bottom:10px;
+}
+
+ .form-group:last-of-type{
+  border:none;
+  padding-bottom:0px;
+  margin-bottom:5px;
+}
+
+legend{
+  background-color:$grey16;
+  width:calc(100% + 20px);
+  border-bottom: 0px solid $grey16;
+  border-radius: 5px 5px 0px 0px;
+  color:white;
+  margin-left:-10px;
+  margin-right:-10px;
+  margin-bottom: 0px;
+  padding:3px 10px 5px 10px;
+}
+
+ .form-control{
+  margin-bottom:5px;
+}
+
+ .form-control:focus{
+  box-shadow: none;
+  border-color: $turq;
+}
+
+// Form group nested column fixes =====================================
+
+.row.form-group{
+  margin-left:-10px;
+  margin-right:-10px;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+ .row.form-group div[class*="col-"]{
+  padding:0 8px;
+}
+
+.form-group .row{
+  margin-left:-10px;
+  margin-right:-10px;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+.form-group .row div[class*="col-"]{
+  padding:0 8px;
+}
+
+
+// Forms Horizontal ================================================
+
+.form-horizontal{
+}
+
+.form-horizontal{ // This aligns the label & inputs to the field-group
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 0px; // changed from 8px in structure.scss
+    padding-right: 0px; // changed from 8px in structure.scss
+  }
+}
+
+.form-horizontal label{ // This puts a little space between the label and input
+  padding-right: 10px!important;
+  text-align:left;
+}
+
+@media (min-width: 768px) {
+  .form-horizontal .form-group:first-of-type{
+    padding-top:5px;
+  }
+}
+
+// Forms Inline ================================---================
+
+@media (min-width: 768px) {
+    .form-inline{
+    }
+
+    .form-inline .form-group{
+      border:none;
+      padding-bottom:0px;
+      margin-bottom:0px;
+      
+    }
+
+    .form-inline div{
+      padding-right:10px;
+    }
+}
+
+// Supported Controls =============================================
+
+ .help-block {
+  color: $grey16;
+}
+ .help-block:before {
+  font-family: 'FontAwesome';
+  content: "\f059" ;
+  margin-right:5px;
+  color:$client;
+  background-color:white;
+  border-radius:50%;
+  border: 1px solid white;
+}
+
+ .has-success .help-block,
+ .has-success .control-label,
+ .has-success .radio,
+ .has-success .checkbox,
+ .has-success .radio-inline,
+ .has-success .checkbox-inline,
+ .has-success.radio label,
+ .has-success.checkbox label,
+ .has-success.radio-inline label,
+ .has-success.checkbox-inline label {
+  color: $success;
+}
+ .has-success .form-control{
+  border-color: $success;
+}
+ .has-success .form-control:focus{
+  border-color: darken($success, 10%);
+}
+ .has-success .input-group-addon { // not amended yet
+  // color: #3c763d;
+  // border-color: #3c763d;
+  // background-color: #dff0d8;
+}
+ .has-success .form-control-feedback { // not amended yet
+  // color: #3c763d;
+}
+
+ has-warning .help-block,
+ .has-warning .control-label,
+ .has-warning .radio,
+ .has-warning .checkbox,
+ .has-warning .radio-inline,
+ .has-warning .checkbox-inline,
+ .has-warning.radio label,
+ .has-warning.checkbox label,
+ .has-warning.radio-inline label,
+ .has-warning.checkbox-inline label {
+  color: darken($warning, 10%)
+}
+ .has-warning .form-control{
+  border-color: darken($warning, 10%);
+}
+ .has-warning .form-control:focus{
+  border-color: darken($warning, 20%);
+}
+ .has-warning .input-group-addon { // not amended yet
+  // color: #3c763d;
+  // border-color: #3c763d;
+  // background-color: #dff0d8;
+}
+ .has-warning .form-control-feedback { // not amended yet
+  // color: #3c763d;
+}
+
+ .has-error .help-block,
+ .has-error .control-label,
+ .has-error .radio,
+ .has-error .checkbox,
+ .has-error .radio-inline,
+ .has-error .checkbox-inline,
+ .has-error.radio label,
+ .has-error.checkbox label,
+ .has-error.radio-inline label,
+ .has-error.checkbox-inline label {
+  color: darken($danger, 0%)
+}
+ .has-error .form-control{
+  border-color: darken($danger, 0%);
+}
+ .has-error .form-control:focus{
+  border-color: darken($danger, 10%);
+}
+ .has-error .input-group-addon { // not amended yet
+  // color: #3c763d;
+  // border-color: #3c763d;
+  // background-color: #dff0d8;
+}
+ .has-error .form-control-feedback { // not amended yet
+  // color: #3c763d;
+}
+
+// Inputs Tweaks =============================================
+
+ input{
+  margin-bottom:5px;
+}
+
+ .radio{
+  padding-top:2px;
+}
+
+ .radio-inline{
+  padding-top:2px;
+  margin-bottom:5px;
+}
+
+ .sub-label{
+  display:inline-block;
+  padding-top:5px;
+  padding-left:5px;
+}
+
+
+// Input Groups =============================================
+
+ .input-group{
+  margin-top:10px;
+  margin-bottom:5px;
+}
+ .input-group:first-of-type{
+  margin-top:0px;
+}
+ .input-group:last-of-type{
+  margin-top:5px;
+}
+
+ .input-group .form-control{
+  margin-bottom:0px;
+}
+
+ .input-group-addon{
+  background-color:$grey16;
+  color:white;
+  border-color:$grey16;
+}
+
+ .input-group-btn > .btn{
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+ .input-group-lg > .input-group-btn > .btn {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+ .input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+// Added Features =================================================
+
+ .form-group-nested{
+  border-bottom: none;
+  margin-bottom:5px;
+}
+
+ .form-group-divide{
+  text-align: center;
+  border-bottom: 1px solid $grey06;
+  margin-top:-15px;
+  margin-bottom:20px;
+  p{ 
+    display:inline-block;
+    position:relative;
+    top:10px;
+    margin-bottom:-10px;
+    background-color:$grey02;    
+    padding:5px;
+  }
+}
+
+// This is for the little : between times form-controls
+ .control-divider{
+  width:10px;
+  margin-top:5px;
+  margin-left:7px;
+}
+
+// this puts a little space after form-contols when they are inline
+ .form-control-inline div[class*="col-"]{
+  margin-right:10px;
+}
+ .form-control-inline div[class*="col-"]:last-of-type{
+  margin-right:0px;
+}
+
+input, button, select, textarea{
+  line-height:1em;
+}
+
+// Form functions =================================================
+
+// Expanding form groups ====================
+// Used in My Appraisal and Job Planning
+// https://css-tricks.com/exposing-form-fields-radio-button-css/
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s;
+  input[value="true"]:checked ~ &,
+  input[value="true"]:checked ~ & {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 0px 10px 16px;
+    transform: scale(1);
+  }
+}
+
+.reveal-if-active .form-group:first-of-type{
+  margin-top:0px;
+}
+
+// This is meant to remove the border-bottom when the No button is active
+.expandable input[value="false"]{ // CAN'T GET THIS TO WORK
+  border:none!important;
+  margin-bottom:0px!important;
+}
+
+
+
+// Tags Styles =====================================================
+// Bootstrap Tagsinput ==========================
+// Changes commented out
+
+$tag-color: $client;
+$tag-color-admin: $admin;
+
+.bootstrap-tagsinput {
+  background-color: #fff;
+  // border: 1px solid #ccc;
+  border: none;
+  // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: block;
+  padding: 4px 6px;
+  color: #555;
+  vertical-align: middle;
+  border-radius: 4px;
+  max-width: 100%;
+  line-height: 28px;
+  cursor: text;
+  // margin-top:5px;
+  // margin-bottom:5px;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  // border:1px solid red;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 6px;
+  margin: 0;
+  min-width:100px;
+  // width: auto;
+  // max-width: inherit;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  background-color:$tag-color;
+  font-size:1em;
+  margin-right: 2px;
+  color: white;
+}
+.bootstrap-tagsinput .tag:hover {
+  background-color:darken($tag-color, 3%);
+}
+.bootstrap-tagsinput .tag:active {
+  background-color:darken($tag-color, 6%);
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  font-family: 'FontAwesome';
+  content: "\f057";
+  padding: 0px 1px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  // box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  // box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+// Tag Colours -----------------------------
+
+.tags-default .bootstrap-tagsinput .tag {
+  background-color:$tag-color;
+}
+
+.tags-default .bootstrap-tagsinput .tag:hover {
+  background-color:darken($tag-color, 3%);
+}
+
+.tags-default .bootstrap-tagsinput .tag:active {
+  background-color:darken($tag-color, 6%);
+}
+
+.tags-admin .bootstrap-tagsinput .tag {
+  background-color:$tag-color-admin;
+}
+
+.tags-admin .bootstrap-tagsinput .tag:hover {
+  background-color:darken($tag-color-admin, 3%);
+}
+
+.tags-admin .bootstrap-tagsinput .tag:active {
+  background-color:darken($tag-color-admin, 6%);
+}

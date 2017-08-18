@@ -5,3 +5,4 @@
 
 // @codekit-prepend 'core/megamenu.js'
 
+// @codekit-prepend 'core/bootstrap-tagsinput.js'
