@@ -72,7 +72,7 @@ hr.dashed-white{border-top: 1px dashed white;}
 // HRs with Dots ========================
 
 .dot-start:before{
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position:relative;
   top:-1.25em;
@@ -80,7 +80,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   color:$border-default;
 }
 .dot-middle:before{
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position:relative;
   top:-1.25em;
@@ -89,7 +89,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   color:$border-default;
 }
 .dot-end:after{
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position:relative;
   top:-1.25em;
@@ -98,7 +98,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   color:$border-default;
 }
 .dot-start-end:before{
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position:relative;
   top:-1.25em;
@@ -106,7 +106,7 @@ hr.dashed-white{border-top: 1px dashed white;}
   color:$border-default;
 }
 .dot-start-end:after{
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position:relative;
   top:-1.25em;

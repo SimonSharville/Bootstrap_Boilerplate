@@ -6216,7 +6216,7 @@ button.close {
 
 [class^="scrollToTop"]:before,
 [class*=" scrollToTop"]:before {
-  content: "\63";
+  content: "\E014";
   font-family: "sa-icon" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -6313,7 +6313,7 @@ hr.dashed-white {
   border-top: 1px dashed #E50073; }
 
 .dot-start:before {
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position: relative;
   top: -1.25em;
@@ -6321,7 +6321,7 @@ hr.dashed-white {
   color: #C7C4C2; }
 
 .dot-middle:before {
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position: relative;
   top: -1.25em;
@@ -6330,7 +6330,7 @@ hr.dashed-white {
   color: #C7C4C2; }
 
 .dot-end:after {
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position: relative;
   top: -1.25em;
@@ -6339,7 +6339,7 @@ hr.dashed-white {
   color: #C7C4C2; }
 
 .dot-start-end:before {
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position: relative;
   top: -1.25em;
@@ -6347,7 +6347,7 @@ hr.dashed-white {
   color: #C7C4C2; }
 
 .dot-start-end:after {
-  content: "\6c";
+  content: "\E00F";
   font-family: "sa-icon" !important;
   position: relative;
   top: -1.25em;
@@ -6791,7 +6791,7 @@ blockquote.serif {
 
 [class^="quote"]:before,
 [class*=" quote"]:before {
-  content: "\61";
+  content: "\e012";
   font-family: "sa-icon" !important;
   font-style: normal !important;
   font-weight: normal !important;

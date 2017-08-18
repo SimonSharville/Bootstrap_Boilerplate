@@ -364,7 +364,7 @@ blockquote.serif{
 
 [class^="quote"]:before,
 [class*=" quote"]:before {
-  content: "\61";
+  content: "\e012";
   font-family: "sa-icon" !important;
   font-style: normal !important;
   font-weight: normal !important;
