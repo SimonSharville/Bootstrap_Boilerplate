@@ -158,6 +158,13 @@ $secondNavDropdownBG-admin  : darken($second-navbar-admin, 15%);
 // End small screens
 
 
+// Navbar Forms =========================================================
+
+.navbar-second form{
+  margin-top:-9px;
+  margin-bottom:-9px;
+}
+
 // Admin Colours ========================================================
 
 .navbar-admin.navbar-second {

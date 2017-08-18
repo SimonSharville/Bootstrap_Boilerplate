@@ -16,8 +16,6 @@ $navFont        : $defaultFont_Bold;
   border:none;
   border-radius: 0;
   font-family: $navFont;
-  // min-height:50px;
-  // height:50px;
 }
 
 .navbar-admin .navbar-brand,
@@ -121,6 +119,8 @@ $navFont        : $defaultFont_Bold;
 .navbar-admin .navbar-toggle{
   border:none;
   background-color:$navActive;
+  margin-top:9px;
+  margin-bottom:9px;
 }
 
 .navbar-admin .navbar-toggle:hover{
@@ -133,28 +133,6 @@ $navFont        : $defaultFont_Bold;
 .navbar-admin .navbar-toggle .icon-bar{
   background-color: $navText;
 }
-
-// Navbar Collapse =================================================
-
-// .navbar-fixed-top .navbar-collapse, 
-// .navbar-fixed-bottom .navbar-collapse{
-//   max-height:100%;
-//   border:none;
-//   box-shadow:none;
-// }
-
-// .navbar-fixed-top .navbar-collapse .navbar-nav, 
-// .navbar-fixed-bottom .navbar-collapse .navbar-nav{
-//   margin:0 -15px;
-// }
-
-// .navbar-fixed-top .navbar-collapse .navbar-nav > li > a, 
-// .navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a{
-//   padding-left: 20px; // changed from 15px
-//     padding-right: 20px; // changed from 15px
-// }
-
-
 
 // =================================================================
 // Navbar Footer Admin  ============================================
