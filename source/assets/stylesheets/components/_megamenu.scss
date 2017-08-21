@@ -9,7 +9,7 @@
 
 .megamenu .title{
   color:$grey18;
-  font-family: $defaultFont_Bold;
+  font-family: $font-Bold;
   font-size:1.25em;
   padding:0 15px;
 }
@@ -29,6 +29,7 @@
 
 .megamenu> li > ul > li {
   list-style: none;
+  font-family: $font-Regular;
 }
 
 .megamenu> li > ul > li > a {

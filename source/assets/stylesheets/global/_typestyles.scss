@@ -1,225 +1,156 @@
 
-/* TYPOGRAPHY ============================= */
-
-
-
-
-//  TYPOGRAPHY GENERAL ========================================================== 
+/* TYPOGRAPHY STYLES ============================= */
 
   $text:             $grey18;
   $bodytext:         $grey18;
 
-// Mixins ========================
-
-$defaultFont_Thin:    'robotothin', Helvetica, Arial, Sans-serif; 
-$defaultFont_Light:   'robotolight', Helvetica, Arial, Sans-serif; 
-$defaultFont_Regular: 'robotoregular', Helvetica, Arial, Sans-serif; 
-$defaultFont_Medium:  'robotomedium', Helvetica, Arial, Sans-serif; 
-$defaultFont_Bold:    'robotobold', Helvetica, Arial, Sans-serif; 
-$defaultFont_Black:   'robotoblack', Helvetica, Arial, Sans-serif; 
-
-$defaultFont_Thin_Italic:    'robotothin_italic', Helvetica, Arial, Sans-serif; 
-$defaultFont_Light_Italic:   'robotolight_italic', Helvetica, Arial, Sans-serif; 
-$defaultFont_Regular_Italic: 'robotoitalic', Helvetica, Arial, Sans-serif; 
-$defaultFont_Medium_Italic:  'robotomedium_italic', Helvetica, Arial, Sans-serif; 
-$defaultFont_Bold_Italic:    'robotobold_italic', Helvetica, Arial, Sans-serif; 
-$defaultFont_Black_Italic:   'robotoblack_italic', Helvetica, Arial, Sans-serif; 
-
-$secondFont_Thin:    'roboto_slabthin', serif; 
-$secondFont_Light:   'roboto_slablight', serif; 
-$secondFont_Regular: 'roboto_slabregular', serif; 
-$secondFont_Medium: 'roboto_slabregular', serif;
-$secondFont_Bold:  'roboto_slabbold', serif; 
-$secondFont_Black:  'roboto_slabbold', serif; 
-
-
-
-// letter-spacing
+  // letter-spacing
   $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
   $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
   $vslight: 0.025em; 
   $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
   $single: 0.0625em; /* 16 * 0.0625 = 1px */
   $double: 0.125em; /* 16 * 0.125 = 2px */
-  
-   
+
+
+// Mixins =============================================================================
+
+// Comment out the differnt fonts, or mix and match them to set one style for the site. 
+// These link to font-roboto scss fies but other fonts could be added this way.
+
+// Roboto =================================================================
+
+$font-Thin:    'roboto-thin', Helvetica, Arial, Sans-serif; 
+$font-Light:   'roboto-light', Helvetica, Arial, Sans-serif; 
+$font-Regular: 'roboto-regular', Helvetica, Arial, Sans-serif; 
+$font-Medium:  'roboto-medium', Helvetica, Arial, Sans-serif; 
+$font-Bold:    'roboto-bold', Helvetica, Arial, Sans-serif; 
+$font-Heavy:   'roboto-black', Helvetica, Arial, Sans-serif; 
+
+$font-Thin-Italic:    'roboto-thin-italic', Helvetica, Arial, Sans-serif; 
+$font-Light-Italic:   'roboto-light-italic', Helvetica, Arial, Sans-serif; 
+$font-Regular-Italic: 'roboto-italic', Helvetica, Arial, Sans-serif; 
+$font-Medium-Italic:  'roboto-medium-italic', Helvetica, Arial, Sans-serif; 
+$font-Bold-Italic:    'roboto-bold-italic', Helvetica, Arial, Sans-serif; 
+$font-Heavy-Italic:   'roboto-black-italic', Helvetica, Arial, Sans-serif; 
+
+// Roboto Slab ============================================================
+// Roboto Slab does not have as many weights as Roboto, hence the reapeats.
+
+// $font-Thin:    'roboto-slab-thin', serif; 
+// $font-Light:   'roboto-slab-light', serif; 
+// $font-Regular: 'roboto-slab-regular', serif; 
+// $font-Medium: 'roboto-slab-regular', serif;
+// $font-Bold:  'roboto-slab-bold', serif; 
+// $font-Heavy:  'roboto-slab-bold', serif; 
+
+// $font-Thin-Italic:    'roboto-slab-thin', serif; 
+// $font-Light-Italic:   'roboto-slab-light', serif; 
+// $font-Regular-Italic: 'roboto-slab-regular', serif; 
+// $font-Medium-Italic: 'roboto-slab-regular', serif;
+// $font-Bold-Italic:  'roboto-slab-bold', serif; 
+// $font-Heavy-Italic:  'roboto-slab-bold', serif; 
+
+
+
+
 // Font Weights ==========================================================
   
 
 .font-thin{
-  font-family: $defaultFont_Thin;
-  font-weight:normal;
-}
-
-.font-thin.serif{
-  font-family: $secondFont_Thin;
+  font-family: $font-Thin;
   font-weight:normal;
 }
 
 .font-thin-italic{
-  font-family: $defaultFont_Light_Italic;
-  font-weight:normal;
-}
-
-.font-thin-italic.serif{
-  font-family: $secondFont_Thin;
+  font-family: $font-Thin-Italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-light{
-  font-family: $defaultFont_Light;
-  font-weight:normal;
-}
-
-.font-light.serif{
-  font-family: $secondFont_Light;
+  font-family: $font-Light;
   font-weight:normal;
 }
 
 .font-light-italic{
-  font-family: $defaultFont_Light_Italic;
-  font-weight:normal;
-}
-
-.font-light-italic.serif{
-  font-family: $secondFont_Light;
+  font-family: $font-Light-Italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-regular{
-  font-family: $defaultFont_Regular;
-  font-weight:normal;
-}
-
-.font-regular.serif{
-  font-family: $secondFont_Regular;
+  font-family: $font-Regular;
   font-weight:normal;
 }
 
 .font-regular-italic{
-  font-family: $defaultFont_Regular_Italic;
-  font-weight:normal;
-}
-
-.font-regular-italic.serif{
-  font-family: $secondFont_Regular;
+  font-family: $font-Regular-Italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-medium{
-  font-family: $defaultFont_Medium;
-  font-weight:normal;
-}
-
-.font-medium.serif{
-  font-family: $secondFont_Medium;
+  font-family: $font-Medium;
   font-weight:normal;
 }
 
 .font-medium-italic{
-  font-family: $defaultFont_Medium_Italic;
-  font-weight:normal;
-}
-
-.font-medium-italic.serif{
-  font-family: $secondFont_Medium;
+  font-family: $font-Medium-Italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-bold{
-  font-family: $defaultFont_Bold;
-  font-weight:normal;
-}
-
-.font-bold.serif{
-  font-family: $secondFont_Bold;
+  font-family: $font-Bold;
   font-weight:normal;
 }
 
 .font-bold-italic{ 
-  font-family: $defaultFont_Bold_Italic;
-  font-weight:normal;
-}
-
-.font-bold-italic.serif{ 
-  font-family: $secondFont_Bold;
+  font-family: $font-Bold-Italic;
   font-weight:normal;
   font-style:italic;
 }
 
-.font-black{ 
-  font-family: $defaultFont_Black;
+.font-heavy{ 
+  font-family: $font-Heavy;
   font-weight:normal;
   letter-spacing: $vslight;
 }
 
-.font-black.serif{ 
-  font-family: $secondFont_Black;
-  font-weight:normal;
-}
-
-.font-black-italic{ 
-  font-family: $defaultFont_Black_Italic;
+.font-heavy-italic{ 
+  font-family: $font-Heavy-Italic;
   font-weight:normal;
   letter-spacing: $vslight;
-}
-
-.font-black-italic.serif{ 
-  font-family: $secondFont_Black;
-  font-weight:normal;
   font-style:italic;
 }
 
 // Other weights =====================================================
 
 strong, .bold, .strong{ 
-  font-family: $defaultFont_Bold;
+  font-family: $font-Bold;
   font-weight:normal;
 }
 
 h5, h6{
   strong, .bold, .strong{ 
-    font-family: $defaultFont_Black;
+    font-family: $font-Heavy;
     font-weight:normal;
   }
 }
 
-.serif{
-  strong, .bold, .strong{ 
-    font-family: $secondFont_Bold;
-    font-weight:normal;
-  }
-  h5, h6{
-    strong, .bold, .strong{ 
-      font-family: $secondFont_Black;
-      font-weight:normal;
-    }
-  }
-}
 
 .thin{
-  font-family: $defaultFont_Thin;
+  font-family: $font-Thin;
 }
 .light{
-  font-family: $defaultFont_Light;
+  font-family: $font-Light;
 }
 
-.thin.serif{
-  font-family: $secondFont_Thin;
-}
-.light.serif{
-  font-family: $secondFont_Light;
-}
 .heavy{
-  font-family: $defaultFont_Black;
+  font-family: $font-Heavy;
 }
-.heavy.serif{
-  font-family: $secondFont_Black;
-}
+
 
 
 
@@ -231,7 +162,7 @@ h1, h2, h3, h4, h5, h6, p, em{
 }
   
 h1 {
-  font-family: $defaultFont_Thin;
+  font-family: $font-Thin;
   font-size: 5.000em;
   line-height:1.0em;
   letter-spacing: $reduced;
@@ -241,12 +172,9 @@ h1 {
  h1.base{
   margin-bottom:0.1em;
 }
-h1.serif{
-  font-family: $secondFont_Thin;
-}
 
 h2 {
-  font-family: $defaultFont_Light;
+  font-family: $font-Light;
   font-size: 3em;
   line-height:1.1em;
   margin-left:-0.05em;
@@ -255,12 +183,9 @@ h2.base{
   line-height:1em;
   margin-bottom:0.07em;
 }
-h2.serif{
-  font-family: $secondFont_Light;
-}
 
 h3 {
-  font-family: $defaultFont_Light;
+  font-family: $font-Light;
   font-size: 2.5em;
   line-height:1.1em;
   margin-left:-0.05em;
@@ -269,12 +194,9 @@ h3.base{
   line-height:1em;
   margin-bottom:0.07em;
 }
-h3.serif{
-  font-family: $secondFont_Light;
-}
 
 h4 {
-  font-family: $defaultFont_Regular;
+  font-family: $font-Regular;
   font-size: 1.75em;
   line-height:1.2em;
 }
@@ -282,12 +204,9 @@ h4.base{
   line-height:1.1em;
   margin-bottom:0.05em;
 }
-h4.serif{
-  font-family: $secondFont_Regular;
-}
 
 h5 {
-  font-family: $defaultFont_Medium;
+  font-family: $font-Medium;
   font-size: 1.5em;
   line-height:1.2em;
 }
@@ -295,12 +214,9 @@ h5.base{
   line-height:1.1em;
   margin-bottom:0.05em;
 }
-h5.serif{
-  font-family: $secondFont_Medium;
-}
 
 h6 {
-  font-family: $defaultFont_Bold;
+  font-family: $font-Bold;
   font-size: 1.2em;
   line-height:1.2em;
 }
@@ -308,42 +224,31 @@ h6.base{
   line-height:1.1em;
   margin-bottom:0.05em;
 }
-h6.serif{
-  font-family: $secondFont_Bold;
-}
 
 p {
-  font-family: $defaultFont_Regular;
+  font-family: $font-Regular;
   font-size: 1.1em;
   line-height:1.4em;
 }
-p.serif{
-  font-family: $secondFont_Regular;
-}
 
 em {
-  font-family: $defaultFont_Light;
+  font-family: $font-Light;
   font-size: 1.500em;
   line-height:1.25em;
-}
-em.serif{
-  font-family: $secondFont_Light;
 }
 
 .intro{
   border:none;
   padding:0em 0 0.5em 0;
   margin:0;
-  font-family: $defaultFont_Light;
+  font-family: $font-Light;
   font-size: 1.7em;
   line-height:1.3em;
 }
-.intro.serif{
-  font-family: $secondFont_Light;
-}
+
 
 blockquote{
-  font-family: $defaultFont_Thin;
+  font-family: $font-Thin;
   border:none;
   padding:0em 0 0.5em 0;
   margin:0;
@@ -354,9 +259,7 @@ blockquote{
 blockquote:last-child{
   padding-bottom: 0em;
 }
-blockquote.serif{
-  font-family: $secondFont_Thin;
-}
+
 
 .quote{
   margin:0em 0 0.5em 1.75em;
@@ -390,18 +293,17 @@ blockquote.serif{
     margin-left:0;
   }
   h3{
-    font-family: $defaultFont_Regular;
+    font-family: $font-Regular;
     font-size: 1.750em;
     margin-left:0;
   }
-  h3.serif{
-    font-family: $secondFont_Regular;
-  }
+
   h4{font-size: 1.500em;}
   blockquote{font-size: 2em;}
 } 
 
 
+// ===========================================================================
 
 // Other Styles =====================================================
 
@@ -413,6 +315,54 @@ blockquote.serif{
 .left{text-align:left;}
 .right{text-align:right;}
 .half{font-size: 0.5em;} // Makes the text 50% size
+
+
+// Dropcaps =========================================================
+
+.dropcap,.dropcap-circle,.dropcap-square{font-family: $font-Thin;}
+
+.dropcap {
+font-size: 5em;
+float: left;   
+position: relative;
+color:$client;
+top:0.25em;
+height: 0.75em;
+margin-right:5px;
+}
+.dropcap-circle {
+font-size: 3em;
+float: left;   
+line-height: 0.8em;
+text-align:center;
+padding-top: 0.230em;
+padding-left: 0.05em;
+color: white;         
+font-weight: 100;
+position: relative;
+left: -0.05em;
+top:0.05em;
+background:$client;
+width: 60px;
+height: 60px;
+border-radius:30px;
+margin-right:5px;
+}
+.dropcap-square {
+font-size: 3em;
+float: left;   
+line-height: 0.8em;
+text-align:center;
+padding-top: 0.2em;
+color: white;         
+font-weight: 100;
+position: relative;
+top:0.1em;
+background:$client;
+width: 55px;
+height: 55px;
+margin-right:8px;
+}
 
 
 // multi-column text blocks ==========================================
@@ -543,58 +493,6 @@ blockquote.serif{
   }
 } 
 
-// Dropcaps =========================================================
-
-.dropcap,.dropcap-circle,.dropcap-square{font-family: $defaultFont_Thin;}
-.serif .dropcap,.serif .dropcap-circle,.serif .dropcap-square{font-family: $secondFont_Thin;}
-
-.dropcap {
-font-size: 5em;
-float: left;   
-position: relative;
-color:$client;
-top:0.25em;
-height: 0.75em;
-margin-right:5px;
-}
-.dropcap-circle {
-font-size: 3em;
-float: left;   
-line-height: 0.8em;
-text-align:center;
-padding-top: 0.230em;
-padding-left: 0.05em;
-color: white;         
-font-weight: 100;
-position: relative;
-left: -0.05em;
-top:0.05em;
-background:$client;
-width: 60px;
-height: 60px;
-border-radius:30px;
-margin-right:5px;
-}
-.dropcap-square {
-font-size: 3em;
-float: left;   
-line-height: 0.8em;
-text-align:center;
-padding-top: 0.2em;
-color: white;         
-font-weight: 100;
-position: relative;
-top:0.1em;
-background:$client;
-width: 55px;
-height: 55px;
-margin-right:8px;
-}
-
-
-
-
-
 
 
 
@@ -609,3 +507,5 @@ margin-right:8px;
 .glyphicon-minus{color:$grey16;}
   
 
+
+   
