@@ -19,35 +19,36 @@
 
 // Roboto =======================
 
-// $font-Thin:    'robotothin', Helvetica, Arial, Sans-serif; 
-// $font-Light:   'robotolight', Helvetica, Arial, Sans-serif; 
-// $font-Regular: 'robotoregular', Helvetica, Arial, Sans-serif; 
-// $font-Medium:  'robotomedium', Helvetica, Arial, Sans-serif; 
-// $font-Bold:    'robotobold', Helvetica, Arial, Sans-serif; 
-// $font-Heavy:   'robotoblack', Helvetica, Arial, Sans-serif; 
+// $font-thin:    'roboto-thin', Helvetica, Arial, Sans-serif; 
+// $font-light:   'roboto-light', Helvetica, Arial, Sans-serif; 
+// $font-regular: 'roboto-regular', Helvetica, Arial, Sans-serif; 
+// $font-medium:  'roboto-medium', Helvetica, Arial, Sans-serif; 
+// $font-bold:    'roboto-bold', Helvetica, Arial, Sans-serif; 
+// $font-heavy:   'roboto-black', Helvetica, Arial, Sans-serif; 
 
-// $font-Thin-Italic:    'robotothin-italic', Helvetica, Arial, Sans-serif; 
-// $font-Light-Italic:   'robotolight-italic', Helvetica, Arial, Sans-serif; 
-// $font-Regular-Italic: 'robotoitalic', Helvetica, Arial, Sans-serif; 
-// $font-Medium-Italic:  'robotomedium-italic', Helvetica, Arial, Sans-serif; 
-// $font-Bold-Italic:    'robotobold-italic', Helvetica, Arial, Sans-serif; 
-// $font-Heavy-Italic:   'robotoblack-italic', Helvetica, Arial, Sans-serif; 
+// $font-thin-italic:    'roboto-thin-italic', Helvetica, Arial, Sans-serif; 
+// $font-light-italic:   'roboto-light-italic', Helvetica, Arial, Sans-serif; 
+// $font-regular-italic: 'roboto-italic', Helvetica, Arial, Sans-serif; 
+// $font-medium-italic:  'roboto-medium-italic', Helvetica, Arial, Sans-serif; 
+// $font-bold-italic:    'roboto-bold-italic', Helvetica, Arial, Sans-serif; 
+// $font-heavy-italic:   'roboto-black-italic', Helvetica, Arial, Sans-serif; 
 
-// Roboto Slab ==================
+// Roboto Slab ============================================================
+// Roboto Slab does not have as many weights as Roboto, hence the reapeats.
 
-$serif-Thin:    'roboto-slab-thin', serif; 
-$serif-Light:   'roboto-slab-light', serif; 
-$serif-Regular: 'roboto-slab-regular', serif; 
-$serif-Medium: 'roboto-slab-regular', serif;
-$serif-Bold:  'roboto-slab-bold', serif; 
-$serif-Heavy:  'roboto-slab-bold', serif; 
+$serif-thin:    'roboto-slab-thin', serif; 
+$serif-light:   'roboto-slab-light', serif; 
+$serif-regular: 'roboto-slab-regular', serif; 
+$serif-medium: 'roboto-slab-regular', serif;
+$serif-bold:  'roboto-slab-bold', serif; 
+$serif-heavy:  'roboto-slab-bold', serif; 
 
-$serif-Thin-Italic:    'roboto-slab-thin', serif; 
-$serif-Light-Italic:   'roboto-slab-light', serif; 
-$serif-Regular-Italic: 'roboto-slab-regular', serif; 
-$serif-Medium-Italic: 'roboto-slab-regular', serif;
-$serif-Bold-Italic:  'roboto-slab-bold', serif; 
-$serif-Heavy-Italic:  'roboto-slab-bold', serif; 
+$serif-thin-italic:    'roboto-slab-thin', serif; 
+$serif-light-italic:   'roboto-slab-light', serif; 
+$serif-regular-italic: 'roboto-slab-regular', serif; 
+$serif-medium-italic: 'roboto-slab-regular', serif;
+$serif-bold-italic:  'roboto-slab-bold', serif; 
+$serif-heavy-italic:  'roboto-slab-bold', serif; 
 
 
 
@@ -56,68 +57,68 @@ $serif-Heavy-Italic:  'roboto-slab-bold', serif;
   
 .serif{
 .font-thin{
-  font-family: $serif-Thin;
+  font-family: $serif-thin;
   font-weight:normal;
 }
 
 .font-thin-italic{
-  font-family: $serif-Light-Italic;
+  font-family: $serif-thin-italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-light{
-  font-family: $serif-Light;
+  font-family: $serif-light;
   font-weight:normal;
 }
 
 .font-light-italic{
-  font-family: $serif-Light-Italic;
+  font-family: $serif-light-italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-regular{
-  font-family: $serif-Regular;
+  font-family: $serif-regular;
   font-weight:normal;
 }
 
 .font-regular-italic{
-  font-family: $serif-Regular-Italic;
+  font-family: $serif-regular-italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-medium{
-  font-family: $serif-Medium;
+  font-family: $serif-medium;
   font-weight:normal;
 }
 
 .font-medium-italic{
-  font-family: $serif-Medium-Italic;
+  font-family: $serif-medium-italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-bold{
-  font-family: $serif-Bold;
+  font-family: $serif-bold;
   font-weight:normal;
 }
 
 .font-bold-italic{ 
-  font-family: $serif-Bold-Italic;
+  font-family: $serif-bold-italic;
   font-weight:normal;
   font-style:italic;
 }
 
 .font-heavy{ 
-  font-family: $serif-Heavy;
+  font-family: $serif-heavy;
   font-weight:normal;
   letter-spacing: $vslight;
 }
 
 .font-heavy-italic{ 
-  font-family: $serif-Heavy-Italic;
+  font-family: $serif-heavy-italic;
   font-weight:normal;
   letter-spacing: $vslight;
   font-style:italic;
@@ -126,27 +127,27 @@ $serif-Heavy-Italic:  'roboto-slab-bold', serif;
 // Other weights =====================================================
 
 strong, .bold, .strong{ 
-  font-family: $serif-Bold;
+  font-family: $serif-bold;
   font-weight:normal;
 }
 
 h5, h6{
   strong, .bold, .strong{ 
-    font-family: $serif-Heavy;
+    font-family: $serif-heavy;
     font-weight:normal;
   }
 }
 
 
 .thin{
-  font-family: $serif-Thin;
+  font-family: $serif-thin;
 }
 .light{
-  font-family: $serif-Light;
+  font-family: $serif-light;
 }
 
 .heavy{
-  font-family: $serif-Heavy;
+  font-family: $serif-heavy;
 }
 
 
@@ -160,7 +161,7 @@ h1, h2, h3, h4, h5, h6, p, em{
 }
   
 h1 {
-  font-family: $serif-Thin;
+  font-family: $serif-thin;
   font-size: 5.000em;
   line-height:1.0em;
   letter-spacing: $reduced;
@@ -172,7 +173,7 @@ h1 {
 }
 
 h2 {
-  font-family: $serif-Light;
+  font-family: $serif-light;
   font-size: 3em;
   line-height:1.1em;
   margin-left:-0.05em;
@@ -183,7 +184,7 @@ h2.base{
 }
 
 h3 {
-  font-family: $serif-Light;
+  font-family: $serif-light;
   font-size: 2.5em;
   line-height:1.1em;
   margin-left:-0.05em;
@@ -194,7 +195,7 @@ h3.base{
 }
 
 h4 {
-  font-family: $serif-Regular;
+  font-family: $serif-regular;
   font-size: 1.75em;
   line-height:1.2em;
 }
@@ -204,7 +205,7 @@ h4.base{
 }
 
 h5 {
-  font-family: $serif-Medium;
+  font-family: $serif-medium;
   font-size: 1.5em;
   line-height:1.2em;
 }
@@ -214,7 +215,7 @@ h5.base{
 }
 
 h6 {
-  font-family: $serif-Bold;
+  font-family: $serif-bold;
   font-size: 1.2em;
   line-height:1.2em;
 }
@@ -224,13 +225,13 @@ h6.base{
 }
 
 p {
-  font-family: $serif-Regular;
+  font-family: $serif-regular;
   font-size: 1.1em;
   line-height:1.4em;
 }
 
 em {
-  font-family: $serif-Light;
+  font-family: $serif-light;
   font-size: 1.500em;
   line-height:1.25em;
 }
@@ -239,14 +240,14 @@ em {
   border:none;
   padding:0em 0 0.5em 0;
   margin:0;
-  font-family: $serif-Light;
+  font-family: $serif-light;
   font-size: 1.7em;
   line-height:1.3em;
 }
 
 
 blockquote{
-  font-family: $serif-Thin;
+  font-family: $serif-thin;
   border:none;
   padding:0em 0 0.5em 0;
   margin:0;
@@ -265,7 +266,7 @@ blockquote:last-child{
 
 // Dropcaps =========================================================
 
-.dropcap,.dropcap-circle,.dropcap-square{font-family: $serif-Thin;}
+.dropcap,.dropcap-circle,.dropcap-square{font-family: $serif-thin;}
 
 
 } // End Serif
@@ -300,7 +301,7 @@ blockquote:last-child{
     margin-left:0;
   }
   h3{
-    font-family: $serif-Regular;
+    font-family: $serif-regular;
     font-size: 1.750em;
     margin-left:0;
   }
