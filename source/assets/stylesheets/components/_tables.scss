@@ -1,5 +1,5 @@
-
-$tableBorder: $grey10;
+$tableBaseGrey:   $grey02;
+$tableBorder:     $grey10;
 
 // BS Tables Overrides =========================================================
 
@@ -181,7 +181,7 @@ $tableBorder: $grey10;
  
 
 .table-default{
-  background-color:$panelBaseGrey;
+  background-color:$tableBaseGrey;
   thead {background-color:$grey16; border:0; color:white;}
   thead > tr > th { border-bottom: none; }
   tbody > tr > th, 
@@ -197,7 +197,7 @@ $tableBorder: $grey10;
   tfoot > tr > td{ 
     color:white;
   }
-  &.table-hover > tbody > tr:hover {background-color: darken($panelBaseGrey, 5%);}
+  &.table-hover > tbody > tr:hover {background-color: darken($tableBaseGrey, 5%);}
 }
 
 .table-info{
