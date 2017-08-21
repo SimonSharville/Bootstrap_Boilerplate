@@ -7,7 +7,7 @@ $navActive      : darken($navBase, 20%);
 $navText        : white;
 $navActiveFocus : darken($navBase, 20%);
 $navDropdown    : darken($navBase, 20%);
-$navFont        : $defaultFont_Bold;
+$navFont        : $font-Bold;
 
 
 
@@ -41,7 +41,7 @@ $navFont        : $defaultFont_Bold;
 }
 
 .navbar-brand{
-  font-family: $defaultFont_Light;
+  font-family: $font-Light;
   font-size:2em;
   line-height:0.6em;
   padding: 14.5px 20px 14.5px 14px;

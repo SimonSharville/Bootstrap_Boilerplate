@@ -18,7 +18,9 @@
 
   @import "global/perforations";
 
-  @import "global/typography";
+  @import "global/typestyles";
+
+  @import "global/typestyles-serif"; // This is only used for the UI version. Delete on final builds  
 
   @import "global/structure";
 

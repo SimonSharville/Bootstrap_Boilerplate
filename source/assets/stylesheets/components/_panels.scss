@@ -4,7 +4,7 @@ $panelBaseGrey:         $grey02;
 
 .panel{
   border-radius:0px;
-  font-family: $defaultFont_Regular;
+  font-family: $font-Regular;
   background-color:$panelBaseGrey;
   border:none;
 }
@@ -12,38 +12,38 @@ $panelBaseGrey:         $grey02;
 .panel-heading{
   border-radius:0px;
   border-color:white;
-  font-family: $defaultFont_Bold;
+  font-family: $font-Bold;
   line-height:1.2em;
   letter-spacing:$vslight;
 }
 
 .panel-heading h1{
-  font-family: $defaultFont_Thin;
+  font-family: $font-Thin;
   font-size: 2.5em;
 }
 
 .panel-heading h2{
-  font-family: $defaultFont_Light;
+  font-family: $font-Light;
   font-size: 2em;
 }
 
 .panel-heading h3{
-  font-family: $defaultFont_Regular;
+  font-family: $font-Regular;
   font-size: 1.500em;
 }
 .panel-heading h4{
   padding-bottom:0px;
-  font-family: $defaultFont_Medium;
+  font-family: $font-Medium;
 }
 
 .panel-heading h5{
   padding-bottom:0px;
-  font-family: $defaultFont_Bold;
+  font-family: $font-Bold;
 }
 
 .panel-heading h6{
   padding-bottom:0px;
-  font-family: $defaultFont_Black;
+  font-family: $font-Heavy;
 }
 
 .panel-heading .btn{
