@@ -269,29 +269,6 @@ blockquote:last-child{
 .dropcap,.dropcap-circle,.dropcap-square{font-family: $serif-thin;}
 
 
-} // End Serif
-
-
-
-[class^="quote"]:before,
-[class*=" quote"]:before {
-  content: "\e012";
-  font-family: "sa-icon" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  color:$client;
-  font-size: 2em;
-  margin-left:-1em;
-  position:relative;
-  top:0.64em;
-}
-
 
 // Small screens ===============
 @media (max-width: 767px) {
@@ -310,6 +287,7 @@ blockquote:last-child{
   blockquote{font-size: 2em;}
 } 
 
+} // End Serif
 
 
    

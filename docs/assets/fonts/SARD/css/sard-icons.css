@@ -38,39 +38,156 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sa-quote:before {
-  content: "\61";
+.sa-flower-xs:before {
+  content: "\e000";
 }
-.sa-arrow-up-circle-o:before {
-  content: "\62";
+.sa-flower-sm:before {
+  content: "\e001";
 }
-.sa-sa-arrow-up-circle:before {
-  content: "\63";
+.sa-flower-lg:before {
+  content: "\e002";
 }
-.sa-arrow-down-circle-o:before {
-  content: "\64";
+.sa-flower-md:before {
+  content: "\e003";
 }
-.sa-arrow-down-circle:before {
-  content: "\65";
+.sa-flower-xl:before {
+  content: "\e004";
 }
-.sa-arrow-left-circle:before {
-  content: "\67";
+.sa-flower-circle-xs:before {
+  content: "\e005";
 }
-.sa-arrow-left-circle-o:before {
-  content: "\66";
+.sa-flower-circle-xl:before {
+  content: "\e006";
 }
-.sa-arrow-right-circle:before {
-  content: "\69";
+.sa-flower-circle-sm:before {
+  content: "\e007";
 }
-.sa-arrow-right-circle-o:before {
-  content: "\68";
+.sa-flower-circle-md:before {
+  content: "\e008";
 }
-.sa-circle:before {
-  content: "\6a";
+.sa-flower-circle-lg:before {
+  content: "\e009";
 }
-.sa-circle-dot:before {
-  content: "\6b";
+.sa-flower-circle-o-xs:before {
+  content: "\e00a";
+}
+.sa-flower-circle-o-xl:before {
+  content: "\e00b";
+}
+.sa-flower-circle-o-sm:before {
+  content: "\e00c";
+}
+.sa-flower-circle-o-md:before {
+  content: "\e00d";
+}
+.sa-flower-circle-o-lg:before {
+  content: "\e00e";
 }
 .sa-dot:before {
-  content: "\6c";
+  content: "\e00f";
+}
+.sa-circle-dot:before {
+  content: "\e010";
+}
+.sa-circle:before {
+  content: "\e011";
+}
+.sa-quote:before {
+  content: "\e012";
+}
+.sa-arrow-up-circle-o:before {
+  content: "\e013";
+}
+.sa-arrow-up-circle:before {
+  content: "\e014";
+}
+.sa-arrow-up:before {
+  content: "\e015";
+}
+.sa-arrow-right-circle-o:before {
+  content: "\e016";
+}
+.sa-arrow-right-circle:before {
+  content: "\e017";
+}
+.sa-arrow-right:before {
+  content: "\e018";
+}
+.sa-arrow-left-circle-o:before {
+  content: "\e019";
+}
+.sa-arrow-left-circle:before {
+  content: "\e01a";
+}
+.sa-arrow-left:before {
+  content: "\e01b";
+}
+.sa-arrow-down-circle-o:before {
+  content: "\e01c";
+}
+.sa-arrow-down-circle:before {
+  content: "\e01d";
+}
+.sa-arrow-down:before {
+  content: "\e01e";
+}
+.sa-quote-o:before {
+  content: "\e01f";
+}
+.sa-volcano:before {
+  content: "\e020";
+}
+.sa-sol-360:before {
+  content: "\e021";
+}
+.sa-sol-360-o:before {
+  content: "\e022";
+}
+.sa-sol-a4a:before {
+  content: "\e023";
+}
+.sa-sol-a4a-o:before {
+  content: "\e024";
+}
+.sa-sol-ele:before {
+  content: "\e025";
+}
+.sa-sol-ele-o:before {
+  content: "\e026";
+}
+.sa-sol-eros:before {
+  content: "\e027";
+}
+.sa-sol-eros-o:before {
+  content: "\e028";
+}
+.sa-sol-jp:before {
+  content: "\e029";
+}
+.sa-sol-jp-o:before {
+  content: "\e02a";
+}
+.sa-sol-mrv:before {
+  content: "\e02b";
+}
+.sa-sol-mrv-o:before {
+  content: "\e02c";
+}
+.sa-sol-nrv:before {
+  content: "\e02d";
+}
+.sa-sol-nrv-o:before {
+  content: "\e02e";
+}
+.sa-360-o:before {
+  content: "\e02f";
+}
+.sa-arrow-up-down:before {
+  content: "\e030";
+}
+.sa-360:before {
+  content: "\e031";
+}
+.sa-arrow-left-right:before {
+  content: "\e032";
 }
