@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "sa-icon";
-  src:url("fonts/sa-icon.eot");
-  src:url("fonts/sa-icon.eot?#iefix") format("embedded-opentype"),
-    url("fonts/sa-icon.woff") format("woff"),
-    url("fonts/sa-icon.ttf") format("truetype"),
-    url("fonts/sa-icon.svg#sa-icon") format("svg");
+  src:url("../fonts/sa-icon.eot");
+  src:url("../fonts/sa-icon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/sa-icon.woff") format("woff"),
+    url("../fonts/sa-icon.ttf") format("truetype"),
+    url("../fonts/sa-icon.svg#sa-icon") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -178,4 +178,16 @@
 }
 .sa-sol-nrv-o:before {
   content: "\e02e";
+}
+.sa-360-o:before {
+  content: "\e02f";
+}
+.sa-arrow-up-down:before {
+  content: "\e030";
+}
+.sa-360:before {
+  content: "\e031";
+}
+.sa-arrow-left-right:before {
+  content: "\e032";
 }

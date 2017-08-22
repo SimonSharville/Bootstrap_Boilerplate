@@ -7129,36 +7129,19 @@ blockquote:last-child {
 .serif .dropcap, .serif .dropcap-circle, .serif .dropcap-square {
   font-family: "roboto-slab-thin", serif; }
 
-[class^="quote"]:before,
-[class*=" quote"]:before {
-  content: "\e012";
-  font-family: "sa-icon" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #00B2B2;
-  font-size: 2em;
-  margin-left: -1em;
-  position: relative;
-  top: 0.64em; }
-
 @media (max-width: 767px) {
-  h1 {
+  .serif h1 {
     font-size: 4.000em; }
-  h2 {
+  .serif h2 {
     font-size: 2.2em;
     margin-left: 0; }
-  h3 {
+  .serif h3 {
     font-family: "roboto-slab-regular", serif;
     font-size: 1.750em;
     margin-left: 0; }
-  h4 {
+  .serif h4 {
     font-size: 1.500em; }
-  blockquote {
+  .serif blockquote {
     font-size: 2em; } }
 
 /* BOOTSTRAP Structure Overrides */
