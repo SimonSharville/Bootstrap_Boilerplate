@@ -62,6 +62,13 @@ $tableBorder:     $grey10;
   background-color: $grey02;
 }
 
+.table-striped.table-hover > tbody > tr:nth-of-type(odd) {
+  background-color: $grey02;
+}
+.table-hover.table-hover > tbody > tr:hover {
+  background-color: $grey04;
+}
+
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
 .table > tfoot > tr > td.active,
@@ -177,7 +184,7 @@ $tableBorder:     $grey10;
 
 
 // =================================================================================
-// Coloured Tables =================================================================
+// Table Styles ====================================================================
  
 
 .table-default{
@@ -198,7 +205,20 @@ $tableBorder:     $grey10;
     color:white;
   }
   &.table-hover > tbody > tr:hover {background-color: darken($tableBaseGrey, 5%);}
+
+  &.table-striped > tbody {
+    background-color: white;
+  }
+  &.table-striped.table-hover > tbody > tr:nth-of-type(odd) {
+    background-color: $grey02;
+  }
+  &.table-hover.table-hover > tbody > tr:hover {
+    background-color: $grey04;
+  }
 }
+
+
+
 
 .table-info{
   background-color:$info;

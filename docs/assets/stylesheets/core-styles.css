@@ -5856,6 +5856,15 @@ button.close {
 .white {
   color: #FFFFFF; }
 
+.lightgrey {
+  color: #C7C4C2; }
+
+.grey {
+  color: #A39E9C; }
+
+.darkgrey {
+  color: #827D7D; }
+
 .text-turq {
   color: #00B2B2; }
 
@@ -7314,6 +7323,12 @@ body {
 
 .padding-bottom20 {
   padding-top: 20px; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
 
 /* LINK Styles =============================================== */
 a {
@@ -9366,6 +9381,12 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
 .table-hover > tbody > tr:hover {
   background-color: #EDEBEB; }
 
+.table-striped.table-hover > tbody > tr:nth-of-type(odd) {
+  background-color: #EDEBEB; }
+
+.table-hover.table-hover > tbody > tr:hover {
+  background-color: #D9D6D6; }
+
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
 .table > tfoot > tr > td.active,
@@ -9499,6 +9520,12 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
     color: white; }
   .table-default.table-hover > tbody > tr:hover {
     background-color: #e1dede; }
+  .table-default.table-striped > tbody {
+    background-color: white; }
+  .table-default.table-striped.table-hover > tbody > tr:nth-of-type(odd) {
+    background-color: #EDEBEB; }
+  .table-default.table-hover.table-hover > tbody > tr:hover {
+    background-color: #D9D6D6; }
 
 .table-info {
   background-color: #00a0e0; }
