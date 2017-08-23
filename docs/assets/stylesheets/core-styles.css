@@ -7785,6 +7785,12 @@ has-warning .help-block,
 .has-error .form-control:focus {
   border-color: #8c0000; }
 
+input[type="radio"],
+input[type="checkbox"] {
+  width: initial;
+  height: initial;
+  margin-top: 7px; }
+
 input {
   margin-bottom: 5px; }
 
@@ -7869,27 +7875,6 @@ select,
 textarea {
   line-height: 1em; }
 
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: scale(0.8);
-  transition: 0.5s; }
-  input[value="true"]:checked ~ .reveal-if-active,
-  input[value="true"]:checked ~ .reveal-if-active {
-    opacity: 1;
-    max-height: 100px;
-    overflow: visible;
-    padding: 10px 0px 10px 16px;
-    transform: scale(1); }
-
-.reveal-if-active .form-group:first-of-type {
-  margin-top: 0px; }
-
-.expandable input[value="false"] {
-  border: none !important;
-  margin-bottom: 0px !important; }
-
 .bootstrap-tagsinput {
   background-color: #fff;
   border: none;
@@ -7963,6 +7948,27 @@ textarea {
 
 .tags-admin .bootstrap-tagsinput .tag:active {
   background-color: #c60064; }
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s; }
+  input[value="true"]:checked ~ .reveal-if-active,
+  input[value="true"]:checked ~ .reveal-if-active {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 0px 10px 16px;
+    transform: scale(1); }
+
+.reveal-if-active .form-group:first-of-type {
+  margin-top: 0px; }
+
+.expandable input[value="false"] {
+  border: none !important;
+  margin-bottom: 0px !important; }
 
 /* Navbar Default  ================================================ */
 @media (max-width: 767px) {
