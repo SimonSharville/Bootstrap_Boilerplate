@@ -1,0 +1,88 @@
+// BS Alerts Overrides
+
+.alert{
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+  color:white;
+}
+
+.alert a:link{ 
+  color: black;
+  font-weight:bold;
+}
+.alert a:hover, a:focus{ 
+  color: darken($success, 40%);
+  text-decoration:underline;
+}
+
+.alert-success{
+  background-color:$success;
+  border:none;
+  }
+
+.alert-info{
+  background-color:$info;
+  border:none;
+}
+
+.alert-warning{
+  background-color:$warning;
+  border:none;
+  color:black;
+  a:link{ color: white;}
+}
+
+.alert-danger{
+  background-color:$danger;
+  border:none;
+}
+
+.alert-MRv{
+  background-color:$MRv;
+  border:none;
+}
+
+.alert-NRv{
+  background-color:$NRv;
+  border:none;
+}
+
+.alert-360{
+  background-color:$sa-360;
+  border:none;
+}
+
+.alert-eLeave{
+  background-color:$eLeave;
+  border:none;
+}
+
+.alert-A4A{
+  background-color:$A4A;
+  border:none;
+}
+
+.alert-JPL{
+  background-color:$JPL;
+  border:none;
+}
+
+.alert-eRo{
+  background-color:$eRo;
+  border:none;
+}
+
+.alert-CPL{
+  background-color:$CPL;
+  border:none;
+}
+
+.alert .close{
+  opacity:1;
+  text-shadow:none;
+  color:white;
+}
+
+.alert .close:hover{
+  color:black;
+}

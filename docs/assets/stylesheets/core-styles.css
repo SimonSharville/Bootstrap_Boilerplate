@@ -5923,7 +5923,7 @@ button.close {
   color: #E50073; }
 
 .text-eRo {
-  color: #004D4D; }
+  color: teal; }
 
 .text-CPL {
   color: #BF0000; }
@@ -6034,7 +6034,7 @@ button.close {
   background-color: #E50073; }
 
 .bg-eRo {
-  background-color: #004D4D; }
+  background-color: teal; }
 
 .bg-CPL {
   background-color: #BF0000; }
@@ -7642,6 +7642,78 @@ li p {
     margin-left: -10px;
     margin-top: 20px; } }
 
+.alert {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+  color: white; }
+
+.alert a:link {
+  color: black;
+  font-weight: bold; }
+
+.alert a:hover, a:focus {
+  color: black;
+  text-decoration: underline; }
+
+.alert-success {
+  background-color: #359E00;
+  border: none; }
+
+.alert-info {
+  background-color: #00a0e0;
+  border: none; }
+
+.alert-warning {
+  background-color: #FFB200;
+  border: none;
+  color: black; }
+  .alert-warning a:link {
+    color: white; }
+
+.alert-danger {
+  background-color: #BF0000;
+  border: none; }
+
+.alert-MRv {
+  background-color: #00B2B2;
+  border: none; }
+
+.alert-NRv {
+  background-color: #FF6A00;
+  border: none; }
+
+.alert-360 {
+  background-color: #FFB200;
+  border: none; }
+
+.alert-eLeave {
+  background-color: #A7BF30;
+  border: none; }
+
+.alert-A4A {
+  background-color: #990099;
+  border: none; }
+
+.alert-JPL {
+  background-color: #E50073;
+  border: none; }
+
+.alert-eRo {
+  background-color: teal;
+  border: none; }
+
+.alert-CPL {
+  background-color: #BF0000;
+  border: none; }
+
+.alert .close {
+  opacity: 1;
+  text-shadow: none;
+  color: white; }
+
+.alert .close:hover {
+  color: black; }
+
 textarea {
   resize: vertical;
   margin-bottom: 5px; }
@@ -9124,22 +9196,22 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
   border: 0; }
 
 .panel-eRo > .panel-heading {
-  background-color: #003434;
+  background-color: #006767;
   color: white;
   border: 0; }
 
 .panel-eRo > .panel-body {
-  background-color: #004d4d;
+  background-color: teal;
   color: white; }
 
 .panel-eRo > .perf-wht {
-  background-color: #004d4d; }
+  background-color: teal; }
 
 .panel-eRo > .perf-grey {
-  background-color: #004d4d; }
+  background-color: teal; }
 
 .panel-eRo > .panel-footer {
-  background-color: #001a1a;
+  background-color: #004d4d;
   color: white;
   border: 0; }
 
@@ -9655,7 +9727,7 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
   background-color: #cc0066; }
 
 .panel-eRo .table-hover > tbody > tr:hover {
-  background-color: #003434; }
+  background-color: #006767; }
 
 .panel-CPL .table-hover > tbody > tr:hover {
   background-color: #a60000; }
