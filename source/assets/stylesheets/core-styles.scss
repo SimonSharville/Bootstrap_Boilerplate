@@ -33,28 +33,30 @@
 
 // Component styles =======================
 
-@import "components/forms";
+  @import "components/alerts";
 
-@import "components/forms-tagsinput";
+  @import "components/forms";
 
-@import "components/forms-reveal-if-active";
+  @import "components/forms-tagsinput";
 
-@import "components/navbar";
+  @import "components/forms-reveal-if-active";
 
-@import "components/navbar-admin";
+  @import "components/navbar";
 
-@import "components/navbar-second";
+  @import "components/navbar-admin";
 
-@import "components/megamenu";
+  @import "components/navbar-second";
 
-@import "components/rag-status";
+  @import "components/megamenu";
 
-@import "components/panels";
+  @import "components/rag-status";
 
-@import "components/tables";
+  @import "components/panels";
 
-@import "components/buttons";
+  @import "components/tables";
 
-@import "components/button-groups";
+  @import "components/buttons";
 
-@import "components/nav-tabs";
+  @import "components/button-groups";
+
+  @import "components/nav-tabs";
