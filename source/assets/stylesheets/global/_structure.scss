@@ -24,6 +24,8 @@ html {
 body {
   color: $bodytext;
   font-family:$font-regular;
+  padding-top:  70px; // Allows for navbars
+  padding-bottom:  80px; // Allows for navbars
 }
 
 

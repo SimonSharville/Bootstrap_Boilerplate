@@ -22,181 +22,176 @@
     <!-- $active_UI_menu = active  --> <!-- This makes this page active in the Navbar -->
     <!-- @import "../navbars/navbar-default-multi-n1.kit" -->
    
-    <div class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-             <h1 class="">Megamenu</h1>
-             <p class="intro">I have created 2 variations of megamenu. A fixed layout version (default) and a multi-column version.</p>
-             <p>Megamenus, like navbars have various nested versions depending on how deep the page is in the file structure. So, index.html has -n0 appended while any pages in the UI folder have -n1, as the pages are nested one folder deep. The reason for this is that using CodeKit to import .kit files into html pages saves time and coding but the links within the import get broken. I can't find away around this other than to make various versions of the same file with slighly different links.(../link.html etc). It's complicated, but less so than having to add links to every page. If I add a new file, I just have to add them to the navbar or megamenu .kit pages.</p>
-          </div> <!-- / col -->
-        </div> <!-- / row -->
-      </div> <!-- / container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+           <h1 class="">Megamenu</h1>
+           <p class="intro">I have created 2 variations of megamenu. A fixed layout version (default) and a multi-column version.</p>
+           <p>Megamenus, like navbars have various nested versions depending on how deep the page is in the file structure. So, index.html has -n0 appended while any pages in the UI folder have -n1, as the pages are nested one folder deep. The reason for this is that using CodeKit to import .kit files into html pages saves time and coding but the links within the import get broken. I can't find away around this other than to make various versions of the same file with slighly different links.(../link.html etc). It's complicated, but less so than having to add links to every page. If I add a new file, I just have to add them to the navbar or megamenu .kit pages.</p>
+        </div> <!-- / col -->
+      </div> <!-- / row -->
+    </div> <!-- / container -->
 
-      
-
-      <!-- ========================================================================================================== -->
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <hr class="dashed-client"></hr>
-            <h3>Megamenu <span class="half">Default version</span></h3>
-            The deafult version uses the standard Bootstrap columns to arrange the lists. The list can be laid out exactly as you wish them to appear.</p>
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ui-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="col-xs-12">
-                <div class="collapse navbar-collapse" id="ui-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="<!-- $active_index? -->"><a href="#">Home</a></li>
-                    <li class="<!-- $active_structure? -->"><a href="#">Structure <span class="sr-only">(current)</span></a></li>
-                    <li class="dropdown <!-- $active_typography? -->">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Typography <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li class="<!-- $active_sans-serif? -->"><a href="#">Sans Serif <span class="light"> (Default)</span></a></li>
-                        <li class="<!-- $active_serif? -->"><a href="#">Serif</a></li>
-                      </ul>
-                    </li>
-                    <!-- UI Menu ============================================================================= -->
-                    <li class="dropdown menu-large <!-- $active_UI_menu? -->">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI Menu <b class="caret"></b></a>       
-                      <ul class="dropdown-menu megamenu">
-                        <li class="col-sm-4">
-                          <ul>
-                            <li class="dropdown-header">Bootstrap Components</li>
-                            <li class="disabled"><a href="#">Accordions</a></li>
-                            <li class="disabled"><a href="#">Alerts</a></li>
-                            <li class=""><a href="#">Buttons</a></li>
-                            <li class="disabled"><a href="#">Forms</a></li>
-                            <li class=""><a href="#">Nav Tabs</a></li>
-                            <li class=""><a href="#">Panels</a></li>
-                            <li class=""><a href="#">Tables</a></li>
-                            <li class="disabled"><a href="#">Tooltips</a></li>
-                          </ul>
-                        </li>
-                        <li class="col-sm-4">
-                          <ul>
-                            <li class="dropdown-header">Other Components</li>
-                            <li class="disabled"><a href="#">List Styles</a></li>
-                            <li class="disabled"><a href="#">Megamenu</a></li>
-                            <li class=""><a href="#">Perforations</a></li>
-                            <li class="disabled"><a href="#">Status Alerts</a></li>
-                            <li class="disabled"><a href="#">Text Links</a></li>
-                            <li class="disabled"><a href="#">Variable Columns</a></li>
-                          </ul>
-                        </li>
-                        <li class="col-sm-4">
-                          <ul>
-                            <li class="dropdown-header">Examples</li>
-                            <li class="disabled"><a href="#">List Item</a></li>
-                            <li class="disabled"><a href="#">List Item</a></li>
-                            <li class="disabled"><a href="#">List Item</a></li>
-                            <li class="disabled"><a href="#">List Item</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">List Header</li>
-                            <li class="disabled"><a href="#">List Item</a></li>
-                            <li class="disabled"><a href="#">List Item</a></li>
-                            <li class="disabled"><a href="#">List Item</a></li>
-                            <li class="disabled"><a href="#">List Item</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li> <!-- / menu-large -->
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </div><!-- / col -->
-            </nav>
-          </div> <!-- / col -->
-        </div> <!-- / row -->
-      </div><!-- /.container -->
-
-      <!-- ========================================================================================================== -->
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <hr class="dashed-client"></hr>
-            <h3>Megamenu <span class="half">multi-column version</span></h3>
-            <p>This version uses a single Bootstrap column with the classes <strong>multi-column multi-column-4</strong> (or 2 or 3) added. This spreads the links over the colums evenly and can save space. However. You can't set a header to be always at the top of a column.</p>
-            <p class="red bold">Note: this will not work in IE 9 and below.</p>
-            <nav class="navbar navbar-admin">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ui-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <div class="col-xs-12">
-                <div class="collapse navbar-collapse" id="ui-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="<!-- $active_index? -->"><a href="#">Home</a></li>
-                    <li class="<!-- $active_structure? -->"><a href="#">Structure <span class="sr-only">(current)</span></a></li>
-                    <li class="dropdown <!-- $active_typography? -->">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Typography <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li class="<!-- $active_sans-serif? -->"><a href="#">Sans Serif <span class="light"> (Default)</span></a></li>
-                        <li class="<!-- $active_serif? -->"><a href="#">Serif</a></li>
-                      </ul>
-                    </li>
-                    <!-- UI Menu ============================================================================= -->
-                    <li class="dropdown menu-large <!-- $active_UI_menu? -->">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI Menu <b class="caret"></b></a>       
-                      <ul class="dropdown-menu megamenu">
-                        <li class="title">UI Menu</li>
-                        <li class="col-xs-12  multi-column multi-column-4">
-                          <ul>
-                            <li class="dropdown-header">Bootstrap Components</li>
-                            <li class="disabled"><a href="#">Accordions</a></li>
-                            <li class="disabled"><a href="#">Alerts</a></li>
-                            <li class=""><a href="#">Buttons</a></li>
-                            <li class="disabled"><a href="#">Forms</a></li>
-                            <li class=""><a href="#l">Navbars</a></li>
-                            <li class=""><a href="#l">Nav Tabs</a></li>
-                            <li class=""><a href="#">Panels</a></li>
-                            <li class=""><a href="#">Tables</a></li>
-                            <li class="disabled"><a href="#">Tooltips</a></li>
-                            <li class="dropdown-header">Other Components</li>
-                            <li class="disabled"><a href="#">List Styles</a></li>
-                            <li class="disabled"><a href="#">Megamenu</a></li>
-                            <li class=""><a href="#">Perforations</a></li>
-                            <li class="disabled"><a href="#">Status Alerts</a></li>
-                            <li class="disabled"><a href="#">Text Links</a></li>
-                            <li class="disabled"><a href="#">Variable Columns</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li> <!-- / menu-large -->
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </div><!-- / col -->
-            </nav>
-          </div> <!-- / col -->
-        </div> <!-- / row -->
-      </div><!-- /.container -->
-
-
-
-      <div class="container margin-top50">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>&nbsp;</p>
-          </div> <!-- / col -->
-        </div> <!-- / row -->
-      </div><!-- /.container -->
-
-
+    
 
     <!-- ========================================================================================================== -->
-    </div> <!-- / wrapper -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <hr class="dashed-client"></hr>
+          <h3>Megamenu <span class="half">Default version</span></h3>
+          The deafult version uses the standard Bootstrap columns to arrange the lists. The list can be laid out exactly as you wish them to appear.</p>
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ui-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="col-xs-12">
+              <div class="collapse navbar-collapse" id="ui-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="<!-- $active_index? -->"><a href="#">Home</a></li>
+                  <li class="<!-- $active_structure? -->"><a href="#">Structure <span class="sr-only">(current)</span></a></li>
+                  <li class="dropdown <!-- $active_typography? -->">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Typography <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li class="<!-- $active_sans-serif? -->"><a href="#">Sans Serif <span class="light"> (Default)</span></a></li>
+                      <li class="<!-- $active_serif? -->"><a href="#">Serif</a></li>
+                    </ul>
+                  </li>
+                  <!-- UI Menu ============================================================================= -->
+                  <li class="dropdown menu-large <!-- $active_UI_menu? -->">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI Menu <b class="caret"></b></a>       
+                    <ul class="dropdown-menu megamenu">
+                      <li class="col-sm-4">
+                        <ul>
+                          <li class="dropdown-header">Bootstrap Components</li>
+                          <li class="disabled"><a href="#">Accordions</a></li>
+                          <li class="disabled"><a href="#">Alerts</a></li>
+                          <li class=""><a href="#">Buttons</a></li>
+                          <li class="disabled"><a href="#">Forms</a></li>
+                          <li class=""><a href="#">Nav Tabs</a></li>
+                          <li class=""><a href="#">Panels</a></li>
+                          <li class=""><a href="#">Tables</a></li>
+                          <li class="disabled"><a href="#">Tooltips</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-sm-4">
+                        <ul>
+                          <li class="dropdown-header">Other Components</li>
+                          <li class="disabled"><a href="#">List Styles</a></li>
+                          <li class="disabled"><a href="#">Megamenu</a></li>
+                          <li class=""><a href="#">Perforations</a></li>
+                          <li class="disabled"><a href="#">Status Alerts</a></li>
+                          <li class="disabled"><a href="#">Text Links</a></li>
+                          <li class="disabled"><a href="#">Variable Columns</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-sm-4">
+                        <ul>
+                          <li class="dropdown-header">Examples</li>
+                          <li class="disabled"><a href="#">List Item</a></li>
+                          <li class="disabled"><a href="#">List Item</a></li>
+                          <li class="disabled"><a href="#">List Item</a></li>
+                          <li class="disabled"><a href="#">List Item</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">List Header</li>
+                          <li class="disabled"><a href="#">List Item</a></li>
+                          <li class="disabled"><a href="#">List Item</a></li>
+                          <li class="disabled"><a href="#">List Item</a></li>
+                          <li class="disabled"><a href="#">List Item</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li> <!-- / menu-large -->
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- / col -->
+          </nav>
+        </div> <!-- / col -->
+      </div> <!-- / row -->
+    </div><!-- /.container -->
+
+    <!-- ========================================================================================================== -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <hr class="dashed-client"></hr>
+          <h3>Megamenu <span class="half">multi-column version</span></h3>
+          <p>This version uses a single Bootstrap column with the classes <strong>multi-column multi-column-4</strong> (or 2 or 3) added. This spreads the links over the colums evenly and can save space. However. You can't set a header to be always at the top of a column.</p>
+          <p class="red bold">Note: this will not work in IE 9 and below.</p>
+          <nav class="navbar navbar-admin">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ui-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="col-xs-12">
+              <div class="collapse navbar-collapse" id="ui-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="<!-- $active_index? -->"><a href="#">Home</a></li>
+                  <li class="<!-- $active_structure? -->"><a href="#">Structure <span class="sr-only">(current)</span></a></li>
+                  <li class="dropdown <!-- $active_typography? -->">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Typography <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li class="<!-- $active_sans-serif? -->"><a href="#">Sans Serif <span class="light"> (Default)</span></a></li>
+                      <li class="<!-- $active_serif? -->"><a href="#">Serif</a></li>
+                    </ul>
+                  </li>
+                  <!-- UI Menu ============================================================================= -->
+                  <li class="dropdown menu-large <!-- $active_UI_menu? -->">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI Menu <b class="caret"></b></a>       
+                    <ul class="dropdown-menu megamenu">
+                      <li class="title">UI Menu</li>
+                      <li class="col-xs-12  multi-column multi-column-4">
+                        <ul>
+                          <li class="dropdown-header">Bootstrap Components</li>
+                          <li class="disabled"><a href="#">Accordions</a></li>
+                          <li class="disabled"><a href="#">Alerts</a></li>
+                          <li class=""><a href="#">Buttons</a></li>
+                          <li class="disabled"><a href="#">Forms</a></li>
+                          <li class=""><a href="#l">Navbars</a></li>
+                          <li class=""><a href="#l">Nav Tabs</a></li>
+                          <li class=""><a href="#">Panels</a></li>
+                          <li class=""><a href="#">Tables</a></li>
+                          <li class="disabled"><a href="#">Tooltips</a></li>
+                          <li class="dropdown-header">Other Components</li>
+                          <li class="disabled"><a href="#">List Styles</a></li>
+                          <li class="disabled"><a href="#">Megamenu</a></li>
+                          <li class=""><a href="#">Perforations</a></li>
+                          <li class="disabled"><a href="#">Status Alerts</a></li>
+                          <li class="disabled"><a href="#">Text Links</a></li>
+                          <li class="disabled"><a href="#">Variable Columns</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li> <!-- / menu-large -->
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- / col -->
+          </nav>
+        </div> <!-- / col -->
+      </div> <!-- / row -->
+    </div><!-- /.container -->
+
+
+    <div class="container margin-top50">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>&nbsp;</p>
+        </div> <!-- / col -->
+      </div> <!-- / row -->
+    </div><!-- /.container -->
+
+
 
     <!-- Footer ========================================================================= -->
     <!-- @import "../navbars/navbar-footer-default.kit" -->
