@@ -7157,7 +7157,9 @@ html {
 
 body {
   color: #211F0F;
-  font-family: "roboto-regular", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif;
+  padding-top: 70px;
+  padding-bottom: 80px; }
 
 .container-fluid .row {
   padding-left: 10px;
