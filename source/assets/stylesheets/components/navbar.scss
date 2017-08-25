@@ -19,9 +19,12 @@ $navFont        : $font-bold;
   }
 
     .navbar-header{
-    // margin:0;
     min-height:50px;
     height:50px;
+  }
+
+  .navbar-nav{
+    margin:0 -15px;
   }
 }
 
@@ -29,6 +32,10 @@ $navFont        : $font-bold;
   .navbar{
     min-height:50px;
     height:50px;
+  }
+
+  .navbar-right{
+    margin-right:10px;
   }
 }
 
@@ -93,8 +100,7 @@ $navFont        : $font-bold;
   .navbar-nav > li > a{
     min-height:50px;
     height:50px;
-    padding-top:15px;
-    padding-bottom:15px;
+    padding:15px 10px;
   }
 }
 
@@ -261,7 +267,8 @@ $navFont        : $font-bold;
   color:$navText;
   border:none;
   font-family: $navFont;
-  font-size: 1em;
+  font-size: 14px;
+  padding-top:7px;
   min-height:35px;
   height:35px;
 }
@@ -315,3 +322,19 @@ $navFont        : $font-bold;
 .navbar-admin .btn:focus { background-color: darken($admin, 35%)!important;}
 .navbar-admin .btn:active  { background-color: darken($admin, 35%)!important;}
 
+
+
+// Tweaks =========================
+// These are small adgustments for the site
+
+.navbar li .fa{
+  color:white;
+}
+
+.navbar .fa-2x{
+  margin-top:-5px;
+}
+
+.navbar hr{
+  margin-top:5px;
+}

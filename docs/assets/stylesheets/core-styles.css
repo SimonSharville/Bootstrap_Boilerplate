@@ -8058,12 +8058,16 @@ textarea {
     height: auto; }
   .navbar-header {
     min-height: 50px;
-    height: 50px; } }
+    height: 50px; }
+  .navbar-nav {
+    margin: 0 -15px; } }
 
 @media (min-width: 768px) {
   .navbar {
     min-height: 50px;
-    height: 50px; } }
+    height: 50px; }
+  .navbar-right {
+    margin-right: 10px; } }
 
 .navbar-default {
   background-color: #00b2b2;
@@ -8119,8 +8123,7 @@ textarea {
   .navbar-nav > li > a {
     min-height: 50px;
     height: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px; } }
+    padding: 15px 10px; } }
 
 .navbar-default .navbar-nav > li > a {
   color: white; }
@@ -8230,7 +8233,8 @@ textarea {
   color: white;
   border: none;
   font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
-  font-size: 1em;
+  font-size: 14px;
+  padding-top: 7px;
   min-height: 35px;
   height: 35px; }
 
@@ -8298,6 +8302,15 @@ textarea {
 
 .navbar-admin .btn:active {
   background-color: #330019 !important; }
+
+.navbar li .fa {
+  color: white; }
+
+.navbar .fa-2x {
+  margin-top: -5px; }
+
+.navbar hr {
+  margin-top: 5px; }
 
 /* Navbar Admin  ================================================ */
 .navbar-admin {
