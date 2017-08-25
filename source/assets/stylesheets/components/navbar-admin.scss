@@ -62,57 +62,117 @@ $navFont        : $font-bold;
 
 // Dropdown menu ===================================================
 
-.navbar-admin .navbar-nav .dropdown-menu{
-  border:none;
-  background-color:$navDropdown;
-  border-radius: 0;
-}
+@media (min-width: 768px){
+  .navbar-admin .navbar-nav .dropdown-menu{
+    padding:0;
+    border-color:$grey03;
+    border-top:none;
+  }
 
-.navbar-admin .navbar-nav > li > .dropdown-menu{
-  padding:0;
-}
+  .navbar-admin .navbar-nav .dropdown-menu > li > a{
+    color:darken($admin, 20%);
+    font-family: $font-medium;
+    padding:8px 10px;
+    border-bottom: 1px solid $grey03;
+  }
 
-.navbar-admin .navbar-nav > li > .dropdown-menu .divider{
-  margin:5px 0;
-}
+  .navbar-admin .navbar-nav .dropdown-menu > li:last-child > a{
+    border-bottom:none;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+  }
 
-.navbar-admin .navbar-nav .dropdown-menu > li > a {
-  font-family: $navFont;
-  color: $navText;
-}
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:visited{
+    color:darken($admin, 20%);
+    background-color:white;
+  }
 
-.navbar-admin .navbar-nav .dropdown-menu > li > a:hover{
-  background-color: darken($navDropdown, 10%);
-  color: $navText;
-}
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:hover{
+    color:white;
+    background-color:$admin;
+  }
+  
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:focus{
+    color:white;
+    background-color:darken($admin, 5%);
+  }
 
-.navbar-admin .navbar-nav .dropdown-menu > li > a:focus, {
-  background-color: darken($navDropdown, 5%);
-  color: $navText;
-}
-
-.navbar-admin .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
-  background-color: darken($navDropdown, 5%);
-}
-
-.navbar-admin .navbar-nav > .open > a, .navbar-admin .navbar-nav > .open > a:hover{
-  background-color:$navDropdown;
 }
 
 @media (max-width: 767px){
+  .navbar-admin .navbar-nav .open .dropdown-menu{
+    padding:0;
+  }
+
   .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
-    background-color:$navDropdown;
+    color: $navText;
+    font-family: $font-medium;
+  }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:visited{
+    background-color: darken($navHover, 0%);
     color: $navText;
   }
   .navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover{
-    background-color: darken($navDropdown, 10%);
+    background-color: darken($navHover, 0%);
     color: $navText;
   }
   .navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus, {
-    background-color: darken($navDropdown, 10%);
+    background-color: darken($navFocus, 0%);
     color: $navText;
   }
 }
+
+// .navbar-admin .navbar-nav .dropdown-menu{
+//   border:none;
+//   background-color:$navDropdown;
+//   border-radius: 0;
+// }
+
+// .navbar-admin .navbar-nav > li > .dropdown-menu{
+//   padding:0;
+// }
+
+// .navbar-admin .navbar-nav > li > .dropdown-menu .divider{
+//   margin:5px 0;
+// }
+
+// .navbar-admin .navbar-nav .dropdown-menu > li > a {
+//   font-family: $navFont;
+//   color: $navText;
+// }
+
+// .navbar-admin .navbar-nav .dropdown-menu > li > a:hover{
+//   background-color: darken($navDropdown, 10%);
+//   color: $navText;
+// }
+
+// .navbar-admin .navbar-nav .dropdown-menu > li > a:focus, {
+//   background-color: darken($navDropdown, 5%);
+//   color: $navText;
+// }
+
+// .navbar-admin .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+//   background-color: darken($navDropdown, 5%);
+// }
+
+// .navbar-admin .navbar-nav > .open > a, .navbar-admin .navbar-nav > .open > a:hover{
+//   background-color:$navDropdown;
+// }
+
+// @media (max-width: 767px){
+//   .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
+//     background-color:$navDropdown;
+//     color: $navText;
+//   }
+//   .navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover{
+//     background-color: darken($navDropdown, 10%);
+//     color: $navText;
+//   }
+//   .navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus, {
+//     background-color: darken($navDropdown, 10%);
+//     color: $navText;
+//   }
+// }
 
 // Toggle Button ===================================================
 
