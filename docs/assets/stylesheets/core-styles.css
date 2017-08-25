@@ -7749,7 +7749,10 @@ legend {
   padding: 3px 10px 5px 10px; }
 
 .form-control {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  border-width: 2px;
+  border-color: #D9D6D6;
+  box-shadow: none; }
 
 .form-control:focus {
   box-shadow: none;
