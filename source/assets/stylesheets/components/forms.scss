@@ -76,7 +76,9 @@ legend{
 
 // Forms Horizontal ================================================
 
-.form-horizontal{
+.form-horizontal .form-group{
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .form-horizontal{ // This aligns the label & inputs to the field-group
