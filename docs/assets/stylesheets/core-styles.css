@@ -9801,6 +9801,9 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
   padding-top: 5px;
   padding-bottom: 5px; }
 
+.table-responsive {
+  border: none; }
+
 .tcol-66 {
   width: 66%; }
 
@@ -9836,6 +9839,15 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
 
 .tcol-14 {
   width: 14%; }
+
+.tcol-12 {
+  width: 12%; }
+
+.tcol-12-5 {
+  width: 12.5%; }
+
+.tcol-11 {
+  width: 11%; }
 
 .tcol-10 {
   width: 10%; }
