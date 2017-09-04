@@ -10955,3 +10955,118 @@ fieldset[disabled] .btn-default.focus {
 .tab-content > .tab-pane .perf.full-row {
   margin-left: -20px;
   width: calc(100% + 40px); }
+
+.toggle-plus.accordion-toggle[aria-expanded="true"]:after {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #211F0F; }
+
+.toggle-plus.accordion-toggle[aria-expanded="false"]:after {
+  font-family: 'FontAwesome';
+  content: "\f067";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #211F0F; }
+
+.accordion .panel-heading .accordion-toggle {
+  display: block; }
+
+/* set panel-heading paddings to <a> instead of h3 */
+.accordion .panel-heading {
+  padding: 0px;
+  color: white; }
+
+.accordion .panel-heading a:link {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none; }
+
+.accordion .panel-heading a:visited {
+  color: white; }
+
+.accordion .panel-heading h3 {
+  margin: 0; }
+
+.accordion .glyphicon {
+  padding: 0; }
+
+.accordion .glyphicon-minus,
+.accordion .glyphicon-plus {
+  color: white; }
+
+/* change color of open class */
+.accordion .panel-heading h3 {
+  background-color: #3a3837; }
+
+.accordion .panel-heading h3:hover {
+  background-color: #2d2b2a; }
+
+.accordion .panel-heading h3:active {
+  background-color: #201f1e; }
+
+/* change color of collapsed class */
+.accordion .collapsed {
+  background-color: #615e5c; }
+
+.accordion .collapsed:hover {
+  background-color: #545150; }
+
+.accordion .collapsed:active {
+  background-color: #474543; }
+
+.accordion .panel {
+  background-color: white;
+  border: none;
+  box-shadow: none; }
+
+.accordion .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+  border-left: 1px solid #615E5C;
+  border-right: 1px solid #615E5C;
+  border-bottom: 1px solid #615E5C; }
+
+.accordion:last-of-type > .panel-heading + .panel-collapse > .panel-body {
+  border-bottom: 1px solid #615E5C; }
+
+.accordion .panel-body {
+  margin-bottom: -1px;
+  border: none;
+  box-shadow: none; }
+
+.accordion .panel-footer {
+  background-color: #545150;
+  color: white;
+  border: none; }
+
+.accordion.panel-default .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+
+/* change color of open class */
+.accordion.panel-admin .panel-heading h3 {
+  background-color: #e50073; }
+
+.accordion.panel-admin .panel-heading h3:hover {
+  background-color: #cc0066; }
+
+.accordion.panel-admin .panel-heading h3:active {
+  background-color: #b20059; }
+
+/* change color of collapsed class */
+.accordion.panel-admin .collapsed {
+  background-color: #e50073; }
+
+.accordion.panel-admin .collapsed:hover {
+  background-color: #cc0066; }
+
+.accordion.panel-admin .collapsed:active {
+  background-color: #b20059; }
+
+.accordion.panel-admin .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+
+.accordion.panel-admin .panel-footer {
+  background-color: #e50073; }
