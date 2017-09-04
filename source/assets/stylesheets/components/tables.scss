@@ -3,6 +3,9 @@
 
 $tableBaseGrey:   $grey02;
 $tableBorder:     $grey10;
+$tableHover:      $grey02;
+$tableHoverHover: $grey04;
+
 
 // BS Tables Overrides =========================================================
 // This is a set of SARD overrides for basic BS Tables.
@@ -63,14 +66,14 @@ $tableBorder:     $grey10;
   background-color: $grey02;
 }
 .table-hover > tbody > tr:hover {
-  background-color: $grey02;
+  background-color: $tableHover;
 }
 
 .table-striped.table-hover > tbody > tr:nth-of-type(odd) {
-  background-color: $grey02;
+  background-color: $tableHover;
 }
 .table-hover.table-hover > tbody > tr:hover {
-  background-color: $grey04;
+  background-color: $tableHoverHover;
 }
 
 .table > thead > tr > td.active,

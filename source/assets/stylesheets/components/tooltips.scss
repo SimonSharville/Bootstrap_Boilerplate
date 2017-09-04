@@ -4,20 +4,12 @@
 // BS Tooltips & Popovers Overrides
 
 a.glyphicon-info-sign{
-    color: darken($info, 0%); 
+    color: darken($info, 0%)!important; 
     background-color:white;
     border-radius:50%;
     border:1px solid white;
     padding:0px;
   }
-
-  // a:hover .glyphicon-info-sign, a:focus .glyphicon-info-sign{
-  //   color: darken($info, 10%);
-  // }
-
-  // .notice .glyphicon.glyphicon-info-sign{
-  //   color:$info;
-  // }
 
 .tooltip{
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
@@ -73,7 +65,6 @@ a.glyphicon-info-sign{
 .popover{
   max-width: 500px;
   background-color: lighten($info, 10%);
-  // padding:0px;
 }
 
 .popover-title{ 

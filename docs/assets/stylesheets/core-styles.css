@@ -11145,7 +11145,7 @@ fieldset[disabled] .btn-default.focus {
 /* ===================================================================================================== */
 /* Tootips & popovers ================================================================================== */
 a.glyphicon-info-sign {
-  color: #00a0e0;
+  color: #00a0e0 !important;
   background-color: white;
   border-radius: 50%;
   border: 1px solid white;
@@ -11229,52 +11229,68 @@ a.glyphicon-info-sign {
 
 /* ===================================================================================================== */
 /* Notices ============================================================================================= */
-.notice-group h3 .glyphicon {
-  font-size: 14px; }
+.notice .panel-body {
+  padding: 0; }
 
-.notice {
-  padding-top: 1px;
-  margin-bottom: 7px;
-  padding-bottom: 8px;
+.notice ul {
+  margin: 0; }
+
+.notice ul li {
+  padding: 8px 15px;
   border-bottom: 1px solid #C7C4C2; }
 
-.notice:last-of-type {
-  border-bottom: none;
-  margin-bottom: -20px; }
+.notice ul li:last-of-type {
+  border-bottom: none; }
 
-.panel-body .notice {
-  border-bottom-color: white; }
+.notice ul li:hover {
+  background-color: #D9D6D6; }
 
-.notice.status:before {
-  height: 32px;
-  width: 32px;
+.notice ul li a {
+  color: #211F0F;
+  text-decoration: none; }
+
+.notice li h1, .notice li h2, .notice li h3, .notice li h4, .notice li h5, .notice li h6, .notice li p {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.2em; }
+
+.notice li.status {
+  min-height: 50px; }
+
+.notice li.status h1, .notice li.status h2, .notice li.status h3, .notice li.status h4, .notice li.status h5, .notice li.status h6, .notice li.status p {
+  margin-left: 38px; }
+
+.notice li.status:before {
+  height: 36px;
+  width: 36px;
   background-size: 28px 28px;
   background-repeat: no-repeat;
-  padding-top: 4px; }
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding-top: 4px;
+  padding-left: 1px;
+  margin-left: -7px; }
 
-.notice.status-alert:before {
-  padding-left: 2px; }
+.notice li.status.status-sm {
+  min-height: 30px; }
 
-.notice.status-danger:before {
-  padding-left: 2px; }
+.notice li.status.status-sm h1, .notice li.status.status-sm h2, .notice li.status.status-sm h3, .notice li.status.status-sm h4, .notice li.status.status-sm h5, .notice li.status.status-sm h6, .notice li.status.status-sm p {
+  margin-left: 22px; }
 
-.notice h5, .notice h6, .notice p {
-  margin: 0 0 0 40px; }
+.notice li.status.status-sm:before {
+  height: 22px;
+  width: 22px;
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  line-height: 0.75em;
+  padding-left: 1px;
+  margin-left: -7px;
+  margin-top: -1px; }
 
-.notice p {
-  margin-bottom: -3px; }
-
-.notice a:link {
-  color: #211F0F; }
-
-.notice a:visited {
-  color: #211F0F; }
-
-.notice a:hover {
-  color: #009999; }
-
-.notice a:active {
-  color: #009999; }
+.notice .single h1, .notice .single h2, .notice .single h3, .notice .single h4, .notice .single h5, .notice .single h6, .notice .single p {
+  line-height: 2.4em; }
 
 /* ===================================================================================================== */
 /* Messages ============================================================================================ */
