@@ -1,4 +1,5 @@
-// Rag Status
+/* ===================================================================================================== */
+/* Rag Status ========================================================================================== */
 
 $rag-red:          $red;
 $rag-amber:        $yellow;
@@ -40,52 +41,48 @@ $rag-white:        $white;
 .rag-bar-status{float:right}
 
 
-  // Status Lights ========================================================
+// Status Lights ========================================================
 
-  .status{
-    // font-family: 'Glyphicons Halflings';
-    // content: "\e080" ;
-  }
 
-  .status:before{
-    content: "" ;
-    display: inline-block;
-    border-radius:50%;
-    border: 2px solid white;
-    float:left;
-    background-image: url("../graphics/panel_highlight.png");
+.status:before{
+  content: "" ;
+  display: inline-block;
+  border-radius:50%;
+  border: 2px solid white;
+  float:left;
+  background-image: url("../graphics/panel_highlight.png");
 
-    font-family: 'robotobold', Helvetica, Arial, Sans-serif;
-    text-align:center;
-    color:white;
-  }
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  text-align:center;
+  color:white;
+}
 
-  .status-alert:before{
-    background-color:$orange;
-    content: "A" ;
-  }
+.status-alert:before{
+  background-color:$orange;
+  content: "A" ;
+}
 
-  .status-warning:before{
-    background-color:$yellow;
-    content: "W" ;
-  }
+.status-warning:before{
+  background-color:$yellow;
+  content: "W" ;
+}
 
-  .status-success:before{
-    background-color:$success;
-    content: "S" ;
-  }
+.status-success:before{
+  background-color:$success;
+  content: "S" ;
+}
 
-  .status-danger:before{
-    background-color:$danger;
-    content: "D" ;
-  }
+.status-danger:before{
+  background-color:$danger;
+  content: "D" ;
+}
 
-  .status-none:before{
-    background-color:transparent;
-    content: "N" ;
-    color:$grey10;
-    border-color:$grey10;
-  }
+.status-none:before{
+  background-color:transparent;
+  content: "N" ;
+  color:$grey10;
+  border-color:$grey10;
+}
 
 // Table specific Status Lights ================
 .table div{ 
@@ -178,7 +175,6 @@ $rag-white:        $white;
 }
 .rag-btn-red:hover { 
   background-color: $grey06; 
-  // color: $rag-red; 
 }
 .rag-btn-red:focus,
 .rag-btn.rag-btn-red.selected { 
@@ -195,7 +191,6 @@ $rag-white:        $white;
 }
 .rag-btn-green:hover { 
   background-color: $grey06; 
-  // color: $rag-green; 
 }
 .rag-btn-green:focus,
 .rag-btn.rag-btn-green.selected { 
@@ -212,7 +207,6 @@ $rag-white:        $white;
 }
 .rag-btn-amber:hover { 
   background-color: $grey06; 
-  // color: $rag-amber; 
 }
 .rag-btn-amber:focus,
 .rag-btn.rag-btn-amber.selected { 
@@ -229,7 +223,6 @@ $rag-white:        $white;
 }
 .rag-btn-na:hover { 
   background-color: $grey06; 
-  // color: $rag-na; 
 }
 .rag-btn-na:focus,
 .rag-btn.rag-btn-na.selected { 

@@ -1,0 +1,151 @@
+/* ===================================================================================================== */
+/* Accordions ========================================================================================== */
+
+// Add .toggle-plus before an .accordion-toggle to include a + - symbol to it 
+
+.toggle-plus.accordion-toggle[aria-expanded="true"]:after{
+  font-family: 'FontAwesome';
+  content: "\f068"; // minus
+  position: absolute;
+  top:0;
+  right:0;
+  color:$text;
+}
+.toggle-plus.accordion-toggle[aria-expanded="false"]:after{
+  font-family: 'FontAwesome';
+  content: "\f067"; // plus
+  position: absolute;
+  top:0;
+  right:0;
+  color:$text;
+}
+
+
+// SA-Accordion ================================================
+
+
+.accordion .panel-heading .accordion-toggle {
+  display: block;
+}
+
+/* set panel-heading paddings to <a> instead of h3 */    
+.accordion .panel-heading { 
+  padding:0px;
+  color:white;
+}
+
+.accordion .panel-heading a:link{ // This makes the entire panel-heading a link
+  padding:10px 15px;
+  color:white;
+  text-decoration:none;
+}
+
+.accordion .panel-heading a:visited{ // This makes the entire panel-heading a link
+  color:white;
+}
+
+.accordion .panel-heading h3{ 
+  margin:0; // Adjusts some strange overlap of the panel-heading
+}
+
+.accordion .glyphicon{ padding: 0;}
+
+.accordion .glyphicon-minus,
+.accordion .glyphicon-plus
+{color:white;}
+
+// Colouring =========================================================
+$accordian: $grey14;
+
+.accordion{
+  // border-bottom:1px solid $accordian;
+}
+
+/* change color of open class */
+.accordion .panel-heading h3{ 
+  background-color: darken($accordian, 15%); 
+}
+.accordion .panel-heading h3:hover{
+  background-color:darken($accordian, 20%);
+}
+.accordion .panel-heading h3:active{
+  background-color:darken($accordian, 25%);
+}
+
+/* change color of collapsed class */
+.accordion .collapsed { 
+  background-color: darken($accordian, 0%); 
+}
+.accordion .collapsed:hover { 
+  background-color: darken($accordian, 5%); 
+}
+.accordion .collapsed:active { 
+  background-color: darken($accordian, 10%); 
+}
+
+.accordion .panel{
+  background-color:white;
+  border:none;
+  box-shadow:none;
+}
+.accordion .panel-heading + .panel-collapse > .panel-body{ 
+  border:none;
+  border-left:1px solid $accordian;
+  border-right:1px solid $accordian;
+  border-bottom:1px solid $accordian;
+}
+
+.accordion:last-of-type > .panel-heading + .panel-collapse > .panel-body{
+  border-bottom:1px solid $accordian;
+}
+
+.accordion .panel-body{
+  margin-bottom:-1px;
+  border:none;
+  box-shadow:none;
+}
+
+.accordion .panel-footer{
+  background-color: darken($accordian, 5%);
+  color:white;
+  border:none;
+}
+
+// Default Colouring =========================================================
+
+.accordion.panel-default .panel-heading + .panel-collapse > .panel-body{ 
+  border:none;
+}
+
+// Admin Colouring ==========================================================
+
+/* change color of open class */
+.accordion.panel-admin .panel-heading h3{ 
+  background-color: darken($admin, 0%); 
+}
+
+.accordion.panel-admin .panel-heading h3:hover{
+  background-color:darken($admin, 5%);
+}
+.accordion.panel-admin .panel-heading h3:active{
+  background-color:darken($admin, 10%);
+}
+
+/* change color of collapsed class */
+.accordion.panel-admin .collapsed { 
+  background-color: darken($admin, 0%); 
+}
+.accordion.panel-admin .collapsed:hover { 
+  background-color: darken($admin, 5%); 
+}
+.accordion.panel-admin .collapsed:active { 
+  background-color: darken($admin, 10%); 
+}
+
+.accordion.panel-admin .panel-heading + .panel-collapse > .panel-body{ 
+  border:none;
+}
+
+.accordion.panel-admin .panel-footer{
+  background-color: darken($admin, 0%);
+}
