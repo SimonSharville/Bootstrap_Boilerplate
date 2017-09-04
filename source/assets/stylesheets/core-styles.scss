@@ -20,7 +20,7 @@
 
   @import "global/typestyles";
 
-  @import "global/typestyles-serif"; // This is only used for the UI version. Delete on final builds  
+  @import "global/typestyles-serif"; // This is only used for the UI version. Delete on final build.
 
   @import "global/structure";
 
@@ -28,7 +28,7 @@
 
   @import "global/list-styles";
 
-  @import "global/ui-styles";
+  @import "global/ui-styles"; // This is only used for the UI version. Delete on final build/
 
 
 // Component styles =======================

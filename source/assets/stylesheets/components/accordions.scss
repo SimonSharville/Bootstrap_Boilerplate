@@ -1,21 +1,24 @@
-  // Add .toggle-plus before an .accordion-toggle to include a + - symbol to it 
+/* ===================================================================================================== */
+/* Accordions ========================================================================================== */
 
-  .toggle-plus.accordion-toggle[aria-expanded="true"]:after{
-    font-family: 'FontAwesome';
-    content: "\f068"; // minus
-    position: absolute;
-    top:0;
-    right:0;
-    color:$text;
-  }
-  .toggle-plus.accordion-toggle[aria-expanded="false"]:after{
-    font-family: 'FontAwesome';
-    content: "\f067"; // plus
-    position: absolute;
-    top:0;
-    right:0;
-    color:$text;
-  }
+// Add .toggle-plus before an .accordion-toggle to include a + - symbol to it 
+
+.toggle-plus.accordion-toggle[aria-expanded="true"]:after{
+  font-family: 'FontAwesome';
+  content: "\f068"; // minus
+  position: absolute;
+  top:0;
+  right:0;
+  color:$text;
+}
+.toggle-plus.accordion-toggle[aria-expanded="false"]:after{
+  font-family: 'FontAwesome';
+  content: "\f067"; // plus
+  position: absolute;
+  top:0;
+  right:0;
+  color:$text;
+}
 
 
 // SA-Accordion ================================================
