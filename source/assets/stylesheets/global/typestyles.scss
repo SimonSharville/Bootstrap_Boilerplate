@@ -310,7 +310,7 @@ blockquote:last-child{
 .asterisk{color:$client}
 .admin .asterisk{color:$admin}
 
-.center{text-align:center;}
+.center, .centre, .text-center, .text-centre{text-align:center;}
 .centre{text-align:center;}
 .left{text-align:left;}
 .right{text-align:right;}

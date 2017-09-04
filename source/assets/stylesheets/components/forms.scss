@@ -42,6 +42,9 @@ legend{
 
  .form-control{
   margin-bottom:5px;
+  border-width:2px;
+  border-color:$grey04;
+  box-shadow:none;
 }
 
  .form-control:focus{
@@ -76,7 +79,9 @@ legend{
 
 // Forms Horizontal ================================================
 
-.form-horizontal{
+.form-horizontal .form-group{
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .form-horizontal{ // This aligns the label & inputs to the field-group

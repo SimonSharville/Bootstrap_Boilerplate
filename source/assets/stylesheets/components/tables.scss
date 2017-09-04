@@ -2,6 +2,7 @@ $tableBaseGrey:   $grey02;
 $tableBorder:     $grey10;
 
 // BS Tables Overrides =========================================================
+// This is a set of SARD overrides for basic BS Tables.
 
 .table h3{
   font-family: $font-regular;
@@ -397,6 +398,13 @@ $tableBorder:     $grey10;
 }
 
 
+// Table Responsive ================================
+
+.table-responsive{
+  border:none;
+}
+
+
 // Table column variations - Use these within the td to adjust it's width.
 // Table column widths must add up to 100% in total, or leave columns empty and it will fill to fit.
 // You should only need to apply this to the top table head or table cell in a column.
@@ -412,6 +420,9 @@ $tableBorder:     $grey10;
 .tcol-20 { width:20%; }
 .tcol-15 { width:15%; }
 .tcol-14 { width:14%; }
+.tcol-12 { width:12%; }
+.tcol-12-5 { width:12.5%; }
+.tcol-11 { width:11%; }
 .tcol-10 { width:10%; }
 .tcol-5 { width:5%; }
 
