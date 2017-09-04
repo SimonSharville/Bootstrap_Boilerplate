@@ -34,3 +34,32 @@ li p { // This adjust the spacing and indents of multi line links in a list
     margin-bottom:0.5em;
     line-height: 1.3em;
   }
+
+  // Doc Lists ======================================================
+// Used in Dashboard/Support Docs
+
+.doc-list{ 
+  margin-bottom:0px;
+}
+.doc-list .title{
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-bottom:2px solid white;
+  padding-bottom:5px;
+  margin-bottom:5px;
+  border-top:1px solid $bodytext;
+  padding-top:5px;
+  margin-top:5px;
+}
+.doc-list .title:first-of-type{
+  border-top:none;
+  padding-top:0px;
+  margin-top:0px;
+}
+.doc-list .link{
+  border-bottom:1px solid $grey06;
+  padding-bottom:5px;
+  margin-bottom:5px;
+}
+.panel-body .doc-list .link{
+  border-bottom-color: white;
+}

@@ -86,8 +86,9 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-           <h1 class="">Alerts</h1>
-           <p class="intro">These are the standard alerts used in bootstap, re-styled.</p>
+           <h1 class="">Tooltips & Popovers</h1>
+           <p class="intro">To avoid visual clutter all Tooltips & Popovers should be set to float right of the list item they are within.</p>
+      <p class="">Tooltips are activated by hovering over them while Popovers are activated by clicking on them.</p>
         </div> <!-- / col -->
       </div> <!-- / row -->
     </div> <!-- / container -->
@@ -96,65 +97,66 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <h4>Standard Alerts</h4>
-          <div class="alert alert-success" role="alert">class="alert alert-success" <a href="#">This is a Link</a></div>
-          <div class="alert alert-info" role="alert">class="alert alert-info" <a href="#">This is a Link</a></div>
-          <div class="alert alert-warning" role="alert">class="alert alert-warning" <a href="#">This is a Link</a></div>
-          <div class="alert alert-danger" role="alert">class="alert alert-danger" <a href="#">This is a Link</a></div>
-        </div> <!-- / col -->
-      </div> <!-- / row -->
-    </div> <!-- / container -->
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="This is an example of a popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis."></a></h3>
+            </div>
+            <div class="panel-body">
+              <div class="notice status status-success">
+                <a href="">
+                  <h6>Status Success</h6>
+                  <p>This is an example of a Status Success.</p>
+                </a>
+              </div>
+              <div class="notice status status-warning">
+                <a href="">
+                  <h6>Status Warning</h6>
+                  <p>This is an example of a Status Warning.</p>
+                </a>
+              </div>
+              <div class="notice status status-alert">
+                <a href="">
+                  <h6>Status Alert</h6>
+                  <p>This is an example of a Status Alert.</p>
+                </a>
+              </div>
+              <div class="notice status status-danger">
+                <a class="pull-right glyphicon glyphicon-info-sign"  
+                data-toggle="tooltip" 
+                title="This is an example of a tootip."></a>
+                <a href="">
+                  <h6>Status Danger</h6>
+                  <p>This is an example of a Status Danger.</p>
+                </a>
+              </div>
+                <div class="notice status status-none">
+                  <a class="pull-right glyphicon glyphicon-info-sign"  
+                  data-toggle="tooltip" 
+                  title="This is an example of a tootip."></a>
+                  <a href="">
+                    <h6>Status None</h6>
+                    <p>This is an example of a Status None.</p>
+                  </a>
+              </div>
+            </div>
+          </div> <!-- / Panel -->
+        </div> <!-- / Column -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <hr class="dashed-client"></hr>
-          <h4>SARD Solution Alerts</h4>
-          <div class="alert alert-MRv" role="alert">Medical Revalidation <code>class="alert alert-MRv"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-NRv" role="alert">Nurse Revalidation <code>class="alert alert-NRv"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-360" role="alert">360 <code>class="alert alert-360"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-eLeave" role="alert">eLeave <code>class="alert alert-eLeave"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-A4A" role="alert">Appraisals for All <code>lass="alert alert-A4A"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-JPL" role="alert">Job Planning <code>class="alert alert-JPL"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-eRo" role="alert">eRostering <code>class="alert alert-eRo"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-CPL" role="alert">Capacity Planning <code>class="alert alert-CPL"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-        </div> <!-- / col -->
-      </div> <!-- / row -->
-    </div> <!-- / container -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <hr class="dashed-client"></hr>
-          <h4>Dismissible Alerts</h4>
-          <p>Build on any alert by adding an optional <strong>.alert-dismissible</strong> and close button.</p>
-          <div class="alert alert-warning alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Warning!</strong> Better check yourself, you're not looking too good.
-            <a href="#">This is a Link</a>
-          </div>
-        </div> <!-- / col -->
-      </div> <!-- / row -->
-    </div> <!-- / container -->
-
-
+        <div class="col-sm-6">
+          <h4>Popovers</h4>
+          <p>Popovers are added by using a link with NO url, like this:</br>
+            <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add popover title here" data-placement="bottom" data-content="Add popover content here."&gt;&lt;/a&gt;</code>
+          </p>
+          <h4>Tooltips</h4>
+          <p>Tooltips are added by adding the following:</br>
+            <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  
+                data-toggle="tooltip" 
+                title="This is an example of a tootip."&gt;&lt;/a&gt;</code>
+          </p>
+        </div> <!-- END Column -->
+      </div> <!-- / Row -->
+    </div> <!-- / Container -->
 
     <!-- Footer ========================================================================= -->
     <nav class="navbar navbar-footer-default navbar-fixed-bottom">

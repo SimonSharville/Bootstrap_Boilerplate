@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Boilerplate</title>
+    <link rel="icon" type="image/ico" href="../assets/graphics/favicon.ico"/>
+
+    <!-- Bootstrap -->
+    <link href="../assets/stylesheets/core-styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="">
+
+    <!-- $active_UI_menu = active  --> <!-- This makes this page active in the Navbar -->
+    <!-- @import "../navbars/navbar-default-multi-n1.kit" -->
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+           <h1 class="">Tooltips & Popovers</h1>
+           <p class="intro">To avoid visual clutter all Tooltips & Popovers should be set to float right of the list item they are within.</p>
+      <p class="">Tooltips are activated by hovering over them while Popovers are activated by clicking on them.</p>
+        </div> <!-- / col -->
+      </div> <!-- / row -->
+    </div> <!-- / container -->
+
+    <!-- ========================================================================================================== -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="This is an example of a popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis."></a></h3>
+            </div>
+            <div class="panel-body">
+              <div class="notice status status-success">
+                <a href="">
+                  <h6>Status Success</h6>
+                  <p>This is an example of a Status Success.</p>
+                </a>
+              </div>
+              <div class="notice status status-warning">
+                <a href="">
+                  <h6>Status Warning</h6>
+                  <p>This is an example of a Status Warning.</p>
+                </a>
+              </div>
+              <div class="notice status status-alert">
+                <a href="">
+                  <h6>Status Alert</h6>
+                  <p>This is an example of a Status Alert.</p>
+                </a>
+              </div>
+              <div class="notice status status-danger">
+                <a class="pull-right glyphicon glyphicon-info-sign"  
+                data-toggle="tooltip" 
+                title="This is an example of a tootip."></a>
+                <a href="">
+                  <h6>Status Danger</h6>
+                  <p>This is an example of a Status Danger.</p>
+                </a>
+              </div>
+                <div class="notice status status-none">
+                  <a class="pull-right glyphicon glyphicon-info-sign"  
+                  data-toggle="tooltip" 
+                  title="This is an example of a tootip."></a>
+                  <a href="">
+                    <h6>Status None</h6>
+                    <p>This is an example of a Status None.</p>
+                  </a>
+              </div>
+            </div>
+          </div> <!-- / Panel -->
+        </div> <!-- / Column -->
+
+        <div class="col-sm-6">
+          <h4>Popovers</h4>
+          <p>Popovers are added by using a link with NO url, like this:</br>
+            <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add popover title here" data-placement="bottom" data-content="Add popover content here."&gt;&lt;/a&gt;</code>
+          </p>
+          <h4>Tooltips</h4>
+          <p>Tooltips are added by adding the following:</br>
+            <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  
+                data-toggle="tooltip" 
+                title="This is an example of a tootip."&gt;&lt;/a&gt;</code>
+          </p>
+        </div> <!-- END Column -->
+      </div> <!-- / Row -->
+    </div> <!-- / Container -->
+
+    <!-- Footer ========================================================================= -->
+    <!-- @import "../navbars/navbar-footer-default.kit" -->
+
+
+  </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../assets/javascripts/core.js"></script>
+</html>

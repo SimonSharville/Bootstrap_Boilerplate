@@ -7619,6 +7619,31 @@ li p {
   margin-bottom: 0.5em;
   line-height: 1.3em; }
 
+.doc-list {
+  margin-bottom: 0px; }
+
+.doc-list .title {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-top: 1px solid #211F0F;
+  padding-top: 5px;
+  margin-top: 5px; }
+
+.doc-list .title:first-of-type {
+  border-top: none;
+  padding-top: 0px;
+  margin-top: 0px; }
+
+.doc-list .link {
+  border-bottom: 1px solid #C7C4C2;
+  padding-bottom: 5px;
+  margin-bottom: 5px; }
+
+.panel-body .doc-list .link {
+  border-bottom-color: white; }
+
 /* ===================================================================================================== */
 /* UI Styles  ========================================================================================== */
 /* This should not be needed on a final build ========================================================== */
@@ -11116,3 +11141,221 @@ fieldset[disabled] .btn-default.focus {
 
 .accordion.panel-admin .panel-footer {
   background-color: #e50073; }
+
+/* ===================================================================================================== */
+/* Tootips & popovers ================================================================================== */
+a.glyphicon-info-sign {
+  color: #00a0e0;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 0px; }
+
+.tooltip {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em; }
+
+.tooltip p {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em;
+  text-align: left; }
+
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
+
+.tooltip-inner {
+  background-color: #00a0e0; }
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #00a0e0; }
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #00a0e0; }
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.popover {
+  max-width: 500px;
+  background-color: #14bcff; }
+
+.popover-title {
+  background-color: #007cad;
+  color: white;
+  border-bottom: 0px solid #007cad;
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.05em; }
+
+.popover-content {
+  color: black;
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em;
+  line-height: 1.3em; }
+
+.popover.top > .arrow:after {
+  border-top-color: #14bcff; }
+
+.popover.right > .arrow:after {
+  border-right-color: #14bcff; }
+
+.popover.bottom > .arrow:after {
+  border-bottom-color: #14bcff; }
+
+.popover.left > .arrow:after {
+  border-left-color: #14bcff; }
+
+.popover-content a:link {
+  color: white;
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
+
+.popover-content a:visited {
+  color: white; }
+
+/* ===================================================================================================== */
+/* Notices ============================================================================================= */
+.notice-group h3 .glyphicon {
+  font-size: 14px; }
+
+.notice {
+  padding-top: 1px;
+  margin-bottom: 7px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #C7C4C2; }
+
+.notice:last-of-type {
+  border-bottom: none;
+  margin-bottom: -20px; }
+
+.panel-body .notice {
+  border-bottom-color: white; }
+
+.notice.status:before {
+  height: 32px;
+  width: 32px;
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  padding-top: 4px; }
+
+.notice.status-alert:before {
+  padding-left: 2px; }
+
+.notice.status-danger:before {
+  padding-left: 2px; }
+
+.notice h5, .notice h6, .notice p {
+  margin: 0 0 0 40px; }
+
+.notice p {
+  margin-bottom: -3px; }
+
+.notice a:link {
+  color: #211F0F; }
+
+.notice a:visited {
+  color: #211F0F; }
+
+.notice a:hover {
+  color: #009999; }
+
+.notice a:active {
+  color: #009999; }
+
+/* ===================================================================================================== */
+/* Messages ============================================================================================ */
+.messages h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #C7C4C2; }
+
+.messages .panel-heading h3 {
+  padding-bottom: 0px;
+  border-bottom: none; }
+
+.message-group {
+  border-bottom: 1px solid #C7C4C2; }
+
+.panel-body .message-group {
+  border-bottom-color: white; }
+
+.message-group:last-of-type {
+  border-bottom: 1px solid transparent; }
+
+.message {
+  position: relative;
+  border-bottom: 1px solid #C7C4C2; }
+
+.panel-body .message {
+  border-bottom: 1px solid white; }
+
+.message:last-of-type {
+  border-bottom: 1px solid transparent; }
+
+.message h4 {
+  color: #E50073; }
+
+.admin-db .message h4 {
+  color: #211F0F; }
+
+.message h6 {
+  margin-top: -8px;
+  padding-bottom: 2px; }
+
+.messages-collapse a:link {
+  color: #211F0F; }
+
+/* ===================================================================================================== */
+/* Notifications ======================================================================================= */
+.notifications {
+  padding: 0; }
+
+.notifications .date {
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+  border-top: 1px solid white;
+  color: black;
+  padding: 5px 0px 0px 0px;
+  margin-top: 15px;
+  margin-bottom: 5px; }
+
+.notifications .date:first-of-type {
+  border-top: none;
+  margin-top: 0px; }
+
+.notifications .time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.notifications .time:first-of-type {
+  border-top: none;
+  padding-top: 0px; }
+
+.panel-body .notifications:last-child {
+  margin-bottom: -10px; }
+
+.notifications.datatable .table td.date-time {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif; }
+
+.notifications.datatable .link-arrow td a {
+  margin-left: -1.25em;
+  text-indent: 1.25em; }
+
+.notifications.datatable .link-arrow td.detail {
+  padding-left: 30px; }

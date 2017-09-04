@@ -1,0 +1,53 @@
+/* ===================================================================================================== */
+/* Notices ============================================================================================= */
+
+// Notices ===============================================================
+.notice-group{
+}
+
+.notice-group h3 .glyphicon{
+font-size:14px;
+}
+
+.notice{
+  padding-top:1px;
+  margin-bottom:7px;
+  padding-bottom:8px;
+  border-bottom: 1px solid $grey06;
+}
+.notice:last-of-type{
+  border-bottom: none;
+  margin-bottom:-20px;
+}
+.panel-body .notice{
+  border-bottom-color: white;
+}
+
+.notice{ 
+  &.status:before{
+    height: 32px;
+    width: 32px;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    padding-top:4px;
+  }
+  &.status-alert:before{ padding-left:2px; }
+  &.status-danger:before{ padding-left:2px; }
+  &.status:hover:before{ }
+
+  h5, h6, p{
+    margin:0 0 0 40px;
+  }
+  p{ margin-bottom:-3px;}
+}
+
+ .notice{
+  a:link{ color:$text;}
+  a:visited{ color:$text;}
+  a:hover{ color:$text_link_hover;}
+  a:active{ color:$text_link_hover;}
+}
+
+
+
+
