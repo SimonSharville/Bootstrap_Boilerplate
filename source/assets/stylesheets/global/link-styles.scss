@@ -4,19 +4,20 @@
     
   // Text Link Colours
 
-    $text_link:             $client;
-    $text_link_visited:     $client;
+    $text_link:             $text;
+    $text_link_visited:     $text;
     $text_link_hover:       darken($client, 5%);
     $text_link_active:      darken($client, 15%);   
 
 
   a {
-    color: $client;
-    text-decoration: none; 
+    // color: $client;
+    text-decoration: none!important; 
   }
 
+
   a:hover, a:focus {
-    color: $ink;
+    // color: $ink;
     text-decoration: none; }
 
   a:link{ color:$text_link;}

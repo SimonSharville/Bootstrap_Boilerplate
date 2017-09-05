@@ -88,9 +88,13 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-           <h1 class="">Tooltips & Popovers</h1>
-           <p class="intro">To avoid visual clutter all Tooltips & Popovers should be set to float right of the list item they are within.</p>
-      <p class="">Tooltips are activated by hovering over them while Popovers are activated by clicking on them.</p>
+           <h1 class="">Notifications</h1>
+           <p class="intro">Notifications are lists that can sit either within a panel or not.</p>
+           <p>Either the panel or the containing div should have the class of <strong>notitfications</strong> added.</p>
+           <p>If you wish to have the link arrow added to the links in the list, then add a class of <strong>link-arrow</strong> to the containing ul.</p>
+           <p>For Headings you can use either <strong>heading</strong> or <strong>date</strong> classes, For Sub-headings you can use either <strong>subhead</strong> or <strong>time</strong> classes.</p>
+           <p>Headings or Dates need to sit outside of the uls.</p>
+           <p>&nbsp;</p>
         </div> <!-- / col -->
       </div> <!-- / row -->
     </div> <!-- / container -->
@@ -99,66 +103,75 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <div class="panel panel-default">
+        <div class="col-xs-6">
+          <h4>Inside a Panel</h4>
+          <div class="panel panel-default notifications">
             <div class="panel-heading">
-              <h3 class="panel-title">Notices<a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="This is an example of a popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa sem, aliquet a sagittis sit amet, euismod hendrerit massa. Morbi lorem mauris, sagittis ut dapibus et, rutrum et risus. Phasellus in erat faucibus, venenatis risus et, congue diam. Maecenas feugiat sem in ante suscipit, et consequat justo ultricies. Donec a tincidunt dolor. Cras faucibus ipsum id laoreet pulvinar. Nulla porttitor metus eget mauris convallis mollis."></a></h3>
+              <h3 class="panel-title">Your Notifications</h3>
             </div>
             <div class="panel-body">
-              <div class="notice status status-success">
-                <a href="">
-                  <h6>Status Success</h6>
-                  <p>This is an example of a Status Success.</p>
-                </a>
-              </div>
-              <div class="notice status status-warning">
-                <a href="">
-                  <h6>Status Warning</h6>
-                  <p>This is an example of a Status Warning.</p>
-                </a>
-              </div>
-              <div class="notice status status-alert">
-                <a href="">
-                  <h6>Status Alert</h6>
-                  <p>This is an example of a Status Alert.</p>
-                </a>
-              </div>
-              <div class="notice status status-danger">
-                <a class="pull-right glyphicon glyphicon-info-sign"  
-                data-toggle="tooltip" 
-                title="This is an example of a tootip."></a>
-                <a href="">
-                  <h6>Status Danger</h6>
-                  <p>This is an example of a Status Danger.</p>
-                </a>
-              </div>
-                <div class="notice status status-none">
-                  <a class="pull-right glyphicon glyphicon-info-sign"  
-                  data-toggle="tooltip" 
-                  title="This is an example of a tootip."></a>
-                  <a href="">
-                    <h6>Status None</h6>
-                    <p>This is an example of a Status None.</p>
-                  </a>
-              </div>
+              <p class="date">Sat, 10 Dec 2016</p>
+              <ul class="link-arrow">
+                <li class="time">01:16PM</li>
+                <li><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></li>
+              </ul>
+              <p class="date">Thu, 08 Dec 2016</p>
+              <ul class="link-arrow">
+                <li class="time">10:41 AM</li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is now complete</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by  Laura Gordon</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr John T Smith</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is ready to sign off and requires your signature</a></li>
+                <li class="time">09:30 AM</li>
+                <li><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></li>
+              </ul>
+              <p class="date">Thu, 17 Nov 2016</p>
+              <ul class="link-arrow">
+                <li class="time">03:33 PM</li>
+                <li><a href="https://demo.sardjv.co.uk/users/2-3/appraisals/jul2016-1/portfolio#domain_attributes/5034dfb2e3e1f1226d00000c/appraisal_datasets/5034e01ee3e1f12443000055">Evidence uploaded by  SARD System was attached to your portfolio Jul 2016</a></li>
+                <li class="time">03:32PM</li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+              </ul>
+              <a href="#" class="btn btn-primary">View All Notifications</a>
             </div>
           </div> <!-- / Panel -->
-        </div> <!-- / Column -->
+        </div> <!-- / Col -->
 
-        <div class="col-sm-6">
-          <h4>Popovers</h4>
-          <p>Popovers are added by using a link with NO url, like this:</br>
-            <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  data-toggle="popover" title="Add popover title here" data-placement="bottom" data-content="Add popover content here."&gt;&lt;/a&gt;</code>
-          </p>
-          <h4>Tooltips</h4>
-          <p>Tooltips are added by adding the following:</br>
-            <code>&lt;a class="pull-right glyphicon glyphicon-info-sign"  
-                data-toggle="tooltip" 
-                title="This is an example of a tootip."&gt;&lt;/a&gt;</code>
-          </p>
-        </div> <!-- END Column -->
-      </div> <!-- / Row -->
-    </div> <!-- / Container -->
+        <div class="col-xs-6">
+          <h4>Outside a Panel</h4>
+            <div class="notifications">
+            <h3 class="">Your Notifications</h3>
+            <p class="heading">Heading</p>
+            <ul class="link-arrow">
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></li>
+            </ul>
+            <p class="heading">Heading</p>
+            <ul class="link-arrow">
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is now complete</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by  Laura Gordon</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr John T Smith</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is ready to sign off and requires your signature</a></li>
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></li>
+            </ul>
+            <p class="heading">Heading</p>
+            <ul class="link-arrow">
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/users/2-3/appraisals/jul2016-1/portfolio#domain_attributes/5034dfb2e3e1f1226d00000c/appraisal_datasets/5034e01ee3e1f12443000055">Evidence uploaded by  SARD System was attached to your portfolio Jul 2016</a></li>
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary">View All Notifications</a>
+          </div><!-- / notifications -->
+        </div> <!-- / Col -->
+      </div> <!-- / row -->
+    </div> <!-- / container -->
 
     <!-- Footer ========================================================================= -->
     <nav class="navbar navbar-footer-default navbar-fixed-bottom">
