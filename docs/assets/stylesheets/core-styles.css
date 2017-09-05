@@ -11258,7 +11258,7 @@ a.glyphicon-info-sign {
 
 .notice ul li {
   padding: 8px 15px;
-  border-bottom: 1px solid #C7C4C2; }
+  border-bottom: 1px solid white; }
 
 .notice ul li:last-of-type {
   border-bottom: none; }
