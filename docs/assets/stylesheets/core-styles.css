@@ -6244,7 +6244,7 @@ button.close {
   color: white;
   font-size: 1.5em; }
 
-.scrollToTop:hover:before {
+.scrollToTop:hover:before, .scrollToTop:focus:before {
   text-decoration: none;
   color: #00B2B2; }
 
@@ -7332,11 +7332,9 @@ body {
 /* ===================================================================================================== */
 /* LINK Styles ========================================================================================= */
 a {
-  color: #00B2B2;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 a:hover, a:focus {
-  color: #000078;
   text-decoration: none; }
 
 a:link {

@@ -11,12 +11,13 @@
 
 
   a {
-    color: $client;
-    text-decoration: none; 
+    // color: $client;
+    text-decoration: none!important; 
   }
 
+
   a:hover, a:focus {
-    color: $ink;
+    // color: $ink;
     text-decoration: none; }
 
   a:link{ color:$text_link;}
