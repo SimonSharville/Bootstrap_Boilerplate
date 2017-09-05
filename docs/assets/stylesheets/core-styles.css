@@ -8873,10 +8873,31 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
   border-radius: 50%;
   border: 2px solid white;
   float: left;
-  background-image: url("../graphics/panel_highlight.png");
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   text-align: center;
   color: white; }
+
+.status:before {
+  height: 36px;
+  width: 36px;
+  background-image: url("../graphics/panel_highlight.png");
+  background-size: 33px 33px;
+  background-repeat: no-repeat;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  padding-top: 4px;
+  padding-left: 1px;
+  margin-left: -7px; }
+
+.status.status-sm:before {
+  height: 22px;
+  width: 22px;
+  background-image: none;
+  font-size: 1em;
+  line-height: 0.75em;
+  padding-left: 0px;
+  margin-left: -7px;
+  margin-top: -1px; }
 
 .status-alert:before {
   background-color: #FF6A00;
@@ -11255,39 +11276,16 @@ a.glyphicon-info-sign {
   line-height: 1.2em; }
 
 .notice li.status {
-  min-height: 50px; }
+  min-height: 45px; }
 
 .notice li.status h1, .notice li.status h2, .notice li.status h3, .notice li.status h4, .notice li.status h5, .notice li.status h6, .notice li.status p {
-  margin-left: 38px; }
+  margin-left: 36px; }
 
-.notice li.status:before {
-  height: 36px;
-  width: 36px;
-  background-size: 28px 28px;
-  background-repeat: no-repeat;
-  font-size: 1.2em;
-  line-height: 1.5em;
-  padding-top: 4px;
-  padding-left: 1px;
-  margin-left: -7px; }
-
-.notice li.status.status-sm {
+.notice .status.status-sm {
   min-height: 30px; }
 
-.notice li.status.status-sm h1, .notice li.status.status-sm h2, .notice li.status.status-sm h3, .notice li.status.status-sm h4, .notice li.status.status-sm h5, .notice li.status.status-sm h6, .notice li.status.status-sm p {
+.notice .status.status-sm h1, .notice .status.status-sm h2, .notice .status.status-sm h3, .notice .status.status-sm h4, .notice .status.status-sm h5, .notice .status.status-sm h6, .notice .status.status-sm p {
   margin-left: 22px; }
-
-.notice li.status.status-sm:before {
-  height: 22px;
-  width: 22px;
-  background-size: 28px 28px;
-  background-repeat: no-repeat;
-  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
-  font-size: 1em;
-  line-height: 0.75em;
-  padding-left: 0px;
-  margin-left: -7px;
-  margin-top: -1px; }
 
 .notice .single h1, .notice .single h2, .notice .single h3, .notice .single h4, .notice .single h5, .notice .single h6, .notice .single p {
   line-height: 2.4em; }
