@@ -88,8 +88,13 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-           <h1 class="">Alerts</h1>
-           <p class="intro">These are the standard alerts used in bootstap, re-styled.</p>
+           <h1 class="">Notifications</h1>
+           <p class="intro">Notifications are lists that can sit either within a panel or not.</p>
+           <p>Either the panel or the containing div should have the class of <strong>notitfications</strong> added.</p>
+           <p>If you wish to have the link arrow added to the links in the list, then add a class of <strong>link-arrow</strong> to the containing ul.</p>
+           <p>For Headings you can use either <strong>heading</strong> or <strong>date</strong> classes, For Sub-headings you can use either <strong>subhead</strong> or <strong>time</strong> classes.</p>
+           <p>Headings or Dates need to sit outside of the uls.</p>
+           <p>&nbsp;</p>
         </div> <!-- / col -->
       </div> <!-- / row -->
     </div> <!-- / container -->
@@ -98,65 +103,75 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <h4>Standard Alerts</h4>
-          <div class="alert alert-success" role="alert">class="alert alert-success" <a href="#">This is a Link</a></div>
-          <div class="alert alert-info" role="alert">class="alert alert-info" <a href="#">This is a Link</a></div>
-          <div class="alert alert-warning" role="alert">class="alert alert-warning" <a href="#">This is a Link</a></div>
-          <div class="alert alert-danger" role="alert">class="alert alert-danger" <a href="#">This is a Link</a></div>
-        </div> <!-- / col -->
+        <div class="col-xs-6">
+          <h4>Inside a Panel</h4>
+          <div class="panel panel-default notifications">
+            <div class="panel-heading">
+              <h3 class="panel-title">Your Notifications</h3>
+            </div>
+            <div class="panel-body">
+              <p class="date">Sat, 10 Dec 2016</p>
+              <ul class="link-arrow">
+                <li class="time">01:16PM</li>
+                <li><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></li>
+              </ul>
+              <p class="date">Thu, 08 Dec 2016</p>
+              <ul class="link-arrow">
+                <li class="time">10:41 AM</li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is now complete</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by  Laura Gordon</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr John T Smith</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is ready to sign off and requires your signature</a></li>
+                <li class="time">09:30 AM</li>
+                <li><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></li>
+              </ul>
+              <p class="date">Thu, 17 Nov 2016</p>
+              <ul class="link-arrow">
+                <li class="time">03:33 PM</li>
+                <li><a href="https://demo.sardjv.co.uk/users/2-3/appraisals/jul2016-1/portfolio#domain_attributes/5034dfb2e3e1f1226d00000c/appraisal_datasets/5034e01ee3e1f12443000055">Evidence uploaded by  SARD System was attached to your portfolio Jul 2016</a></li>
+                <li class="time">03:32PM</li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></li>
+                <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+              </ul>
+              <a href="#" class="btn btn-primary">View All Notifications</a>
+            </div>
+          </div> <!-- / Panel -->
+        </div> <!-- / Col -->
+
+        <div class="col-xs-6">
+          <h4>Outside a Panel</h4>
+            <div class="notifications">
+            <h3 class="">Your Notifications</h3>
+            <p class="heading">Heading</p>
+            <ul class="link-arrow">
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></li>
+            </ul>
+            <p class="heading">Heading</p>
+            <ul class="link-arrow">
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is now complete</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by  Laura Gordon</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith has been signed off by Dr John T Smith</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/54e652bf80254210b2000030">The Job Plan Jan 2016 for Dr John T Smith is ready to sign off and requires your signature</a></li>
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/users/2-3/eleave_calendar">Dr Janet T Johnson approved a leave period</a></li>
+            </ul>
+            <p class="heading">Heading</p>
+            <ul class="link-arrow">
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/users/2-3/appraisals/jul2016-1/portfolio#domain_attributes/5034dfb2e3e1f1226d00000c/appraisal_datasets/5034e01ee3e1f12443000055">Evidence uploaded by  SARD System was attached to your portfolio Jul 2016</a></li>
+              <li class="subhead">Subhead</li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith is now complete</a></li>
+              <li><a href="https://demo.sardjv.co.uk/online_job_plans/555c56c1f2a39f7ff900017f">The Job Plan Apr 2017 for Dr John T Smith has been signed off by Dr Sophie Buijsen</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary">View All Notifications</a>
+          </div><!-- / notifications -->
+        </div> <!-- / Col -->
       </div> <!-- / row -->
     </div> <!-- / container -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <hr class="dashed-client"></hr>
-          <h4>SARD Solution Alerts</h4>
-          <div class="alert alert-MRv" role="alert">Medical Revalidation <code>class="alert alert-MRv"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-NRv" role="alert">Nurse Revalidation <code>class="alert alert-NRv"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-360" role="alert">360 <code>class="alert alert-360"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-eLeave" role="alert">eLeave <code>class="alert alert-eLeave"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-A4A" role="alert">Appraisals for All <code>lass="alert alert-A4A"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-JPL" role="alert">Job Planning <code>class="alert alert-JPL"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-eRo" role="alert">eRostering <code>class="alert alert-eRo"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-          <div class="alert alert-CPL" role="alert">Capacity Planning <code>class="alert alert-CPL"</code> 
-            <a href="#">This is a Link</a>
-          </div>
-        </div> <!-- / col -->
-      </div> <!-- / row -->
-    </div> <!-- / container -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <hr class="dashed-client"></hr>
-          <h4>Dismissible Alerts</h4>
-          <p>Build on any alert by adding an optional <strong>.alert-dismissible</strong> and close button.</p>
-          <div class="alert alert-warning alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Warning!</strong> Better check yourself, you're not looking too good.
-            <a href="#">This is a Link</a>
-          </div>
-        </div> <!-- / col -->
-      </div> <!-- / row -->
-    </div> <!-- / container -->
-
-
 
     <!-- Footer ========================================================================= -->
     <nav class="navbar navbar-footer-default navbar-fixed-bottom">

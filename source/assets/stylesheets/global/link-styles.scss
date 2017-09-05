@@ -4,8 +4,8 @@
     
   // Text Link Colours
 
-    $text_link:             $client;
-    $text_link_visited:     $client;
+    $text_link:             $text;
+    $text_link_visited:     $text;
     $text_link_hover:       darken($client, 5%);
     $text_link_active:      darken($client, 15%);   
 
