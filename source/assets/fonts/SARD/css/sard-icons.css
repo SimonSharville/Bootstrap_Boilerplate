@@ -207,3 +207,27 @@
 .sa-upload-o:before {
   content: "\e037";
 }
+.sa-nhs-logo:before {
+  content: "\e038";
+}
+.sa-nhs-oxleas:before {
+  content: "\e039";
+}
+.sa-nhs-oxleas-joint:before {
+  content: "\e03a";
+}
+.sa-sard-name:before {
+  content: "\e03b";
+}
+.sa-sard-logo-xs:before {
+  content: "\e03c";
+}
+.sa-sard-logo-sm:before {
+  content: "\e03d";
+}
+.sa-sard-logo-md:before {
+  content: "\e03e";
+}
+.sa-sard-logo-lg:before {
+  content: "\e03f";
+}
