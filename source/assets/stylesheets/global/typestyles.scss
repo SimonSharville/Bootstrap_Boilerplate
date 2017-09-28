@@ -1,0 +1,511 @@
+/* ===================================================================================================== */
+/* Typestyles ========================================================================================== */
+
+  $text:             $grey18;
+  $bodytext:         $grey18;
+
+  // letter-spacing
+  $tight: -0.05em; /* 16 * 0.0312 = 1/2px */
+  $reduced: -0.025em; /* 16 * 0.0312 = 1/2px */
+  $vslight: 0.025em; 
+  $slight: 0.05em; /* 16 * 0.0312 = 1/2px */
+  $single: 0.0625em; /* 16 * 0.0625 = 1px */
+  $double: 0.125em; /* 16 * 0.125 = 2px */
+
+
+// Mixins =============================================================================
+
+// Comment out the differnt fonts, or mix and match them to set one style for the site. 
+// These link to font-roboto scss fies but other fonts could be added this way.
+
+// Roboto =================================================================
+
+$font-thin:    'roboto-thin', Helvetica, Arial, Sans-serif; 
+$font-light:   'roboto-light', Helvetica, Arial, Sans-serif; 
+$font-regular: 'roboto-regular', Helvetica, Arial, Sans-serif; 
+$font-medium:  'roboto-medium', Helvetica, Arial, Sans-serif; 
+$font-bold:    'roboto-bold', Helvetica, Arial, Sans-serif; 
+$font-heavy:   'roboto-black', Helvetica, Arial, Sans-serif; 
+
+$font-thin-italic:    'roboto-thin-italic', Helvetica, Arial, Sans-serif; 
+$font-light-italic:   'roboto-light-italic', Helvetica, Arial, Sans-serif; 
+$font-regular-italic: 'roboto-italic', Helvetica, Arial, Sans-serif; 
+$font-medium-italic:  'roboto-medium-italic', Helvetica, Arial, Sans-serif; 
+$font-bold-italic:    'roboto-bold-italic', Helvetica, Arial, Sans-serif; 
+$font-heavy-italic:   'roboto-black-italic', Helvetica, Arial, Sans-serif; 
+
+// Roboto Slab ============================================================
+// Roboto Slab does not have as many weights as Roboto, hence the reapeats.
+
+// $font-thin:    'roboto-slab-thin', serif; 
+// $font-light:   'roboto-slab-light', serif; 
+// $font-regular: 'roboto-slab-regular', serif; 
+// $font-medium: 'roboto-slab-regular', serif;
+// $font-bold:  'roboto-slab-bold', serif; 
+// $font-heavy:  'roboto-slab-bold', serif; 
+
+// $font-thin-italic:    'roboto-slab-thin', serif; 
+// $font-light-italic:   'roboto-slab-light', serif; 
+// $font-regular-italic: 'roboto-slab-regular', serif; 
+// $font-medium-italic: 'roboto-slab-regular', serif;
+// $font-bold-italic:  'roboto-slab-bold', serif; 
+// $font-heavy-italic:  'roboto-slab-bold', serif; 
+
+
+
+
+// Font Weights ==========================================================
+  
+
+.font-thin{
+  font-family: $font-thin;
+  font-weight:normal;
+}
+
+.font-thin-italic{
+  font-family: $font-thin-italic;
+  font-weight:normal;
+  font-style:italic;
+}
+
+.font-light{
+  font-family: $font-light;
+  font-weight:normal;
+}
+
+.font-light-italic{
+  font-family: $font-light-italic;
+  font-weight:normal;
+  font-style:italic;
+}
+
+.font-regular{
+  font-family: $font-regular;
+  font-weight:normal;
+}
+
+.font-regular-italic{
+  font-family: $font-regular-italic;
+  font-weight:normal;
+  font-style:italic;
+}
+
+.font-medium{
+  font-family: $font-medium;
+  font-weight:normal;
+}
+
+.font-medium-italic{
+  font-family: $font-medium-italic;
+  font-weight:normal;
+  font-style:italic;
+}
+
+.font-bold{
+  font-family: $font-bold;
+  font-weight:normal;
+}
+
+.font-bold-italic{ 
+  font-family: $font-bold-italic;
+  font-weight:normal;
+  font-style:italic;
+}
+
+.font-heavy{ 
+  font-family: $font-heavy;
+  font-weight:normal;
+  letter-spacing: $vslight;
+}
+
+.font-heavy-italic{ 
+  font-family: $font-heavy-italic;
+  font-weight:normal;
+  letter-spacing: $vslight;
+  font-style:italic;
+}
+
+// Other weights =====================================================
+
+strong, .bold, .strong{ 
+  font-family: $font-bold;
+  font-weight:normal;
+}
+
+h5, h6{
+  strong, .bold, .strong{ 
+    font-family: $font-heavy;
+    font-weight:normal;
+  }
+}
+
+
+.thin{
+  font-family: $font-thin;
+}
+.light{
+  font-family: $font-light;
+}
+
+.heavy{
+  font-family: $font-heavy;
+}
+
+
+
+
+// font sizes ========================================================
+
+h1, h2, h3, h4, h5, h6, p, em{
+  font-weight:normal;
+  font-style:normal;
+}
+  
+h1 {
+  font-family: $font-thin;
+  font-size: 5.000em;
+  line-height:1.0em;
+  letter-spacing: $reduced;
+  margin-left:-0.05em;
+  margin-bottom:0.2em;
+}
+ h1.base{
+  margin-bottom:0.1em;
+}
+
+h2 {
+  font-family: $font-light;
+  font-size: 3em;
+  line-height:1.1em;
+  margin-left:-0.05em;
+}
+h2.base{
+  line-height:1em;
+  margin-bottom:0.07em;
+}
+
+h3 {
+  font-family: $font-light;
+  font-size: 2.5em;
+  line-height:1.1em;
+  margin-left:-0.05em;
+}
+h3.base{
+  line-height:1em;
+  margin-bottom:0.07em;
+}
+
+h4 {
+  font-family: $font-regular;
+  font-size: 1.75em;
+  line-height:1.2em;
+}
+h4.base{
+  line-height:1.1em;
+  margin-bottom:0.05em;
+}
+
+h5 {
+  font-family: $font-medium;
+  font-size: 1.5em;
+  line-height:1.2em;
+}
+h5.base{
+  line-height:1.1em;
+  margin-bottom:0.05em;
+}
+
+h6 {
+  font-family: $font-bold;
+  font-size: 1.2em;
+  line-height:1.2em;
+}
+h6.base{
+  line-height:1.1em;
+  margin-bottom:0.05em;
+}
+
+p {
+  font-family: $font-regular;
+  font-size: 1.1em;
+  line-height:1.4em;
+}
+
+em {
+  font-family: $font-light;
+  font-size: 1.500em;
+  line-height:1.25em;
+}
+
+.intro{
+  border:none;
+  padding:0em 0 0.5em 0;
+  margin:0;
+  font-family: $font-light;
+  font-size: 1.7em;
+  line-height:1.3em;
+}
+
+
+blockquote{
+  font-family: $font-thin;
+  border:none;
+  padding:0em 0 0.5em 0;
+  margin:0;
+  font-size: 2.25em;
+  line-height:1.2em;
+  padding-bottom: 0.5em;
+}
+blockquote:last-child{
+  padding-bottom: 0em;
+}
+
+
+.quote{
+  margin:0em 0 0.5em 1.75em;
+}
+
+[class^="quote"]:before,
+[class*=" quote"]:before {
+  content: "\e012";
+  font-family: "sa-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color:$client;
+  font-size: 2em;
+  margin-left:-1em;
+  position:relative;
+  top:0.64em;
+}
+
+
+// Small screens ===============
+@media (max-width: 767px) {
+  h1{ font-size: 4.000em;}
+  h2{ 
+    font-size: 2.2em; 
+    margin-left:0;
+  }
+  h3{
+    font-family: $font-regular;
+    font-size: 1.750em;
+    margin-left:0;
+  }
+
+  h4{font-size: 1.500em;}
+  blockquote{font-size: 2em;}
+} 
+
+
+// ===========================================================================
+
+// Other Styles =====================================================
+
+.asterisk{color:$client}
+.admin .asterisk{color:$admin}
+
+.center, .centre, .text-center, .text-centre{text-align:center;}
+.centre{text-align:center;}
+.left{text-align:left;}
+.right{text-align:right;}
+.half{font-size: 0.5em;} // Makes the text 50% size
+
+
+// Dropcaps =========================================================
+
+.dropcap,.dropcap-circle,.dropcap-square{font-family: $font-thin;}
+
+.dropcap {
+font-size: 5em;
+float: left;   
+position: relative;
+color:$client;
+top:0.25em;
+height: 0.75em;
+margin-right:5px;
+}
+.dropcap-circle {
+font-size: 3em;
+float: left;   
+line-height: 0.8em;
+text-align:center;
+padding-top: 0.230em;
+padding-left: 0.05em;
+color: white;         
+font-weight: 100;
+position: relative;
+left: -0.05em;
+top:0.05em;
+background:$client;
+width: 60px;
+height: 60px;
+border-radius:30px;
+margin-right:5px;
+}
+.dropcap-square {
+font-size: 3em;
+float: left;   
+line-height: 0.8em;
+text-align:center;
+padding-top: 0.2em;
+color: white;         
+font-weight: 100;
+position: relative;
+top:0.1em;
+background:$client;
+width: 55px;
+height: 55px;
+margin-right:8px;
+}
+
+
+// multi-column text blocks ==========================================
+
+
+.multi-column-2, .multi-column-3, .multi-column-4 {
+  -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px;            /* Firefox */
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid $grey06;  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid $grey06;    /* Firefox */
+  column-rule: 1px solid $grey06;
+  -webkit-column-rule-width: 1px;   /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;      /* Firefox */
+  column-rule-width: 1px;
+}
+
+.multi-column-2-client, .multi-column-3-client, .multi-column-4-client {
+  -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px;            /* Firefox */
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid $client;  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid $client;    /* Firefox */
+  column-rule: 1px solid $client;
+  -webkit-column-rule-width: 1px;   /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;      /* Firefox */
+  column-rule-width: 1px;
+}
+
+.multi-column-2-admin, .multi-column-3-admin, .multi-column-4-admin {
+  -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px;            /* Firefox */
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid $admin;  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid $admin;    /* Firefox */
+  column-rule: 1px solid $admin;
+  -webkit-column-rule-width: 1px;   /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;      /* Firefox */
+  column-rule-width: 1px;
+}
+
+.multi-column-2-dark, .multi-column-3-dark, .multi-column-4-dark {
+  -webkit-column-gap: 30px;         /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px;            /* Firefox */
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid $grey18;  /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid $grey18;    /* Firefox */
+  column-rule: 1px solid $grey18;
+  -webkit-column-rule-width: 1px;   /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 1px;      /* Firefox */
+  column-rule-width: 1px;
+}
+
+
+// Small screens
+@media (max-width: 767px) {
+  .multi-column-2, .multi-column-3, .multi-column-4,
+  .multi-column-2-client, .multi-column-3-client, .multi-column-4-client,
+  .multi-column-2-admin, .multi-column-3-admin, .multi-column-4-admin,
+  .multi-column-2-dark, .multi-column-3-dark, .multi-column-4-dark
+   {
+      -webkit-column-count: 1;          /* Chrome, Safari, Opera */
+      -moz-column-count: 1;             /* Firefox */
+      column-count: 1;
+  }
+} 
+
+// Medium screens
+@media (min-width: 768px) and (max-width: 991px) {
+  .multi-column-2, .multi-column-3, .multi-column-4,
+  .multi-column-2-client, .multi-column-3-client, .multi-column-4-client,
+  .multi-column-2-admin, .multi-column-3-admin, .multi-column-4-admin,
+  .multi-column-2-dark, .multi-column-3-dark, .multi-column-4-dark
+   {
+      -webkit-column-count: 2;          /* Chrome, Safari, Opera */
+      -moz-column-count: 2;             /* Firefox */
+      column-count: 2;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 992px) and (max-width: 1199px) {
+  .multi-column-2, 
+  .multi-column-2-client, 
+  .multi-column-2-admin, 
+  .multi-column-2-dark {
+      -webkit-column-count: 2;          /* Chrome, Safari, Opera */
+      -moz-column-count: 2;             /* Firefox */
+      column-count: 2;
+  }
+  .multi-column-3, .multi-column-4,
+  .multi-column-3-client, .multi-column-4-client,
+  .multi-column-3-admin, .multi-column-4-admin,
+  .multi-column-3-dark, .multi-column-4-dark {
+      -webkit-column-count: 3;          /* Chrome, Safari, Opera */
+      -moz-column-count: 3;             /* Firefox */
+      column-count: 3;
+  }
+} 
+
+
+// Large screens
+@media (min-width: 1200px) {
+  .multi-column-2, 
+  .multi-column-2-client, 
+  .multi-column-2-admin, 
+  .multi-column-2-dark  {
+      -webkit-column-count: 2;          /* Chrome, Safari, Opera */
+      -moz-column-count: 2;             /* Firefox */
+      column-count: 2;
+  }
+  .multi-column-3, 
+  .multi-column-3-client, 
+  .multi-column-3-admin, 
+  .multi-column-3-dark  {
+      -webkit-column-count: 3;          /* Chrome, Safari, Opera */
+      -moz-column-count: 3;             /* Firefox */
+      column-count: 3;
+  }
+  .multi-column-4, 
+  .multi-column-4-client, 
+  .multi-column-4-admin, 
+  .multi-column-4-dark  {
+      -webkit-column-count: 4;          /* Chrome, Safari, Opera */
+      -moz-column-count: 4;             /* Firefox */
+      column-count: 4;
+  }
+} 
+
+
+
+
+// Glyphicons  & Font Awesome =========================================================================
+  
+.glyphicon, .fa{ 
+  padding: 0 5px 0 0;
+}
+
+.glyphicon-ok{color:$green;}
+.glyphicon-remove{color:$red;}
+.glyphicon-minus{color:$grey16;}
+  
+
+
+   

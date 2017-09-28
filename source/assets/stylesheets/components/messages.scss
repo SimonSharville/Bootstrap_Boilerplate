@@ -1,0 +1,51 @@
+/* ===================================================================================================== */
+/* Messages ============================================================================================ */
+
+.messages{
+
+}
+
+.messages h3{
+  padding-bottom:10px;
+  border-bottom: 1px solid $grey06;
+}
+
+ .messages .panel-heading h3{
+  padding-bottom:0px;
+  border-bottom: none;
+}
+
+.message-group{
+  border-bottom: 1px solid $grey06;
+}
+.panel-body .message-group{
+  border-bottom-color: white;
+}
+.message-group:last-of-type{
+  border-bottom: 1px solid transparent;
+}
+
+.message{
+  position: relative;
+  border-bottom: 1px solid $grey06;
+}
+.panel-body .message{
+  border-bottom: 1px solid white;
+}
+
+.message:last-of-type{
+  border-bottom: 1px solid transparent;
+}
+
+.message h4{ color: $admin;}
+.admin-db .message h4{ color: $text;}
+
+.message h6{ 
+  margin-top:-8px;
+  padding-bottom:2px;
+}
+.message p{ }
+
+.messages-collapse{
+  a:link{ color:$text;}
+}

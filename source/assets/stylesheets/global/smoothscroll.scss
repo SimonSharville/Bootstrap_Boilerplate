@@ -1,0 +1,39 @@
+/* ===================================================================================================== */
+/* Smooth Scroll ======================================================================================= */
+
+// http://www.paulund.co.uk/how-to-create-an-animated-scroll-to-top-with-jquery
+
+.scrollToTop{
+  width:30px; 
+  height:30px;
+  text-align:center; 
+  position:fixed;
+  bottom:3px;
+  left:calc(50% - 15px);
+  display:none;
+  color:white;
+}
+
+[class^="scrollToTop"]:before,
+[class*=" scrollToTop"]:before {
+  content: "\E014";
+  font-family: "sa-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:white;
+  font-size: 1.5em;
+}
+.scrollToTop:hover:before, .scrollToTop:focus:before{
+  text-decoration:none;
+  color:$client;
+}
+
+.navbar-footer-admin .scrollToTop:hover:before{
+  text-decoration:none;
+  color:$admin;
+}

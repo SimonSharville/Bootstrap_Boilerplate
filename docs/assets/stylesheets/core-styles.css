@@ -5816,6 +5816,8 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* ===================================================================================================== */
+/* Colours ============================================================================================= */
 /* SARD Colours ======================== */
 .turq {
   color: #00B2B2; }
@@ -5855,6 +5857,15 @@ button.close {
 
 .white {
   color: #FFFFFF; }
+
+.lightgrey {
+  color: #C7C4C2; }
+
+.grey {
+  color: #A39E9C; }
+
+.darkgrey {
+  color: #827D7D; }
 
 .text-turq {
   color: #00B2B2; }
@@ -5914,7 +5925,7 @@ button.close {
   color: #E50073; }
 
 .text-eRo {
-  color: #004D4D; }
+  color: teal; }
 
 .text-CPL {
   color: #BF0000; }
@@ -6025,7 +6036,7 @@ button.close {
   background-color: #E50073; }
 
 .bg-eRo {
-  background-color: #004D4D; }
+  background-color: teal; }
 
 .bg-CPL {
   background-color: #BF0000; }
@@ -6090,120 +6101,125 @@ button.close {
 .bg-admin {
   background-color: #E50073; }
 
-/* ROBOTO */
+/* ===================================================================================================== */
+/* Font Roboto ========================================================================================= */
 @font-face {
-  font-family: 'robotothin';
+  font-family: 'roboto-thin';
   src: url("../fonts/Roboto/roboto-thin-webfont.eot");
-  src: url("../fonts/Roboto/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-thin-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-thin-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-thin-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-thin-webfont.svg#robotothin") format("svg");
+  src: url("../fonts/Roboto/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-thin-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-thin-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-thin-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-thin-webfont.svg#roboto-thin") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotothin_italic';
+  font-family: 'roboto-thin-italic';
   src: url("../fonts/Roboto/roboto-thinitalic-webfont.eot");
-  src: url("../fonts/Roboto/roboto-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-thinitalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-thinitalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-thinitalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-thinitalic-webfont.svg#robotothin_italic") format("svg");
+  src: url("../fonts/Roboto/roboto-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-thinitalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-thinitalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-thinitalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-thinitalic-webfont.svg#roboto-thin-italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotolight';
+  font-family: 'roboto-light';
   src: url("../fonts/Roboto/roboto-light-webfont.eot");
-  src: url("../fonts/Roboto/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-light-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-light-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-light-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-light-webfont.svg#robotolight") format("svg");
+  src: url("../fonts/Roboto/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-light-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-light-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-light-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-light-webfont.svg#roboto-light") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotolight_italic';
+  font-family: 'roboto-light-italic';
   src: url("../fonts/Roboto/roboto-lightitalic-webfont.eot");
-  src: url("../fonts/Roboto/roboto-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-lightitalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-lightitalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-lightitalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-lightitalic-webfont.svg#robotolight_italic") format("svg");
+  src: url("../fonts/Roboto/roboto-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-lightitalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-lightitalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-lightitalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-lightitalic-webfont.svg#roboto-light-italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotoregular';
+  font-family: 'roboto-regular';
   src: url("../fonts/Roboto/roboto-regular-webfont.eot");
-  src: url("../fonts/Roboto/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-regular-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-regular-webfont.svg#robotoregular") format("svg");
+  src: url("../fonts/Roboto/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-regular-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-regular-webfont.svg#roboto-regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotoitalic';
+  font-family: 'roboto-italic';
   src: url("../fonts/Roboto/roboto-italic-webfont.eot");
-  src: url("../fonts/Roboto/roboto-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-italic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-italic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-italic-webfont.svg#robotoitalic") format("svg");
+  src: url("../fonts/Roboto/roboto-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-italic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-italic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-italic-webfont.svg#roboto-italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotomedium';
+  font-family: 'roboto-medium';
   src: url("../fonts/Roboto/roboto-medium-webfont.eot");
-  src: url("../fonts/Roboto/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-medium-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-medium-webfont.svg#robotomedium") format("svg");
+  src: url("../fonts/Roboto/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-medium-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-medium-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-medium-webfont.svg#roboto-medium") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotomedium_italic';
+  font-family: 'roboto-medium-italic';
   src: url("../fonts/Roboto/roboto-mediumitalic-webfont.eot");
-  src: url("../fonts/Roboto/roboto-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-mediumitalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-mediumitalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-mediumitalic-webfont.svg#robotomedium_italic") format("svg");
+  src: url("../fonts/Roboto/roboto-mediumitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-mediumitalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-mediumitalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-mediumitalic-webfont.svg#roboto-medium-italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotobold';
+  font-family: 'roboto-bold';
   src: url("../fonts/Roboto/roboto-bold-webfont.eot");
-  src: url("../fonts/Roboto/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-bold-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-bold-webfont.svg#robotobold") format("svg");
+  src: url("../fonts/Roboto/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-bold-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-bold-webfont.svg#roboto-bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotobold_italic';
+  font-family: 'roboto-bold-italic';
   src: url("../fonts/Roboto/roboto-bolditalic-webfont.eot");
-  src: url("../fonts/Roboto/roboto-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-bolditalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-bolditalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-bolditalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-bolditalic-webfont.svg#robotobold_italic") format("svg");
+  src: url("../fonts/Roboto/roboto-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-bolditalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-bolditalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-bolditalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-bolditalic-webfont.svg#roboto-bold-italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotoblack';
+  font-family: 'roboto-black';
   src: url("../fonts/Roboto/roboto-black-webfont.eot");
-  src: url("../fonts/Roboto/roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-black-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-black-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-black-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-black-webfont.svg#robotoblack") format("svg");
+  src: url("../fonts/Roboto/roboto-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-black-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-black-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-black-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-black-webfont.svg#roboto-black") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotoblack_italic';
+  font-family: 'roboto-black-italic';
   src: url("../fonts/Roboto/roboto-blackitalic-webfont.eot");
-  src: url("../fonts/Roboto/roboto-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-blackitalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-blackitalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-blackitalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-blackitalic-webfont.svg#robotoblack_italic") format("svg");
+  src: url("../fonts/Roboto/roboto-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/roboto-blackitalic-webfont.woff2") format("woff2"), url("../fonts/Roboto/roboto-blackitalic-webfont.woff") format("woff"), url("../fonts/Roboto/roboto-blackitalic-webfont.ttf") format("truetype"), url("../fonts/Roboto/roboto-blackitalic-webfont.svg#roboto-black-italic") format("svg");
   font-weight: normal;
   font-style: normal; }
 
+/* ===================================================================================================== */
+/* Font Roboto Slab ==================================================================================== */
 /* ROBOTO SLAB*/
 @font-face {
-  font-family: 'roboto_slabthin';
+  font-family: 'roboto-slab-thin';
   src: url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.eot");
-  src: url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.svg#roboto_slabthin") format("svg");
+  src: url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Thin-webfont.svg#roboto-slab-thin") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'roboto_slablight';
+  font-family: 'roboto-slab-light';
   src: url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.eot");
-  src: url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.svg#roboto_slablight") format("svg");
+  src: url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Light-webfont.svg#roboto-slab-light") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'roboto_slabregular';
+  font-family: 'roboto-slab-regular';
   src: url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.eot");
-  src: url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.svg#roboto_slabregular") format("svg");
+  src: url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Regular-webfont.svg#roboto-slab-regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'roboto_slabbold';
+  font-family: 'roboto-slab-bold';
   src: url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.eot");
-  src: url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.svg#roboto_slabbold") format("svg");
+  src: url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.ttf") format("truetype"), url("../fonts/RobotoSlab/RobotoSlab-Bold-webfont.svg#roboto-slab-bold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
+/* ===================================================================================================== */
+/* Smooth Scroll ======================================================================================= */
 .scrollToTop {
   width: 30px;
   height: 30px;
@@ -6228,7 +6244,7 @@ button.close {
   color: white;
   font-size: 1.5em; }
 
-.scrollToTop:hover:before {
+.scrollToTop:hover:before, .scrollToTop:focus:before {
   text-decoration: none;
   color: #00B2B2; }
 
@@ -6236,6 +6252,8 @@ button.close {
   text-decoration: none;
   color: #E50073; }
 
+/* ===================================================================================================== */
+/* Perforations ======================================================================================== */
 /* HRs and Dividers ============================= */
 hr {
   border-top: 1px solid #C7C4C2;
@@ -6520,156 +6538,92 @@ hr.dashed-white {
 .col-xs-6.vr-dashed-white:last-child {
   border-right: 0px dashed white; }
 
-/* TYPOGRAPHY ============================= */
+/* ===================================================================================================== */
+/* Typestyles ========================================================================================== */
 /* 16 * 0.0312 = 1/2px */
 /* 16 * 0.0312 = 1/2px */
 /* 16 * 0.0312 = 1/2px */
 /* 16 * 0.0625 = 1px */
 /* 16 * 0.125 = 2px */
 .font-thin {
-  font-family: "robotothin", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-thin.serif {
-  font-family: "roboto_slabthin", serif;
+  font-family: "roboto-thin", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
 .font-thin-italic {
-  font-family: "robotolight_italic", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-thin-italic.serif {
-  font-family: "roboto_slabthin", serif;
+  font-family: "roboto-thin-italic", Helvetica, Arial, Sans-serif;
   font-weight: normal;
   font-style: italic; }
 
 .font-light {
-  font-family: "robotolight", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-light.serif {
-  font-family: "roboto_slablight", serif;
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
 .font-light-italic {
-  font-family: "robotolight_italic", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-light-italic.serif {
-  font-family: "roboto_slablight", serif;
+  font-family: "roboto-light-italic", Helvetica, Arial, Sans-serif;
   font-weight: normal;
   font-style: italic; }
 
 .font-regular {
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-regular.serif {
-  font-family: "roboto_slabregular", serif;
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
 .font-regular-italic {
-  font-family: "robotoitalic", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-regular-italic.serif {
-  font-family: "roboto_slabregular", serif;
+  font-family: "roboto-italic", Helvetica, Arial, Sans-serif;
   font-weight: normal;
   font-style: italic; }
 
 .font-medium {
-  font-family: "robotomedium", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-medium.serif {
-  font-family: "roboto_slabregular", serif;
+  font-family: "roboto-medium", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
 .font-medium-italic {
-  font-family: "robotomedium_italic", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-medium-italic.serif {
-  font-family: "roboto_slabregular", serif;
+  font-family: "roboto-medium-italic", Helvetica, Arial, Sans-serif;
   font-weight: normal;
   font-style: italic; }
 
 .font-bold {
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-bold.serif {
-  font-family: "roboto_slabbold", serif;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
 .font-bold-italic {
-  font-family: "robotobold_italic", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.font-bold-italic.serif {
-  font-family: "roboto_slabbold", serif;
+  font-family: "roboto-bold-italic", Helvetica, Arial, Sans-serif;
   font-weight: normal;
   font-style: italic; }
 
-.font-black {
-  font-family: "robotoblack", Helvetica, Arial, Sans-serif;
+.font-heavy {
+  font-family: "roboto-black", Helvetica, Arial, Sans-serif;
   font-weight: normal;
   letter-spacing: 0.025em; }
 
-.font-black.serif {
-  font-family: "roboto_slabbold", serif;
-  font-weight: normal; }
-
-.font-black-italic {
-  font-family: "robotoblack_italic", Helvetica, Arial, Sans-serif;
+.font-heavy-italic {
+  font-family: "roboto-black-italic", Helvetica, Arial, Sans-serif;
   font-weight: normal;
-  letter-spacing: 0.025em; }
-
-.font-black-italic.serif {
-  font-family: "roboto_slabbold", serif;
-  font-weight: normal;
+  letter-spacing: 0.025em;
   font-style: italic; }
 
 strong, .bold, .strong {
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
 h5 strong, h5 .bold, h5 .strong, h6 strong, h6 .bold, h6 .strong {
-  font-family: "robotoblack", Helvetica, Arial, Sans-serif;
-  font-weight: normal; }
-
-.serif strong, .serif .bold, .serif .strong {
-  font-family: "roboto_slabbold", serif;
-  font-weight: normal; }
-
-.serif h5 strong, .serif h5 .bold, .serif h5 .strong, .serif h6 strong, .serif h6 .bold, .serif h6 .strong {
-  font-family: "roboto_slabbold", serif;
+  font-family: "roboto-black", Helvetica, Arial, Sans-serif;
   font-weight: normal; }
 
 .thin {
-  font-family: "robotothin", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-thin", Helvetica, Arial, Sans-serif; }
 
 .light {
-  font-family: "robotolight", Helvetica, Arial, Sans-serif; }
-
-.thin.serif {
-  font-family: "roboto_slabthin", serif; }
-
-.light.serif {
-  font-family: "roboto_slablight", serif; }
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif; }
 
 .heavy {
-  font-family: "robotoblack", Helvetica, Arial, Sans-serif; }
-
-.heavy.serif {
-  font-family: "roboto_slabbold", serif; }
+  font-family: "roboto-black", Helvetica, Arial, Sans-serif; }
 
 h1, h2, h3, h4, h5, h6, p, em {
   font-weight: normal;
   font-style: normal; }
 
 h1 {
-  font-family: "robotothin", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-thin", Helvetica, Arial, Sans-serif;
   font-size: 5.000em;
   line-height: 1.0em;
   letter-spacing: -0.025em;
@@ -6679,11 +6633,8 @@ h1 {
 h1.base {
   margin-bottom: 0.1em; }
 
-h1.serif {
-  font-family: "roboto_slabthin", serif; }
-
 h2 {
-  font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif;
   font-size: 3em;
   line-height: 1.1em;
   margin-left: -0.05em; }
@@ -6692,11 +6643,8 @@ h2.base {
   line-height: 1em;
   margin-bottom: 0.07em; }
 
-h2.serif {
-  font-family: "roboto_slablight", serif; }
-
 h3 {
-  font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif;
   font-size: 2.5em;
   line-height: 1.1em;
   margin-left: -0.05em; }
@@ -6705,11 +6653,8 @@ h3.base {
   line-height: 1em;
   margin-bottom: 0.07em; }
 
-h3.serif {
-  font-family: "roboto_slablight", serif; }
-
 h4 {
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif;
   font-size: 1.75em;
   line-height: 1.2em; }
 
@@ -6717,11 +6662,8 @@ h4.base {
   line-height: 1.1em;
   margin-bottom: 0.05em; }
 
-h4.serif {
-  font-family: "roboto_slabregular", serif; }
-
 h5 {
-  font-family: "robotomedium", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-medium", Helvetica, Arial, Sans-serif;
   font-size: 1.5em;
   line-height: 1.2em; }
 
@@ -6729,11 +6671,8 @@ h5.base {
   line-height: 1.1em;
   margin-bottom: 0.05em; }
 
-h5.serif {
-  font-family: "roboto_slabregular", serif; }
-
 h6 {
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
   font-size: 1.2em;
   line-height: 1.2em; }
 
@@ -6741,38 +6680,26 @@ h6.base {
   line-height: 1.1em;
   margin-bottom: 0.05em; }
 
-h6.serif {
-  font-family: "roboto_slabbold", serif; }
-
 p {
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif;
   font-size: 1.1em;
   line-height: 1.4em; }
 
-p.serif {
-  font-family: "roboto_slabregular", serif; }
-
 em {
-  font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif;
   font-size: 1.500em;
   line-height: 1.25em; }
-
-em.serif {
-  font-family: "roboto_slablight", serif; }
 
 .intro {
   border: none;
   padding: 0em 0 0.5em 0;
   margin: 0;
-  font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif;
   font-size: 1.7em;
   line-height: 1.3em; }
 
-.intro.serif {
-  font-family: "roboto_slablight", serif; }
-
 blockquote {
-  font-family: "robotothin", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-thin", Helvetica, Arial, Sans-serif;
   border: none;
   padding: 0em 0 0.5em 0;
   margin: 0;
@@ -6782,9 +6709,6 @@ blockquote {
 
 blockquote:last-child {
   padding-bottom: 0em; }
-
-blockquote.serif {
-  font-family: "roboto_slabthin", serif; }
 
 .quote {
   margin: 0em 0 0.5em 1.75em; }
@@ -6813,11 +6737,9 @@ blockquote.serif {
     font-size: 2.2em;
     margin-left: 0; }
   h3 {
-    font-family: "robotoregular", Helvetica, Arial, Sans-serif;
+    font-family: "roboto-regular", Helvetica, Arial, Sans-serif;
     font-size: 1.750em;
     margin-left: 0; }
-  h3.serif {
-    font-family: "roboto_slabregular", serif; }
   h4 {
     font-size: 1.500em; }
   blockquote {
@@ -6829,7 +6751,7 @@ blockquote.serif {
 .admin .asterisk {
   color: #E50073; }
 
-.center {
+.center, .centre, .text-center, .text-centre {
   text-align: center; }
 
 .centre {
@@ -6843,6 +6765,51 @@ blockquote.serif {
 
 .half {
   font-size: 0.5em; }
+
+.dropcap, .dropcap-circle, .dropcap-square {
+  font-family: "roboto-thin", Helvetica, Arial, Sans-serif; }
+
+.dropcap {
+  font-size: 5em;
+  float: left;
+  position: relative;
+  color: #00B2B2;
+  top: 0.25em;
+  height: 0.75em;
+  margin-right: 5px; }
+
+.dropcap-circle {
+  font-size: 3em;
+  float: left;
+  line-height: 0.8em;
+  text-align: center;
+  padding-top: 0.230em;
+  padding-left: 0.05em;
+  color: white;
+  font-weight: 100;
+  position: relative;
+  left: -0.05em;
+  top: 0.05em;
+  background: #00B2B2;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 5px; }
+
+.dropcap-square {
+  font-size: 3em;
+  float: left;
+  line-height: 0.8em;
+  text-align: center;
+  padding-top: 0.2em;
+  color: white;
+  font-weight: 100;
+  position: relative;
+  top: 0.1em;
+  background: #00B2B2;
+  width: 55px;
+  height: 55px;
+  margin-right: 8px; }
 
 .multi-column-2, .multi-column-3, .multi-column-4 {
   -webkit-column-gap: 30px;
@@ -6983,54 +6950,6 @@ blockquote.serif {
     /* Firefox */
     column-count: 4; } }
 
-.dropcap, .dropcap-circle, .dropcap-square {
-  font-family: "robotothin", Helvetica, Arial, Sans-serif; }
-
-.serif .dropcap, .serif .dropcap-circle, .serif .dropcap-square {
-  font-family: "roboto_slabthin", serif; }
-
-.dropcap {
-  font-size: 5em;
-  float: left;
-  position: relative;
-  color: #00B2B2;
-  top: 0.25em;
-  height: 0.75em;
-  margin-right: 5px; }
-
-.dropcap-circle {
-  font-size: 3em;
-  float: left;
-  line-height: 0.8em;
-  text-align: center;
-  padding-top: 0.230em;
-  padding-left: 0.05em;
-  color: white;
-  font-weight: 100;
-  position: relative;
-  left: -0.05em;
-  top: 0.05em;
-  background: #00B2B2;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  margin-right: 5px; }
-
-.dropcap-square {
-  font-size: 3em;
-  float: left;
-  line-height: 0.8em;
-  text-align: center;
-  padding-top: 0.2em;
-  color: white;
-  font-weight: 100;
-  position: relative;
-  top: 0.1em;
-  background: #00B2B2;
-  width: 55px;
-  height: 55px;
-  margin-right: 8px; }
-
 .glyphicon, .fa {
   padding: 0 5px 0 0; }
 
@@ -7043,6 +6962,201 @@ blockquote.serif {
 .glyphicon-minus {
   color: #403D3D; }
 
+/* ===================================================================================================== */
+/* Typestyles Serif ==================================================================================== */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0312 = 1/2px */
+/* 16 * 0.0625 = 1px */
+/* 16 * 0.125 = 2px */
+.serif .font-thin {
+  font-family: "roboto-slab-thin", serif;
+  font-weight: normal; }
+
+.serif .font-thin-italic {
+  font-family: "roboto-slab-thin", serif;
+  font-weight: normal;
+  font-style: italic; }
+
+.serif .font-light {
+  font-family: "roboto-slab-light", serif;
+  font-weight: normal; }
+
+.serif .font-light-italic {
+  font-family: "roboto-slab-light", serif;
+  font-weight: normal;
+  font-style: italic; }
+
+.serif .font-regular {
+  font-family: "roboto-slab-regular", serif;
+  font-weight: normal; }
+
+.serif .font-regular-italic {
+  font-family: "roboto-slab-regular", serif;
+  font-weight: normal;
+  font-style: italic; }
+
+.serif .font-medium {
+  font-family: "roboto-slab-regular", serif;
+  font-weight: normal; }
+
+.serif .font-medium-italic {
+  font-family: "roboto-slab-regular", serif;
+  font-weight: normal;
+  font-style: italic; }
+
+.serif .font-bold {
+  font-family: "roboto-slab-bold", serif;
+  font-weight: normal; }
+
+.serif .font-bold-italic {
+  font-family: "roboto-slab-bold", serif;
+  font-weight: normal;
+  font-style: italic; }
+
+.serif .font-heavy {
+  font-family: "roboto-slab-bold", serif;
+  font-weight: normal;
+  letter-spacing: 0.025em; }
+
+.serif .font-heavy-italic {
+  font-family: "roboto-slab-bold", serif;
+  font-weight: normal;
+  letter-spacing: 0.025em;
+  font-style: italic; }
+
+.serif strong, .serif .bold, .serif .strong {
+  font-family: "roboto-slab-bold", serif;
+  font-weight: normal; }
+
+.serif h5 strong, .serif h5 .bold, .serif h5 .strong, .serif h6 strong, .serif h6 .bold, .serif h6 .strong {
+  font-family: "roboto-slab-bold", serif;
+  font-weight: normal; }
+
+.serif .thin {
+  font-family: "roboto-slab-thin", serif; }
+
+.serif .light {
+  font-family: "roboto-slab-light", serif; }
+
+.serif .heavy {
+  font-family: "roboto-slab-bold", serif; }
+
+.serif h1, .serif h2, .serif h3, .serif h4, .serif h5, .serif h6, .serif p, .serif em {
+  font-weight: normal;
+  font-style: normal; }
+
+.serif h1 {
+  font-family: "roboto-slab-thin", serif;
+  font-size: 5.000em;
+  line-height: 1.0em;
+  letter-spacing: -0.025em;
+  margin-left: -0.05em;
+  margin-bottom: 0.2em; }
+
+.serif h1.base {
+  margin-bottom: 0.1em; }
+
+.serif h2 {
+  font-family: "roboto-slab-light", serif;
+  font-size: 3em;
+  line-height: 1.1em;
+  margin-left: -0.05em; }
+
+.serif h2.base {
+  line-height: 1em;
+  margin-bottom: 0.07em; }
+
+.serif h3 {
+  font-family: "roboto-slab-light", serif;
+  font-size: 2.5em;
+  line-height: 1.1em;
+  margin-left: -0.05em; }
+
+.serif h3.base {
+  line-height: 1em;
+  margin-bottom: 0.07em; }
+
+.serif h4 {
+  font-family: "roboto-slab-regular", serif;
+  font-size: 1.75em;
+  line-height: 1.2em; }
+
+.serif h4.base {
+  line-height: 1.1em;
+  margin-bottom: 0.05em; }
+
+.serif h5 {
+  font-family: "roboto-slab-regular", serif;
+  font-size: 1.5em;
+  line-height: 1.2em; }
+
+.serif h5.base {
+  line-height: 1.1em;
+  margin-bottom: 0.05em; }
+
+.serif h6 {
+  font-family: "roboto-slab-bold", serif;
+  font-size: 1.2em;
+  line-height: 1.2em; }
+
+.serif h6.base {
+  line-height: 1.1em;
+  margin-bottom: 0.05em; }
+
+.serif p {
+  font-family: "roboto-slab-regular", serif;
+  font-size: 1.1em;
+  line-height: 1.4em; }
+
+.serif em {
+  font-family: "roboto-slab-light", serif;
+  font-size: 1.500em;
+  line-height: 1.25em; }
+
+.serif .intro {
+  border: none;
+  padding: 0em 0 0.5em 0;
+  margin: 0;
+  font-family: "roboto-slab-light", serif;
+  font-size: 1.7em;
+  line-height: 1.3em; }
+
+.serif blockquote {
+  font-family: "roboto-slab-thin", serif;
+  border: none;
+  padding: 0em 0 0.5em 0;
+  margin: 0;
+  font-size: 2.25em;
+  line-height: 1.2em;
+  padding-bottom: 0.5em; }
+
+.serif blockquote:last-child {
+  padding-bottom: 0em; }
+
+.serif .quote {
+  margin: 0em 0 0.5em 1.75em; }
+
+.serif .dropcap, .serif .dropcap-circle, .serif .dropcap-square {
+  font-family: "roboto-slab-thin", serif; }
+
+@media (max-width: 767px) {
+  .serif h1 {
+    font-size: 4.000em; }
+  .serif h2 {
+    font-size: 2.2em;
+    margin-left: 0; }
+  .serif h3 {
+    font-family: "roboto-slab-regular", serif;
+    font-size: 1.750em;
+    margin-left: 0; }
+  .serif h4 {
+    font-size: 1.500em; }
+  .serif blockquote {
+    font-size: 2em; } }
+
+/* ===================================================================================================== */
+/* Structure =========================================================================================== */
 /* BOOTSTRAP Structure Overrides */
 * {
   -webkit-font-smoothing: antialiased !important;
@@ -7056,8 +7170,11 @@ html {
 
 body {
   color: #211F0F;
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif;
+  padding-top: 70px;
+  padding-bottom: 80px; }
 
+/* GRID ADJUSTMENTS  */
 .container-fluid .row {
   padding-left: 10px;
   padding-right: 10px; }
@@ -7206,20 +7323,25 @@ body {
 .padding-bottom20 {
   padding-top: 20px; }
 
-/* LINK Styles =============================================== */
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+/* ===================================================================================================== */
+/* LINK Styles ========================================================================================= */
 a {
-  color: #00B2B2;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 a:hover, a:focus {
-  color: #000078;
   text-decoration: none; }
 
 a:link {
-  color: #00B2B2; }
+  color: #211F0F; }
 
 a:visited {
-  color: #00B2B2; }
+  color: #211F0F; }
 
 a:hover, a:focus {
   color: #009999; }
@@ -7463,7 +7585,8 @@ p.link-email {
   padding-left: 1.3em;
   text-indent: -1.3em; }
 
-/* LIST Styles ==================================================== */
+/* ===================================================================================================== */
+/* LIST Styles ========================================================================================= */
 ul {
   padding: 0;
   list-style-type: none;
@@ -7494,7 +7617,34 @@ li p {
   margin-bottom: 0.5em;
   line-height: 1.3em; }
 
-/* UI Styles  ========================== */
+.doc-list {
+  margin-bottom: 0px; }
+
+.doc-list .title {
+  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-top: 1px solid #211F0F;
+  padding-top: 5px;
+  margin-top: 5px; }
+
+.doc-list .title:first-of-type {
+  border-top: none;
+  padding-top: 0px;
+  margin-top: 0px; }
+
+.doc-list .link {
+  border-bottom: 1px solid #C7C4C2;
+  padding-bottom: 5px;
+  margin-bottom: 5px; }
+
+.panel-body .doc-list .link {
+  border-bottom-color: white; }
+
+/* ===================================================================================================== */
+/* UI Styles  ========================================================================================== */
+/* This should not be needed on a final build ========================================================== */
 .ui-grid {
   background-image: url("../graphics/20px_grid.png"); }
 
@@ -7535,6 +7685,82 @@ li p {
     margin-left: -10px;
     margin-top: 20px; } }
 
+/* ===================================================================================================== */
+/* Alerts ============================================================================================== */
+.alert {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+  color: white; }
+
+.alert a:link {
+  color: black;
+  font-weight: bold; }
+
+.alert a:hover, a:focus {
+  color: black;
+  text-decoration: underline; }
+
+.alert-success {
+  background-color: #359E00;
+  border: none; }
+
+.alert-info {
+  background-color: #00a0e0;
+  border: none; }
+
+.alert-warning {
+  background-color: #FFB200;
+  border: none;
+  color: black; }
+  .alert-warning a:link {
+    color: white; }
+
+.alert-danger {
+  background-color: #BF0000;
+  border: none; }
+
+.alert-MRv {
+  background-color: #00B2B2;
+  border: none; }
+
+.alert-NRv {
+  background-color: #FF6A00;
+  border: none; }
+
+.alert-360 {
+  background-color: #FFB200;
+  border: none; }
+
+.alert-eLeave {
+  background-color: #A7BF30;
+  border: none; }
+
+.alert-A4A {
+  background-color: #990099;
+  border: none; }
+
+.alert-JPL {
+  background-color: #E50073;
+  border: none; }
+
+.alert-eRo {
+  background-color: teal;
+  border: none; }
+
+.alert-CPL {
+  background-color: #BF0000;
+  border: none; }
+
+.alert .close {
+  opacity: 1;
+  text-shadow: none;
+  color: white; }
+
+.alert .close:hover {
+  color: black; }
+
+/* ===================================================================================================== */
+/* Forms =============================================================================================== */
 textarea {
   resize: vertical;
   margin-bottom: 5px; }
@@ -7568,7 +7794,10 @@ legend {
   padding: 3px 10px 5px 10px; }
 
 .form-control {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  border-width: 2px;
+  border-color: #D9D6D6;
+  box-shadow: none; }
 
 .form-control:focus {
   box-shadow: none;
@@ -7591,6 +7820,10 @@ legend {
 
 .form-group .row div[class*="col-"] {
   padding: 0 8px; }
+
+.form-horizontal .form-group {
+  padding-left: 16px;
+  padding-right: 16px; }
 
 .form-horizontal .col-xs-1, .form-horizontal .col-sm-1, .form-horizontal .col-md-1, .form-horizontal .col-lg-1, .form-horizontal .col-xs-2, .form-horizontal .col-sm-2, .form-horizontal .col-md-2, .form-horizontal .col-lg-2, .form-horizontal .col-xs-3, .form-horizontal .col-sm-3, .form-horizontal .col-md-3, .form-horizontal .col-lg-3, .form-horizontal .col-xs-4, .form-horizontal .col-sm-4, .form-horizontal .col-md-4, .form-horizontal .col-lg-4, .form-horizontal .col-xs-5, .form-horizontal .col-sm-5, .form-horizontal .col-md-5, .form-horizontal .col-lg-5, .form-horizontal .col-xs-6, .form-horizontal .col-sm-6, .form-horizontal .col-md-6, .form-horizontal .col-lg-6, .form-horizontal .col-xs-7, .form-horizontal .col-sm-7, .form-horizontal .col-md-7, .form-horizontal .col-lg-7, .form-horizontal .col-xs-8, .form-horizontal .col-sm-8, .form-horizontal .col-md-8, .form-horizontal .col-lg-8, .form-horizontal .col-xs-9, .form-horizontal .col-sm-9, .form-horizontal .col-md-9, .form-horizontal .col-lg-9, .form-horizontal .col-xs-10, .form-horizontal .col-sm-10, .form-horizontal .col-md-10, .form-horizontal .col-lg-10, .form-horizontal .col-xs-11, .form-horizontal .col-sm-11, .form-horizontal .col-md-11, .form-horizontal .col-lg-11, .form-horizontal .col-xs-12, .form-horizontal .col-sm-12, .form-horizontal .col-md-12, .form-horizontal .col-lg-12 {
   padding-left: 0px;
@@ -7678,6 +7911,12 @@ has-warning .help-block,
 .has-error .form-control:focus {
   border-color: #8c0000; }
 
+input[type="radio"],
+input[type="checkbox"] {
+  width: initial;
+  height: initial;
+  margin-top: 7px; }
+
 input {
   margin-bottom: 5px; }
 
@@ -7762,27 +8001,8 @@ select,
 textarea {
   line-height: 1em; }
 
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: scale(0.8);
-  transition: 0.5s; }
-  input[value="true"]:checked ~ .reveal-if-active,
-  input[value="true"]:checked ~ .reveal-if-active {
-    opacity: 1;
-    max-height: 100px;
-    overflow: visible;
-    padding: 10px 0px 10px 16px;
-    transform: scale(1); }
-
-.reveal-if-active .form-group:first-of-type {
-  margin-top: 0px; }
-
-.expandable input[value="false"] {
-  border: none !important;
-  margin-bottom: 0px !important; }
-
+/* ===================================================================================================== */
+/* Forms Tags Input ==================================================================================== */
 .bootstrap-tagsinput {
   background-color: #fff;
   border: none;
@@ -7857,23 +8077,103 @@ textarea {
 .tags-admin .bootstrap-tagsinput .tag:active {
   background-color: #c60064; }
 
-/* Navbar Default  ================================================ */
+/* ===================================================================================================== */
+/* Forms - Reveal if Active ============================================================================ */
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s; }
+  input[value="true"]:checked ~ .reveal-if-active,
+  input[value="true"]:checked ~ .reveal-if-active {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 0px 10px 16px;
+    transform: scale(1); }
+
+.reveal-if-active .form-group:first-of-type {
+  margin-top: 0px; }
+
+.expandable input[value="false"] {
+  border: none !important;
+  margin-bottom: 0px !important; }
+
+/* ===================================================================================================== */
+/* Navbar Default  ===================================================================================== */
+@media (max-width: 767px) {
+  .navbar {
+    min-height: 50px;
+    height: auto; }
+  .navbar-header {
+    min-height: 50px;
+    height: 50px; }
+  .navbar-nav {
+    margin: 0 -15px; } }
+
 @media (min-width: 768px) {
   .navbar {
     min-height: 50px;
-    height: 50px; } }
+    height: 50px; }
+  .navbar-right {
+    margin-right: 10px; } }
 
 .navbar-default {
   background-color: #00b2b2;
   color: white;
   border: none;
   border-radius: 0;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif; }
+
+.navbar-brand {
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif;
+  font-size: 2em;
+  line-height: 0.6em;
+  padding: 14.5px 20px 14.5px 14px;
+  min-height: 50px;
+  height: 50px;
+  color: white; }
+
+.navbar-brand > a {
+  color: white;
+  text-decoration: none; }
+
+[class^="navbar-brand"]:before,
+[class*=" navbar-brand"]:before {
+  content: "\e005";
+  font-family: "sa-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  font-size: 1em;
+  line-height: 0em;
+  margin-right: 0.15em;
+  position: relative;
+  top: 0.15em; }
+
+.navbar-default {
+  background-color: #00b2b2;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif; }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: white; }
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    min-height: 50px;
+    height: 50px;
+    padding: 15px 10px; } }
 
 .navbar-default .navbar-nav > li > a {
   color: white; }
@@ -7904,50 +8204,51 @@ textarea {
   background-color: #004c4c;
   color: white; }
 
-.navbar-default .navbar-nav .dropdown-menu {
-  border: none;
-  background-color: #004c4c;
-  border-radius: 0; }
-
-.navbar-default .navbar-nav > li > .dropdown-menu {
-  padding: 0; }
-
-.navbar-default .navbar-nav > li > .dropdown-menu .divider {
-  margin: 5px 0; }
-
-.navbar-default .navbar-nav .dropdown-menu > li > a {
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
-  color: white; }
-
-.navbar-default .navbar-nav .dropdown-menu > li > a:hover {
-  background-color: #001919;
-  color: white; }
-
-.navbar-default .navbar-nav .dropdown-menu > li > a:focus {
-  background-color: #003333;
-  color: white; }
-
-.navbar-default .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-  background-color: #003333; }
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover {
-  background-color: #004c4c; }
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav .dropdown-menu {
+    padding: 0;
+    border-color: #E3E1E1;
+    border-top: none; }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: #004c4c;
+    font-family: "roboto-medium", Helvetica, Arial, Sans-serif;
+    padding: 8px 10px;
+    border-bottom: 1px solid #E3E1E1; }
+  .navbar-default .navbar-nav .dropdown-menu > li:last-child > a {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .navbar-default .navbar-nav .dropdown-menu > li > a:visited {
+    color: #004c4c;
+    background-color: white; }
+  .navbar-default .navbar-nav .dropdown-menu > li > a:hover {
+    color: white;
+    background-color: #00B2B2; }
+  .navbar-default .navbar-nav .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #009999; } }
 
 @media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    padding: 0; }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    background-color: #004c4c;
+    color: white;
+    font-family: "roboto-medium", Helvetica, Arial, Sans-serif; }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:visited {
+    background-color: #006666;
     color: white; }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    background-color: #001919;
+    background-color: #006666;
     color: white; }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: #001919;
+    background-color: #004c4c;
     color: white; } }
 
 .navbar-default .navbar-toggle {
   border: none;
-  background-color: #004c4c; }
+  background-color: #004c4c;
+  margin-top: 9px;
+  margin-bottom: 9px; }
 
 .navbar-default .navbar-toggle:hover {
   background-color: #006666; }
@@ -7962,43 +8263,58 @@ textarea {
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 100%;
   border: none;
-  box-shadow: none; }
-
-.navbar-fixed-top .navbar-collapse .navbar-nav,
-.navbar-fixed-bottom .navbar-collapse .navbar-nav {
-  margin: 0 -15px; }
-
-.navbar-fixed-top .navbar-collapse .navbar-nav > li > a,
-.navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a {
-  padding-left: 20px;
-  padding-right: 20px; }
+  box-shadow: none;
+  width: calc(100% + 30px); }
 
 @media (max-width: 767px) {
-  .navbar-fixed-top .col-xs-12 {
-    padding-left: 0px;
-    padding-right: 0px; } }
+  .navbar-fixed-top .navbar-collapse .navbar-nav > li > a,
+  .navbar-fixed-bottom .navbar-collapse .navbar-nav > li > a {
+    min-height: auto;
+    height: auto; } }
 
 .navbar-inverse {
   border: none;
   border-radius: 0;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif; }
 
-.navbar-footer-default {
+.navbar-fixed-bottom {
   background-color: #403D3D;
   color: white;
   border: none;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
+  font-size: 14px;
+  padding-top: 7px;
   min-height: 35px;
   height: 35px; }
 
-.navbar-footer-default a:link {
+.navbar-fixed-bottom a:link {
   color: #00b2b2; }
 
-.navbar-footer-default a:visited {
+.navbar-fixed-bottom a:visited {
   color: #00b2b2; }
 
-.navbar-footer-default a:hover {
-  color: #006666; }
+.navbar-fixed-bottom a:hover {
+  color: #009999; }
+
+.navbar-form {
+  margin-top: 8px;
+  margin-bottom: 8px; }
+
+.navbar .btn {
+  font-size: 14px;
+  padding: 7px 10px;
+  border-radius: 22px;
+  margin-top: -10px; }
+
+@media (max-width: 767px) {
+  .navbar .btn {
+    margin-top: 0px; } }
+
+.navbar .input-group .btn {
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 0px 20px 20px 0px;
+  margin-top: 0px; }
 
 .navbar-default .btn {
   background-color: #003434;
@@ -8036,13 +8352,23 @@ textarea {
 .navbar-admin .btn:active {
   background-color: #330019 !important; }
 
-/* Navbar Admin  ================================================ */
+.navbar li .fa {
+  color: white; }
+
+.navbar .fa-2x {
+  margin-top: -5px; }
+
+.navbar hr {
+  margin-top: 5px; }
+
+/* ===================================================================================================== */
+/* Navbar Admin  ======================================================================================= */
 .navbar-admin {
   background-color: #e50073;
   color: white;
   border: none;
   border-radius: 0;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif; }
 
 .navbar-admin .navbar-brand,
 .navbar-admin .navbar-brand:hover,
@@ -8078,50 +8404,51 @@ textarea {
   background-color: #7f0040;
   color: white; }
 
-.navbar-admin .navbar-nav .dropdown-menu {
-  border: none;
-  background-color: #7f0040;
-  border-radius: 0; }
-
-.navbar-admin .navbar-nav > li > .dropdown-menu {
-  padding: 0; }
-
-.navbar-admin .navbar-nav > li > .dropdown-menu .divider {
-  margin: 5px 0; }
-
-.navbar-admin .navbar-nav .dropdown-menu > li > a {
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
-  color: white; }
-
-.navbar-admin .navbar-nav .dropdown-menu > li > a:hover {
-  background-color: #4c0026;
-  color: white; }
-
-.navbar-admin .navbar-nav .dropdown-menu > li > a:focus {
-  background-color: #660033;
-  color: white; }
-
-.navbar-admin .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-  background-color: #660033; }
-
-.navbar-admin .navbar-nav > .open > a,
-.navbar-admin .navbar-nav > .open > a:hover {
-  background-color: #7f0040; }
+@media (min-width: 768px) {
+  .navbar-admin .navbar-nav .dropdown-menu {
+    padding: 0;
+    border-color: #E3E1E1;
+    border-top: none; }
+  .navbar-admin .navbar-nav .dropdown-menu > li > a {
+    color: #7f0040;
+    font-family: "roboto-medium", Helvetica, Arial, Sans-serif;
+    padding: 8px 10px;
+    border-bottom: 1px solid #E3E1E1; }
+  .navbar-admin .navbar-nav .dropdown-menu > li:last-child > a {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:visited {
+    color: #7f0040;
+    background-color: white; }
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:hover {
+    color: white;
+    background-color: #E50073; }
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #cc0066; } }
 
 @media (max-width: 767px) {
+  .navbar-admin .navbar-nav .open .dropdown-menu {
+    padding: 0; }
   .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
-    background-color: #7f0040;
+    color: white;
+    font-family: "roboto-medium", Helvetica, Arial, Sans-serif; }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:visited {
+    background-color: #99004d;
     color: white; }
   .navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover {
-    background-color: #4c0026;
+    background-color: #99004d;
     color: white; }
   .navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: #4c0026;
+    background-color: #7f0040;
     color: white; } }
 
 .navbar-admin .navbar-toggle {
   border: none;
-  background-color: #7f0040; }
+  background-color: #7f0040;
+  margin-top: 9px;
+  margin-bottom: 9px; }
 
 .navbar-admin .navbar-toggle:hover {
   background-color: #99004d; }
@@ -8136,7 +8463,7 @@ textarea {
   background-color: #403D3D;
   color: white;
   border: none;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
   min-height: 35px;
   height: 35px; }
 
@@ -8149,6 +8476,8 @@ textarea {
 .navbar-footer-admin a:hover {
   color: #99004d; }
 
+/* ===================================================================================================== */
+/* Navbar Second ======================================================================================= */
 .navbar-second {
   min-height: 40px !important;
   padding: 10px 5px;
@@ -8182,7 +8511,9 @@ textarea {
 .navbar-second .navbar-nav > li > a {
   color: white;
   padding: 10px;
-  margin-top: -10px; }
+  margin-top: -10px;
+  min-height: 40px;
+  height: 40px; }
 
 .navbar-second .navbar-nav > li > a:hover,
 .navbar-second .navbar-nav > li > a:focus {
@@ -8205,33 +8536,45 @@ textarea {
 .navbar-second .navbar-form {
   border-color: #00B2B2; }
 
-.navbar-second .navbar-nav > li > .dropdown-menu {
-  border-radius: 0;
-  background-color: #006666;
-  border: none;
-  color: white; }
+@media (min-width: 768px) {
+  .navbar-second .navbar-nav .dropdown-menu {
+    padding: 0;
+    border-color: #E3E1E1;
+    border-top: none; }
+  .navbar-second .navbar-nav .dropdown-menu > li > a {
+    color: #004c4c;
+    font-family: "roboto-medium", Helvetica, Arial, Sans-serif;
+    padding: 8px 10px;
+    border-bottom: 1px solid #E3E1E1; }
+  .navbar-second .navbar-nav .dropdown-menu > li:last-child > a {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .navbar-second .navbar-nav .dropdown-menu > li > a:visited {
+    color: #004c4c;
+    background-color: white; }
+  .navbar-second .navbar-nav .dropdown-menu > li > a:hover {
+    color: white;
+    background-color: #00B2B2; }
+  .navbar-second .navbar-nav .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #009999; } }
 
-.navbar-second .navbar-nav .dropdown-menu > li > a {
-  color: white; }
-
-.navbar-second .navbar-nav .dropdown-menu > li > a:hover,
-.navbar-second .navbar-nav .dropdown-menu > li > a:focus {
-  background-color: #004c4c;
-  color: white; }
-
-.navbar-second .navbar-nav .open .dropdown-menu > li > a {
-  color: white; }
-
-.navbar-second .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-second .navbar-nav .open .dropdown-menu > li > a:focus {
-  color: white;
-  background-color: #004c4c; }
-
-.navbar-second .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-second .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-second .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: white;
-  background-color: #004c4c; }
+@media (max-width: 767px) {
+  .navbar-second .navbar-nav .open .dropdown-menu {
+    padding: 0; }
+  .navbar-second .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+    font-family: "roboto-medium", Helvetica, Arial, Sans-serif; }
+  .navbar-second .navbar-nav .open .dropdown-menu > li > a:visited {
+    background-color: #99004d;
+    color: white; }
+  .navbar-second .navbar-nav .open .dropdown-menu > li > a:hover {
+    background-color: #99004d;
+    color: white; }
+  .navbar-second .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #7f0040;
+    color: white; } }
 
 @media (max-width: 767px) {
   #second-navbar form {
@@ -8241,7 +8584,7 @@ textarea {
     margin: 5px 0px; }
   .navbar-second .navbar-nav > li > a {
     padding: 5px 10px;
-    margin-top: 0px; }
+    margin-top: 10px; }
   .navbar-second .navbar-nav > li:last-child > a {
     padding-bottom: 10px; }
   .navbar-second .navbar-nav .open .dropdown-menu > li > a {
@@ -8255,6 +8598,10 @@ textarea {
   .navbar-second .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: white;
     background-color: #004c4c; } }
+
+.navbar-second form {
+  margin-top: -9px;
+  margin-bottom: -9px; }
 
 .navbar-admin.navbar-second {
   background-color: #b20059; }
@@ -8277,21 +8624,29 @@ textarea {
 .navbar-admin.navbar-second .navbar-form {
   border-color: #E50073; }
 
-.navbar-admin.navbar-second .navbar-nav > li > .dropdown-menu {
-  background-color: #99004d; }
-
-.navbar-admin.navbar-second .navbar-nav .dropdown-menu > li > a:hover,
-.navbar-admin.navbar-second .navbar-nav .dropdown-menu > li > a:focus {
-  background-color: #7f0040; }
-
-.navbar-admin.navbar-second .navbar-nav .open .dropdown-menu > li > a:hover,
-.navbar-admin.navbar-second .navbar-nav .open .dropdown-menu > li > a:focus {
-  background-color: #7f0040; }
-
-.navbar-admin.navbar-second .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-admin.navbar-second .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-admin.navbar-second .navbar-nav .open .dropdown-menu > .active > a:focus {
-  background-color: #7f0040; }
+@media (min-width: 768px) {
+  .navbar-admin.navbar-second .navbar-nav .dropdown-menu {
+    padding: 0;
+    border-color: #E3E1E1;
+    border-top: none; }
+  .navbar-admin.navbar-second .navbar-nav .dropdown-menu > li > a {
+    color: #7f0040;
+    font-family: "roboto-medium", Helvetica, Arial, Sans-serif;
+    padding: 8px 10px;
+    border-bottom: 1px solid #E3E1E1; }
+  .navbar-admin.navbar-second .navbar-nav .dropdown-menu > li:last-child > a {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .navbar-admin.navbar-second .navbar-nav .dropdown-menu > li > a:visited {
+    color: #7f0040;
+    background-color: white; }
+  .navbar-admin.navbar-second .navbar-nav .dropdown-menu > li > a:hover {
+    color: white;
+    background-color: #E50073; }
+  .navbar-admin.navbar-second .navbar-nav .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #cc0066; } }
 
 @media (max-width: 767px) {
   .navbar-admin.navbar-second .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -8302,12 +8657,14 @@ textarea {
   .navbar-admin.navbar-second .navbar-nav .open .dropdown-menu > .active > a:focus {
     background-color: #7f0040; } }
 
+/* ===================================================================================================== */
+/* Mega Menu =========================================================================================== */
 .menu-large {
   position: static !important; }
 
 .megamenu .title {
   color: #211F0F;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
   font-size: 1.25em;
   padding: 0 15px; }
 
@@ -8322,7 +8679,8 @@ textarea {
   padding: 0px 5px; }
 
 .megamenu > li > ul > li {
-  list-style: none; }
+  list-style: none;
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif; }
 
 .megamenu > li > ul > li > a {
   display: block;
@@ -8470,6 +8828,8 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
     div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .navbar-nav > li > .megamenu, div[class*="col-lg-2"] .navbar-nav > li > .megamenu, div[class*="col-xl-2"] .navbar-nav > li > .megamenu {
       width: calc(100% + 5px); } }
 
+/* ===================================================================================================== */
+/* Rag Status ========================================================================================== */
 .rag-red {
   background-color: #BF0000; }
 
@@ -8511,10 +8871,31 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
   border-radius: 50%;
   border: 2px solid white;
   float: left;
-  background-image: url("../graphics/panel_highlight.png");
-  font-family: 'robotobold', Helvetica, Arial, Sans-serif;
   text-align: center;
   color: white; }
+
+.status:before {
+  height: 36px;
+  width: 36px;
+  background-image: url("../graphics/panel_highlight.png");
+  background-size: 33px 33px;
+  background-repeat: no-repeat;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  padding-top: 4px;
+  padding-left: 1px;
+  margin-left: -7px; }
+
+.status.status-sm:before {
+  height: 22px;
+  width: 22px;
+  background-image: none;
+  font-size: 1em;
+  line-height: 0.75em;
+  padding-left: 0px;
+  margin-left: -7px;
+  margin-top: -1px; }
 
 .status-alert:before {
   background-color: #FF6A00;
@@ -8654,42 +9035,44 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
 .rag-btn-na:active {
   background-color: #757171; }
 
+/* ===================================================================================================== */
+/* Panels ============================================================================================== */
 .panel {
   border-radius: 0px;
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif;
   background-color: #EDEBEB;
   border: none; }
 
 .panel-heading {
   border-radius: 0px;
   border-color: white;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif;
   line-height: 1.2em;
   letter-spacing: 0.025em; }
 
 .panel-heading h1 {
-  font-family: "robotothin", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-thin", Helvetica, Arial, Sans-serif;
   font-size: 2.5em; }
 
 .panel-heading h2 {
-  font-family: "robotolight", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif;
   font-size: 2em; }
 
 .panel-heading h3 {
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif;
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif;
   font-size: 1.500em; }
 
 .panel-heading h4 {
   padding-bottom: 0px;
-  font-family: "robotomedium", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-medium", Helvetica, Arial, Sans-serif; }
 
 .panel-heading h5 {
   padding-bottom: 0px;
-  font-family: "robotobold", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif; }
 
 .panel-heading h6 {
   padding-bottom: 0px;
-  font-family: "robotoblack", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-black", Helvetica, Arial, Sans-serif; }
 
 .panel-heading .btn {
   margin-left: 10px; }
@@ -8935,22 +9318,22 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
   border: 0; }
 
 .panel-eRo > .panel-heading {
-  background-color: #003434;
+  background-color: #006767;
   color: white;
   border: 0; }
 
 .panel-eRo > .panel-body {
-  background-color: #004d4d;
+  background-color: teal;
   color: white; }
 
 .panel-eRo > .perf-wht {
-  background-color: #004d4d; }
+  background-color: teal; }
 
 .panel-eRo > .perf-grey {
-  background-color: #004d4d; }
+  background-color: teal; }
 
 .panel-eRo > .panel-footer {
-  background-color: #001a1a;
+  background-color: #004d4d;
   color: white;
   border: 0; }
 
@@ -9137,8 +9520,10 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
 .panel-group .panel + .panel {
   margin-top: 1px; }
 
+/* ===================================================================================================== */
+/* Tables ============================================================================================== */
 .table h3 {
-  font-family: "robotoregular", Helvetica, Arial, Sans-serif; }
+  font-family: "roboto-regular", Helvetica, Arial, Sans-serif; }
 
 .table p {
   margin-bottom: 0.5em;
@@ -9180,6 +9565,12 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
 
 .table-hover > tbody > tr:hover {
   background-color: #EDEBEB; }
+
+.table-striped.table-hover > tbody > tr:nth-of-type(odd) {
+  background-color: #EDEBEB; }
+
+.table-hover.table-hover > tbody > tr:hover {
+  background-color: #D9D6D6; }
 
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
@@ -9314,6 +9705,12 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
     color: white; }
   .table-default.table-hover > tbody > tr:hover {
     background-color: #e1dede; }
+  .table-default.table-striped > tbody {
+    background-color: white; }
+  .table-default.table-striped.table-hover > tbody > tr:nth-of-type(odd) {
+    background-color: #EDEBEB; }
+  .table-default.table-hover.table-hover > tbody > tr:hover {
+    background-color: #D9D6D6; }
 
 .table-info {
   background-color: #00a0e0; }
@@ -9454,7 +9851,7 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
   background-color: #cc0066; }
 
 .panel-eRo .table-hover > tbody > tr:hover {
-  background-color: #003434; }
+  background-color: #006767; }
 
 .panel-CPL .table-hover > tbody > tr:hover {
   background-color: #a60000; }
@@ -9485,6 +9882,9 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
 .table-condensed > tfoot > tr > td {
   padding-top: 5px;
   padding-bottom: 5px; }
+
+.table-responsive {
+  border: none; }
 
 .tcol-66 {
   width: 66%; }
@@ -9521,6 +9921,15 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
 
 .tcol-14 {
   width: 14%; }
+
+.tcol-12 {
+  width: 12%; }
+
+.tcol-12-5 {
+  width: 12.5%; }
+
+.tcol-11 {
+  width: 11%; }
 
 .tcol-10 {
   width: 10%; }
@@ -9617,6 +10026,8 @@ div[class*="col-xs-2"] .navbar-nav > li > .megamenu, div[class*="col-sm-2"] .nav
 fieldset .table-hover > tbody > tr:hover {
   background-color: #D9D6D6; }
 
+/* ===================================================================================================== */
+/* Buttons ============================================================================================= */
 .btn {
   border: 0px;
   font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
@@ -9660,6 +10071,43 @@ button:hover {
   font-size: 12px;
   padding: 3px 8px;
   border-radius: 14px; }
+
+.btn-round-50 {
+  min-width: 50px;
+  width: 50px;
+  min-height: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 1em;
+  padding: 9px;
+  text-align: center !important; }
+
+.btn-round-100 {
+  min-width: 100px;
+  width: 100px;
+  min-height: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 1em;
+  padding: 9px; }
+
+.btn-round-150 {
+  min-width: 150px;
+  width: 150px;
+  min-height: 150px;
+  height: 150px;
+  border-radius: 50%;
+  line-height: 1em;
+  padding: 9px; }
+
+.btn-round-200 {
+  min-width: 200px;
+  width: 200px;
+  min-height: 200px;
+  height: 200px;
+  border-radius: 50%;
+  line-height: 1em;
+  padding: 9px; }
 
 .btn-default {
   background-color: #615e5c;
@@ -9981,6 +10429,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-label.btn-warning .glyphicon {
   color: #211F0F; }
 
+/* ===================================================================================================== */
+/* Button-groups ======================================================================================= */
 .btn-group-xl > .btn {
   font-size: 24px;
   padding: 12px 21px;
@@ -10088,6 +10538,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-group.open > .dropdown-menu .divider {
   border-top: 1px solid white; }
 
+/* ===================================================================================================== */
+/* Nav Tabs ============================================================================================ */
 .nav-tabs > li > a {
   border-radius: 0px; }
 
@@ -10591,3 +11043,336 @@ fieldset[disabled] .btn-default.focus {
 .tab-content > .tab-pane .perf.full-row {
   margin-left: -20px;
   width: calc(100% + 40px); }
+
+/* ===================================================================================================== */
+/* Accordions ========================================================================================== */
+.toggle-plus.accordion-toggle[aria-expanded="true"]:after {
+  font-family: 'FontAwesome';
+  content: "\f068";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #211F0F; }
+
+.toggle-plus.accordion-toggle[aria-expanded="false"]:after {
+  font-family: 'FontAwesome';
+  content: "\f067";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #211F0F; }
+
+.accordion .panel-heading .accordion-toggle {
+  display: block; }
+
+/* set panel-heading paddings to <a> instead of h3 */
+.accordion .panel-heading {
+  padding: 0px;
+  color: white; }
+
+.accordion .panel-heading a:link {
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none; }
+
+.accordion .panel-heading a:visited {
+  color: white; }
+
+.accordion .panel-heading h3 {
+  margin: 0; }
+
+.accordion .glyphicon {
+  padding: 0; }
+
+.accordion .glyphicon-minus,
+.accordion .glyphicon-plus {
+  color: white; }
+
+/* change color of open class */
+.accordion .panel-heading h3 {
+  background-color: #3a3837; }
+
+.accordion .panel-heading h3:hover {
+  background-color: #2d2b2a; }
+
+.accordion .panel-heading h3:active {
+  background-color: #201f1e; }
+
+/* change color of collapsed class */
+.accordion .collapsed {
+  background-color: #615e5c; }
+
+.accordion .collapsed:hover {
+  background-color: #545150; }
+
+.accordion .collapsed:active {
+  background-color: #474543; }
+
+.accordion .panel {
+  background-color: white;
+  border: none;
+  box-shadow: none; }
+
+.accordion .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+  border-left: 1px solid #615E5C;
+  border-right: 1px solid #615E5C;
+  border-bottom: 1px solid #615E5C; }
+
+.accordion:last-of-type > .panel-heading + .panel-collapse > .panel-body {
+  border-bottom: 1px solid #615E5C; }
+
+.accordion .panel-body {
+  margin-bottom: -1px;
+  border: none;
+  box-shadow: none; }
+
+.accordion .panel-footer {
+  background-color: #545150;
+  color: white;
+  border: none; }
+
+.accordion.panel-default .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+
+/* change color of open class */
+.accordion.panel-admin .panel-heading h3 {
+  background-color: #e50073; }
+
+.accordion.panel-admin .panel-heading h3:hover {
+  background-color: #cc0066; }
+
+.accordion.panel-admin .panel-heading h3:active {
+  background-color: #b20059; }
+
+/* change color of collapsed class */
+.accordion.panel-admin .collapsed {
+  background-color: #e50073; }
+
+.accordion.panel-admin .collapsed:hover {
+  background-color: #cc0066; }
+
+.accordion.panel-admin .collapsed:active {
+  background-color: #b20059; }
+
+.accordion.panel-admin .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
+
+.accordion.panel-admin .panel-footer {
+  background-color: #e50073; }
+
+/* ===================================================================================================== */
+/* Tootips & popovers ================================================================================== */
+a.glyphicon-info-sign {
+  color: #00a0e0 !important;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 0px; }
+
+.tooltip {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em; }
+
+.tooltip p {
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em;
+  text-align: left; }
+
+.tooltip.in {
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
+
+.tooltip-inner {
+  background-color: #00a0e0; }
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: #00a0e0; }
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #00a0e0; }
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #00a0e0; }
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #00a0e0; }
+
+.popover {
+  max-width: 500px;
+  background-color: #14bcff; }
+
+.popover-title {
+  background-color: #007cad;
+  color: white;
+  border-bottom: 0px solid #007cad;
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.05em; }
+
+.popover-content {
+  color: black;
+  font-family: 'robotoregular', Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.025em;
+  line-height: 1.3em; }
+
+.popover.top > .arrow:after {
+  border-top-color: #14bcff; }
+
+.popover.right > .arrow:after {
+  border-right-color: #14bcff; }
+
+.popover.bottom > .arrow:after {
+  border-bottom-color: #14bcff; }
+
+.popover.left > .arrow:after {
+  border-left-color: #14bcff; }
+
+.popover-content a:link {
+  color: white;
+  font-family: 'robotomedium', Helvetica, Arial, Sans-serif; }
+
+.popover-content a:visited {
+  color: white; }
+
+/* ===================================================================================================== */
+/* Notices ============================================================================================= */
+.notice .panel-body {
+  padding: 0; }
+
+.notice ul {
+  margin: 0; }
+
+.notice ul li {
+  padding: 8px 15px;
+  border-bottom: 1px solid white; }
+
+.notice ul li:last-of-type {
+  border-bottom: none; }
+
+.notice ul li:hover {
+  background-color: #D9D6D6; }
+
+.notice ul li a {
+  color: #211F0F;
+  text-decoration: none; }
+
+.notice li h1, .notice li h2, .notice li h3, .notice li h4, .notice li h5, .notice li h6, .notice li p {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.2em; }
+
+.notice li.status {
+  min-height: 45px; }
+
+.notice li.status h1, .notice li.status h2, .notice li.status h3, .notice li.status h4, .notice li.status h5, .notice li.status h6, .notice li.status p {
+  margin-left: 36px; }
+
+.notice .status.status-sm {
+  min-height: 30px; }
+
+.notice .status.status-sm h1, .notice .status.status-sm h2, .notice .status.status-sm h3, .notice .status.status-sm h4, .notice .status.status-sm h5, .notice .status.status-sm h6, .notice .status.status-sm p {
+  margin-left: 22px; }
+
+.notice .single h1, .notice .single h2, .notice .single h3, .notice .single h4, .notice .single h5, .notice .single h6, .notice .single p {
+  line-height: 2.4em; }
+
+/* ===================================================================================================== */
+/* Messages ============================================================================================ */
+.messages h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #C7C4C2; }
+
+.messages .panel-heading h3 {
+  padding-bottom: 0px;
+  border-bottom: none; }
+
+.message-group {
+  border-bottom: 1px solid #C7C4C2; }
+
+.panel-body .message-group {
+  border-bottom-color: white; }
+
+.message-group:last-of-type {
+  border-bottom: 1px solid transparent; }
+
+.message {
+  position: relative;
+  border-bottom: 1px solid #C7C4C2; }
+
+.panel-body .message {
+  border-bottom: 1px solid white; }
+
+.message:last-of-type {
+  border-bottom: 1px solid transparent; }
+
+.message h4 {
+  color: #E50073; }
+
+.admin-db .message h4 {
+  color: #211F0F; }
+
+.message h6 {
+  margin-top: -8px;
+  padding-bottom: 2px; }
+
+.messages-collapse a:link {
+  color: #211F0F; }
+
+/* ===================================================================================================== */
+/* Notifications ======================================================================================= */
+.notifications {
+  padding: 0; }
+
+.notifications .date, .notifications .heading {
+  font-family: "roboto-light", Helvetica, Arial, Sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+  border-top: 1px solid #D9D6D6;
+  color: black;
+  padding-top: 10px;
+  margin-bottom: -3px; }
+
+.panel.notifications .date, .panel.notifications .heading {
+  border-top: 1px solid white; }
+
+.notifications .date:first-of-type, .notifications .heading:first-of-type {
+  border-top: none;
+  padding-top: 0px; }
+
+.notifications .time, .notifications .subhead {
+  font-family: "roboto-black", Helvetica, Arial, Sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  border-top: 1px solid #D9D6D6;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.panel.notifications .time, .panel.notifications .subhead {
+  border-top: 1px solid white; }
+
+.notifications .time:first-of-type, .notifications .subhead:first-of-type {
+  border-top: none;
+  padding-top: 0px; }
+
+.notifications.datatable .table td.date-time {
+  font-family: "roboto-bold", Helvetica, Arial, Sans-serif; }
+
+.notifications.datatable .link-arrow td a {
+  margin-left: -1.25em;
+  text-indent: 1.25em; }
+
+.notifications.datatable .link-arrow td.detail {
+  padding-left: 30px; }

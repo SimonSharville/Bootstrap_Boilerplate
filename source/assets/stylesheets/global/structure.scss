@@ -1,0 +1,193 @@
+/* ===================================================================================================== */
+/* Structure =========================================================================================== */
+
+// This is for main struture ONLY.
+// Do not use for Page Specific styles.
+
+// =====================================================================================================
+/* BOOTSTRAP Structure Overrides */
+// =====================================================================================================
+
+* {
+    -webkit-font-smoothing: antialiased!important;
+    -moz-font-smoothing: grayscale!important;
+    font-smoothing: antialiased!important;
+}
+
+html, body {
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+}
+
+body {
+  color: $bodytext;
+  font-family:$font-regular;
+  padding-top:  70px; // Allows for navbars
+  padding-bottom:  80px; // Allows for navbars
+}
+
+
+
+// =====================================================================================================
+/* GRID ADJUSTMENTS  */
+// ===============================================
+// This reduces the column-gutter with to 20px (from 30px).
+// Comment this section out to default to original settings.
+
+.container-fluid .row{
+  padding-left: 10px; // changed from 15px
+  padding-right: 10px; // changed from 15px
+}
+
+.container .row{
+    padding-left: 10px; // changed from 15px
+    padding-right: 10px; // changed from 15px
+  }
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-left: 10px; // changed from 15px
+  padding-right: 10px; // changed from 15px
+}
+
+@media (min-width: 768px){
+  .navbar .container{ 
+    padding-left: 20px; // changed from 15px
+    padding-right: 20px; // changed from 15px
+  }
+}
+
+
+
+// =====================================================================================================
+// STRUCTURE ===========================================================================================
+
+.wrapper{
+  margin-top:100px;
+  margin-bottom:100px;
+}
+
+
+
+// Force elements out of a container =========================================
+// Will need adjusting if you remove the above Grid Adjustment settings
+
+.full-row {
+  margin-left:-20px; 
+  margin-right:-20px;
+  width: calc(100% + 40px); 
+}
+
+.full-col {
+  margin-left:-10px; 
+  margin-right:-10px;
+  width: calc(100% + 20px); 
+}
+
+
+@media (max-width: 767px){
+  .breakout {
+    margin-right: -20px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+
+}
+@media (min-width: 768px) {
+  .breakout {
+    // width: 750px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 725px / 2);
+    margin-right: calc(-50vw + 725px / 2);
+  }
+}
+@media (min-width: 992px) {
+  .breakout {
+    // width: 970px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 945px / 2);
+    margin-right: calc(-50vw + 945px / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .breakout {
+    // width: 1170px;
+    width:calc(100vw - 15px);
+    margin-left: calc(-50vw + 1145px / 2);
+    margin-right: calc(-50vw + 1145px / 2);
+  }
+}
+
+// Margin Adjustments and Tweaks ==========================
+
+.margin-top-5{ margin-top:-5px; }
+
+.margin-bottom-5{ margin-bottom:-5px; }
+
+.margin-top-10{ margin-top:-10px; }
+
+.margin-bottom-10{ margin-bottom:-10px; }
+
+.margin-top-20{ margin-top:-20px; }
+
+.margin-bottom-20{ margin-bottom:-20px; }
+
+.margin-top-30{ margin-top:-30px; }
+
+.margin-bottom-30{ margin-bottom:-30px; }
+
+.margin-top-40{ margin-top:-40px; }
+
+.margin-bottom-40{ margin-bottom:-40px; }
+
+.margin-top-50{ margin-top:-50px; }
+
+.margin-bottom-50{ margin-bottom:-50px; }
+
+.margin-top5{ margin-top:5px; }
+
+.margin-bottom5{ margin-bottom:5px; }
+
+.margin-top10{ margin-top:10px; }
+
+.margin-bottom10{ margin-bottom:10px; }
+
+.margin-top20{ margin-top:20px; }
+
+.margin-bottom20{ margin-bottom:20px; }
+
+.margin-top30{ margin-top:30px; }
+
+.margin-bottom30{ margin-bottom:30px; }
+
+.margin-top40{ margin-top:40px; }
+
+.margin-bottom40{ margin-bottom:40px; }
+
+.margin-top50{ margin-top:50px; }
+
+.margin-bottom50{ margin-bottom:50px; }
+
+.margin-bottom100{ margin-bottom:100px; }
+
+// Padding Adjustments and Tweaks ==========================
+
+.padding-top5{ padding-top:5px; }
+
+.padding-bottom5{ padding-top:5px; }
+
+.padding-top10{ padding-top:10px; }
+
+.padding-bottom10{ padding-top:10px; }
+
+.padding-top20{ padding-top:20px; }
+
+.padding-bottom20{ padding-top:20px; }
+
+.float-right{ float: right;}
+
+.float-left{ float: left;}

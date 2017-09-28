@@ -1,0 +1,218 @@
+/* ===================================================================================================== */
+/* Navbar Admin  ======================================================================================= */
+
+$navBase        : darken($admin, 0%);
+$navHover       : darken($navBase, 15%);
+$navFocus       : darken($navBase, 20%);
+$navActive      : darken($navBase, 20%);
+$navText        : white;
+$navActiveFocus : darken($navBase, 20%);
+$navDropdown    : darken($navBase, 20%);
+$navFont        : $font-bold;
+
+
+.navbar-admin {
+  background-color:$navBase;
+  color:$navText;
+  border:none;
+  border-radius: 0;
+  font-family: $navFont;
+}
+
+.navbar-admin .navbar-brand,
+.navbar-admin .navbar-brand:hover,
+.navbar-admin .navbar-brand:focus {
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > li > a {
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > li > a:hover {
+  background-color: $navHover;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > li > a:focus {
+  background-color:$navFocus;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > .active > a, 
+.navbar-admin .navbar-nav > .active > a:hover{
+  background-color:$navActive;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > .active > a:focus{
+  background-color:$navActiveFocus;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > .open > a, 
+.navbar-admin .navbar-nav > .open > a:hover{
+  background-color:$navActive;
+  color: $navText;
+}
+
+.navbar-admin .navbar-nav > .open > a:focus{
+  background-color:$navActiveFocus;
+  color: $navText;
+}
+
+// Dropdown menu ===================================================
+
+@media (min-width: 768px){
+  .navbar-admin .navbar-nav .dropdown-menu{
+    padding:0;
+    border-color:$grey03;
+    border-top:none;
+  }
+
+  .navbar-admin .navbar-nav .dropdown-menu > li > a{
+    color:darken($admin, 20%);
+    font-family: $font-medium;
+    padding:8px 10px;
+    border-bottom: 1px solid $grey03;
+  }
+
+  .navbar-admin .navbar-nav .dropdown-menu > li:last-child > a{
+    border-bottom:none;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+  }
+
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:visited{
+    color:darken($admin, 20%);
+    background-color:white;
+  }
+
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:hover{
+    color:white;
+    background-color:$admin;
+  }
+  
+  .navbar-admin .navbar-nav .dropdown-menu > li > a:focus{
+    color:white;
+    background-color:darken($admin, 5%);
+  }
+
+}
+
+@media (max-width: 767px){
+  .navbar-admin .navbar-nav .open .dropdown-menu{
+    padding:0;
+  }
+
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
+    color: $navText;
+    font-family: $font-medium;
+  }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:visited{
+    background-color: darken($navHover, 0%);
+    color: $navText;
+  }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover{
+    background-color: darken($navHover, 0%);
+    color: $navText;
+  }
+  .navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus, {
+    background-color: darken($navFocus, 0%);
+    color: $navText;
+  }
+}
+
+// .navbar-admin .navbar-nav .dropdown-menu{
+//   border:none;
+//   background-color:$navDropdown;
+//   border-radius: 0;
+// }
+
+// .navbar-admin .navbar-nav > li > .dropdown-menu{
+//   padding:0;
+// }
+
+// .navbar-admin .navbar-nav > li > .dropdown-menu .divider{
+//   margin:5px 0;
+// }
+
+// .navbar-admin .navbar-nav .dropdown-menu > li > a {
+//   font-family: $navFont;
+//   color: $navText;
+// }
+
+// .navbar-admin .navbar-nav .dropdown-menu > li > a:hover{
+//   background-color: darken($navDropdown, 10%);
+//   color: $navText;
+// }
+
+// .navbar-admin .navbar-nav .dropdown-menu > li > a:focus, {
+//   background-color: darken($navDropdown, 5%);
+//   color: $navText;
+// }
+
+// .navbar-admin .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+//   background-color: darken($navDropdown, 5%);
+// }
+
+// .navbar-admin .navbar-nav > .open > a, .navbar-admin .navbar-nav > .open > a:hover{
+//   background-color:$navDropdown;
+// }
+
+// @media (max-width: 767px){
+//   .navbar-admin .navbar-nav .open .dropdown-menu > li > a {
+//     background-color:$navDropdown;
+//     color: $navText;
+//   }
+//   .navbar-admin .navbar-nav .open .dropdown-menu > li > a:hover{
+//     background-color: darken($navDropdown, 10%);
+//     color: $navText;
+//   }
+//   .navbar-admin .navbar-nav .open .dropdown-menu > li > a:focus, {
+//     background-color: darken($navDropdown, 10%);
+//     color: $navText;
+//   }
+// }
+
+// Toggle Button ===================================================
+
+.navbar-admin .navbar-toggle{
+  border:none;
+  background-color:$navActive;
+  margin-top:9px;
+  margin-bottom:9px;
+}
+
+.navbar-admin .navbar-toggle:hover{
+  background-color: $navHover;
+}
+.navbar-admin .navbar-toggle:focus{
+  background-color: $navActiveFocus;
+}
+
+.navbar-admin .navbar-toggle .icon-bar{
+  background-color: $navText;
+}
+
+// =================================================================
+// Navbar Footer Admin  ============================================
+
+
+.navbar-footer-admin{
+  background-color:$grey16;
+  color:$navText;
+  border:none;
+  font-family: $navFont;
+  min-height:35px;
+  height:35px;
+}
+.navbar-footer-admin a:link{
+  color:$navBase;
+}
+.navbar-footer-admin a:visited{
+  color:$navBase;
+}
+.navbar-footer-admin a:hover{
+  color:$navHover;
+}

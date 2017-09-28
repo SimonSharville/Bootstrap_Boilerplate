@@ -30,11 +30,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand " href="../index.html">Boilerplate</a>
         </div>
-        <div class="col-xs-12">
           <div class="collapse navbar-collapse" id="ui-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class=""><a href="../index.html">Home</a></li>
               <li class=""><a href="structure.html">Structure <span class="sr-only">(current)</span></a></li>
               <li class="dropdown ">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Typography <span class="caret"></span></a>
@@ -45,15 +44,15 @@
               </li>
               <!-- UI Menu ============================================================================= -->
               <!-- UI Menu Multi-column ============================================================================= -->
-              <li class="dropdown menu-large active ">
+              <li class="dropdown menu-large active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI Menu <b class="caret"></b></a>       
                 <ul class="dropdown-menu megamenu">
                   <li class="title">UI Menu</li>
                   <li class="col-xs-12  multi-column multi-column-4">
                     <ul>
                       <li class="dropdown-header">Bootstrap Components</li>
-                      <li class="disabled"><a href="#">Accordions</a></li>
-                      <li class="disabled"><a href="#">Alerts</a></li>
+                      <li class=""><a href="accordions.html">Accordions</a></li>
+                      <li class=""><a href="alerts.html">Alerts</a></li>
                       <li class=""><a href="buttons.html">Buttons</a></li>
                       <li class=""><a href="forms.html">Forms</a></li>
                       <li class=""><a href="form-controls.html">Form Controls</a></li>
@@ -61,10 +60,12 @@
                       <li class=""><a href="nav-tabs.html">Nav Tabs</a></li>
                       <li class=""><a href="panels.html">Panels</a></li>
                       <li class=""><a href="tables.html">Tables</a></li>
-                      <li class="disabled"><a href="#">Tooltips</a></li>
+                      <li class=""><a href="tooltips.html">Tooltips</a></li>
                       <li class="dropdown-header">Other Components</li>
                       <li class="disabled"><a href="#">List Styles</a></li>
                       <li class=""><a href="megamenu.html">Megamenu</a></li>
+                      <li class=""><a href="notices.html">Notices</a></li>
+                      <li class=""><a href="notifications.html">Notifications</a></li>
                       <li class=""><a href="perforations.html">Perforations</a></li>
                       <li class="disabled"><a href="#">Status Alerts</a></li>
                       <li class="disabled"><a href="#">Text Links</a></li>
@@ -81,202 +82,219 @@
               
             </ul>
           </div><!-- /.navbar-collapse -->
-        </div><!-- / col -->
       </div><!-- /.container -->
     </nav>
    
-    <div class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2>Forms</h2>
-            <p class="intro">Everything should be contained within a <strong>fieldset</strong> and a <strong>field-group</strong>.</br>
-              You can have multiple fieldsets within a form and multiple field-groups within a fieldset.</p>
-            <p class="ui-intro">You can disable all controls within the fieldset at once, by adding <strong>disabled</strong> to it. (ie. <code>&lt;fieldset disabled&gt;</code>).</p>
-            <p>
-              <code>
-                &lt;form&gt;</br>
-                &nbsp;  &lt;fieldset&gt;</br>
-                &nbsp;&nbsp;    &lt;legend&gt;Legend&lt;/legend&gt;</br>
-                &nbsp;&nbsp;    &lt;div class="form-group"&gt;</br>
-                &nbsp;&nbsp;&nbsp;      &lt;label for="example"&gt;Label for input&lt;/label&gt;</br>
-                &nbsp;&nbsp;&nbsp;      &lt;input type="email" class="form-control" id="example" placeholder="Placeholder"&gt;</br>
-                &nbsp;&nbsp;    &lt;/div&gt;</br>
-                &nbsp;&nbsp;    &lt;div class="form-group"&gt;</br>
-                &nbsp;&nbsp;&nbsp;      &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;</br>
-                &nbsp;&nbsp;&nbsp;      &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;</br>
-                &nbsp;&nbsp;    &lt;/div&gt;</br>
-                &nbsp;&nbsp;    &lt;div class="form-group"&gt;</br>
-                &nbsp;&nbsp;&nbsp;      &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;</br>
-                &nbsp;&nbsp;&nbsp;      &lt;input type="file" id="exampleInputFile"&gt;</br>
-                &nbsp;&nbsp;&nbsp;      &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;</br>
-                &nbsp;&nbsp;    &lt;/div&gt;</br>
-                &nbsp;&nbsp;    &lt;div class="form-group"&gt;</br>
-                &nbsp;&nbsp;&nbsp;      &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;</br>
-                &nbsp;&nbsp;    &lt;/div&gt;</br>
-                 &nbsp; &lt;/fieldset&gt;</br>
-                &lt;/form&gt;
-              </code>
-            </p>
-            <p><strong>Note on Columns within a form-group:</strong> Some form-groups have columns nested within them. to make them align properly you can either add a row around these columns, or for drier coding, just add the class of <strong>row</strong> to the <strong>form-group</strong> class.</p>
-          </div> <!-- / col -->
-        </div> <!-- / row -->
-      </div> <!-- / container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Forms</h1>
+          <p class="intro">Everything should be contained within a <strong>fieldset</strong> and a <strong>field-group</strong>.</br>
+            You can have multiple fieldsets within a form and multiple field-groups within a fieldset.</p>
+          <p class="ui-intro">You can disable all controls within the fieldset at once, by adding <strong>disabled</strong> to it. (ie. <code>&lt;fieldset disabled&gt;</code>).</p>
+          <p>
+            <code>
+              &lt;form&gt;</br>
+              &nbsp;  &lt;fieldset&gt;</br>
+              &nbsp;&nbsp;    &lt;legend&gt;Legend&lt;/legend&gt;</br>
+              &nbsp;&nbsp;    &lt;div class="form-group"&gt;</br>
+              &nbsp;&nbsp;&nbsp;      &lt;label for="example"&gt;Label for input&lt;/label&gt;</br>
+              &nbsp;&nbsp;&nbsp;      &lt;input type="email" class="form-control" id="example" placeholder="Placeholder"&gt;</br>
+              &nbsp;&nbsp;    &lt;/div&gt;</br>
+              &nbsp;&nbsp;    &lt;div class="form-group"&gt;</br>
+              &nbsp;&nbsp;&nbsp;      &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;</br>
+              &nbsp;&nbsp;&nbsp;      &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;</br>
+              &nbsp;&nbsp;    &lt;/div&gt;</br>
+              &nbsp;&nbsp;    &lt;div class="form-group"&gt;</br>
+              &nbsp;&nbsp;&nbsp;      &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;</br>
+              &nbsp;&nbsp;&nbsp;      &lt;input type="file" id="exampleInputFile"&gt;</br>
+              &nbsp;&nbsp;&nbsp;      &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;</br>
+              &nbsp;&nbsp;    &lt;/div&gt;</br>
+              &nbsp;&nbsp;    &lt;div class="form-group"&gt;</br>
+              &nbsp;&nbsp;&nbsp;      &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;</br>
+              &nbsp;&nbsp;    &lt;/div&gt;</br>
+               &nbsp; &lt;/fieldset&gt;</br>
+              &lt;/form&gt;
+            </code>
+          </p>
+        </div> <!-- / col -->
+      </div> <!-- / row -->
+    </div> <!-- / container -->
 
-      <!-- ========================================================================================================== -->
+    <!-- ========================================================================================================== -->
 
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <hr class="dashed-client"></hr>
-          </div>
-          <div class="col-sm-6">
-            <h4>Form with Fieldset</h4>
-            <form>
-              <fieldset>
-                <div class="form-group">
-                  <label for="example">Label for input</label>
-                  <input type="email" class="form-control" id="example" placeholder="Placeholder">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <hr class="dashed-client"></hr>
+        </div>
+        <div class="col-sm-6">
+          <h4>Form with Fieldset</h4>
+          <form>
+            <fieldset>
+              <div class="form-group">
+                <label for="example">Label for input</label>
+                <input type="email" class="form-control" id="example" placeholder="Placeholder">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Check me out
+                  </label>
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </fieldset>
+          </form>
+        </div> <!-- / Column -->
+
+        <div class="col-sm-6">
+          <h4>Form with Fieldset and Legend</h4>
+          <form>
+            <fieldset>
+              <legend>Legend</legend>
+              <div class="form-group">
+                <label for="example">Label for input</label>
+                <input type="email" class="form-control" id="example" placeholder="Placeholder">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Check me out
+                  </label>
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
-                  <p class="help-block">Example block-level help text here.</p>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </fieldset>
+          </form>
+        </div> <!-- / Column -->
+
+        <div class="col-sm-12">
+          <hr class="dashed-client"></hr>
+          <h3>Horizontal forms</h3>
+        </div> <!-- / Column -->
+
+        <div class="col-sm-6">
+          <h4>Form Horizontal</h4>
+          <form class="form-horizontal">
+            <fieldset>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                 </div>
-                <div class="form-group">
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox"> Check me out
+                      <input type="checkbox"> Remember me
                     </label>
                   </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
                 </div>
-              </fieldset>
-            </form>
-          </div> <!-- / Column -->
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div> <!-- / Column -->
 
-          <div class="col-sm-6">
-            <h4>Form with Fieldset and Legend</h4>
-            <form>
-              <fieldset>
-                <legend>Legend</legend>
-                <div class="form-group">
-                  <label for="example">Label for input</label>
-                  <input type="email" class="form-control" id="example" placeholder="Placeholder">
+        <div class="col-sm-6">
+          <h4>Form Horizontal with Legend</h4>
+          <form class="form-horizontal">
+            <fieldset>
+              <legend>Legend</legend>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
-                  <p class="help-block">Example block-level help text here.</p>
-                </div>
-                <div class="form-group">
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox"> Check me out
+                      <input type="checkbox"> Remember me
                     </label>
                   </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
                 </div>
-              </fieldset>
-            </form>
-          </div> <!-- / Column -->
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div> <!-- / Column -->
+      </div> <!-- / row -->
+    </div> <!-- / container -->
 
-          <div class="col-sm-12">
-            <hr class="dashed-client"></hr>
-            <h3>Horizontal forms</h3>
-          </div> <!-- / Column -->
+    <!-- ========================================================================================================== -->
 
-          <div class="col-sm-6">
-            <h4>Form Horizontal</h4>
-            <form class="form-horizontal">
-              <fieldset>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox"> Remember me
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div> <!-- / Column -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <hr class="dashed-client"></hr>
+          <h3>Inline forms</h3>
+        </div> <!-- / Column -->
+        <div class="col-sm-12">
+          <h4>Form Inline</h4>
+          <form class="form-inline">
+            <fieldset>
+              <div class="form-group">
+                <label for="exampleInputName2">Name</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-default">Send invitation</button>
+              </div>
+            </fieldset>
+          </form>
+        </div> <!-- / Column -->
 
-          <div class="col-sm-6">
-            <h4>Form Horizontal with Legend</h4>
-            <form class="form-horizontal">
-              <fieldset>
-                <legend>Legend</legend>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox"> Remember me
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div> <!-- / Column -->
-        </div> <!-- / row -->
-      </div> <!-- / container -->
-
-      <!-- ========================================================================================================== -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <hr class="dashed-client"></hr>
-            <h3>Inline forms</h3>
-          </div> <!-- / Column -->
-          <div class="col-sm-12">
-            <h4>Form Inline</h4>
+         <div class="col-sm-12">
+          <h4>Form Inline with Legend</h4>
             <form class="form-inline">
               <fieldset>
+                <legend>Legend</legend>
                 <div class="form-group">
                   <label for="exampleInputName2">Name</label>
                   <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
@@ -292,83 +310,59 @@
             </form>
           </div> <!-- / Column -->
 
-           <div class="col-sm-12">
-            <h4>Form Inline with Legend</h4>
-              <form class="form-inline">
-                <fieldset>
-                  <legend>Legend</legend>
-                  <div class="form-group">
-                    <label for="exampleInputName2">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+          <div class="col-sm-12">
+            <form class="form-inline">
+              <fieldset>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputPassword3">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail2">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-default">Send invitation</button>
-                  </div>
-                </fieldset>
-              </form>
-            </div> <!-- / Column -->
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+              </fieldset>
+            </form>
+          </div> <!-- / Column -->
 
-            <div class="col-sm-12">
-              <form class="form-inline">
-                <fieldset>
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+          <div class="col-sm-12">
+            <form class="form-inline">
+              <fieldset>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                    <div class="input-group-addon">.00</div>
                   </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputPassword3">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox"> Remember me
-                      </label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Sign in</button>
-                  </div>
-                </fieldset>
-              </form>
-            </div> <!-- / Column -->
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Transfer cash</button>
+                </div>
+              </fieldset>
+            </form>
+          </div> <!-- / Column -->
+      </div> <!-- / row -->
+    </div> <!-- / container -->
 
-            <div class="col-sm-12">
-              <form class="form-inline">
-                <fieldset>
-                  <div class="form-group">
-                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-                    <div class="input-group">
-                      <div class="input-group-addon">$</div>
-                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-                      <div class="input-group-addon">.00</div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Transfer cash</button>
-                  </div>
-                </fieldset>
-              </form>
-            </div> <!-- / Column -->
-        </div> <!-- / row -->
-      </div> <!-- / container -->
-
-<!--  -->    <!-- ========================================================================================================== -->
-    </div> <!-- / wrapper -->
 
     <!-- Footer ========================================================================= -->
     <nav class="navbar navbar-footer-default navbar-fixed-bottom">
       <div class="container">
-        <div class="navbar-btn">
           <div class="row">
             <div class="col-xs-6 bg">Bootstrap Boilerplate</div>
             <div class="col-xs-6 bg right">Design: <a href="http://www.simonsharville.co.uk" target="new">SiDe</a></div>
             <a href="#" class="scrollToTop"></a> <!-- Link for scroll-to-top button -->
           </div>
         <!-- <div id="col1">content</div><div id="col2">content</div> -->
-        </div>
         
       </div><!-- /.container-fluid -->
     </nav>

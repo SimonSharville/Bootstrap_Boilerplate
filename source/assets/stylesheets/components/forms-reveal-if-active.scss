@@ -1,0 +1,35 @@
+/* ===================================================================================================== */
+/* Forms - Reveal if Active ============================================================================ */
+// Reveal If Active =================================================
+// Expanding form groups ====================
+// Used in My Appraisal and Job Planning
+// https://css-tricks.com/exposing-form-fields-radio-button-css/
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s;
+  input[value="true"]:checked ~ &,
+  input[value="true"]:checked ~ & {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 0px 10px 16px;
+    transform: scale(1);
+  }
+}
+
+.reveal-if-active .form-group:first-of-type{
+  margin-top:0px;
+}
+
+// This is meant to remove the border-bottom when the No button is active
+.expandable input[value="false"]{ // CAN'T GET THIS TO WORK
+  border:none!important;
+  margin-bottom:0px!important;
+}
+
+
+

@@ -1,0 +1,65 @@
+/* ===================================================================================================== */
+/* Notices ============================================================================================= */
+
+// See rag.status.scss for status styles =============
+
+.notice .panel-body{
+  padding:0;
+}
+
+.notice ul{
+  margin:0;
+}
+
+ .notice ul li {
+  // background-color:red;
+  padding:8px 15px;;
+  border-bottom: 1px solid white;
+ }
+
+ .notice ul li:last-of-type{
+  border-bottom: none;
+ }
+
+.notice ul li:hover {
+  background-color:$tableHoverHover;
+ }
+
+ .notice ul li a{
+  color:$text;
+  text-decoration:none;
+ }
+
+.notice { 
+  li h1, li h2, li h3, li h4, li h5, li h6, li p{
+    margin:0;
+    font-size:1.1em;
+    line-height:1.2em;
+  }
+
+  li.status{
+    min-height:45px;
+  }
+
+  li.status { 
+    h1, h2, h3, h4, h5, h6, p{
+    margin-left:36px;
+    }
+  }
+
+  .status.status-sm{
+    min-height:30px;
+  }
+
+  .status.status-sm { 
+    h1, h2, h3, h4, h5, h6, p{
+    margin-left:22px;
+    }
+  }
+}
+
+.notice { 
+  .single h1, .single h2, .single h3, .single h4, .single h5, .single h6, .single p{
+    line-height:2.4em;
+  }
+}

@@ -14,11 +14,13 @@
 
   @import "global/font-robotoslab";
 
-  @import "global/scroll-to-top";
+  @import "global/smoothscroll";
 
   @import "global/perforations";
 
-  @import "global/typography";
+  @import "global/typestyles";
+
+  @import "global/typestyles-serif"; // This is only used for the UI version. Delete on final build.
 
   @import "global/structure";
 
@@ -26,29 +28,45 @@
 
   @import "global/list-styles";
 
-  @import "global/ui-styles";
+  @import "global/ui-styles"; // This is only used for the UI version. Delete on final build/
 
 
 // Component styles =======================
 
-@import "components/forms";
+  @import "components/alerts";
 
-@import "components/navbar";
+  @import "components/forms";
 
-@import "components/navbar-admin";
+  @import "components/forms-tagsinput";
 
-@import "components/navbar-second";
+  @import "components/forms-reveal-if-active";
 
-@import "components/megamenu";
+  @import "components/navbar";
 
-@import "components/rag-status";
+  @import "components/navbar-admin";
 
-@import "components/panels";
+  @import "components/navbar-second";
 
-@import "components/tables";
+  @import "components/megamenu";
 
-@import "components/buttons";
+  @import "components/rag-status";
 
-@import "components/button-groups";
+  @import "components/panels";
 
-@import "components/nav-tabs";
+  @import "components/tables";
+
+  @import "components/buttons";
+
+  @import "components/button-groups";
+
+  @import "components/nav-tabs";
+
+  @import "components/accordions";
+
+  @import "components/tooltips";
+
+  @import "components/notices";
+
+  @import "components/messages";
+
+  @import "components/notifications";

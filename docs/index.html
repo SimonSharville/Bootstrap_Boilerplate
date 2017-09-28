@@ -30,11 +30,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand active" href="index.html">Boilerplate</a>
         </div>
-        <div class="col-xs-12">
           <div class="collapse navbar-collapse" id="ui-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
               <li class=""><a href="ui/structure.html">Structure <span class="sr-only">(current)</span></a></li>
               <li class="dropdown ">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Typography <span class="caret"></span></a>
@@ -52,8 +51,8 @@
                   <li class="col-xs-12  multi-column multi-column-4">
                     <ul>
                       <li class="dropdown-header">Bootstrap Components</li>
-                      <li class="disabled"><a href="#">Accordions</a></li>
-                      <li class="disabled"><a href="#">Alerts</a></li>
+                      <li class=""><a href="ui/accordions.html">Accordions</a></li>
+                      <li class=""><a href="ui/alerts.html">Alerts</a></li>
                       <li class=""><a href="ui/buttons.html">Buttons</a></li>
                       <li class=""><a href="ui/forms.html">Forms</a></li>
                       <li class=""><a href="ui/form-controls.html">Form Controls</a></li>
@@ -61,10 +60,12 @@
                       <li class=""><a href="ui/nav-tabs.html">Nav Tabs</a></li>
                       <li class=""><a href="ui/panels.html">Panels</a></li>
                       <li class=""><a href="ui/tables.html">Tables</a></li>
-                      <li class="disabled"><a href="#">Tooltips</a></li>
+                      <li class=""><a href="ui/tooltips.html">Tooltips</a></li>
                       <li class="dropdown-header">Other Components</li>
                       <li class="disabled"><a href="#">List Styles</a></li>
                       <li class=""><a href="ui/megamenu.html">Megamenu</a></li>
+                      <li class=""><a href="ui/notices.html">Notices</a></li>
+                      <li class=""><a href="ui/notifications.html">Notifications</a></li>
                       <li class=""><a href="ui/perforations.html">Perforations</a></li>
                       <li class="disabled"><a href="#">Status Alerts</a></li>
                       <li class="disabled"><a href="#">Text Links</a></li>
@@ -81,60 +82,52 @@
               
             </ul>
           </div><!-- /.navbar-collapse -->
-        </div><!-- / col -->
       </div><!-- /.container -->
     </nav>
    
-    <div class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-             <h1 class="">Bootstrap Boilerplate</h1>
-            <p class="intro">I have created this boilerplate as a starting point for future projects.</p>
-            <p class="intro">The default bootstrap grid has been adjusted a little to reduce the gutter-width between columns, which I have always found to be a little wide. Details of this can be seen on the <a href="structure.html">Structure</a> page.</p>
-            <p class="intro">I have also created stylesheets for <a href="typography.html">typography</a> and a set of default Navbars. Components will be added as they are created and can be accessed through the UI Menu at the top.</p>
-            <p class="intro">The boilerplate has been constructed using <a href="https://codekitapp.com/" target="_blank">CodeKit</a>. <br/>Feel free to <a href="https://github.com/SimonSharville/Bootstrap_Boilerplate" target="_blank">fork</a> it and use as you wish.</p>
-          </div>
-        </div>
-      </div> <!-- / container -->
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <a href="https://www.simonsharville.co.uk">
-              <img alt="Simon Sharville" src="assets/images/Simon_Sharville_icon_600.png" class="ui-profile-image">
-            </a>
-          </div>
-          <div class="col-xs-12">
-            <h5 class="base heavy ">Simon Sharville</h5>
-            <h5 class="light margin-top-5">Graphic Designer</h5>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+           <h1 class="">Bootstrap Boilerplate</h1>
+          <p class="intro">I have created this boilerplate as a starting point for future projects.</p>
+          <p class="intro">The default bootstrap grid has been adjusted a little to reduce the gutter-width between columns, which I have always found to be a little wide. Details of this can be seen on the <a href="structure.html">Structure</a> page.</p>
+          <p class="intro">I have also created stylesheets for <a href="typography.html">typography</a> and a set of default Navbars. Components will be added as they are created and can be accessed through the UI Menu at the top.</p>
         </div>
       </div>
-
-      <div class="container margin-top50">
-        <div class="row">
-          <div class="col-xs-12">
-            <hr class="dashed-client"></hr>
-            <p><strong>Note:</strong> Feel free to cut and paste any of the components coding, however, occasionally I have added <strong>ui-classes</strong> to certain elements. These are just for presentation purposes. ie. buttons have ui-btn on them to give them a little vertical space between them. So remove that ui-class when using it.<br/>
-            You should also remove the ui-styles.scss from core-styles.scss.  </p>
-          </div>
+    </div> <!-- / container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="https://www.simonsharville.co.uk">
+            <img alt="Simon Sharville" src="assets/images/Simon_Sharville_icon_600.png" class="ui-profile-image">
+          </a>
+        </div>
+        <div class="col-xs-12">
+          <h5 class="base heavy ">Simon Sharville</h5>
+          <h5 class="light margin-top-5">Graphic Designer</h5>
         </div>
       </div>
-    </div> <!-- / wrapper -->
+    </div>
 
-
+    <div class="container margin-top50">
+      <div class="row">
+        <div class="col-xs-12">
+          <hr class="dashed-client"></hr>
+          <p><strong>Note:</strong> Feel free to cut and paste any of the components coding, however, occasionally I have added <strong>ui-classes</strong> to certain elements. These are just for presentation purposes. ie. buttons have ui-btn on them to give them a little vertical space between them. So remove that ui-class when using it.<br/>
+          You should also remove the ui-styles.scss from core-styles.scss.  </p>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer ========================================================================= -->
     <nav class="navbar navbar-footer-default navbar-fixed-bottom">
       <div class="container">
-        <div class="navbar-btn">
           <div class="row">
             <div class="col-xs-6 bg">Bootstrap Boilerplate</div>
             <div class="col-xs-6 bg right">Design: <a href="http://www.simonsharville.co.uk" target="new">SiDe</a></div>
             <a href="#" class="scrollToTop"></a> <!-- Link for scroll-to-top button -->
           </div>
         <!-- <div id="col1">content</div><div id="col2">content</div> -->
-        </div>
         
       </div><!-- /.container-fluid -->
     </nav>

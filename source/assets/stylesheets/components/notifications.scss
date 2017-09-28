@@ -1,0 +1,66 @@
+/* ===================================================================================================== */
+/* Notifications ======================================================================================= */
+
+
+// Used on Dashboard/Notifications
+
+.notifications{
+  padding:0;
+}
+
+.notifications .date, .notifications .heading {
+  font-family: $font-light;
+  font-size:1.5em;
+  line-height:1em;
+  border-top: 1px solid $grey04;
+  color:black;
+  padding-top:10px;
+  // padding: 10px 0px 0px 0px;
+  margin-bottom: -3px;
+}
+
+.panel.notifications .date, .panel.notifications .heading{
+  border-top: 1px solid white;
+}
+
+.notifications .date:first-of-type, .notifications .heading:first-of-type{
+  border-top:none;
+  padding-top:0px;
+}
+
+.notifications .time, .notifications .subhead {
+  font-family: $font-heavy;
+  font-size:1em;
+  line-height:1em;
+  border-top: 1px solid $grey04;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.panel.notifications .time, .panel.notifications .subhead{
+  border-top: 1px solid white;
+}
+
+.notifications .time:first-of-type, .notifications .subhead:first-of-type{
+  border-top: none;
+  padding-top: 0px;
+}
+
+
+
+// v2 of Notifications. Using sortable datatable =====================
+
+.notifications.datatable .table td.date-time{
+  font-family: $font-bold;
+}
+
+// This indents the text below the link arrow icon
+.notifications.datatable .link-arrow td a{
+  margin-left: -1.25em;
+  text-indent: 1.25em;
+}
+// This aligns the link
+.notifications.datatable .link-arrow td.detail{
+  padding-left:30px;
+}
