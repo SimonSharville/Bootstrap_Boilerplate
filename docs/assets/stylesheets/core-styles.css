@@ -7175,22 +7175,37 @@ body {
   padding-bottom: 80px; }
 
 /* GRID ADJUSTMENTS  */
-.container-fluid .row {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-.container .row {
-  padding-left: 10px;
-  padding-right: 10px; }
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-  padding-left: 10px;
-  padding-right: 10px; }
+.container {
+  margin-right: auto;
+  margin-left: auto; }
 
 @media (min-width: 768px) {
-  .navbar .container {
-    padding-left: 20px;
-    padding-right: 20px; } }
+  .container {
+    width: 740px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1160px; } }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .wrapper {
   margin-top: 100px;
@@ -11046,21 +11061,24 @@ fieldset[disabled] .btn-default.focus {
 
 /* ===================================================================================================== */
 /* Accordions ========================================================================================== */
-.toggle-plus.accordion-toggle[aria-expanded="true"]:after {
+.toggle-plus.panel-heading a:link:after {
   font-family: 'FontAwesome';
   content: "\f068";
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #211F0F; }
+  color: white;
+  float: right; }
 
-.toggle-plus.accordion-toggle[aria-expanded="false"]:after {
+.toggle-plus.panel-heading a:link.collapsed:after {
   font-family: 'FontAwesome';
   content: "\f067";
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #211F0F; }
+  color: white;
+  float: right; }
+
+.toggle-panel .panel-heading a:link {
+  color: white; }
+
+.toggle-panel .panel-heading a:link:after {
+  margin-top: -17px;
+  font-size: 1.25em; }
 
 .accordion .panel-heading .accordion-toggle {
   display: block; }
@@ -11080,13 +11098,6 @@ fieldset[disabled] .btn-default.focus {
 
 .accordion .panel-heading h3 {
   margin: 0; }
-
-.accordion .glyphicon {
-  padding: 0; }
-
-.accordion .glyphicon-minus,
-.accordion .glyphicon-plus {
-  color: white; }
 
 /* change color of open class */
 .accordion .panel-heading h3 {
@@ -11108,31 +11119,9 @@ fieldset[disabled] .btn-default.focus {
 .accordion .collapsed:active {
   background-color: #474543; }
 
-.accordion .panel {
-  background-color: white;
-  border: none;
-  box-shadow: none; }
-
-.accordion .panel-heading + .panel-collapse > .panel-body {
-  border: none;
-  border-left: 1px solid #615E5C;
-  border-right: 1px solid #615E5C;
-  border-bottom: 1px solid #615E5C; }
-
-.accordion:last-of-type > .panel-heading + .panel-collapse > .panel-body {
-  border-bottom: 1px solid #615E5C; }
-
-.accordion .panel-body {
-  margin-bottom: -1px;
-  border: none;
-  box-shadow: none; }
-
 .accordion .panel-footer {
   background-color: #545150;
   color: white;
-  border: none; }
-
-.accordion.panel-default .panel-heading + .panel-collapse > .panel-body {
   border: none; }
 
 /* change color of open class */
@@ -11154,9 +11143,6 @@ fieldset[disabled] .btn-default.focus {
 
 .accordion.panel-admin .collapsed:active {
   background-color: #b20059; }
-
-.accordion.panel-admin .panel-heading + .panel-collapse > .panel-body {
-  border: none; }
 
 .accordion.panel-admin .panel-footer {
   background-color: #e50073; }
@@ -11376,3 +11362,11 @@ a.glyphicon-info-sign {
 
 .notifications.datatable .link-arrow td.detail {
   padding-left: 30px; }
+
+@media (max-width: 991px) {
+  .hide-col-1 {
+    display: none; } }
+
+@media (min-width: 992px) {
+  .hide-col-2 {
+    display: none; } }

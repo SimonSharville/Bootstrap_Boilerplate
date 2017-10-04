@@ -1,27 +1,33 @@
 /* ===================================================================================================== */
 /* Accordions ========================================================================================== */
 
-// Add .toggle-plus before an .accordion-toggle to include a + - symbol to it 
+// Add .toggle-plus to the .panel-header to include a + - symbol to it 
 
-.toggle-plus.accordion-toggle[aria-expanded="true"]:after{
+.toggle-plus.panel-heading a:link:after{
   font-family: 'FontAwesome';
   content: "\f068"; // minus
-  position: absolute;
-  top:0;
-  right:0;
-  color:$text;
+  color:white;
+  float:right;
 }
-.toggle-plus.accordion-toggle[aria-expanded="false"]:after{
+.toggle-plus.panel-heading a:link.collapsed:after{
   font-family: 'FontAwesome';
   content: "\f067"; // plus
-  position: absolute;
-  top:0;
-  right:0;
-  color:$text;
+  color:white;
+  float:right;
+}
+
+// Toggle Panels that arn't an accordion ======================================
+.toggle-panel .panel-heading a:link{
+  color: white;
+}
+
+.toggle-panel .panel-heading a:link:after{
+  margin-top: -17px;
+  font-size: 1.25em;
 }
 
 
-// SA-Accordion ================================================
+// Make Accordion Panel Headings as a link ====================================
 
 
 .accordion .panel-heading .accordion-toggle {
@@ -48,18 +54,10 @@
   margin:0; // Adjusts some strange overlap of the panel-heading
 }
 
-.accordion .glyphicon{ padding: 0;}
 
-.accordion .glyphicon-minus,
-.accordion .glyphicon-plus
-{color:white;}
-
-// Colouring =========================================================
+// Default Colouring =========================================================
 $accordian: $grey14;
 
-.accordion{
-  // border-bottom:1px solid $accordian;
-}
 
 /* change color of open class */
 .accordion .panel-heading h3{ 
@@ -83,39 +81,13 @@ $accordian: $grey14;
   background-color: darken($accordian, 10%); 
 }
 
-.accordion .panel{
-  background-color:white;
-  border:none;
-  box-shadow:none;
-}
-.accordion .panel-heading + .panel-collapse > .panel-body{ 
-  border:none;
-  border-left:1px solid $accordian;
-  border-right:1px solid $accordian;
-  border-bottom:1px solid $accordian;
-}
-
-.accordion:last-of-type > .panel-heading + .panel-collapse > .panel-body{
-  border-bottom:1px solid $accordian;
-}
-
-.accordion .panel-body{
-  margin-bottom:-1px;
-  border:none;
-  box-shadow:none;
-}
-
 .accordion .panel-footer{
   background-color: darken($accordian, 5%);
   color:white;
   border:none;
 }
 
-// Default Colouring =========================================================
 
-.accordion.panel-default .panel-heading + .panel-collapse > .panel-body{ 
-  border:none;
-}
 
 // Admin Colouring ==========================================================
 
@@ -140,10 +112,6 @@ $accordian: $grey14;
 }
 .accordion.panel-admin .collapsed:active { 
   background-color: darken($admin, 10%); 
-}
-
-.accordion.panel-admin .panel-heading + .panel-collapse > .panel-body{ 
-  border:none;
 }
 
 .accordion.panel-admin .panel-footer{
